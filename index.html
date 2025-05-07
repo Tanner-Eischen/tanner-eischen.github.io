@@ -6,8 +6,8 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/animate.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/nivo-lightbox.css">
-        <link rel="stylesheet" href="css/nivo_themes/default/default.css">
+        
+        
 
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -18,10 +18,12 @@
         <script src="js/wow.min.js"></script>
         <script src="js/custom.js"></script>
         <script src="js/addrec.js"></script>
+        
     </head>
-    <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
-        <section class="navbar navbar-fixed-top custom-navbar" role="navigation">
-            <div class="container">
+
+        <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+        <nav class="navbar navbar-fixed-top custom-navbar" role="navigation">
+            <div class="navbox"  style= "background: #fff">
                 <div class="navbar-header">
                     <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon icon-bar"></span>
@@ -33,7 +35,7 @@
                     </button>
                     <a href="#" class="navbar-brand"><span class="bold">Tanner Eischen</span></a>
                 </div>
-                <div class="collapse navbar-collapse">
+                <div class="collapse navbar-collapse" id="">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#home" class="smoothScroll">HOME</a></li>
                         <li><a href="#about" class="smoothScroll">ABOUT</a></li>
@@ -41,21 +43,21 @@
                         <li><a href="#Projects" class="smoothScroll">PORTFOLIO</a></li>
                         <li><a href="#Edu" class="smoothScroll">EDUCATION</a></li>
                         <li><a href="#Exp" class="smoothScroll">EXPERIENCE</a></li>
-                        <li><a href="#recommendations" class="smoothScroll">RECOMMENDATIONS</a></li>
                         <li><a href="#contact" class="smoothScroll">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
-        </section>
+        </nav>
+   
        
 
-        <!-- home section -->
+        < <div id="page-content"><!-- home section -->
         <section id="home">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
                         <hr>
-                        <h3><span class="bold">I AM A SOFTWARE DEVELOPER - GEOPHYSICIST - STEM EDUCATOR</h3>
+                        <h3><span class="bold">I AM A FULLSTCK SOFTWARE DEVELOPER</h3>
                         <h1 class="heading">Open to Opportunities</h1>
                         <a href="#about" class="smoothScroll btn btn-default">Learn More</a>
                     </div>
@@ -64,26 +66,27 @@
         </section>
 
         <section id="about">
-            <div class="container">
+            <div class="container text-center">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 text-center">
                         <h1 class="heading bold">About Me</h1>
                         <img src="images/Tanner.jpeg" style="width:200px">
                         <h2 class="subheading">GEOSCIENTIST, EDUCATOR &amp; TECH PROFESSIONAL</h2>
                     </div>
+                  
                     <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
                         <i class="fa fa-globe"></i>
-                            <h3>Geoscience</h3>
+                            <h3>data</h3>
                             <p>I have a passion for geoscience and have been nerding out about Earth's dynamic processes for over a decade</p>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.9s">
                         <i class="fa fa-laptop"></i>
-                            <h3>Tech and Development</h3>
+                            <h3>ai/ml</h3>
                             <p>From the use of machine learning in seismic surveying to AI training and engineering to aesthetic front-end development, I am always interested in learning new ways to integrate techonolgy.</p>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
                         <i class="fa fa-cloud"></i>
-                            <h3>STEM Education</h3>
+                            <h3></h3>
                             <p>The importance of communicating technical concepts is imperative and a skill I have developed through teaching math and science to k-12, early college, and adult students.</p>
                     </div>
                     <hr>
@@ -92,10 +95,7 @@
         </section>
  
         <section id="skills">
-            <div class="skills">
-            
-            </div>
-            <div class="container">
+            <div class="container text-center">
                 <h2>Skills</h2>
                 <div class="skill wow fadeInUp" data-wow-delay="0.2s">
                     
@@ -118,58 +118,126 @@
                     <img src="images/css.png" alt="CSS Logo">
                     <p>CSS</p>
                 </div>
+                <div class="skill wow fadeInUp" data-wow-delay="1s">
+                    <img src="images/css.png" alt="Node.JS">
+                    <p>Node Express</p>
+                </div>
+                <div class="skill wow fadeInUp" data-wow-delay="1s">
+                    <img src="images/css.png" alt="React">
+                    <p>React</p>
+                </div>
             </div>
             
         </section>
 
-        <section id="Projects">
-       
-        <br>
-            <div class="project">
-                <h2>Projects</h2>
-                <hr style="width: 100%">
-                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
-                
+        <section id="Projects">  
+        
+        <div class="container text-center">
+            <h2>Projects</h2>  
+             <hr>
+             <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'project1')">Project1</button>
+                <button class="tablinks" onclick="openTab(event, 'project2')">Project2</button>
+                <button class="tablinks" onclick="openTab(event, 'project3')">Project3</button>
+                </div>  
+            <div id="project1" class="project DfadeInUp tabcontent" data-wow-delay=".2s">
                 <h4>Personal Website</h4>
                 <p>Built using HTML, CSS, and JavaScript to showcase my skills and portfolio.</p>
+                <div class="scrollwindow">
+                    <div class="tab">
+                        <button class="tablinks" onclick="openTab(event, 'HTML')">HTML</button>
+                        <button class="tablinks" onclick="openTab(event, 'CSS')">CSS</button>
+                        <button class="tablinks" onclick="openTab(event, 'JavaScript')">JavaScript</button>
+                      </div>
+                    <div id="HTML" class="tabcontent">
+                        <h3>HTML</h3>
+                        <img src="images/HTML1.png" alt="HTML Code" style="width:auto; height:5000px">
+                      </div>
+                      
+                      <div id="CSS" class="tabcontent">
+                        <h3>CSS</h3>
+                        <p></p>
+                      </div>
+                      
+                      <div id="JavaScript" class="tabcontent">
+                        <h3>JavaScript</h3>
+                        <p></p>
+                      </div>
                 </div>
             </div>
-            <hr style="width: 100%">
-            <div class="project">
-                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
+            <div id="project2" class="fadeInUp tabcontent" data-wow-delay=".2s">
                 <h4>HTML Calculator</h4>
                 <p>My 1st personal html project built</p>
+                <div class="scrollwindow">
+                    <div class="tab">
+                        <button class="tablinks" onclick="openTab(event, 'HTML2')">HTML</button>
+                        <button class="tablinks" onclick="openTab(event, 'CSS2')">CSS</button>
+                        <button class="tablinks" onclick="openTab(event, 'JavaScript2')">JavaScript</button>
+                      </div>
+                    <div id="HTML2" class="tabcontent">
+                        <h3>HTML</h3>
+                        <p></p>
+                      </div>
+                      
+                    <div id="CSS2" class="tabcontent">
+                        <h3>CSS</h3>
+                        <p></p>
+                      </div>
+                      
+                    <div id="JavaScript2" class="tabcontent">
+                        <h3>JavaScript</h3>
+                        <p></p>
+                      </div>
                 </div>
+                    
             </div>
-            <hr style="width: 100%">
-            <div class="project">
-                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
+            <div id="project3" class="project fadeInUp tabcontent" data-wow-delay=".2s">
                 <h4><a href="https://thescholarship.ecu.edu/items/f0b974ae-e010-47bc-9ffc-33e8929f1269/full">Geometry and Construction of Upper Crustal Igenous Intrusions</a></h4>
                 <p>M.S. thesis pulished through East Carolina University</p>
+                <div class="scrollwindow">
+                    <div class="tab">
+                        <button class="tablinks" onclick="openTab(event, 'HTML3')">HTML</button>
+                        <button class="tablinks" onclick="openTab(event, 'CSS3')">CSS</button>
+                        <button class="tablinks" onclick="openTab(event, 'JavaScript3')">JavaScript</button>
+                      </div>
+                    <div id="HTML3" class="tabcontent">
+                        <h3>HTML</h3>
+                        <p></p>
+                      </div>
+                      
+                      <div id="CSS3" class="tabcontent">
+                        <h3>CSS</h3>
+                        <p></p>
+                      </div>
+                      
+                      <div id="JavaScript3" class="tabcontent">
+                        <h3>JavaScript</h3>
+                        <p></p>
+                      </div>
                 </div>
             </div>
-        </ul>
+        </div>
         </section>
 
 
         <section id="Edu">
-            <div class="col-md-12">
+            <div class="container text-center">
                 <h2>Education</h2>
         
                 <div class="school">
-                    <div class="col-lg-12 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
+                    <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
                     <img src="images/Utexas.png" alt="Utexas Logo" style="width:200px; height:60px;">
                     <p>University of Texas at Austin <br>PhD (ABD) Geophysics</p><hr>
                 </div>
                 </div>
                 <div class="school">
-                    <div class="col-lg-12 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
+                    <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
                     <img src="images/ECU.png" alt="ECU Logo" style="width:180px; height:60px;">
                     <p>East Carolina University <br>M.S. Geological Sciences</p><hr>
                 </div>
                 </div>
                 <div class="school">
-                    <div class="col-lg-12 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
+                    <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
                     <img src="images/gustavus.png" alt="Gustavus Logo" style="width:70px; height:60px;">
                     <p>Gustavus Adolphus College <br>B.A. Geology</p><hr>
                 </div>
@@ -178,7 +246,7 @@
          </section>
 
          <section id="Exp">
-             <div class="col-md-12">
+             <div class="container text-center">
             <h2>Experience</h2>
                 <div class="job-list">
                     <div class="jobs">
@@ -213,6 +281,7 @@
         </section>
 
         <section id="recommendations">
+            <div class="container text-center">
             <h2>Recommendations</h2>
             <div class="recommendation">
                 <p>"Tanner is an exceptional developer and a great team player!" - John Doe</p>
@@ -223,11 +292,13 @@
             <div class="recommendation">
                 <p>"Tanner is a fast learner and contributes greatly to our team!" - Mike Johnson</p>
             </div>
-        </section>
+            
+       
 
-        <section id="new-recommendation">
+     
             <h3>New Recommendation</h3>
             <button onclick="addRecommendation()">Add Recommendation</button>
+            </div>
         </section>
 
         <section id="contact">
