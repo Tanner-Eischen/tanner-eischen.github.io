@@ -198,17 +198,21 @@ nav {
 #contact {
   background: #f9f9f9;
   text-align: center;
+  height: 200px;
 }
 #contact .fa {
   font-size: 40px;
 }
-
+#contact .a {
+  display: inline-block
+}
 /* footer section */
 footer {
  
   text-align: center;
   padding-top: 80px;
   padding-bottom: 80px;
+
 
 }
 
