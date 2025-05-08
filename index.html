@@ -12,12 +12,9 @@
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/smoothscroll.js"></script>
-        <script src="js/isotope.js"></script>
-        <script src="js/imagesloaded.min.js"></script>
-        <script src="js/nivo-lightbox.min.js"></script>
         <script src="js/wow.min.js"></script>
         <script src="js/custom.js"></script>
-        <script src="js/addrec.js"></script>
+
         
     </head>
 
@@ -57,7 +54,7 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
                         <hr>
-                        <h3><span class="bold">I AM A FULLSTCK SOFTWARE DEVELOPER</h3>
+                        <h3><span class="bold">I AM A DATA SCIENTIST AND FULLSTCK DEVELOPER</h3>
                         <h1 class="heading">Open to Opportunities</h1>
                         <a href="#about" class="smoothScroll btn btn-default">Learn More</a>
                     </div>
@@ -76,18 +73,18 @@
                   
                     <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
                         <i class="fa fa-globe"></i>
-                            <h3>data</h3>
-                            <p>I have a passion for geoscience and have been nerding out about Earth's dynamic processes for over a decade</p>
+                            <h3>Data</h3>
+                            <p>Detail- and data-oriented developer with 5+ years experience analyzing complex data, building machine learning workflows, and training AI systems. Skilled in Python, data preprocessing, exploratory analysis, and visualization.</p>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.9s">
                         <i class="fa fa-laptop"></i>
-                            <h3>ai/ml</h3>
-                            <p>From the use of machine learning in seismic surveying to AI training and engineering to aesthetic front-end development, I am always interested in learning new ways to integrate techonolgy.</p>
+                            <h3>Ai/Ml</h3>
+                            <p>Interested in applications of AI/ML and am currently participating in LLM evaluation, LORA training, and using ML to solve problems in Earth Science. </p>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
                         <i class="fa fa-cloud"></i>
-                            <h3></h3>
-                            <p>The importance of communicating technical concepts is imperative and a skill I have developed through teaching math and science to k-12, early college, and adult students.</p>
+                            <h3>Accessability</h3>
+                            <p>I beleive in using effective communicaiton of technical concepts to make complex informatin accessible to others regardless of thier background. </p>
                     </div>
                     <hr>
                 </div>
@@ -97,35 +94,46 @@
         <section id="skills">
             <div class="container text-center">
                 <h2>Skills</h2>
-                <div class="skill wow fadeInUp" data-wow-delay="0.2s">
-                    
+                <div class="skill wow fadeInUp" data-wow-delay="0.2s" data-skill="python">                    
                     <img src="images/Python.png" id="python" alt="Python Logo">
                     <p>Python</p>
                 </div>
-                <div class="skill wow fadeInUp" data-wow-delay="0.4s">
+                <div class="skill wow fadeInUp" data-wow-delay="0.4s" data-skill="arcgis">
                     <img src="images/ArcGIS.png" alt="ArcGIS Logo">
                     <p>ArcGIS</p>
                 </div>
-                <div class="skill wow fadeInUp" data-wow-delay="0.6s">
+                <div class="skill wow fadeInUp" data-wow-delay="0.6s" data-skill="matlab">
                     <img src="images/Matlab.png" alt="MatLab Logo">
                     <p>Matlab</p>
                 </div>
-                <div class="skill wow fadeInUp" data-wow-delay="0.8s">
+                <div class="skill wow fadeInUp" data-wow-delay="0.8s" data-skill="html">
                     <img src="images/html-5.png" alt="HTML Logo">
                     <p>HTML</p>
                 </div>
-                <div class="skill wow fadeInUp" data-wow-delay="1s">
+                <div class="skill wow fadeInUp" data-wow-delay="1s" data-skill="css">
                     <img src="images/css.png" alt="CSS Logo">
                     <p>CSS</p>
                 </div>
-                <div class="skill wow fadeInUp" data-wow-delay="1s">
-                    <img src="images/css.png" alt="Node.JS">
-                    <p>Node Express</p>
+                <div class="skill wow fadeInUp" data-wow-delay="1s" data-skill="sql">
+                    <img src="images/sql.png" alt="sql" style="width:175px">
+                    <p>SQL</p>
                 </div>
-                <div class="skill wow fadeInUp" data-wow-delay="1s">
-                    <img src="images/css.png" alt="React">
+                <div class="skill wow fadeInUp" data-wow-delay="1s" data-skill="react">
+                    <img src="images/react.png" alt="React">
                     <p>React</p>
                 </div>
+                 <div class="skill wow fadeInUp" data-wow-delay="1s" data-skill="flask">
+                    <img src="images/flask.png" alt="flask" style="width:175px; height:175px">
+                    <p>flask</p>
+                </div>
+                 <div class="skill wow fadeInUp" data-wow-delay="1s" data-skill="nodejs">
+                    <img src="images/nodeexpress.png" alt="Node.JS" style="width:200px; height:125px">
+                    <p>Node.js and Express</p>
+                </div>
+                <div id="skill-details-box" class="hidden">
+                    <h3 id="skill-details-title"></h3>  
+                    <ul id="skill-details-list"></ul>
+                  </div>
             </div>
             
         </section>
@@ -134,24 +142,24 @@
         
         <div class="container text-center">
             <h2>Projects</h2>  
-             <hr>
              <div class="tab">
-                <button class="tablinks" onclick="openTab(event, 'project1')">Project1</button>
-                <button class="tablinks" onclick="openTab(event, 'project2')">Project2</button>
-                <button class="tablinks" onclick="openTab(event, 'project3')">Project3</button>
+                <button class="tablinks" onclick="openTab(event, 'project1')">Amazon KDP Scraper</button>
+                <button class="tablinks" onclick="openTab(event, 'project2')">AI Text Emotion Detector</button>
+                <button class="tablinks" onclick="openTab(event, 'project3')">M.S. Thesis - Magma Chamber Development</button>
                 </div>  
+            
             <div id="project1" class="project DfadeInUp tabcontent" data-wow-delay=".2s">
-                <h4>Personal Website</h4>
-                <p>Built using HTML, CSS, and JavaScript to showcase my skills and portfolio.</p>
+                <h4>Amazon Kindle Publishing Niche and Keyword Hunter</h4>
+                <p>Python-based dashboard using Selenium and Streamlit to analyze market trends and identify low-competition niches in Kindle Direct Publishing.</p>
                 <div class="scrollwindow">
                     <div class="tab">
-                        <button class="tablinks" onclick="openTab(event, 'HTML')">HTML</button>
-                        <button class="tablinks" onclick="openTab(event, 'CSS')">CSS</button>
-                        <button class="tablinks" onclick="openTab(event, 'JavaScript')">JavaScript</button>
+                        <button class="tablinks" onclick="openInnerTab(event, 'HTML')">Preview</button>
+                        <button class="tablinks" onclick="openInnerTab(event, 'CSS')">Python Code</button>
+                        <button class="tablinks" onclick="openInnerTab(event, 'JavaScript')">Output</button>
                       </div>
                     <div id="HTML" class="tabcontent">
-                        <h3>HTML</h3>
-                        <img src="images/HTML1.png" alt="HTML Code" style="width:auto; height:5000px">
+                        <h3>Dashboard</h3>
+                        <img src="images/streamlit.png" alt="HTML Code" style="width:auto; height:1000px">
                       </div>
                       
                       <div id="CSS" class="tabcontent">
@@ -166,13 +174,13 @@
                 </div>
             </div>
             <div id="project2" class="fadeInUp tabcontent" data-wow-delay=".2s">
-                <h4>HTML Calculator</h4>
-                <p>My 1st personal html project built</p>
+                <h4>Text Anlyser and Emotion Detector</h4>
+                <p>An AI tool that detects sentiment and classifies emotions in input text built with python and flask</p>
                 <div class="scrollwindow">
                     <div class="tab">
-                        <button class="tablinks" onclick="openTab(event, 'HTML2')">HTML</button>
-                        <button class="tablinks" onclick="openTab(event, 'CSS2')">CSS</button>
-                        <button class="tablinks" onclick="openTab(event, 'JavaScript2')">JavaScript</button>
+                        <button class="tablinks" onclick="openInnerTab(event, 'HTML2')">Preview</button>
+                        <button class="tablinks" onclick="openInnerTab(event, 'CSS2')">Code sample</button>
+                        <button class="tablinks" onclick="openInnerTab(event, 'JavaScript2')">Output</button>
                       </div>
                     <div id="HTML2" class="tabcontent">
                         <h3>HTML</h3>
@@ -193,12 +201,12 @@
             </div>
             <div id="project3" class="project fadeInUp tabcontent" data-wow-delay=".2s">
                 <h4><a href="https://thescholarship.ecu.edu/items/f0b974ae-e010-47bc-9ffc-33e8929f1269/full">Geometry and Construction of Upper Crustal Igenous Intrusions</a></h4>
-                <p>M.S. thesis pulished through East Carolina University</p>
+                <p>M.S. thesis pulished through East Carolina University. See samples of projects made in ArcMap for an example of spatial data handling and analysis.</p>
                 <div class="scrollwindow">
                     <div class="tab">
-                        <button class="tablinks" onclick="openTab(event, 'HTML3')">HTML</button>
-                        <button class="tablinks" onclick="openTab(event, 'CSS3')">CSS</button>
-                        <button class="tablinks" onclick="openTab(event, 'JavaScript3')">JavaScript</button>
+                        <button class="tablinks" onclick="openInnerTab(event, 'HTML3')">Preview</button>
+                        <button class="tablinks" onclick="openInnerTab(event, 'CSS3')">ArcGIS Examples</button>
+                        <button class="tablinks" onclick="openInnerTab(event, 'JavaScript3')">Field Photos</button>
                       </div>
                     <div id="HTML3" class="tabcontent">
                         <h3>HTML</h3>
@@ -206,12 +214,12 @@
                       </div>
                       
                       <div id="CSS3" class="tabcontent">
-                        <h3>CSS</h3>
+                        <h3>ArcMap Figures</h3>
                         <p></p>
                       </div>
                       
                       <div id="JavaScript3" class="tabcontent">
-                        <h3>JavaScript</h3>
+                        <h3>Field Photos</h3>
                         <p></p>
                       </div>
                 </div>
@@ -222,7 +230,7 @@
 
         <section id="Edu">
             <div class="container text-center">
-                <h2>Education</h2>
+                <h2 style="padding-top:150px">Education</h2>
         
                 <div class="school">
                     <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
@@ -280,26 +288,7 @@
                 </div>
         </section>
 
-        <section id="recommendations">
-            <div class="container text-center">
-            <h2>Recommendations</h2>
-            <div class="recommendation">
-                <p>"Tanner is an exceptional developer and a great team player!" - John Doe</p>
-            </div>
-            <div class="recommendation">
-                <p>"His problem-solving skills and enthusiasm for learning are inspiring!" - Jane Smith</p>
-            </div>
-            <div class="recommendation">
-                <p>"Tanner is a fast learner and contributes greatly to our team!" - Mike Johnson</p>
-            </div>
-            
-       
 
-     
-            <h3>New Recommendation</h3>
-            <button onclick="addRecommendation()">Add Recommendation</button>
-            </div>
-        </section>
 
         <section id="contact">
             <h2>Contact</h2>
@@ -307,4 +296,4 @@
             <h4>tannereichen@gmail.com</h4>
         </section>
 
-<section id=">
+    </html>

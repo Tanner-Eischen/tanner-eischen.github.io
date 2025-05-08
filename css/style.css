@@ -28,7 +28,7 @@ h1,h2,h3,h4 {
 	padding-bottom: 60px;
 }
 .bold {
-	font-weight: bold;
+	font-weight: 400;
 }
 
 p {
@@ -151,7 +151,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 275px;
-  padding-bottom: 200px;
+  padding-bottom: 250px;
 
   text-align: center;
 }
@@ -223,8 +223,8 @@ footer {
 }
 
 .skill img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
  
 }
 
@@ -274,6 +274,35 @@ footer {
 .skill:hover p {
   opacity: 1;
 }
+#skill-details-box {
+  width: 100%;
+  background: #ffffff;
+  border-top: 2px solid #fffffd;
+  padding: 20px;
+  text-align: left;
+  margin-top: 20px;
+  display: none;
+  height: 100px
+}
+
+#skill-details-box ul {
+  margin: 0;
+  padding: 0 20px;
+  list-style-type: disc;
+}
+
+#skill-details-box li {
+  margin: 5px 0;
+  font-size: 24px;
+}
+
+#skill-details-box.hidden {
+  display: none;
+}
+
+#skill-details-box:not(.hidden) {
+  display: block;
+}
 
 #Projects {
 
@@ -287,6 +316,7 @@ footer {
   justify-content: center;
   flex-grow: 1;
   padding-right: 50px;
+  
 
 }
 
@@ -348,7 +378,9 @@ footer {
   position: relative;
   display: inline-block;
   text-align: center;
-  padding: 50px
+
+  padding: 50px;
+  padding-top: 150px
 }
 
 .school img {
