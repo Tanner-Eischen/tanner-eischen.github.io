@@ -1,0 +1,28 @@
+{
+  "web": {
+    "provider": "gemini",
+    "model": "gemini-2.5-flash"
+  },
+  "plan": {
+    "fileProvider": "gemini",
+    "thinkingProvider": "gemini",
+    "thinkingModel": "gemini-2.5-flash",
+    "fileModel": "gemini-2.5-flash"
+  },
+  "repo": {
+    "provider": "gemini",
+    "model": "gemini-2.5-flash"
+  },
+  "doc": {
+    "provider": "gemini",
+    "model": "gemini-2.5-flash"
+  },
+  "stagehand": {
+    "provider": "openai"
+  },
+  "mcp": {
+    "provider": "openai",
+    "model": "o3"
+  },
+  "ide": "cursor"
+}

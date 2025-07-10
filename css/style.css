@@ -37,7 +37,7 @@ p {
 }
 
 #about,
-#skills, #Projects, #Edu, #Exp, #recommendations {
+#skills, #Projects, #Edu, #Exp{
 	padding-top: 120px;
 	padding-bottom: 600px;
 }
@@ -107,6 +107,47 @@ nav {
 }
 .custom-navbar .nav li.active > a {
     background-color: #FFD321;
+}
+
+/* Resume link styling */
+.navbar-nav li a.resume-link {
+    background-color: #FFD321;
+    color: #404040;
+    border-radius: 4px;
+    margin: 8px 5px;
+    padding: 8px 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav li a.resume-link:hover {
+    background-color: #f1d16e;
+    color: #404040;
+    text-decoration: none;
+}
+
+/* Social media links styling */
+.navbar-nav li a[aria-label] {
+    padding: 15px 10px;
+    font-size: 18px;
+}
+
+.navbar-nav li a[aria-label]:hover {
+    color: #FFD321;
+}
+
+/* Social Media Links in Navigation */
+.navbar-nav li a[aria-label="GitHub Profile"],
+.navbar-nav li a[aria-label="LinkedIn Profile"] {
+    padding: 15px 10px;
+    font-size: 18px;
+}
+
+.navbar-nav li a[aria-label="GitHub Profile"]:hover,
+.navbar-nav li a[aria-label="LinkedIn Profile"]:hover {
+    background: #29ca8e;
+    color: #ffffff;
+    transform: scale(1.1);
 }
 .custom-navbar .navbar-toggle {
     border: none;
@@ -226,10 +267,33 @@ footer {
   padding: 30px;
 }
 
-.skill img {
+/* Standardized logo container for skills */
+.skill .logo-container {
   width: 100px;
   height: 100px;
- 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.skill .logo-container img {
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.skill:hover .logo-container {
+  border-color: #FFD321;
+  box-shadow: 0 4px 12px rgba(255, 211, 33, 0.3);
+}
+
+.skill:hover .logo-container img {
+  transform: scale(1.1);
 }
 
 #skills {
@@ -256,27 +320,11 @@ footer {
 
 
 .skill p {
-  position: absolute;
-  bottom: -25px; /* Adjusts the position of the text */
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 12px;
-  white-space: nowrap;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  pointer-events: none; /* Prevents accidental text selection */
-}
-
-.skill:hover img {
-  transform: scale(1.1);
-}
-
-.skill:hover p {
-  opacity: 1;
+  margin-top: 10px;
+  color: #555;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
 }
 #skill-details-box {
   width: 100%;
@@ -308,72 +356,168 @@ footer {
   display: block;
 }
 
+/* Projects Section */
 #Projects {
-
- 
-  display: flex;
-  flex-wrap: wrap;
-  height: 500px;
-  align-items:flex-start;
-  text-align: center;
-  width: 100vw;
-  justify-content: center;
-  flex-grow: 1;
-  padding-right: 50px;
-  
-
+    background: #f8f9fa;
+    padding: 100px 0;
 }
 
-.scrollwindow {
-  margin: 5px;
-  
-  background-color: rgb(251, 239, 175);
-  width: 100%;
-  height: 400px;
-  overflow-y: scroll;
-  overflow-x: scroll;
-}
-.tab {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 20px auto;
-  background-color: #f1f1f1;
-  border: solid #ccc;
-  padding: 10px;
-  width: fit-content;
-  border-radius: 8px;
+#Projects h2 {
+    color: #333;
+    margin-bottom: 50px;
 }
 
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-
-  transition: 0.3s;
-  top: 0;
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 30px;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
+.project-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    border: 1px solid #e9ecef;
 }
 
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
+.card-header {
+    background: linear-gradient(135deg, #FFD321 0%, #f1d16e 100%);
+    color: #404040;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-header h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: left;
+}
+
+.card-body p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.card-body p:last-child {
+    margin-bottom: 0;
+}
+
+.card-footer {
+    padding: 15px 20px;
+    background: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    text-align: center;
+}
+
+.card-footer a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 8px 16px;
+    background: #404040;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.card-footer a:hover {
+    background: #007bff;
+    text-decoration: none;
+    color: white;
+}
+
+.card-footer a i {
+    margin-right: 5px;
+}
+
+/* Project Visual Styles */
+.project-visual {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.project-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+    transform: scale(0.98);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-visual img {
+    transform: scale(1);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .card-header h4 {
+        font-size: 1.1rem;
+    }
+    
+    .card-body {
+        padding: 15px;
+    }
+    
+    .card-footer {
+        padding: 12px 15px;
+    }
+    
+    .card-footer a {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .projects-grid {
+        gap: 1rem;
+    }
+    
+    .card-header {
+        padding: 15px;
+    }
+    
+    .card-header h4 {
+        font-size: 1rem;
+    }
+    
+    .card-body {
+        padding: 12px;
+    }
+    
+    .card-footer {
+        padding: 10px 12px;
+    }
 }
 
 
@@ -382,45 +526,46 @@ footer {
   position: relative;
   display: inline-block;
   text-align: center;
-
   padding: 50px;
   padding-top: 150px
 }
 
-.school img {
-  width: 50px;
-  height: 50px;
-  transition: transform 0.3s ease-in-out;
-  display: inline-block
+/* Standardized logo container for education */
+.school .logo-container {
+  width: 150px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+  margin: 0 auto 15px auto;
+  transition: all 0.3s ease;
 }
 
-/* .school img { */
-  /* width: 200px; */
-  /* height: 60px; */
-  /* transition: transform 0.3s ease-in-out;} */
+.school .logo-container img {
+  max-width: 130px;
+  max-height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.school:hover .logo-container {
+  border-color: #FFD321;
+  box-shadow: 0 4px 12px rgba(255, 211, 33, 0.3);
+}
+
+.school:hover .logo-container img {
+  transform: scale(1.05);
+}
 
 .school p {
-  position: absolute;
-  bottom: -25px; /* Adjusts the position of the text */
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 12px;
-  white-space: nowrap;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  pointer-events: none; /* Prevents accidental text selection */
-}
-
-.school:hover img {
-  transform: scale(1.1);
-}
-
-.school:hover p {
-  opacity: 1;
+  margin-top: 10px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
 }
 #Exp {
   
@@ -436,30 +581,44 @@ footer {
   position: relative;
   display: inline-block;
   text-align: center;
+  padding: 20px;
+}
+
+/* Standardized logo container for experience */
+.jobs .logo-container {
+  width: 120px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+  margin: 0 auto 15px auto;
+  transition: all 0.3s ease;
+}
+
+.jobs .logo-container img {
+  max-width: 100px;
+  max-height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.jobs:hover .logo-container {
+  border-color: #FFD321;
+  box-shadow: 0 4px 12px rgba(255, 211, 33, 0.3);
+}
+
+.jobs:hover .logo-container img {
+  transform: scale(1.05);
 }
 
 .jobs p {
-  position: absolute;
-  bottom: -25px; /* Adjusts the position of the text */
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 12px;
-  white-space: nowrap;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  pointer-events: none; /* Prevents accidental text selection */
-}
-
-.jobs:hover img {
-  transform: scale(1.1);
-}
-
-.jobs:hover p {
-  opacity: 1;
+  margin-top: 10px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.4;
 }
 
 

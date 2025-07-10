@@ -66,7 +66,7 @@ $(document).ready(function () {
 
     list.empty();
     $('#skill-details-box').show().html('<ul><li>Debug Test</li></ul>');
-    
+
     if (skillsData[key]) {
       skillsData[key].forEach(item => {
         list.append(`<li>${item}</li>`);
@@ -80,48 +80,40 @@ $(document).ready(function () {
   });
 });
 
-function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
+// Tab functionality has been removed in favor of new project card layout
+// Other existing functionalities preserved below
+
+// Initialize WOW.js for animations
+if (typeof WOW !== 'undefined') {
+    new WOW().init();
 }
 
-// ✅ New function for second-level tab logic
-function openInnerTab(evt, tabName) {
-  const container = evt.currentTarget.closest('.scrollwindow');
-  const tabcontent = container.querySelectorAll('.tabcontent');
-  const tablinks = container.querySelectorAll('.tablinks');
-
-  tabcontent.forEach(el => el.style.display = "none");
-  tablinks.forEach(el => el.classList.remove("active"));
-
-  const activeTab = container.querySelector(`#${tabName}`);
-  if (activeTab) activeTab.style.display = "block";
-
-  evt.currentTarget.classList.add("active");
-}
-
-// ✅ Open default tabs on page load
-document.addEventListener("DOMContentLoaded", function () {
-  // Open the first top-level tab in #Projects
-  const defaultTopTab = document.querySelector("#Projects .tab button.tablinks");
-  if (defaultTopTab) {
-    defaultTopTab.click();
-  }
-
-  // Open the first inner tab in each scrollwindow
-  document.querySelectorAll("#Projects .scrollwindow").forEach(container => {
-    const firstInnerButton = container.querySelector(".tab button.tablinks");
-    if (firstInnerButton) {
-      firstInnerButton.click();
-    }
-  });
+// Smooth scroll with offset for fixed navbar
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all anchor links that start with #
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+    
+    anchorLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            
+            // Skip if it's just # or empty
+            if (href === '#' || href === '') return;
+            
+            const targetElement = document.querySelector(href);
+            if (targetElement) {
+                e.preventDefault();
+                
+                // Calculate offset (navbar height + some padding)
+                const navbarHeight = 70; // Approximate navbar height
+                const elementPosition = targetElement.offsetTop;
+                const offsetPosition = elementPosition - navbarHeight;
+                
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
 });
