@@ -92,12 +92,12 @@
                     <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.9s">
                         <i class="fa fa-laptop"></i>
                             <h3>Ai/Ml</h3>
-                            <p>Interested in applications of AI/ML and am currently participating in LLM evaluation, LORA training, and using ML to solve problems in Earth Science. </p>
+                            <p>Building with an AI-first mindset creating strong implementatoin plans with detailed contexxt engineering, RAG and vector enhancements, and . </p>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
                         <i class="fa fa-cloud"></i>
-                            <h3>Accessability</h3>
-                            <p>I beleive in using effective communicaiton of technical concepts to make complex informatin accessible to others regardless of thier background. </p>
+                            <h3>User Empathy</h3>
+                            <p>The user experience is an integral part of AI-first development. By understanding user pain-points and truly empathizing, I am able to unpack meaningful problems and deliver impactful solutions.</p>
                     </div>
                     <hr>
                 </div>
@@ -167,7 +167,7 @@
                     </div>
                     <p>Node.js and Express</p>
                 </div>
-                <div id="skill-details-box" class="hidden">
+                <div id="skill-details-box">
                     <h3 id="skill-details-title"></h3>  
                     <ul id="skill-details-list"></ul>
                   </div>
@@ -183,7 +183,7 @@
                 <!-- DissertAI Project Card -->
                 <div class="project-card wow fadeInUp" data-wow-delay="0.2s">
                     <div class="project-visual">
-                        <img src="https://via.placeholder.com/400x200/FFD321/404040?text=DissertAI" alt="DissertAI Project Screenshot">
+                        <img src="assets/images/DissertAI" alt="DissertAI Project Screenshot">
                     </div>
                     <div class="card-header">
                         <h4>DissertAI - Academic AI Writing Assistant</h4>
@@ -202,7 +202,7 @@
                 <!-- Leafwise Project Card -->
                 <div class="project-card wow fadeInUp" data-wow-delay="0.4s">
                     <div class="project-visual">
-                        <img src="https://via.placeholder.com/400x200/28a745/ffffff?text=Leafwise" alt="Leafwise Project Screenshot">
+                        <img src="assets/images/Leafwise" alt="Leafwise Project Screenshot">
                     </div>
                     <div class="card-header">
                         <h4>Leafwise - Plant Health Monitor</h4>
@@ -221,7 +221,7 @@
                 <!-- Publishing Strategist Project Card -->
                 <div class="project-card wow fadeInUp" data-wow-delay="0.6s">
                     <div class="project-visual">
-                        <img src="https://via.placeholder.com/400x200/17a2b8/ffffff?text=Publishing+Strategist" alt="Publishing Strategist Project Screenshot">
+                        <img src="assets/images/publishingstrategist" alt="Publishing Strategist Project Screenshot">
                     </div>
                     <div class="card-header">
                         <h4>Publishing Strategist - Market Intelligence</h4>
@@ -240,7 +240,7 @@
                 <!-- Master's Thesis Project Card -->
                 <div class="project-card wow fadeInUp" data-wow-delay="0.8s">
                     <div class="project-visual">
-                        <img src="https://via.placeholder.com/400x200/dc3545/ffffff?text=Master%27s+Thesis" alt="Master's Thesis Project Screenshot">
+                        <img src="assets/images/Thesis" alt="Master's Thesis Project Screenshot">
                     </div>
                     <div class="card-header">
                         <h4>Master's Thesis - Magma Chamber Development</h4>
@@ -265,7 +265,7 @@
             <div class="container text-center">
                 <h2 style="padding-top:150px">Education</h2>
         
-                <div class="school">
+                <div class="school education-item" data-education="utexas">
                     <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
                         <div class="logo-container">
                             <img src="assets/images/Utexas.png" alt="University of Texas at Austin Logo">
@@ -273,7 +273,7 @@
                         <p>University of Texas at Austin <br>PhD (ABD) Geophysics</p><hr>
                     </div>
                 </div>
-                <div class="school">
+                <div class="school education-item" data-education="ecu">
                     <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
                         <div class="logo-container">
                             <img src="assets/images/ECU.png" alt="East Carolina University Logo">
@@ -281,13 +281,17 @@
                         <p>East Carolina University <br>M.S. Geological Sciences</p><hr>
                     </div>
                 </div>
-                <div class="school">
+                <div class="school education-item" data-education="gustavus">
                     <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
                         <div class="logo-container">
                             <img src="assets/images/gustavus.png" alt="Gustavus Adolphus College Logo">
                         </div>
                         <p>Gustavus Adolphus College <br>B.A. Geology</p><hr>
                     </div>
+                </div>
+                <div id="education-details-box">
+                    <h3 id="education-details-title"></h3>
+                    <ul id="education-details-list"></ul>
                 </div>
             </div>
          </section>
@@ -296,21 +300,21 @@
              <div class="container text-center">
             <h2>Experience</h2>
                 <div class="job-list">
-                    <div class="jobs">
+                    <div class="jobs experience-item" data-experience="hackthegap">
                         <h3>Software Developer</h3>
                         <div class="logo-container">
                             <img src="assets/images/hackthegap.jpg" alt="Hack The Gap Logo">
                         </div>
                         <p>Hack The Gap</p><hr>
                     </div>
-                    <div class="jobs">
+                    <div class="jobs experience-item" data-experience="outlier">
                         <h3>AI Trainer and LLM Specialist</h3>
                         <div class="logo-container">
                             <img src="assets/images/outlier.jpg" alt="Outlier Logo">
                         </div>
                         <p>Outlier and Data Annotation Tech</p><hr>
                     </div>
-                    <div class="jobs">
+                    <div class="jobs experience-item" data-experience="tutoring">
                         <h3>Physics and Math Instructor</h3>
                         <div class="logo-container">
                             <img src="assets/images/AirTutors.png" alt="AirTutors Logo">
@@ -318,7 +322,7 @@
                         <p>AirTutors and Tutor Doctor</p><hr>
                     </div>
                 
-                    <div class="jobs">
+                    <div class="jobs experience-item" data-experience="aecom">
                         <h3>Geologist</h3>
                         <div class="logo-container">
                             <img src="assets/images/AECOM.png" alt="AECOM Logo">
@@ -326,7 +330,7 @@
                         <p>AECOM</p><hr>
                     </div>
             
-                    <div class="jobs">
+                    <div class="jobs experience-item" data-experience="seismologist">
                         <h3>Assistant Seismologist</h3>
                         <div class="logo-container">
                             <img src="assets/images/UWash.png" alt="University of Washington Logo">
@@ -334,13 +338,17 @@
                         <p>University of Washington and Texas A&M</p><hr>
                     </div>
                 
-                    <div class="jobs">
+                    <div class="jobs experience-item" data-experience="utig">
                         <h3>Research Assistant</h3>
                         <div class="logo-container">
                             <img src="assets/images/UTIG.jpg" alt="Institute for Geophysics Logo">
                         </div>
                         <p>Institute for Geophysics</p><hr>
                     </div>
+                </div>
+                <div id="experience-details-box">
+                    <h3 id="experience-details-title"></h3>
+                    <ul id="experience-details-list"></ul>
                 </div>
                 </div>
         </section>

@@ -39,7 +39,7 @@ p {
 #about,
 #skills, #Projects, #Edu, #Exp{
 	padding-top: 120px;
-	padding-bottom: 600px;
+	padding-bottom: 150px;
 }
 
 #about .fa {
@@ -334,7 +334,7 @@ footer {
   text-align: left;
   margin-top: 20px;
   display: none;
-  height: 100px
+  height: 100px;
 }
 
 #skill-details-box ul {
@@ -348,13 +348,7 @@ footer {
   font-size: 24px;
 }
 
-#skill-details-box.hidden {
-  display: none;
-}
-
-#skill-details-box:not(.hidden) {
-  display: block;
-}
+/* Redundant CSS rules removed - visibility now managed by JavaScript */
 
 /* Projects Section */
 #Projects {
@@ -380,16 +374,17 @@ footer {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
-    border: 1px solid #e9ecef;
+    border: 2px solid #e9ecef;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15), 0 4px 12px rgba(255, 211, 33, 0.3);
+    border-color: #FFD321;
 }
 
 .card-header {
-    background: linear-gradient(135deg, #FFD321 0%, #f1d16e 100%);
+    background: linear-gradient(135deg, #FFD321 0%, #f9f4e4 100%);
     color: #404040;
     padding: 20px;
     text-align: center;
@@ -635,3 +630,43 @@ button {
 button:hover {
   background-color: #2980B9;
 }
+
+/* Education and Experience Details Boxes */
+#education-details-box,
+#experience-details-box {
+  width: 100%;
+  background: #ffffff;
+  border-top: 2px solid #FFD321;
+  padding: 20px;
+  text-align: left;
+  margin-top: 20px;
+  display: none;
+  min-height: 100px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 0 0 8px 8px;
+}
+
+#education-details-box ul,
+#experience-details-box ul {
+  margin: 0;
+  padding: 0 20px;
+  list-style-type: disc;
+}
+
+#education-details-box li,
+#experience-details-box li {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+#education-details-box h3,
+#experience-details-box h3 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Visibility is now managed by JavaScript show()/hide() methods */
