@@ -192,6 +192,7 @@ h3 {
 }
 
 .nav-toggle {
+  position: relative;
   display: none;
   width: 2.75rem;
   height: 2.75rem;
@@ -202,13 +203,23 @@ h3 {
   cursor: pointer;
 }
 
-.nav-toggle span:not(.sr-only) {
-  display: block;
-  width: 100%;
+.nav-toggle-line {
+  position: absolute;
+  top: 50%;
+  right: 0.7rem;
+  left: 0.7rem;
   height: 2px;
-  margin-block: 0.35rem;
   background: currentColor;
-  transition: transform 180ms ease;
+  transform-origin: center;
+  transition: transform 180ms var(--ease);
+}
+
+.nav-toggle-line-top {
+  transform: translateY(-4px);
+}
+
+.nav-toggle-line-bottom {
+  transform: translateY(4px);
 }
 
 .hero {
@@ -901,12 +912,12 @@ h3 {
     display: block;
   }
 
-  .nav-toggle[aria-expanded="true"] span:not(.sr-only):first-of-type {
-    transform: translateY(4px) rotate(45deg);
+  .nav-toggle[aria-expanded="true"] .nav-toggle-line-top {
+    transform: rotate(45deg);
   }
 
-  .nav-toggle[aria-expanded="true"] span:not(.sr-only):last-of-type {
-    transform: translateY(-4px) rotate(-45deg);
+  .nav-toggle[aria-expanded="true"] .nav-toggle-line-bottom {
+    transform: rotate(-45deg);
   }
 
   .site-nav {
