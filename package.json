@@ -1,0 +1,20 @@
+{
+  "name": "tanner-eischen-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal portfolio for Tanner Eischen",
+  "scripts": {
+    "build": "node scripts/build-site.mjs",
+    "dev": "python -m http.server 8080",
+    "format": "prettier --write index.html css/style.css js/custom.js README.md scripts/*.mjs .github/workflows/pages.yml",
+    "format:check": "prettier --check index.html css/style.css js/custom.js README.md scripts/*.mjs .github/workflows/pages.yml",
+    "lint:html": "html-validate index.html",
+    "lint:links": "node scripts/check-links.mjs",
+    "lint:js": "node --check js/custom.js",
+    "check": "npm run format:check && npm run lint:html && npm run lint:links && npm run lint:js && npm run build"
+  },
+  "devDependencies": {
+    "html-validate": "11.15.0",
+    "prettier": "3.9.6"
+  }
+}

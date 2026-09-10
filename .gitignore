@@ -25,3 +25,7 @@ thumbs.db
 
 # PRPs
 PRPs/
+# Local dependencies and generated site output
+node_modules/
+dist/
+tmp/
