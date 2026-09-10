@@ -581,6 +581,53 @@ h3 {
   border-bottom: 1px solid var(--ink);
 }
 
+.experience {
+  padding-block: clamp(5rem, 10vw, 9rem);
+  border-top: 1px solid var(--line-light);
+}
+
+.experience-list {
+  border-top: 1px solid var(--line-light);
+}
+
+.experience-item {
+  display: grid;
+  grid-template-columns: minmax(11rem, 0.4fr) minmax(0, 1fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  padding: clamp(2rem, 4vw, 3.5rem) 0;
+  border-bottom: 1px solid var(--line-light);
+}
+
+.experience-company {
+  margin: 0;
+  color: #6e6551;
+  font-family: var(--mono-font);
+  font-size: 0.8rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.experience-item h3 {
+  max-width: 25ch;
+  margin-bottom: 1.1rem;
+  font-family: var(--display-font);
+  font-size: clamp(1.7rem, 3.2vw, 2.7rem);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.08;
+}
+
+.experience-item p:not(.experience-company) {
+  max-width: 68ch;
+  margin-bottom: 0.85rem;
+  color: #5a5342;
+}
+
+.experience-item p:last-child {
+  margin-bottom: 0;
+}
+
 .approach {
   position: relative;
   width: 100%;
@@ -916,6 +963,11 @@ h3 {
   .approach-list li {
     grid-template-columns: 2.5rem minmax(0, 1fr);
     gap: 1rem;
+  }
+
+  .experience-item {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
   }
 
   .background-card {
