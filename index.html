@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Tanner Eischen is an AI/ML engineer and full-stack developer building dependable software for complex, real-world problems."
+      content="Tanner Eischen is a software developer who builds AI applications, data tools, and web products in Python and TypeScript."
     />
     <meta name="author" content="Tanner Eischen" />
-    <meta name="theme-color" content="#07111f" />
-    <meta property="og:title" content="Tanner Eischen — AI/ML Engineer" />
+    <meta name="theme-color" content="#f5cf3d" />
+    <meta property="og:title" content="Tanner Eischen, Software Developer" />
     <meta
       property="og:description"
-      content="AI systems, developer tools, and data products grounded in real-world problem solving."
+      content="Projects in AI, computer vision, browser automation, and computational geometry."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://tanner-eischen.github.io/" />
-    <title>Tanner Eischen — AI/ML Engineer &amp; Full-Stack Developer</title>
+    <title>Tanner Eischen, AI/ML Engineer and Full-Stack Developer</title>
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/custom.js" defer></script>
@@ -49,9 +49,9 @@
         data-nav
       >
         <a href="#work">Work</a>
-        <a href="#approach">Approach</a>
+        <a href="#approach">Technical focus</a>
         <a href="#background">Background</a>
-        <a class="nav-cta" href="#contact">Let’s talk</a>
+        <a class="nav-cta" href="#contact">Contact</a>
       </nav>
     </header>
 
@@ -61,18 +61,14 @@
           <p class="eyebrow">
             <span>AI/ML engineer</span><span>Full-stack builder</span>
           </p>
-          <h1 id="hero-title">
-            I turn messy, real-world systems into useful software.
-          </h1>
+          <h1 id="hero-title">I build AI applications and data tools.</h1>
           <p class="hero-intro">
-            I build AI products, developer tools, and data-rich
-            applications—with a scientist’s instinct for evidence and an
-            engineer’s focus on reliability.
+            My recent work includes a browser-based CAD modeler, a roof
+            segmentation system, and AI agents for portfolio analysis,
+            publishing research, and web testing.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#work"
-              >Explore selected work</a
-            >
+            <a class="button button-primary" href="#work">View projects</a>
             <a
               class="button button-secondary"
               href="https://github.com/Tanner-Eischen"
@@ -80,11 +76,11 @@
               rel="noreferrer"
             >
               GitHub
-              <span aria-hidden="true">↗</span>
             </a>
           </div>
           <p class="availability">
-            <span aria-hidden="true"></span> Open to thoughtful engineering work
+            <span aria-hidden="true"></span> Available for software engineering
+            roles
           </p>
         </div>
 
@@ -117,28 +113,25 @@
       >
         <div class="section-heading">
           <div>
-            <p class="kicker">Selected work / 2025–2026</p>
-            <h2 id="work-title">Built to make complexity usable.</h2>
+            <p class="kicker">Selected work, 2025-2026</p>
+            <h2 id="work-title">Projects</h2>
           </div>
-          <p>
-            Six projects across AI, computer vision, browser automation, and
-            geometry—each centered on a concrete user problem.
-          </p>
+          <p>Six public projects with links to their source code.</p>
         </div>
 
         <div class="project-grid">
           <article class="project-card project-card-featured reveal">
             <div class="project-topline">
               <span class="project-number">01</span>
-              <span class="project-state">Active build</span>
+              <span class="project-state">TypeScript CAD</span>
             </div>
             <div>
               <p class="project-domain">Computational geometry</p>
               <h3>Parametric Modeller</h3>
               <p>
-                A browser-based 3D CAD system for planar and prismatic
-                woodworking models, with a history-based feature tree,
-                deterministic rebuilds, assemblies, and manufacturing exports.
+                A browser-based CAD application for woodworking. It stores an
+                editable feature history, rebuilds geometry deterministically,
+                and exports shop drawings in SVG, PDF, and DXF formats.
               </p>
             </div>
             <ul class="tag-list" aria-label="Technologies">
@@ -154,7 +147,7 @@
               rel="noreferrer"
               aria-label="View Parametric Modeller on GitHub"
             >
-              View repository <span aria-hidden="true">↗</span>
+              View repository
             </a>
           </article>
 
@@ -167,9 +160,9 @@
               <p class="project-domain">Geospatial ML</p>
               <h3>Roof Segmentation</h3>
               <p>
-                An address-to-satellite-image workflow that detects roof
-                boundaries with a U-Net, supports batch analysis, and exposes
-                results through a FastAPI and React application.
+                A U-Net segments roofs in satellite images selected by address.
+                The FastAPI and React application supports single-property,
+                batch, and side-by-side comparison workflows.
               </p>
             </div>
             <ul class="tag-list" aria-label="Technologies">
@@ -185,22 +178,22 @@
               rel="noreferrer"
               aria-label="View Roof Segmentation on GitHub"
             >
-              View repository <span aria-hidden="true">↗</span>
+              View repository
             </a>
           </article>
 
           <article class="project-card reveal">
             <div class="project-topline">
               <span class="project-number">03</span>
-              <span class="project-state">Agent engineering</span>
+              <span class="project-state">Portfolio analysis</span>
             </div>
             <div>
               <p class="project-domain">Fintech AI</p>
               <h3>Ghostfolio Agent</h3>
               <p>
-                A portfolio assistant that combines natural-language analysis
-                with typed tools, confidence scoring, verification checks,
-                evaluation suites, and usage observability.
+                A portfolio assistant that calls typed analysis tools and checks
+                its responses with confidence scores and validation rules. The
+                repository includes a React interface and a FastAPI service.
               </p>
             </div>
             <ul class="tag-list" aria-label="Technologies">
@@ -216,22 +209,22 @@
               rel="noreferrer"
               aria-label="View Ghostfolio Agent on GitHub"
             >
-              View repository <span aria-hidden="true">↗</span>
+              View repository
             </a>
           </article>
 
           <article class="project-card reveal">
             <div class="project-topline">
               <span class="project-number">04</span>
-              <span class="project-state">Market intelligence</span>
+              <span class="project-state">Publishing research</span>
             </div>
             <div>
-              <p class="project-domain">Applied AI</p>
+              <p class="project-domain">Research automation</p>
               <h3>Publishing Strategist</h3>
               <p>
-                An agent for Kindle Direct Publishing research: niche discovery,
-                competition analysis, listing optimization, and evidence-backed
-                market stress testing.
+                A research agent for Kindle Direct Publishing. It searches for
+                niches, compares competing titles, drafts listing copy, and
+                scores demand and competition with configured market data.
               </p>
             </div>
             <ul class="tag-list" aria-label="Technologies">
@@ -247,7 +240,7 @@
               rel="noreferrer"
               aria-label="View Publishing Strategist on GitHub"
             >
-              View repository <span aria-hidden="true">↗</span>
+              View repository
             </a>
           </article>
 
@@ -260,9 +253,9 @@
               <p class="project-domain">Browser automation</p>
               <h3>NLWebAgent</h3>
               <p>
-                A natural-language web testing agent with semantic assertions,
-                self-healing selectors, session recording, and Playwright code
-                generation.
+                A CLI that turns natural-language test instructions into
+                Playwright actions. It records sessions, writes Playwright
+                tests, and tries coordinates when a selector fails.
               </p>
             </div>
             <ul class="tag-list" aria-label="Technologies">
@@ -278,22 +271,22 @@
               rel="noreferrer"
               aria-label="View NLWebAgent on GitHub"
             >
-              View repository <span aria-hidden="true">↗</span>
+              View repository
             </a>
           </article>
 
           <article class="project-card reveal">
             <div class="project-topline">
               <span class="project-number">06</span>
-              <span class="project-state">Learning technology</span>
+              <span class="project-state">Tutoring software</span>
             </div>
             <div>
               <p class="project-domain">Education</p>
               <h3>Socrates</h3>
               <p>
-                A tutoring application that guides discovery through targeted
-                questions, with adaptive dialogue, session analytics, real-time
-                collaboration, and a React client.
+                A tutoring application that responds with guiding questions. It
+                records sessions, displays learning analytics, and supports
+                real-time chat in the React client.
               </p>
             </div>
             <ul class="tag-list" aria-label="Technologies">
@@ -309,7 +302,7 @@
               rel="noreferrer"
               aria-label="View Socrates on GitHub"
             >
-              View repository <span aria-hidden="true">↗</span>
+              View repository
             </a>
           </article>
         </div>
@@ -320,7 +313,7 @@
           target="_blank"
           rel="noreferrer"
         >
-          Browse all repositories <span aria-hidden="true">→</span>
+          Browse all repositories
         </a>
       </section>
 
@@ -331,46 +324,42 @@
       >
         <div class="section-heading section-heading-light">
           <div>
-            <p class="kicker">How I work</p>
-            <h2 id="approach-title">
-              Evidence first. Systems thinking throughout.
-            </h2>
+            <p class="kicker">Technical focus</p>
+            <h2 id="approach-title">What I work on</h2>
           </div>
-          <p>
-            My path through geoscience, research, education, and software shapes
-            how I build: observe carefully, make assumptions explicit, and test
-            the whole system.
-          </p>
         </div>
 
         <ol class="approach-list">
           <li class="reveal">
             <span>01</span>
             <div>
-              <h3>Find the actual constraint</h3>
+              <h3>Agent testing</h3>
               <p>
-                Translate an ambiguous problem into a model of users, data,
-                failure modes, and the decision the product needs to support.
+                I use typed tool inputs, evaluation cases, confidence
+                thresholds, and trace data to find incorrect or unsupported
+                agent responses.
               </p>
             </div>
           </li>
           <li class="reveal">
             <span>02</span>
             <div>
-              <h3>Build a thin, complete path</h3>
+              <h3>Full-stack applications</h3>
               <p>
-                Connect interface, service, and data early so real behavior—not
-                isolated demos—can drive the next engineering decision.
+                I build Python or TypeScript services and connect them to React
+                interfaces. Tests and deployment configuration live with the
+                application code.
               </p>
             </div>
           </li>
           <li class="reveal">
             <span>03</span>
             <div>
-              <h3>Prove it under pressure</h3>
+              <h3>Spatial and 3D data</h3>
               <p>
-                Use tests, evaluations, observability, and adversarial cases to
-                turn “it works” into evidence a team can trust.
+                I use maps, satellite imagery, 3D geometry, and numerical
+                analysis in projects such as Roof Segmentation and Parametric
+                Modeller.
               </p>
             </div>
           </li>
@@ -384,12 +373,14 @@
       >
         <div class="background-intro reveal">
           <p class="kicker">Background</p>
-          <h2 id="background-title">A builder with a scientist’s range.</h2>
+          <h2 id="background-title">
+            Geoscience, teaching, and software development
+          </h2>
           <p>
-            I’ve worked across geoscience, spatial analysis, AI training,
-            software development, and STEM education. That range helps me enter
-            unfamiliar domains quickly and communicate across technical and
-            nontechnical teams.
+            I have worked in geoscience research, spatial analysis, AI training,
+            software development, and STEM education. My graduate work focused
+            on geophysics and geological sciences. I now build software in
+            Python and TypeScript.
           </p>
           <a
             class="text-link"
@@ -397,33 +388,33 @@
             target="_blank"
             rel="noreferrer"
           >
-            Read my résumé <span aria-hidden="true">↗</span>
+            Read my résumé
           </a>
         </div>
 
         <div class="background-grid">
           <article class="background-card reveal">
-            <p class="card-label">Focus</p>
-            <h3>AI &amp; product engineering</h3>
+            <p class="card-label">Software</p>
+            <h3>AI and web applications</h3>
             <p>
-              Python and TypeScript applications, agent workflows, evaluation
-              systems, APIs, React interfaces, and pragmatic deployment.
+              Python and TypeScript applications, FastAPI and Express services,
+              React interfaces, automated tests, and deployment configuration.
             </p>
           </article>
           <article class="background-card reveal">
-            <p class="card-label">Domain depth</p>
-            <h3>Geoscience &amp; spatial data</h3>
+            <p class="card-label">Research</p>
+            <h3>Geoscience and spatial data</h3>
             <p>
-              Research experience spanning seismology, igneous systems, GIS,
-              remote sensing, and quantitative analysis.
+              Seismology, igneous systems, GIS, remote sensing, and numerical
+              analysis.
             </p>
           </article>
           <article class="background-card reveal">
             <p class="card-label">Education</p>
-            <h3>Research-trained communicator</h3>
+            <h3>Graduate study and teaching</h3>
             <p>
-              Graduate work at the University of Texas at Austin and East
-              Carolina University, grounded by years of teaching math and
+              PhD coursework in Geophysics at the University of Texas at Austin,
+              an MS in Geological Sciences, and experience teaching math and
               physics.
             </p>
           </article>
@@ -435,11 +426,15 @@
         class="contact section-shell"
         aria-labelledby="contact-title"
       >
-        <p class="kicker">Start a conversation</p>
+        <p class="kicker">Contact</p>
         <div class="contact-layout">
-          <h2 id="contact-title">
-            Have a difficult problem worth making simpler?
-          </h2>
+          <div>
+            <h2 id="contact-title">Get in touch</h2>
+            <p class="contact-copy">
+              I am available for software engineering roles and project work.
+              Email is the fastest way to reach me.
+            </p>
+          </div>
           <div class="contact-actions">
             <a class="button button-light" href="mailto:tannereischen@gmail.com"
               >Email me</a
@@ -450,7 +445,7 @@
               target="_blank"
               rel="noreferrer"
             >
-              LinkedIn <span aria-hidden="true">↗</span>
+              LinkedIn
             </a>
           </div>
         </div>
@@ -459,8 +454,7 @@
 
     <footer class="site-footer section-shell">
       <p>© 2026 Tanner Eischen</p>
-      <p>Built with semantic HTML, modern CSS, and plain JavaScript.</p>
-      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      <a href="#top">Back to top</a>
     </footer>
   </body>
 </html>

@@ -1,8 +1,8 @@
-# Tanner Eischen — Portfolio
+# Tanner Eischen Portfolio
 
 [![Portfolio checks and deployment](https://github.com/Tanner-Eischen/tanner-eischen.github.io/actions/workflows/pages.yml/badge.svg)](https://github.com/Tanner-Eischen/tanner-eischen.github.io/actions/workflows/pages.yml)
 
-The source for [tanner-eischen.github.io](https://tanner-eischen.github.io), a compact portfolio focused on AI/ML engineering, full-stack product development, and applied data work.
+This repository contains [tanner-eischen.github.io](https://tanner-eischen.github.io), my software development portfolio.
 
 ## What’s here
 
