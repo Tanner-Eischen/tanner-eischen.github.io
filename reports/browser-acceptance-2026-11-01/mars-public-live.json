@@ -1,0 +1,77 @@
+{
+  "deployment": "dep-dbjimhnavr4c73c3hosg",
+  "source_commit": "e11e3b9a1ccb7926b1f8684653b97b1d2204eee0",
+  "live": {
+    "status": "alive",
+    "build": {
+      "package_version": "0.1.1",
+      "build_id": null,
+      "declared_source_commit": null,
+      "declared_commit_scope": "Ancestry label only; actual backend byte identity is independent",
+      "backend_sha256": "9bfed21f6dc9a89ef468332bb45967b7b19699a7dccae569a8d28f7e1b052428",
+      "backend_python_files": 94,
+      "fingerprint_definition": "SHA-256 of sorted compact JSON mapping package-relative Python paths to byte SHA-256",
+      "capture_scope": "Cached once per process; restart after source changes; frontend assets are separate"
+    }
+  },
+  "ready": {
+    "status": "ready",
+    "checks": {
+      "config": "ready",
+      "cache_dir": "ready",
+      "output_dir": "ready",
+      "planetary_sources": "ready"
+    },
+    "build": {
+      "package_version": "0.1.1",
+      "build_id": null,
+      "declared_source_commit": null,
+      "declared_commit_scope": "Ancestry label only; actual backend byte identity is independent",
+      "backend_sha256": "9bfed21f6dc9a89ef468332bb45967b7b19699a7dccae569a8d28f7e1b052428",
+      "backend_python_files": 94,
+      "fingerprint_definition": "SHA-256 of sorted compact JSON mapping package-relative Python paths to byte SHA-256",
+      "capture_scope": "Cached once per process; restart after source changes; frontend assets are separate"
+    },
+    "sources": {
+      "status": "verified",
+      "verification_scope": "Pinned file checksums verified when the process source store initializes",
+      "global": {
+        "id": "mola16",
+        "sha256": "d18d9b9ab8c5516d02e157dd2cde0f1d0d160c21940e953ba22391269a545e7b"
+      },
+      "detail": {
+        "id": "ctx",
+        "sha256": "16a1aa66c3f48c1bca252795827db7b417876217aff0f5e1aff18027fab2327b"
+      }
+    }
+  },
+  "checks": [
+    {
+      "check": "live-ctx-route-browser-download",
+      "status": "passed",
+      "id": "5807845d4e7f41d98f254b9cd6e877f7",
+      "request_id": "7c9c5226-e320-4051-a1ed-1d6021339db5",
+      "source": "ctx",
+      "spacing_m": 20,
+      "bytes": 5071,
+      "sha256": "64cb69cedee284735f8c84a0f42360a137666cd086c0f3b7d64231316fce7aaa"
+    },
+    {
+      "check": "live-webgl-orbit-and-reset",
+      "status": "passed",
+      "renderer": {
+        "contextLost": false,
+        "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A7A8) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      }
+    },
+    {
+      "check": "live-mola-keyboard-route",
+      "status": "passed",
+      "id": "29691ad941ed4fd984802e320b18a419",
+      "source": "mola16",
+      "spacing_m": 3704.4613373579646,
+      "label": "MOLA global topography · 16 pixels/degree"
+    }
+  ],
+  "app_errors": []
+}

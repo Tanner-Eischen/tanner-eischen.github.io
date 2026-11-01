@@ -436,11 +436,46 @@
     "final-no-js-case-320.png": "2a5e3311f9571aaa0e7e1abaf20fc9aa47550cd366a50f738036c84ade411d84",
     "final-reduced-motion-800.png": "54f29107a351fedef670c7aa6b0fee9294f05923a94e1a53acc2638e93ddd18f",
     "geosteering-figure-1440.png": "fd388e17ef37787f35714866bf8e7cab272437f3ed02dc3f4dbefb8da3767c7b",
-    "roof-table-keyboard-390.png": "0f67182359d8af30882c3c91defdb19bbea2c1ba346a0d2ab65e78e674238bff"
+    "roof-table-keyboard-390.png": "0f67182359d8af30882c3c91defdb19bbea2c1ba346a0d2ab65e78e674238bff",
+    "final-release-geosteering.html.png": "013e33d23f9fb5444e0d6e82ec69080b9fa4e800191cb6c773f1e6a7a40512c3",
+    "final-release-roof-segmentation.html.png": "5723887a8ab3a687c66eeb954969a6f2a74bac07fdaa5ae342412359bb8fcba0",
+    "final-release-marshab.html.png": "173ef8521dd75f99300eb8b927fbdfc7ed1860f92fc7b12f7f56191587f74d39",
+    "mars-public-ctx-webgl.png": "b58f47c1816bf0b6c6d04d5febaafb5bb3f78244b559d0126e26032c60559fbf",
+    "mars-public-mola-800.png": "ab496fe320de5246b24b113c075f6aa135cc70accef14c3ea0ab8996f50b5dec"
   },
   "limits": [
     "Automated accessibility checks are not full WCAG conformance.",
     "Existing biography and PDF facts unchanged; not independently verified.",
     "Scientific evidence archives retain original source versions and limitations."
-  ]
+  ],
+  "final_release_recheck": {
+    "routes": [
+      {
+        "route": "/",
+        "client": 375,
+        "scroll": 375,
+        "status": "passed"
+      },
+      {
+        "route": "case-studies/geosteering.html",
+        "client": 375,
+        "scroll": 375,
+        "status": "passed"
+      },
+      {
+        "route": "case-studies/roof-segmentation.html",
+        "client": 375,
+        "scroll": 375,
+        "status": "passed"
+      },
+      {
+        "route": "case-studies/marshab.html",
+        "client": 375,
+        "scroll": 375,
+        "status": "passed"
+      }
+    ],
+    "content_fingerprint": "6da760df7d10349a6211c751938179938cd6b6d1c3b9c0fe0d4b5718edbf6406",
+    "automated_final_mars_case_violations": 0
+  }
 }

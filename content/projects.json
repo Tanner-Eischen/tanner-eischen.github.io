@@ -8,7 +8,7 @@
       "short_summary": "Controlled synthetic HOLD and guided steering comparison.",
       "contribution": "LAS/survey QC, minimum-curvature geometry, causal simulation and immutable reports.",
       "current_readiness": "local_evidence",
-      "source_revision": "14ffc90dfd547cfc1217d1ce3a059b4928639dc2",
+      "source_revision": "b6790a2e42f41c12ac9d5a2435872b56b63b3c20",
       "source_access": "public",
       "source_repository": "Tanner-Eischen/GeoSteering",
       "source_url": "https://github.com/Tanner-Eischen/GeoSteering",
@@ -18,10 +18,11 @@
       "evidence": [
         "assets/evidence/geosteering.json",
         "assets/evidence/geosteering-handoff.json",
-        "assets/evidence/geosteering-verification-2026-11-01.json"
+        "assets/evidence/geosteering-verification-2026-11-01.json",
+        "assets/evidence/wave2-browser-acceptance-2026-11-01.json"
       ],
       "limits": [
-        "Known signed synthetic sensor, one scenario/seed; browser, Linux and field policy unverified.",
+        "Actual browser workflow passed; known signed synthetic sensor and one scenario/seed; Linux and field policy unverified.",
         "Exact dirty release snapshots are identified by artifact/source hashes; base commit is not the full tested source."
       ],
       "pages": ["index.html", "case-studies/geosteering.html"],
@@ -39,7 +40,7 @@
       "short_summary": "Reproducible WHU binary building-segmentation pipeline.",
       "contribution": "Official-split training, model evaluation, checkpoint provenance and local inference.",
       "current_readiness": "local_evidence",
-      "source_revision": "ff53742b99a537e5461e588b457f071b2062bfb4",
+      "source_revision": "f13acdd9c3ccbfcefb658e3a3dcad7d457dfb561",
       "source_access": "public",
       "source_repository": "Tanner-Eischen/RoofSegmentation",
       "source_url": "https://github.com/Tanner-Eischen/RoofSegmentation",
@@ -49,10 +50,11 @@
       "evidence": [
         "assets/evidence/roof-segmentation.json",
         "assets/evidence/roof-segmentation-handoff.json",
-        "assets/evidence/roof-segmentation-verification-2026-11-01.json"
+        "assets/evidence/roof-segmentation-verification-2026-11-01.json",
+        "assets/evidence/wave2-browser-acceptance-2026-11-01.json"
       ],
       "limits": [
-        "WHU binary building extent; poor transfer; follow-up test reuse is developmental; browser unverified.",
+        "Actual-checkpoint browser upload/export passed; WHU binary building extent and poor transfer; later test reuse is developmental.",
         "Exact dirty release snapshots are identified by artifact/source hashes; base commit is not the full tested source."
       ],
       "pages": ["index.html", "case-studies/roof-segmentation.html"],
@@ -70,7 +72,7 @@
       "short_summary": "Real Mars elevation processing, terrain tradeoffs and routing.",
       "contribution": "Planetary transforms, terrain analysis, constrained routes and georeferenced exports.",
       "current_readiness": "local_evidence",
-      "source_revision": "459973dba92dc5b82f9d24519fd333577646ae3a",
+      "source_revision": "e11e3b9a1ccb7926b1f8684653b97b1d2204eee0",
       "source_access": "public",
       "source_repository": "Tanner-Eischen/MarsGIS",
       "source_url": "https://github.com/Tanner-Eischen/MarsGIS",
@@ -80,10 +82,11 @@
       "evidence": [
         "assets/evidence/marshab.json",
         "assets/evidence/marshab-handoff.json",
-        "assets/evidence/marshab-verification-2026-11-01.json"
+        "assets/evidence/marshab-verification-2026-11-01.json",
+        "assets/evidence/wave2-browser-acceptance-2026-11-01.json"
       ],
       "limits": [
-        "Public source; ROI-relative terrain tradeoffs, not habitat safety; 1 GiB recorded local container; browser/deployment unverified.",
+        "Public source and live build/source readiness, CTX/MOLA routes, WebGL and downloads verified;512MiB local journey reached the cap; terrain tradeoffs are not habitat safety.",
         "Exact dirty release snapshots are identified by artifact/source hashes; base commit is not the full tested source."
       ],
       "pages": ["index.html", "case-studies/marshab.html"],

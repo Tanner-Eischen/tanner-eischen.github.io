@@ -46,8 +46,7 @@
           transforms, georeferenced exports, and a global MOLA/CTX explorer.
         </p>
         <p class="case-project">
-          MarsHab / MarsGIS · Verified local terrain release · browser
-          interaction unverified
+          MarsHab / MarsGIS · Verified terrain release and browser workflows
         </p>
       </header>
       <dl class="case-metrics">
@@ -223,8 +222,9 @@
             viewer; they are not Earth RFC 7946 WGS84 coordinates.
           </li>
           <li>
-            Map interaction and 3D rendering have component/API evidence, but no
-            browser interaction or visual verification was performed. Live
+            Actual Chromium checks verified map/keyboard routing, CTX and MOLA
+            source labels, WebGL camera controls, route downloads,
+            stale-response rejection and useful WebGL fallback. Live
             availability is time-specific.
           </li>
           <li>
@@ -233,19 +233,28 @@
             alongside the source.
           </li>
           <li>
-            The current local Docker release is verified at 1 GiB / two CPUs.
-            The 512 MiB attempt had no reliable headroom; free-tier hosting at
-            that limit is not a verified target for this release.
+            The final local Docker journey completed at 512 MiB / 0.1 CPU,
+            including a full comparison recompute, without OOM. It reached the
+            memory cap and reclaimed cache; this is no general capacity or
+            headroom guarantee.
           </li>
           <li>
-            The local release and existing hosted explorer are separate.
-            Deployment acceptance is recorded separately from source
-            publication.
+            The live release backend fingerprint and both source checksums
+            matched. Public CTX/MOLA routing, keyboard entry, WebGL orbit/reset
+            and the route download passed. The free service can sleep;
+            availability is time-specific.
           </li>
         </ul>
       </section>
       <section class="case-download">
         <h2>Inspect the evidence</h2>
+        <p>
+          <a
+            href="../assets/evidence/wave2-browser-acceptance-2026-11-01.json"
+            download
+            >New browser acceptance and pinned source revisions (JSON)</a
+          >
+        </p>
         <p>
           <a
             href="../assets/evidence/marshab-verification-2026-11-01.json"
@@ -299,8 +308,7 @@
             href="https://marshab.onrender.com"
             target="_blank"
             rel="noreferrer"
-            >Existing hosted explorer (the local patched release has not been
-            deployed)</a
+            >Open the verified Mars explorer</a
           >
         </p>
         <p class="case-note">

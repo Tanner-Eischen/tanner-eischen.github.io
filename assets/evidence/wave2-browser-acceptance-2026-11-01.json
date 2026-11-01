@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-01",
+  "scope": "New actual-browser application acceptance; original scientific packets remain unchanged.",
+  "projects": [
+    {
+      "project": "geosteering",
+      "source_commit": "b6790a2e42f41c12ac9d5a2435872b56b63b3c20",
+      "evidence_url": "https://github.com/Tanner-Eischen/GeoSteering/blob/b6790a2e42f41c12ac9d5a2435872b56b63b3c20/reports/browser-qa-2026-11-01/qa.json",
+      "evidence_sha256": "826d5913686812fdb31d2bf459e1b1725b6172820c782275a58c565f784b4eac",
+      "actual_browser": "passed",
+      "backend_tests_passed": 147,
+      "frontend_unit_tests_passed": 0,
+      "public_deployment": "not_hosted_local_application"
+    },
+    {
+      "project": "roof-segmentation",
+      "source_commit": "f13acdd9c3ccbfcefb658e3a3dcad7d457dfb561",
+      "evidence_url": "https://github.com/Tanner-Eischen/RoofSegmentation/blob/f13acdd9c3ccbfcefb658e3a3dcad7d457dfb561/reports/browser-acceptance-2026-11-01/browser-proof.json",
+      "evidence_sha256": "f89818e80e19ce9bc7df212d8c7d9216c7e222bf2e530855bcf651c508db10fe",
+      "actual_browser": "passed",
+      "backend_tests_passed": 48,
+      "frontend_unit_tests_passed": 10,
+      "public_deployment": "not_hosted_local_application"
+    },
+    {
+      "project": "marshab",
+      "source_commit": "e11e3b9a1ccb7926b1f8684653b97b1d2204eee0",
+      "evidence_url": "https://github.com/Tanner-Eischen/MarsGIS/blob/e11e3b9a1ccb7926b1f8684653b97b1d2204eee0/reports/mh03-browser-acceptance-2026-11-01/portfolio-evidence.json",
+      "evidence_sha256": "09682a9e2f4473a6bdd6719f66d921a273e7a29d2087a87639daba6966fb99da",
+      "actual_browser": "passed",
+      "backend_tests_passed": 461,
+      "frontend_unit_tests_passed": 118,
+      "public_deployment": "passed_live_build_sources_ctx_mola_webgl_and_download",
+      "live_release_evidence": "https://github.com/Tanner-Eischen/tanner-eischen.github.io/blob/codex/portfolio-evidence-wave1/reports/browser-acceptance-2026-11-01/mars-public-live.json"
+    }
+  ],
+  "limits": [
+    "GeoSteering remains a known-sensor synthetic study; no field policy validation.",
+    "Roof actual-checkpoint generated-fixture browser transaction does not measure accuracy; no public inference host.",
+    "Mars512MiB/0.1CPU journey completed without OOM but reached the memory cap; no headroom/capacity guarantee.",
+    "Mars backend suite has one disclosed skipped optional test. Browser coverage is one pinned Chromium/software-GPU configuration, not hardware certification."
+  ]
+}

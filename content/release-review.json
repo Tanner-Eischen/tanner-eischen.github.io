@@ -7,14 +7,14 @@
       "state": "satisfied",
       "reason": "Current publication assets reviewed; restricted imagery/weights and private data excluded.",
       "evidence": "content/publication-asset-review-2026-11-01.json",
-      "evidence_sha256": "82d71c6ea41ed637cba9538f187e29e6ab0b1f44f7602bf976295cc21c9e7d06"
+      "evidence_sha256": "652a4537b8ec5e0bce0589b3cfb68efea2682ad55ab08ab83bd5c01a66e8e360"
     },
     {
       "id": "interactive-verification",
       "state": "satisfied",
       "reason": "Actual Chromium functional and separate visual acceptance completed.",
       "evidence": "reports/browser-acceptance-2026-11-01/browser-proof.json",
-      "evidence_sha256": "11258f8734b701acbc4726c84c719fbea582bc860bf071c92a0a4c6318580600"
+      "evidence_sha256": "a82873dd7daff97d0778f5a6ba88fdd0e25d4c7d53082473ab23732f18495f13"
     },
     {
       "id": "publication-approval",

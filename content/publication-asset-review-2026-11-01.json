@@ -17,7 +17,7 @@
     },
     {
       "scope": "Portfolio",
-      "decision": "Existing owner-authored site assets plus generated scientific figures and normalized browser evidence. New current-tree/build secret scan required before publishing."
+      "decision": "Existing owner-authored site assets plus generated scientific figures and normalized browser evidence. Exact staged current tree scanned clean with official Gitleaks vendor defaults before publication; no raw traces or browser profiles."
     },
     {
       "scope": "HarborForge",

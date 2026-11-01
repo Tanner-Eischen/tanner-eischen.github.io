@@ -110,3 +110,6 @@ The subsequent local implementation is recorded in
 ## License
 
 Portfolio content and personal assets are © Tanner Eischen. Source code may be reused with attribution.
+
+The completed browser/publication release is documented in
+`docs/implementation/WAVE2_RELEASE_2026-11-01.md`; earlier handoffs preserve their historical limits.
