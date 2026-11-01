@@ -1,0 +1,268 @@
+{
+  "scope": "Fresh local HTTP resource availability and byte identity, not browser/rendering/accessibility verification.",
+  "checks": [
+    {
+      "path": ".nojekyll",
+      "status": 200,
+      "bytes": 2,
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "path": "assets/downloads/geosteering-current-report.pdf",
+      "status": 200,
+      "bytes": 395725,
+      "sha256": "01258804d34ae91551fe0834c78fc9a5852e4bf2b745544c20f80a5571a6ef46"
+    },
+    {
+      "path": "assets/downloads/geosteering-evidence-2026-11-01.zip",
+      "status": 200,
+      "bytes": 642157,
+      "sha256": "e63b43c3ba3fa13e0c48c8aa61fd93e2c16100dc132cd0b3542db31371c10ba3"
+    },
+    {
+      "path": "assets/downloads/marshab-evidence-2026-11-01.zip",
+      "status": 200,
+      "bytes": 1256605,
+      "sha256": "91d2c9013ea203009c15cd1c408dfb3d58e31a4ee059860ba07a1f19e7800b35"
+    },
+    {
+      "path": "assets/downloads/marshab-reference-routes.geojson",
+      "status": 200,
+      "bytes": 158033,
+      "sha256": "96f8e4ad5991db021f33a05ea1577804e74230f19c0ad06fc8f5b9175b60fe87"
+    },
+    {
+      "path": "assets/downloads/roof-segmentation-evidence-2026-11-01.zip",
+      "status": 200,
+      "bytes": 203399,
+      "sha256": "65977381a65d88b24bb6a7a1fbb8293bd09d4601149eb17ba2b3efb09b78507a"
+    },
+    {
+      "path": "assets/evidence/adversarial-correctness.json",
+      "status": 200,
+      "bytes": 1395,
+      "sha256": "3a2391372d00f39b06d9b85f02f74907e2ffdf63051ec3547900590b3ebb8e89"
+    },
+    {
+      "path": "assets/evidence/adversarial-correctness.sha256",
+      "status": 200,
+      "bytes": 95,
+      "sha256": "9378a67657aee12a1e175928852158b44d31a6f38aa2c15e952374b367fa8542"
+    },
+    {
+      "path": "assets/evidence/geosteering-current-reference.json",
+      "status": 200,
+      "bytes": 356,
+      "sha256": "666b7a4c307513009d1c8f2c83a2bbb081a62b8c14f13010c6e744146b14273e"
+    },
+    {
+      "path": "assets/evidence/geosteering-handoff.json",
+      "status": 200,
+      "bytes": 5228,
+      "sha256": "1200b2f07857707b1b967ae5ae035e4b597fb4108920b5d48bb9b6cf6ee3d088"
+    },
+    {
+      "path": "assets/evidence/geosteering.json",
+      "status": 200,
+      "bytes": 10277,
+      "sha256": "35ab8cba317dc5862ac066aaed638af8a635876a68c70c0aa7ee0054ac22a59b"
+    },
+    {
+      "path": "assets/evidence/geosteering.sha256",
+      "status": 200,
+      "bytes": 84,
+      "sha256": "f98494eaf995d310554aedd1bf2392788995858af3bbc46cb9b47bd27720fed3"
+    },
+    {
+      "path": "assets/evidence/ghostfolio-agent.json",
+      "status": 200,
+      "bytes": 821,
+      "sha256": "1c66aab3c39bbef17937542ef856529f480c3ffaeaef12df90be0c1a844ac611"
+    },
+    {
+      "path": "assets/evidence/ghostfolio-agent.sha256",
+      "status": 200,
+      "bytes": 88,
+      "sha256": "3288504fafd744c590febfe8c02b34829dfd4cf7e0f750e3888f470f0a034756"
+    },
+    {
+      "path": "assets/evidence/legacylens.json",
+      "status": 200,
+      "bytes": 5517,
+      "sha256": "7755f21317dacbce2185ef4e427652dbe0909a2e1cc1fc6c0c76c2d718928fb4"
+    },
+    {
+      "path": "assets/evidence/legacylens.sha256",
+      "status": 200,
+      "bytes": 82,
+      "sha256": "83a4a6a809db19b0aec6d421fdf7d8eed8a40dc7d18aeedcbaa43a0cb5089a91"
+    },
+    {
+      "path": "assets/evidence/marshab-handoff.json",
+      "status": 200,
+      "bytes": 4057,
+      "sha256": "0af3a267d8d38cc0d54cdccde3bf5ef888b4994bbcc627b203c7be1cea20bed4"
+    },
+    {
+      "path": "assets/evidence/marshab.json",
+      "status": 200,
+      "bytes": 7358,
+      "sha256": "b646749a3836e818c2a8a01fea2c5aa9b4c8cb306bcf8a0ff48c8ebba8bfbd4c"
+    },
+    {
+      "path": "assets/evidence/marshab.sha256",
+      "status": 200,
+      "bytes": 80,
+      "sha256": "8dcf903c512b0477ebe06a359cd10e863a81469cfbebd57e573a0fe93719c54a"
+    },
+    {
+      "path": "assets/evidence/roof-external-per-image.csv",
+      "status": 200,
+      "bytes": 9622,
+      "sha256": "b1d8fe8d1d05725404c0b1a52c12b50fd6b10c89ebadaca67bd83d46c8503d08"
+    },
+    {
+      "path": "assets/evidence/roof-segmentation-handoff.json",
+      "status": 200,
+      "bytes": 2813,
+      "sha256": "66a99c4c1d786acf81b2342964a8f8687e97f5670fc6579c21b58b2d74dc0bf6"
+    },
+    {
+      "path": "assets/evidence/roof-segmentation.json",
+      "status": 200,
+      "bytes": 7566,
+      "sha256": "6d45294ce8aebee36deeaa673d9316df4ddf249a17a6f40544a215ed85615181"
+    },
+    {
+      "path": "assets/evidence/roof-segmentation.sha256",
+      "status": 200,
+      "bytes": 90,
+      "sha256": "de2e3a34152fb7c913e27aae0025250fa83ae5cbdc97fb5b94f25255015ac7b2"
+    },
+    {
+      "path": "assets/evidence/roof-serving-whu-per-image.csv",
+      "status": 200,
+      "bytes": 256087,
+      "sha256": "39371631271b320c965a9bf27fd663bff2a6a3b772d2c7ca4dafb4557ee56b88"
+    },
+    {
+      "path": "assets/evidence/roof-whu-test-per-image.csv",
+      "status": 200,
+      "bytes": 412284,
+      "sha256": "49e5acd010ade2daa0dff86fc3c2f5ba05614bb1e43bbcd37db80339b19a6721"
+    },
+    {
+      "path": "assets/images/case-geosteering-correlation.png",
+      "status": 200,
+      "bytes": 92478,
+      "sha256": "63e8e5f462f48a1ff6709bb955f621e9f4b42f292e89c8134de0eb68c5acb06d"
+    },
+    {
+      "path": "assets/images/case-geosteering-current.png",
+      "status": 200,
+      "bytes": 71900,
+      "sha256": "cd81493ee594b0d173812da94f692c15e99c188bf18c799321c05db1557ba168"
+    },
+    {
+      "path": "assets/images/case-geosteering-final.png",
+      "status": 200,
+      "bytes": 71900,
+      "sha256": "cd81493ee594b0d173812da94f692c15e99c188bf18c799321c05db1557ba168"
+    },
+    {
+      "path": "assets/images/case-marshab-comparison.png",
+      "status": 200,
+      "bytes": 1224601,
+      "sha256": "60927accfd9903e2b069a9da3b14f3636755c3bf29178c1c1fdfa02c5524532d"
+    },
+    {
+      "path": "assets/images/case-roof-external.png",
+      "status": 200,
+      "bytes": 1671081,
+      "sha256": "cd80e518cef589a518b93deca25a7d1490264c9314a9fda27e7ad249580e967f"
+    },
+    {
+      "path": "assets/images/case-roof-whu-learning.png",
+      "status": 200,
+      "bytes": 71307,
+      "sha256": "b814bd25e079d4ffa4cc846c9fe3a0fdd29c7e1aa28327f62b14e109a1b8a0e9"
+    },
+    {
+      "path": "assets/images/Tanner.jpeg",
+      "status": 200,
+      "bytes": 58823,
+      "sha256": "862a7b867785dd17124f030ffdcb55163401b5b8331fbedd63772a9f212192d1"
+    },
+    {
+      "path": "assets/resume.pdf",
+      "status": 200,
+      "bytes": 70202,
+      "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655"
+    },
+    {
+      "path": "case-studies/adversarial-correctness.html",
+      "status": 200,
+      "bytes": 6838,
+      "sha256": "88f0903a2f175f1cf6456aff30660ae0aec3f0b96e5d1f96e0ac5f201823bb42"
+    },
+    {
+      "path": "case-studies/geosteering.html",
+      "status": 200,
+      "bytes": 10706,
+      "sha256": "b3ad8450af6f657a580cd12eccc718462c8aafdbb6fa8a1d53da3f19609c501a"
+    },
+    {
+      "path": "case-studies/ghostfolio-agent.html",
+      "status": 200,
+      "bytes": 6608,
+      "sha256": "30b44fe4da6d3548d12583deb5108d365e24808b6f11401efeb23b6f6209fe9d"
+    },
+    {
+      "path": "case-studies/legacylens.html",
+      "status": 200,
+      "bytes": 8310,
+      "sha256": "6ee368eb1e3efe086ff735ef8a838142f8a9faaaab8c3d32d36458b44bb5d6b3"
+    },
+    {
+      "path": "case-studies/marshab.html",
+      "status": 200,
+      "bytes": 10026,
+      "sha256": "09b6e895a54ff080afead7fecee2414cac74e44d0b8f33b4786010308315c787"
+    },
+    {
+      "path": "case-studies/roof-segmentation.html",
+      "status": 200,
+      "bytes": 13146,
+      "sha256": "f3f80c3f43025e783831d5a2a7ca5a7d2bcbdbe66973c1a68e334ce640b0180d"
+    },
+    {
+      "path": "css/style.css",
+      "status": 200,
+      "bytes": 20567,
+      "sha256": "b4a69a77ed1323202f2dc95f3239cdb4c150cd40b7d3580a5a2d4e6283510c12"
+    },
+    {
+      "path": "favicon.ico",
+      "status": 200,
+      "bytes": 272,
+      "sha256": "58568a5690630efbff25853c7ee8d064ad80af3b8246f09bc598d486ace6daa8"
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 22824,
+      "sha256": "c04678f1c0e30883624980361ccb626bf078006d21381c601c2f219013ad4c0e"
+    },
+    {
+      "path": "js/custom.js",
+      "status": 200,
+      "bytes": 2611,
+      "sha256": "97565ca15cea2cec9b00b311cebcdd2cacb6e8a85095267b80832ec9d14a50c0"
+    }
+  ],
+  "home_static_resources_bytes": 1472905,
+  "home_static_resources_count": 8,
+  "home_budget_bytes": 1500000,
+  "home_budget_pass": true,
+  "note": "Conservative uncompressed sum includes all home images even those marked loading=lazy. No browser network timing was measured."
+}

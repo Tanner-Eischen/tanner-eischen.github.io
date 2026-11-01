@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "projects": [
+    {
+      "id": "geosteering",
+      "title": "GeoSteering",
+      "category": "scientific software",
+      "short_summary": "Controlled synthetic HOLD and guided steering comparison.",
+      "contribution": "LAS/survey QC, minimum-curvature geometry, causal simulation and immutable reports.",
+      "current_readiness": "local_evidence",
+      "source_revision": "14ffc90dfd547cfc1217d1ce3a059b4928639dc2",
+      "source_access": "public",
+      "source_repository": "Tanner-Eischen/GeoSteering",
+      "source_url": "https://github.com/Tanner-Eischen/GeoSteering",
+      "demo_url": null,
+      "report_url": "assets/evidence/geosteering.json",
+      "verification_date": "2026-11-01",
+      "evidence": [
+        "assets/evidence/geosteering.json",
+        "assets/evidence/geosteering-handoff.json",
+        "assets/evidence/geosteering-verification-2026-11-01.json"
+      ],
+      "limits": [
+        "Known signed synthetic sensor, one scenario/seed; browser, Linux and field policy unverified.",
+        "Exact dirty release snapshots are identified by artifact/source hashes; base commit is not the full tested source."
+      ],
+      "pages": ["index.html", "case-studies/geosteering.html"],
+      "image": {
+        "path": "assets/images/case-geosteering-current.png",
+        "alt": "GeoSteering recorded scientific result",
+        "width": 1500,
+        "height": 525
+      }
+    },
+    {
+      "id": "roof-segmentation",
+      "title": "Roof Segmentation",
+      "category": "geospatial machine learning",
+      "short_summary": "Reproducible WHU binary building-segmentation pipeline.",
+      "contribution": "Official-split training, model evaluation, checkpoint provenance and local inference.",
+      "current_readiness": "local_evidence",
+      "source_revision": "ff53742b99a537e5461e588b457f071b2062bfb4",
+      "source_access": "public",
+      "source_repository": "Tanner-Eischen/RoofSegmentation",
+      "source_url": "https://github.com/Tanner-Eischen/RoofSegmentation",
+      "demo_url": null,
+      "report_url": "assets/evidence/roof-segmentation.json",
+      "verification_date": "2026-11-01",
+      "evidence": [
+        "assets/evidence/roof-segmentation.json",
+        "assets/evidence/roof-segmentation-handoff.json",
+        "assets/evidence/roof-segmentation-verification-2026-11-01.json"
+      ],
+      "limits": [
+        "WHU binary building extent; poor transfer; follow-up test reuse is developmental; browser unverified.",
+        "Exact dirty release snapshots are identified by artifact/source hashes; base commit is not the full tested source."
+      ],
+      "pages": ["index.html", "case-studies/roof-segmentation.html"],
+      "image": {
+        "path": "assets/images/case-roof-whu-learning.png",
+        "alt": "Roof Segmentation recorded scientific result",
+        "width": 1800,
+        "height": 666
+      }
+    },
+    {
+      "id": "marshab",
+      "title": "MarsHab / MarsGIS",
+      "category": "planetary geospatial software",
+      "short_summary": "Real Mars elevation processing, terrain tradeoffs and routing.",
+      "contribution": "Planetary transforms, terrain analysis, constrained routes and georeferenced exports.",
+      "current_readiness": "local_evidence",
+      "source_revision": "459973dba92dc5b82f9d24519fd333577646ae3a",
+      "source_access": "private",
+      "source_repository": "Tanner-Eischen/MarsGIS",
+      "source_url": null,
+      "demo_url": "https://marshab.onrender.com",
+      "report_url": "assets/evidence/marshab.json",
+      "verification_date": "2026-11-01",
+      "evidence": [
+        "assets/evidence/marshab.json",
+        "assets/evidence/marshab-handoff.json",
+        "assets/evidence/marshab-verification-2026-11-01.json"
+      ],
+      "limits": [
+        "Private source; ROI-relative terrain tradeoffs, not habitat safety; 1 GiB recorded local container; browser/deployment unverified.",
+        "Exact dirty release snapshots are identified by artifact/source hashes; base commit is not the full tested source."
+      ],
+      "pages": ["index.html", "case-studies/marshab.html"],
+      "image": {
+        "path": "assets/images/case-marshab-comparison.png",
+        "alt": "MarsHab / MarsGIS recorded scientific result",
+        "width": 2100,
+        "height": 700
+      }
+    },
+    {
+      "id": "parametric-modeller",
+      "title": "Parametric Modeller",
+      "category": "applied software",
+      "short_summary": "Parametric Modeller repository-reported implementation.",
+      "contribution": "A browser-based CAD application for woodworking. It stores an editable feature history, rebuilds geometry deterministically, and exports shop drawings in SVG, PDF, and DXF formats.",
+      "current_readiness": "source_only",
+      "source_revision": null,
+      "source_access": "public",
+      "source_repository": "Tanner-Eischen/ParametricModeller",
+      "source_url": "https://github.com/Tanner-Eischen/ParametricModeller",
+      "demo_url": null,
+      "report_url": null,
+      "verification_date": "2026-11-01",
+      "evidence": ["content/source-snapshots/parametric-modeller-readme.txt"],
+      "limits": [
+        "Current repository README/access inspected; app and feature behavior not rerun in this session."
+      ],
+      "pages": ["index.html"],
+      "image": null
+    },
+    {
+      "id": "ghostfolio-agent",
+      "title": "Ghostfolio Agent",
+      "category": "applied software",
+      "short_summary": "Ghostfolio Agent repository-reported implementation.",
+      "contribution": "A portfolio assistant that calls typed analysis tools and checks its responses with confidence scores and validation rules. The repository includes a React interface and a FastAPI service.",
+      "current_readiness": "source_only",
+      "source_revision": null,
+      "source_access": "public",
+      "source_repository": "Tanner-Eischen/ghostfolio-agent",
+      "source_url": "https://github.com/Tanner-Eischen/ghostfolio-agent",
+      "demo_url": null,
+      "report_url": "assets/evidence/ghostfolio-agent.json",
+      "verification_date": "2026-11-01",
+      "evidence": ["content/source-snapshots/ghostfolio-agent-readme.txt"],
+      "limits": [
+        "Current repository README/access inspected; app and feature behavior not rerun in this session."
+      ],
+      "pages": ["index.html"],
+      "image": null
+    },
+    {
+      "id": "publishing-strategist",
+      "title": "Publishing Strategist",
+      "category": "applied software",
+      "short_summary": "Publishing Strategist repository-reported implementation.",
+      "contribution": "A research agent for Kindle Direct Publishing. It searches for niches, compares competing titles, drafts listing copy, and scores demand and competition with configured market data.",
+      "current_readiness": "source_only",
+      "source_revision": null,
+      "source_access": "public",
+      "source_repository": "Tanner-Eischen/PublishingStrategist",
+      "source_url": "https://github.com/Tanner-Eischen/PublishingStrategist",
+      "demo_url": null,
+      "report_url": null,
+      "verification_date": "2026-11-01",
+      "evidence": ["content/source-snapshots/publishing-strategist-readme.txt"],
+      "limits": [
+        "Current repository README/access inspected; app and feature behavior not rerun in this session."
+      ],
+      "pages": ["index.html"],
+      "image": null
+    },
+    {
+      "id": "nlwebagent",
+      "title": "NLWebAgent",
+      "category": "applied software",
+      "short_summary": "NLWebAgent repository-reported implementation.",
+      "contribution": "A CLI that turns natural-language test instructions into Playwright actions. It records sessions, writes Playwright tests, and tries coordinates when a selector fails.",
+      "current_readiness": "source_only",
+      "source_revision": null,
+      "source_access": "public",
+      "source_repository": "Tanner-Eischen/NLWebAgent",
+      "source_url": "https://github.com/Tanner-Eischen/NLWebAgent",
+      "demo_url": null,
+      "report_url": null,
+      "verification_date": "2026-11-01",
+      "evidence": ["content/source-snapshots/nlwebagent-readme.txt"],
+      "limits": [
+        "Current repository README/access inspected; app and feature behavior not rerun in this session."
+      ],
+      "pages": ["index.html"],
+      "image": null
+    },
+    {
+      "id": "socrates",
+      "title": "Socrates",
+      "category": "applied software",
+      "short_summary": "Socrates repository-reported implementation.",
+      "contribution": "A tutoring application that responds with guiding questions. It records sessions, displays learning analytics, and supports real-time chat in the React client.",
+      "current_readiness": "source_only",
+      "source_revision": null,
+      "source_access": "public",
+      "source_repository": "Tanner-Eischen/SocratesTutoring",
+      "source_url": "https://github.com/Tanner-Eischen/SocratesTutoring",
+      "demo_url": null,
+      "report_url": null,
+      "verification_date": "2026-11-01",
+      "evidence": ["content/source-snapshots/socrates-readme.txt"],
+      "limits": [
+        "Current repository README/access inspected; app and feature behavior not rerun in this session."
+      ],
+      "pages": ["index.html"],
+      "image": null
+    }
+  ]
+}

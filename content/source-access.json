@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "repositories": [
+    {
+      "id": "parametric-modeller",
+      "repository": "Tanner-Eischen/ParametricModeller",
+      "visibility": "public",
+      "checked_date": "2026-11-01",
+      "method": "authenticated GitHub API visibility field; no signed-out browser check",
+      "readme_blob_sha": "bf23b056b5bef52d54fbaa394ce767a849f2f5e3",
+      "readme_url": "https://github.com/Tanner-Eischen/ParametricModeller/blob/main/README.md",
+      "snapshot": "content/source-snapshots/parametric-modeller-readme.txt"
+    },
+    {
+      "id": "ghostfolio-agent",
+      "repository": "Tanner-Eischen/ghostfolio-agent",
+      "visibility": "public",
+      "checked_date": "2026-11-01",
+      "method": "authenticated GitHub API visibility field; no signed-out browser check",
+      "readme_blob_sha": "041a48ee3120700f99820b084be68581b99ccaa1",
+      "readme_url": "https://github.com/Tanner-Eischen/ghostfolio-agent/blob/main/README.md",
+      "snapshot": "content/source-snapshots/ghostfolio-agent-readme.txt"
+    },
+    {
+      "id": "publishing-strategist",
+      "repository": "Tanner-Eischen/PublishingStrategist",
+      "visibility": "public",
+      "checked_date": "2026-11-01",
+      "method": "authenticated GitHub API visibility field; no signed-out browser check",
+      "readme_blob_sha": "84d211437fc81134d3a9b97ce438e362ab12f273",
+      "readme_url": "https://github.com/Tanner-Eischen/PublishingStrategist/blob/master/README.md",
+      "snapshot": "content/source-snapshots/publishing-strategist-readme.txt"
+    },
+    {
+      "id": "nlwebagent",
+      "repository": "Tanner-Eischen/NLWebAgent",
+      "visibility": "public",
+      "checked_date": "2026-11-01",
+      "method": "authenticated GitHub API visibility field; no signed-out browser check",
+      "readme_blob_sha": "c661a4421fd5bb2f0e2ebf2d1500175647382f3b",
+      "readme_url": "https://github.com/Tanner-Eischen/NLWebAgent/blob/main/README.md",
+      "snapshot": "content/source-snapshots/nlwebagent-readme.txt"
+    },
+    {
+      "id": "socrates",
+      "repository": "Tanner-Eischen/SocratesTutoring",
+      "visibility": "public",
+      "checked_date": "2026-11-01",
+      "method": "authenticated GitHub API visibility field; no signed-out browser check",
+      "readme_blob_sha": "dffa8434f660af0b18f16f9fc388da5df801c455",
+      "readme_url": "https://github.com/Tanner-Eischen/SocratesTutoring/blob/main/README.md",
+      "snapshot": "content/source-snapshots/socrates-readme.txt"
+    },
+    {
+      "id": "geosteering",
+      "repository": "Tanner-Eischen/GeoSteering",
+      "visibility": "public",
+      "checked_date": "2026-11-01",
+      "method": "authenticated GitHub API visibility field; no signed-out browser check"
+    },
+    {
+      "id": "roof-segmentation",
+      "repository": "Tanner-Eischen/RoofSegmentation",
+      "visibility": "public",
+      "checked_date": "2026-11-01",
+      "method": "authenticated GitHub API visibility field; no signed-out browser check"
+    },
+    {
+      "id": "marshab",
+      "repository": "Tanner-Eischen/MarsGIS",
+      "visibility": "private",
+      "checked_date": "2026-11-01",
+      "method": "authenticated GitHub API visibility field; no signed-out browser check"
+    }
+  ]
+}

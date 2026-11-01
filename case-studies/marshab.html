@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MarsHab / MarsGIS | Tanner Eischen</title>
+    <meta
+      name="description"
+      content="A measured DEM-to-suitability-to-routing workflow, with planetary transforms, georeferenced exports, and a global MOLA/CTX explorer."
+    />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="canonical"
+      href="https://tanner-eischen.github.io/case-studies/marshab.html"
+    />
+    <meta property="og:title" content="MarsHab / MarsGIS | Tanner Eischen" />
+    <meta
+      property="og:description"
+      content="A measured DEM-to-suitability-to-routing workflow, with planetary transforms, georeferenced exports, and a global MOLA/CTX explorer."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://tanner-eischen.github.io/case-studies/marshab.html"
+    />
+  </head>
+  <body class="case-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="case-nav" aria-label="Project navigation">
+      <a href="../index.html#work">← All work</a
+      ><a href="../index.html#contact">Contact Tanner</a>
+    </nav>
+    <main id="main" class="case-shell">
+      <nav class="case-breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a> /
+        <span aria-current="page">MarsHab / MarsGIS</span>
+      </nav>
+      <header class="case-head">
+        <p class="eyebrow">06 / Planetary geospatial software</p>
+        <h1>
+          Trace a Mars route back to its terrain, coordinates and cost model.
+        </h1>
+        <p class="case-intro">
+          A measured DEM-to-suitability-to-routing workflow, with planetary
+          transforms, georeferenced exports, and a global MOLA/CTX explorer.
+        </p>
+        <p class="case-project">
+          MarsHab / MarsGIS · Verified local terrain release · browser
+          interaction unverified
+        </p>
+      </header>
+      <dl class="case-metrics">
+        <div>
+          <dt>reference grid cells</dt>
+          <dd>593 × 563</dd>
+        </div>
+        <div>
+          <dt>reference grid spacing</dt>
+          <dd>20 m</dd>
+        </div>
+        <div>
+          <dt>candidate routes</dt>
+          <dd>3</dd>
+        </div>
+      </dl>
+      <section>
+        <h2>The problem</h2>
+        <p>
+          Terrain scores and routes are misleading when gradients use the wrong
+          units, missing cells receive neutral scores, or path heuristics and
+          exports use inconsistent coordinates.
+        </p>
+        <h2>My contribution</h2>
+        <p>
+          I repaired terrain calculations, common validity masks, Mars
+          coordinate handling and A* routing, then added analytical fixtures,
+          independent shortest-path comparisons, provenance manifests and a
+          same-origin React/FastAPI application.
+        </p>
+      </section>
+      <section>
+        <h2>How it works</h2>
+        <ol class="case-flow">
+          <li>Checksum-pinned NASA/USGS CTX DEM</li>
+          <li>20 m metric grid + common validity mask</li>
+          <li>Terrain-only suitability + bounded routing</li>
+          <li>GeoTIFF / Mars-coordinate GeoJSON / provenance</li>
+        </ol>
+        <h3>Decisions that shaped the release</h3>
+        <ul>
+          <li>
+            Use local metric coordinates for the Jezero comparison and spherical
+            Mars distances for global routing. Do not silently mix MOLA and CTX
+            datums.
+          </li>
+          <li>
+            Keep suitability weights and terrain route penalties explicit. The
+            score is relative to the region; route cost is a heuristic
+            distance-equivalent, not rover energy.
+          </li>
+          <li>
+            Preserve every route pixel and forbid diagonal corner cutting.
+            Return explicit coverage and no-path failures rather than fabricated
+            coordinates.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Measured results</h2>
+        <p>
+          The new independent checker reconstructed all 2,359,894 directed edges
+          and matched each of the three archived route costs to Dijkstra within
+          the declared float32-artifact tolerance. This establishes optimality
+          on the serialized graph, not physical mobility. The reference was
+          checked in place rather than regenerated, and the updated checker was
+          not retested inside the earlier container budget.
+        </p>
+        <p>
+          Archived Jezero CTX reference artifact, verified by its original
+          output checksums. Its manifest records an earlier dirty source
+          revision; the reviewed current revision is identified separately in
+          the evidence download. The patched 0.1.1 local release separately
+          passed a new server calculation and artifact-download checks under its
+          1 GiB profile; no deployment is implied.
+        </p>
+        <section
+          class="case-table"
+          aria-label="Measured release results"
+          tabindex="0"
+        >
+          <table>
+            <caption>
+              MarsHab / MarsGIS: release evidence
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Candidate</th>
+                <th scope="col">Route length</th>
+                <th scope="col">Straight distance</th>
+                <th scope="col">Terrain cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>11510.9 m</td>
+                <td>9623.2 m</td>
+                <td>27898.5 m-equivalent</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>18000.7 m</td>
+                <td>15174.6 m</td>
+                <td>35873.3 m-equivalent</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>10036.4 m</td>
+                <td>8383.5 m</td>
+                <td>25936.6 m-equivalent</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+      <section>
+        <h2>A failure worth inspecting</h2>
+        <h3>
+          A shorter route can be more costly under the declared terrain penalty.
+        </h3>
+        <p>
+          For candidate 1, the terrain-aware route costs 27,898.5 m-equivalent,
+          versus 33,654.3 for the distance-only route. This is an inspectable
+          algorithmic tradeoff under the chosen penalty, rather than a physical
+          energy prediction. Barrier and no-path controls test fail-closed
+          behavior.
+        </p>
+        <pre><code>{
+  &quot;candidate_rank&quot;: 1,
+  &quot;terrain_route_cost_m_equivalent&quot;: 27898.49477515784,
+  &quot;distance_only_route_cost_m_equivalent&quot;: 33654.316053606744,
+  &quot;cost_is_physical_energy&quot;: false
+}</code></pre>
+      </section>
+      <section>
+        <h2>Working artifacts</h2>
+        <figure>
+          <img
+            src="../assets/images/case-marshab-comparison.png"
+            alt="Measured Jezero elevation, slope, terrain suitability and three candidate routes"
+            loading="lazy"
+            width="2100"
+            height="700"
+          />
+          <figcaption>
+            NASA MRO CTX stereo DEM distributed by USGS. Archived terrain-only
+            reference; numerical rankings are relative to this region.
+          </figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>Limits and next questions</h2>
+        <ul>
+          <li>
+            Terrain-only illustrative candidate cells. No habitat safety, soil
+            strength, ice, dust, solar power, mission economics or rover-energy
+            validation is claimed.
+          </li>
+          <li>
+            Global MOLA cells are about 3.7 km at the equator; they cannot
+            resolve local hazards. CTX is used only within available detailed
+            coverage.
+          </li>
+          <li>
+            GeoJSON coordinates describe Mars and require a planetary-aware
+            viewer; they are not Earth RFC 7946 WGS84 coordinates.
+          </li>
+          <li>
+            Map interaction and 3D rendering have component/API evidence, but no
+            browser interaction or visual verification was performed. Live
+            availability is time-specific.
+          </li>
+          <li>
+            Implementation remains private. This local showcase draft includes
+            measured artifacts and metadata. A public evidence release and
+            asset-rights review remain pending.
+          </li>
+          <li>
+            The current local Docker release is verified at 1 GiB / two CPUs.
+            The 512 MiB attempt had no reliable headroom; free-tier hosting at
+            that limit is not a verified target for this release.
+          </li>
+          <li>
+            The local release and existing hosted explorer are separate. No new
+            deployment or private source publication was performed.
+          </li>
+        </ul>
+      </section>
+      <section class="case-download">
+        <h2>Inspect the evidence</h2>
+        <p>
+          <a
+            href="../assets/evidence/marshab-verification-2026-11-01.json"
+            download
+            >New local verification summary (JSON)</a
+          >
+          ·
+          <a
+            href="../assets/downloads/marshab-verification-2026-11-01.zip"
+            download
+            >Verification supplement (ZIP)</a
+          >
+        </p>
+        <p>
+          <a href="../assets/downloads/marshab-evidence-2026-11-01.zip" download
+            >Compact evidence packet (ZIP)</a
+          >
+          ·
+          <a href="../assets/evidence/marshab-handoff.json" download
+            >Versioned evidence handoff (JSON)</a
+          >
+        </p>
+        <p class="case-note">
+          Local review draft prepared November 1, 2026. Packet integrity and
+          recorded scientific artifacts were checked; publication, browser
+          interaction and current application deployment are separate gates.
+        </p>
+        <p>
+          <a href="../assets/evidence/marshab.json" download
+            >Download sanitized evidence (JSON)</a
+          >
+          · <a href="../assets/evidence/marshab.sha256" download>SHA256</a>
+        </p>
+        <p>
+          <span>Private implementation · sanitized evidence available</span>
+        </p>
+        <p>
+          <a
+            href="../assets/downloads/marshab-reference-routes.geojson"
+            download
+            >Reference routes in Mars coordinates (GeoJSON)</a
+          >
+        </p>
+        <p>
+          <a
+            href="https://marshab.onrender.com"
+            target="_blank"
+            rel="noreferrer"
+            >Existing hosted explorer (the local patched release has not been
+            deployed)</a
+          >
+        </p>
+        <p class="case-note">
+          Software controls, development-set measurements and model quality
+          retain separate denominators. Verification dates and source revisions
+          are recorded in the evidence download. Browser interaction remains
+          unverified.
+        </p>
+      </section>
+    </main>
+    <footer class="case-footer">
+      <a href="../index.html#work">Return to selected work</a>
+      <p>Tanner Eischen · AI evaluation and applied engineering</p>
+    </footer>
+  </body>
+</html>

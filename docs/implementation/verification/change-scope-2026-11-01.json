@@ -1,0 +1,17 @@
+{
+  "baseline_commit": "ee2779fd48949bd6204ba7e53d56e269990e4660",
+  "branch": "codex/portfolio-evidence-wave1",
+  "preexisting_files_removed": [],
+  "preexisting_files_changed_this_turn": [
+    "index.html",
+    "package-lock.json",
+    "package.json",
+    "README.md",
+    ".github/workflows/pages.yml",
+    "case-studies/geosteering.html",
+    "case-studies/marshab.html",
+    "case-studies/roof-segmentation.html"
+  ],
+  "resume_sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+  "prior_dirty_snapshot": "tmp/wave1-before/"
+}

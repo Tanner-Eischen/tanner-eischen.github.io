@@ -30,8 +30,16 @@ if (
     .forEach((link) => link.addEventListener("click", closeNavigation));
 
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") closeNavigation();
+    if (
+      event.key === "Escape" &&
+      navToggle.getAttribute("aria-expanded") === "true"
+    ) {
+      closeNavigation();
+      navToggle.focus();
+    }
   });
+
+  navToggle.closest(".site-header")?.classList.add("nav-ready");
 }
 
 const revealItems = document.querySelectorAll(".reveal");

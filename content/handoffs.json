@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "imports": [
+    {
+      "project_id": "geosteering",
+      "handoff_path": "assets/evidence/geosteering-handoff.json",
+      "handoff_sha256": "1200b2f07857707b1b967ae5ae035e4b597fb4108920b5d48bb9b6cf6ee3d088",
+      "archive_path": "assets/downloads/geosteering-evidence-2026-11-01.zip",
+      "archive_sha256": "e63b43c3ba3fa13e0c48c8aa61fd93e2c16100dc132cd0b3542db31371c10ba3",
+      "archive_bytes": 642157,
+      "state": "local_review_draft_not_published"
+    },
+    {
+      "project_id": "marshab",
+      "handoff_path": "assets/evidence/marshab-handoff.json",
+      "handoff_sha256": "0af3a267d8d38cc0d54cdccde3bf5ef888b4994bbcc627b203c7be1cea20bed4",
+      "archive_path": "assets/downloads/marshab-evidence-2026-11-01.zip",
+      "archive_sha256": "91d2c9013ea203009c15cd1c408dfb3d58e31a4ee059860ba07a1f19e7800b35",
+      "archive_bytes": 1256605,
+      "state": "local_review_draft_not_published"
+    },
+    {
+      "project_id": "roof-segmentation",
+      "handoff_path": "assets/evidence/roof-segmentation-handoff.json",
+      "handoff_sha256": "66a99c4c1d786acf81b2342964a8f8687e97f5670fc6579c21b58b2d74dc0bf6",
+      "archive_path": "assets/downloads/roof-segmentation-evidence-2026-11-01.zip",
+      "archive_sha256": "65977381a65d88b24bb6a7a1fbb8293bd09d4601149eb17ba2b3efb09b78507a",
+      "archive_bytes": 203399,
+      "state": "local_review_draft_not_published"
+    }
+  ]
+}

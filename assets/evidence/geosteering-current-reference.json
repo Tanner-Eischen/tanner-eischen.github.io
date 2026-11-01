@@ -1,0 +1,10 @@
+{
+  "circular_radius_ft": 1000.0,
+  "circular_angle_deg": 37.0,
+  "max_position_error_ft": 1.1368683772161603e-13,
+  "position_tolerance_ft": 1e-08,
+  "tiny_expected_dls_deg_per_100ft": 1e-07,
+  "tiny_actual_dls_deg_per_100ft": 9.999999999999998e-08,
+  "analytic_in_zone_percent": 19.999999999999996,
+  "analytic_mean_center_distance_ft": 25.0
+}

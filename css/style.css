@@ -65,8 +65,7 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
-button:focus-visible,
-a:focus-visible {
+:focus-visible {
   outline: 3px solid var(--yellow-deep);
   outline-offset: 4px;
 }
@@ -839,8 +838,8 @@ h3 {
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(1.25rem);
+  opacity: 1;
+  transform: none;
   transition:
     opacity 650ms var(--ease),
     transform 650ms var(--ease);
@@ -954,6 +953,25 @@ h3 {
     text-align: center;
   }
 
+  /* Navigation remains available until the menu enhancement is initialized. */
+  .site-header:not(.nav-ready) {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .site-header:not(.nav-ready) .nav-toggle {
+    display: none;
+  }
+
+  .site-header:not(.nav-ready) .site-nav {
+    position: static;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+    box-shadow: none;
+  }
+
   .hero {
     min-height: auto;
     padding-block: 4.25rem 5.5rem;
@@ -1014,5 +1032,159 @@ h3 {
   .reveal {
     opacity: 1;
     transform: none;
+  }
+}
+
+/* Case studies remain fully readable without JavaScript. */
+.project-preview {
+  display: block;
+  width: 100%;
+  height: 13rem;
+  object-fit: contain;
+  background: #fffdf7;
+  border: 1px solid var(--line-light);
+}
+.project-result {
+  font-weight: 650;
+}
+.case-shell figure {
+  margin: 1.5rem 0;
+}
+.case-shell figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.case-shell figcaption {
+  margin-top: 0.65rem;
+  font-size: 0.9rem;
+  color: #5c5648;
+}
+.case-nav {
+  max-width: 1040px;
+  margin: auto;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--line-light);
+}
+.case-shell {
+  max-width: 1040px;
+  margin: auto;
+  padding: 3rem 2rem 5rem;
+}
+.case-breadcrumb {
+  margin-bottom: 1.5rem;
+  overflow-wrap: anywhere;
+  font-size: 0.9rem;
+}
+.case-head h1 {
+  max-width: 22ch;
+  font: 500 clamp(2.3rem, 5vw, 4.5rem)/1.12 var(--display-font);
+  letter-spacing: -0.035em;
+  margin: 1rem 0;
+}
+.case-intro {
+  max-width: 68ch;
+  font-size: 1.2rem;
+}
+.case-project,
+.case-note {
+  color: #5c5648;
+  font-size: 0.92rem;
+}
+.case-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  border: 1px solid var(--line-light);
+  margin: 2.5rem 0 3rem;
+}
+.case-metrics div {
+  padding: 1.4rem;
+}
+.case-metrics dt {
+  font-size: 0.86rem;
+}
+.case-metrics dd {
+  margin: 0.3rem 0 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.case-shell section {
+  margin: 3rem 0;
+  max-width: 78ch;
+}
+.case-shell h2 {
+  font: 500 2rem/1.2 var(--display-font);
+  margin: 2rem 0 1rem;
+}
+.case-shell h3 {
+  font-size: 1.12rem;
+  margin-top: 1.75rem;
+}
+.case-shell li {
+  margin-bottom: 0.8rem;
+}
+.case-flow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  gap: 0.75rem;
+  padding: 0;
+  list-style-position: inside;
+}
+.case-flow li {
+  background: var(--yellow-soft);
+  padding: 1rem;
+  border: 1px solid var(--line-light);
+}
+.case-shell .case-table {
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+.case-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.case-table caption {
+  text-align: left;
+  margin-bottom: 0.8rem;
+  color: #5c5648;
+}
+.case-table th,
+.case-table td {
+  text-align: left;
+  padding: 0.85rem;
+  border-bottom: 1px solid var(--line-light);
+  vertical-align: top;
+}
+.case-table thead {
+  background: var(--paper-deep);
+}
+.case-shell pre {
+  padding: 1.2rem;
+  background: #201e17;
+  color: #fffdf5;
+  border-radius: 0.25rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.6;
+}
+.case-download {
+  padding-top: 1rem;
+  border-top: 2px solid var(--ink);
+}
+.case-footer {
+  padding: 2rem;
+  text-align: center;
+  background: var(--paper-deep);
+}
+@media (max-width: 600px) {
+  .case-shell {
+    padding: 2rem 1.2rem;
+  }
+  .case-nav {
+    padding: 1rem 1.2rem;
   }
 }

@@ -1,0 +1,272 @@
+{
+  "schema_version": 2,
+  "review_date": "2026-10-31",
+  "reviewed_revision": "14ffc90dfd547cfc1217d1ce3a059b4928639dc2",
+  "scenario": "structural_dip_01",
+  "seed": 123,
+  "causal_comparison": {
+    "guided": {
+      "action_change_count": 57,
+      "avg_center_distance_ft": 1.074120655634311,
+      "clipped_command_count": 5,
+      "dls_violation_count": 0,
+      "evaluated_length_ft": 5000.0,
+      "in_zone_length_ft": 4858.713283922184,
+      "integration_step_max_ft": 1.0,
+      "max_dls_deg_per_100ft": 3.0000000000000884,
+      "max_overshoot_ft": 2.6726085285911267,
+      "percent_in_zone": 97.17426567844367
+    },
+    "hold": {
+      "action_change_count": 0,
+      "avg_center_distance_ft": 27.52464829587919,
+      "clipped_command_count": 0,
+      "dls_violation_count": 0,
+      "evaluated_length_ft": 5000.0,
+      "in_zone_length_ft": 1903.5810398298531,
+      "integration_step_max_ft": 1.0,
+      "max_dls_deg_per_100ft": 0.0,
+      "max_overshoot_ft": 38.000000000000455,
+      "percent_in_zone": 38.07162079659706
+    }
+  },
+  "archived_summary_sha256": "a78a1d810b0b910e25603eef50533a7bf84359730c645e05df08abe06f53fddd",
+  "historical_report_provenance": {
+    "recorded_revision_prefix": "8fd97bf",
+    "dirty": true,
+    "recorded_revision": "8fd97bf67be0a1c1c195cd9a2cdf5a954fc2bee3",
+    "sha256": "259f1b21dfbfb259916d6e2ce3b9c9ffab16fb520c18f7d6b125054b1782c7ee",
+    "pages": 13,
+    "embedded_figures": 7
+  },
+  "browser_verified": false,
+  "release_gate_complete": true,
+  "fresh_checks": {
+    "full_current_tests": 98,
+    "third_party_packages_audited": 61,
+    "known_python_advisories": 0,
+    "third_party_audit_skips": 0,
+    "first_party_catalog_limit": "Unpublished local package is not indexed; source is covered by the stated tests",
+    "current_pdf_all_pages_visually_inspected": true,
+    "current_report_pages": 14,
+    "fresh_process_and_relocated_reopen": "passed",
+    "browser_verified": false
+  },
+  "release_version": "0.2.0",
+  "current_release_summary": {
+    "schema_version": 1,
+    "project": "GeoSteering",
+    "release_version": "0.2.0",
+    "scenario_version": "structural_dip_01-v1",
+    "seed": 123,
+    "profile": "Synthetic local research/training workbench",
+    "source_provenance": {
+      "basis": "verified_packaged_source_manifest",
+      "code_revision": "14ffc90dfd547cfc1217d1ce3a059b4928639dc2",
+      "dirty_working_tree": true,
+      "source_fingerprint": "fb22d15aaf2b509230b2edf927c29cd43466c0f56c361e5659dd94cf59cbc2a0",
+      "source_file_count": 77,
+      "runtime_git_revision": null,
+      "runtime_git_dirty": null,
+      "source_bytes_verified": true
+    },
+    "results": {
+      "guided": {
+        "action_change_count": 57,
+        "avg_center_distance_ft": 1.074120655634311,
+        "clipped_command_count": 5,
+        "dls_violation_count": 0,
+        "evaluated_length_ft": 5000.0,
+        "in_zone_length_ft": 4858.713283922184,
+        "integration_step_max_ft": 1.0,
+        "max_dls_deg_per_100ft": 3.000000000000017,
+        "max_overshoot_ft": 2.6726085285911267,
+        "percent_in_zone": 97.17426567844367
+      },
+      "hold": {
+        "action_change_count": 0,
+        "avg_center_distance_ft": 27.52464829587919,
+        "clipped_command_count": 0,
+        "dls_violation_count": 0,
+        "evaluated_length_ft": 5000.0,
+        "in_zone_length_ft": 1903.5810398298531,
+        "integration_step_max_ft": 1.0,
+        "max_dls_deg_per_100ft": 0.0,
+        "max_overshoot_ft": 38.000000000000455,
+        "percent_in_zone": 38.07162079659706
+      }
+    },
+    "verification": {
+      "full_suite": {
+        "passed": 98,
+        "skipped": 0,
+        "seconds": 366.65,
+        "source_fingerprint": "fb22d15aaf2b509230b2edf927c29cd43466c0f56c361e5659dd94cf59cbc2a0",
+        "runtime_python": "3.12.14",
+        "scope": "Full current suite in the patched hash-locked Python3.12 profile"
+      },
+      "dependency_audit": {
+        "schema_version": 1,
+        "status": "passed",
+        "auditor": "pip-audit2.10.1",
+        "recorded_at_utc": "2026-10-31T10:29:17.355657+00:00",
+        "audited_thirdparty_distributions": 61,
+        "known_vulnerability_entries": 0,
+        "thirdparty_skips": 0,
+        "installed_local_project_database_skip": {
+          "name": "geosteering-workbench",
+          "skip_reason": "Dependency not found on PyPI and could not be audited: geosteering-workbench (0.2.0)"
+        },
+        "initial_reported_vulnerability_entries": 247,
+        "initial_vulnerable_packages": 12,
+        "ignored_vulnerability_ids": [],
+        "scope": "All third-party distributions in actual clean site-packages, including bootstrap tools; unpublished local project has no PyPI database entry",
+        "changes": [
+          {
+            "package": "certifi",
+            "previous_version": "2026.2.25",
+            "current_version": "2026.10.23",
+            "previous_advisory_entries": 2,
+            "disposition": "upgraded"
+          },
+          {
+            "package": "gitpython",
+            "previous_version": "3.1.46",
+            "current_version": null,
+            "previous_advisory_entries": 46,
+            "disposition": "Removed obsolete dependency chain when Streamlit was upgraded"
+          },
+          {
+            "package": "idna",
+            "previous_version": "3.11",
+            "current_version": "3.20",
+            "previous_advisory_entries": 2,
+            "disposition": "upgraded"
+          },
+          {
+            "package": "pillow",
+            "previous_version": "12.1.1",
+            "current_version": "13.0.0",
+            "previous_advisory_entries": 74,
+            "disposition": "upgraded"
+          },
+          {
+            "package": "pip",
+            "previous_version": "23.0.1",
+            "current_version": "26.2.2",
+            "previous_advisory_entries": 14,
+            "disposition": "upgraded"
+          },
+          {
+            "package": "pygments",
+            "previous_version": "2.19.2",
+            "current_version": "2.21.0",
+            "previous_advisory_entries": 2,
+            "disposition": "upgraded"
+          },
+          {
+            "package": "pypdf",
+            "previous_version": "6.9.1",
+            "current_version": "6.21.4",
+            "previous_advisory_entries": 71,
+            "disposition": "upgraded"
+          },
+          {
+            "package": "pytest",
+            "previous_version": "9.0.2",
+            "current_version": "9.0.3",
+            "previous_advisory_entries": 2,
+            "disposition": "upgraded"
+          },
+          {
+            "package": "requests",
+            "previous_version": "2.32.5",
+            "current_version": "2.34.2",
+            "previous_advisory_entries": 2,
+            "disposition": "upgraded"
+          },
+          {
+            "package": "setuptools",
+            "previous_version": "65.5.0",
+            "current_version": "84.2.1",
+            "previous_advisory_entries": 9,
+            "disposition": "upgraded"
+          },
+          {
+            "package": "tornado",
+            "previous_version": "6.5.5",
+            "current_version": null,
+            "previous_advisory_entries": 16,
+            "disposition": "Removed obsolete dependency chain when Streamlit was upgraded"
+          },
+          {
+            "package": "urllib3",
+            "previous_version": "2.6.3",
+            "current_version": "2.8.0",
+            "previous_advisory_entries": 7,
+            "disposition": "upgraded"
+          }
+        ],
+        "thirdparty_audit_sha256": "86151fcce5c98052c2639f3422fd434bcc7206e19ad6824243c973f629dd2957",
+        "installed_audit_sha256": "f6ad8257e34efe63b226d3d3565eaa09e4fb795196f67682ccb59107e4737d49"
+      },
+      "clean_install": {
+        "python": "3.12.14",
+        "platform": "win32",
+        "locked_distribution_count": 61,
+        "installed_python_file_count": 77
+      },
+      "decision_rows": 100,
+      "decision_fields_checked": 1500,
+      "plan_rows": 143,
+      "plan_values_checked": 1001,
+      "kpi_values_recomputed": 600,
+      "pdf_kpi_rows_checked": 100,
+      "fresh_process_reopen": true,
+      "relocated_project_reopen": true,
+      "pdf_pages": 14,
+      "pdf_figures": 7,
+      "native_pdf_visual_qa": "passed"
+    },
+    "failure_example": {
+      "step_index": "43",
+      "md_from_ft": "4100.0",
+      "md_to_ft": "4150.0",
+      "recommendation_action": "DROP",
+      "observations": "Observed MD 4080.0-4100.0 ft; median GR 19.942 API is saturated; center unresolved; retained last constrained interpretation",
+      "risk_note": "Replay recommendation; recorded trajectory is unchanged"
+    },
+    "limitations": [
+      "One idealized two-dimensional scenario and one seed",
+      "Known signed synthetic GR calibration and assumed uncertainty",
+      "Replay recommendations do not change the recorded path",
+      "Lateral DLS bound3degrees/100ft differs from landing6degrees/100ft",
+      "No operational drilling or field-data performance claim",
+      "Browser interaction and Linux execution unverified"
+    ],
+    "report": {
+      "path": "/assets/downloads/geosteering-current-report.pdf",
+      "sha256": "01258804d34ae91551fe0834c78fc9a5852e4bf2b745544c20f80a5571a6ef46"
+    }
+  },
+  "current_source_provenance": {
+    "basis": "verified_packaged_source_manifest",
+    "code_revision": "14ffc90dfd547cfc1217d1ce3a059b4928639dc2",
+    "dirty_working_tree": true,
+    "source_fingerprint": "fb22d15aaf2b509230b2edf927c29cd43466c0f56c361e5659dd94cf59cbc2a0",
+    "source_file_count": 77,
+    "runtime_git_revision": null,
+    "runtime_git_dirty": null,
+    "source_bytes_verified": true
+  },
+  "current_report_sha256": "01258804d34ae91551fe0834c78fc9a5852e4bf2b745544c20f80a5571a6ef46",
+  "release_binding": {
+    "project": "geosteering",
+    "version": "0.2.0",
+    "owner_manifest_sha256": "5448d6cec6b30dbd5983b64ccc7e2bf6d38b56410b1e73f35554e9ad49cc277b",
+    "wheel_sha256": "56b770c76a8c7e3840e0ebe0c08b56955e48c3a306860fdc0290ddb941181955",
+    "dependency_lock_sha256": "fc52f9083f3252ac4c5beef5cdc7a6eb97019649b62ae4d3aa6afabdcd56cf54"
+  },
+  "project": "GeoSteering",
+  "release_profile": "Verified synthetic workbench release \u00b7 operational use excluded"
+}

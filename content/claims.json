@@ -1,0 +1,940 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "id": "career-experience-11",
+      "wording": "I create terminal-based evaluation harnesses and containerized benchmark environments for Terminal Bench and Reasoning Bench. I author tasks across coding, physics, mathematics, geoscience, and data analysis.",
+      "state": "rendered",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Owner confirmation and resume reconciliation are pending.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "career-experience-12",
+      "wording": "I write reference implementations, golden answers, rubrics, graders, and deterministic checks. As a reviewer, I identify reasoning, validation, and reproducibility defects.",
+      "state": "rendered",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Owner confirmation and resume reconciliation are pending.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "career-experience-15",
+      "wording": "I completed a 10-week engineering program based on weekly product sprints. I built Ghostfolio Agent with FastAPI, LangGraph, React, Docker, evaluation cases, and LangSmith traces.",
+      "state": "rendered",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Owner confirmation and resume reconciliation are pending.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "career-experience-18",
+      "wording": "I built React, Node.js, and Express features and REST API integrations for internal and client-facing products. I added input validation, structured error handling, tests, accessible interfaces, and documentation for components and integrations.",
+      "state": "rendered",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Owner confirmation and resume reconciliation are pending.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "career-experience-21",
+      "wording": "I built Python and Jupyter pipelines for 3D seismic data from Axial Seamount. I used them for data cleaning, quality control, anomaly detection, visualization, and seismic interpretation.",
+      "state": "rendered",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Owner confirmation and resume reconciliation are pending.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "career-background-26",
+      "wording": "My background includes doctoral research in marine geophysics at the University of Texas at Austin, an MS in Geological Sciences from East Carolina University, and a BS in Geology from Gustavus Adolphus College.",
+      "state": "rendered",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Owner confirmation and resume reconciliation are pending.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "career-background-30",
+      "wording": "Environmental Geology and Hydrogeology certificate from East Carolina University. IBM Full Stack Software Developer Professional Certificate.",
+      "state": "rendered",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Owner confirmation and resume reconciliation are pending.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "career-background-33",
+      "wording": "I taught mathematics, physics, chemistry, and ACT/SAT preparation through individual tutoring and test preparation.",
+      "state": "rendered",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Owner confirmation and resume reconciliation are pending.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "career-background-36",
+      "wording": "I supported drilling oversight for wells and borings and prepared groundwater, geospatial, and hydrogeologic analyses for technical reports.",
+      "state": "rendered",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Owner confirmation and resume reconciliation are pending.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "doctorate-awarded",
+      "wording": "I earned a PhD in Geophysics from the University of Texas at Austin,",
+      "state": "held",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Original numerical/credential wording is held from the updated home page; owner confirmation pending. The existing PDF is unchanged.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "tasks-count",
+      "wording": "more than 50 tasks",
+      "state": "held",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Original numerical/credential wording is held from the updated home page; owner confirmation pending. The existing PDF is unchanged.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "review-defects-count",
+      "wording": "more than 100 reasoning, validation, and reproducibility defects.",
+      "state": "held",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Original numerical/credential wording is held from the updated home page; owner confirmation pending. The existing PDF is unchanged.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "seismic-volume",
+      "wording": "terabyte-scale 3D seismic data",
+      "state": "held",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Original numerical/credential wording is held from the updated home page; owner confirmation pending. The existing PDF is unchanged.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "tutoring-count",
+      "wording": "more than 20 students",
+      "state": "held",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Original numerical/credential wording is held from the updated home page; owner confirmation pending. The existing PDF is unchanged.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "act-outcome",
+      "wording": "Their average ACT score increased by five points.",
+      "state": "held",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Original numerical/credential wording is held from the updated home page; owner confirmation pending. The existing PDF is unchanged.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "wells-count",
+      "wording": "more than 25 wells and borings",
+      "state": "held",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Original numerical/credential wording is held from the updated home page; owner confirmation pending. The existing PDF is unchanged.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "resume-doctorate",
+      "wording": "PhD, Geological Sciences (Marine Geophysics) | University of Texas at Austin",
+      "state": "resume_review",
+      "surfaces": [],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Unchanged resume inventory for owner review. PDF is not a credential verification source. Old roof metrics belong to a different dataset/model and must not be merged with WHU results.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "resume-dates",
+      "wording": "Snorkel AI 2024 - Present; Gauntlet AI Oct 2025 - Dec 2025; Hack the Gap Feb 2024 - Oct 2025; UT Austin Aug 2020 - Feb 2023; StudyPoint & AirTutors Aug 2020 - Sep 2025; AECOM Jan 2020 - Jul 2020",
+      "state": "resume_review",
+      "surfaces": [],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Unchanged resume inventory for owner review. PDF is not a credential verification source. Old roof metrics belong to a different dataset/model and must not be merged with WHU results.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "resume-roles",
+      "wording": "Expert Contributor & Reviewer | AI Evaluation Engineering; AI Engineering Fellow; Full-Stack Developer; Research Assistant, Institute for Geophysics; Math, Physics & ACT/SAT Instructor; Geologist",
+      "state": "resume_review",
+      "surfaces": [],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Unchanged resume inventory for owner review. PDF is not a credential verification source. Old roof metrics belong to a different dataset/model and must not be merged with WHU results.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "resume-task-review-counts",
+      "wording": "50+ benchmark tasks; Reviewer within one month; 100+ defects",
+      "state": "resume_review",
+      "surfaces": [],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Unchanged resume inventory for owner review. PDF is not a credential verification source. Old roof metrics belong to a different dataset/model and must not be merged with WHU results.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "resume-client-counts",
+      "wording": "10+ features; three client projects delivered on schedule",
+      "state": "resume_review",
+      "surfaces": [],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Unchanged resume inventory for owner review. PDF is not a credential verification source. Old roof metrics belong to a different dataset/model and must not be merged with WHU results.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "resume-research-counts",
+      "wording": "terabyte-scale 3D seismic datasets; 3+ research outputs",
+      "state": "resume_review",
+      "surfaces": [],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Unchanged resume inventory for owner review. PDF is not a credential verification source. Old roof metrics belong to a different dataset/model and must not be merged with WHU results.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "resume-ghostfolio-coverage",
+      "wording": "88% overall test coverage",
+      "state": "resume_review",
+      "surfaces": [],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Unchanged resume inventory for owner review. PDF is not a credential verification source. Old roof metrics belong to a different dataset/model and must not be merged with WHU results.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "resume-old-roof-result",
+      "wording": "EfficientNet-B2: 87.22% validation IoU on 890 annotated aerial images; approximately 10 ms per 256 x 256 tile; 1.5% baseline improvement; train/validation gap below 4%",
+      "state": "resume_review",
+      "surfaces": [],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Unchanged resume inventory for owner review. PDF is not a credential verification source. Old roof metrics belong to a different dataset/model and must not be merged with WHU results.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "resume-tutoring-outcome",
+      "wording": "20+ students; average ACT scores raised by 5 points",
+      "state": "resume_review",
+      "surfaces": [],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Unchanged resume inventory for owner review. PDF is not a credential verification source. Old roof metrics belong to a different dataset/model and must not be merged with WHU results.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "resume-aecom-counts",
+      "wording": "25+ wells and borings; 6+ technical reports",
+      "state": "resume_review",
+      "surfaces": [],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Unchanged resume inventory for owner review. PDF is not a credential verification source. Old roof metrics belong to a different dataset/model and must not be merged with WHU results.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "resume-credentials-awards",
+      "wording": "MS Geological Sciences; BS Geology; ECU Environmental Geology and Hydrogeology certificate; IBM certificate 2025; ECU graduate presentation and grant awards",
+      "state": "resume_review",
+      "surfaces": [],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Unchanged resume inventory for owner review. PDF is not a credential verification source. Old roof metrics belong to a different dataset/model and must not be merged with WHU results.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "resume-deployment",
+      "wording": "Gauntlet product deployments and Ghostfolio Railway deployment; historical deployment wording, current availability unverified",
+      "state": "resume_review",
+      "surfaces": [],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Unchanged resume inventory for owner review. PDF is not a credential verification source. Old roof metrics belong to a different dataset/model and must not be merged with WHU results.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "resume-nlwebagent",
+      "wording": "10 typed actions and four model providers",
+      "state": "resume_review",
+      "surfaces": [],
+      "evidence": [
+        {
+          "path": "assets/resume.pdf",
+          "sha256": "c02f5fc78269a64ad40cefb1207145aabc0db7aac5d8d900d93f1497ff830655",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Career description from existing owner-supplied portfolio and resume; not independently credential-verified.",
+      "qualification": "Unchanged resume inventory for owner review. PDF is not a credential verification source. Old roof metrics belong to a different dataset/model and must not be merged with WHU results.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "pending",
+      "hold_publication": true,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "project-parametric-modeller",
+      "wording": "A browser-based CAD application for woodworking. It stores an editable feature history, rebuilds geometry deterministically, and exports shop drawings in SVG, PDF, and DXF formats.",
+      "state": "rendered",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "content/source-snapshots/parametric-modeller-readme.txt",
+          "sha256": "ace67a061d213ff1048a8741c82b4b05f31ecf44fb9e977de3702437826e0640",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Existing project contribution description; current public repository README inspected. Application behavior not rerun.",
+      "qualification": "Repository-reported capability; no new production-scale, live-service or model-quality validation.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "not_requested",
+      "hold_publication": false,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "project-ghostfolio-agent",
+      "wording": "A portfolio assistant that calls typed analysis tools and checks its responses with confidence scores and validation rules. The repository includes a React interface and a FastAPI service.",
+      "state": "rendered",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "content/source-snapshots/ghostfolio-agent-readme.txt",
+          "sha256": "5e26cb97e2bcb2888ad476e23c7619a8dbaa20861beb23b57f11eeaa69d8609a",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Existing project contribution description; current public repository README inspected. Application behavior not rerun.",
+      "qualification": "Repository-reported capability; no new production-scale, live-service or model-quality validation.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "not_requested",
+      "hold_publication": false,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "project-publishing-strategist",
+      "wording": "A research agent for Kindle Direct Publishing. It searches for niches, compares competing titles, drafts listing copy, and scores demand and competition with configured market data.",
+      "state": "rendered",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "content/source-snapshots/publishing-strategist-readme.txt",
+          "sha256": "8eba184a5757b286cde2bfcc3e17502530a81877a549fce87b766803464df72d",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Existing project contribution description; current public repository README inspected. Application behavior not rerun.",
+      "qualification": "Repository-reported capability; no new production-scale, live-service or model-quality validation.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "not_requested",
+      "hold_publication": false,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "project-nlwebagent",
+      "wording": "A CLI that turns natural-language test instructions into Playwright actions. It records sessions, writes Playwright tests, and tries coordinates when a selector fails.",
+      "state": "rendered",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "content/source-snapshots/nlwebagent-readme.txt",
+          "sha256": "a1ce961f8706db08e31aac1d728a481301b0ecfaec005659a09f6c00a29e27ad",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Existing project contribution description; current public repository README inspected. Application behavior not rerun.",
+      "qualification": "Repository-reported capability; no new production-scale, live-service or model-quality validation.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "not_requested",
+      "hold_publication": false,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "project-socrates",
+      "wording": "A tutoring application that responds with guiding questions. It records sessions, displays learning analytics, and supports real-time chat in the React client.",
+      "state": "rendered",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "content/source-snapshots/socrates-readme.txt",
+          "sha256": "9015d94471c1a8fa645e35898b0a8faf60402749a9a5f532e7cca1ead4655bbb",
+          "kind": "repository_reported"
+        }
+      ],
+      "source_revision": null,
+      "scope": "Existing project contribution description; current public repository README inspected. Application behavior not rerun.",
+      "qualification": "Repository-reported capability; no new production-scale, live-service or model-quality validation.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "not_requested",
+      "hold_publication": false,
+      "claim_type": "qualitative"
+    },
+    {
+      "id": "geo-headline",
+      "wording": "38.1% HOLD versus 97.2% guided in-zone length on the same synthetic 5,000-ft lateral, using a known signed sensor calibration in one scenario and seed.",
+      "state": "rendered",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "assets/evidence/geosteering.json",
+          "sha256": "35ab8cba317dc5862ac066aaed638af8a635876a68c70c0aa7ee0054ac22a59b",
+          "kind": "independently_artifact_checked"
+        },
+        {
+          "path": "assets/evidence/geosteering-verification-2026-11-01.json",
+          "sha256": "52fcc2cdddab5699418761627f11c5ca9b58ae19e216d15e8a250e04db734089",
+          "kind": "independently_artifact_checked"
+        }
+      ],
+      "source_revision": "14ffc90dfd547cfc1217d1ce3a059b4928639dc2",
+      "scope": "Two fresh installed-backend seed123 simulations reproduced the same synthetic comparison; stored independent scoring and history/reopen checks also passed. Browser interaction remains unverified.",
+      "qualification": "Known signed sensor; one idealized 2D scenario/seed; no field performance.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "not_requested",
+      "hold_publication": false,
+      "quantities": [
+        {
+          "name": "hold in-zone",
+          "value": 38.07162079659706,
+          "unit": "percent",
+          "dataset_scenario": "structural_dip_01-v1; seed 123",
+          "denominator": "same 5000 ft lateral, MD 2000-7000 ft",
+          "selection_protocol": "one fixed documented scenario and seed",
+          "limitation": "known signed synthetic sensor; no field-policy validation",
+          "evidence_path": "assets/evidence/geosteering-verification-2026-11-01.json",
+          "json_pointer": "/headline_causal_metrics/hold/percent_in_zone"
+        },
+        {
+          "name": "guided in-zone",
+          "value": 97.17426567844367,
+          "unit": "percent",
+          "dataset_scenario": "structural_dip_01-v1; seed 123",
+          "denominator": "same 5000 ft lateral, MD 2000-7000 ft",
+          "selection_protocol": "one fixed documented scenario and seed",
+          "limitation": "known signed synthetic sensor; no field-policy validation",
+          "evidence_path": "assets/evidence/geosteering-verification-2026-11-01.json",
+          "json_pointer": "/headline_causal_metrics/guided/percent_in_zone"
+        }
+      ],
+      "claim_type": "quantitative"
+    },
+    {
+      "id": "roof-headline",
+      "wording": "0.8921 WHU IoU across 2,416 tiles; external IoU 0.4016 in Las Vegas and 0.0474 in Paris (32 each).",
+      "state": "rendered",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "assets/evidence/roof-segmentation.json",
+          "sha256": "6d45294ce8aebee36deeaa673d9316df4ddf249a17a6f40544a215ed85615181",
+          "kind": "independently_artifact_checked"
+        },
+        {
+          "path": "assets/evidence/roof-whu-test-per-image.csv",
+          "sha256": "49e5acd010ade2daa0dff86fc3c2f5ba05614bb1e43bbcd37db80339b19a6721",
+          "kind": "independently_artifact_checked"
+        }
+      ],
+      "source_revision": "ff53742b99a537e5461e588b457f071b2062bfb4",
+      "scope": "WHU per-image counts recomputed in this session; external figures are existing recorded release results.",
+      "qualification": "External transfer is poor; binary building extent only; no arbitrary-address claim.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "not_requested",
+      "hold_publication": false,
+      "quantities": [
+        {
+          "name": "WHU IoU",
+          "value": 0.8921192509468081,
+          "unit": "ratio",
+          "dataset_scenario": "WHU publisher Christchurch test partition",
+          "denominator": "2416 tiles; pixel-count aggregate",
+          "selection_protocol": "validation-selected epoch 32, threshold 0.5; original held-out scoring",
+          "limitation": "binary building extent; later test reuse is developmental",
+          "evidence_path": "assets/evidence/roof-segmentation.json",
+          "json_pointer": "/baseline/aggregate/iou"
+        },
+        {
+          "name": "AOI_2_Vegas IoU",
+          "value": 0.4015882263973643,
+          "unit": "ratio",
+          "dataset_scenario": "SpaceNet2 AOI_2_Vegas",
+          "denominator": "32 paired images per city",
+          "selection_protocol": "seed 73 selection before labels/scoring; no retuning",
+          "limitation": "small transfer study with different footprint labels",
+          "evidence_path": "assets/evidence/roof-segmentation.json",
+          "json_pointer": "/external_regions/AOI_2_Vegas/iou"
+        },
+        {
+          "name": "AOI_3_Paris IoU",
+          "value": 0.04735199844592298,
+          "unit": "ratio",
+          "dataset_scenario": "SpaceNet2 AOI_3_Paris",
+          "denominator": "32 paired images per city",
+          "selection_protocol": "seed 73 selection before labels/scoring; no retuning",
+          "limitation": "small transfer study with different footprint labels",
+          "evidence_path": "assets/evidence/roof-segmentation.json",
+          "json_pointer": "/external_regions/AOI_3_Paris/iou"
+        }
+      ],
+      "claim_type": "quantitative"
+    },
+    {
+      "id": "mars-headline",
+      "wording": "Three candidate routes on a checksum-verified 593 × 563 CTX terrain grid at 20 m spacing.",
+      "state": "rendered",
+      "surfaces": ["index.html"],
+      "evidence": [
+        {
+          "path": "assets/evidence/marshab.json",
+          "sha256": "b646749a3836e818c2a8a01fea2c5aa9b4c8cb306bcf8a0ff48c8ebba8bfbd4c",
+          "kind": "independently_artifact_checked"
+        },
+        {
+          "path": "assets/evidence/marshab-verification-2026-11-01.json",
+          "sha256": "006aff14f4f103315381196ac4d64a44751fe72fb3f1db252ca632ab9ec60de0",
+          "kind": "independently_artifact_checked"
+        }
+      ],
+      "source_revision": "459973dba92dc5b82f9d24519fd333577646ae3a",
+      "scope": "Archived real-DEM reference with freshly verified independent full-graph directed Dijkstra costs for all three routes; historical generation not rerun.",
+      "qualification": "Private source; terrain-only tradeoffs; current local Docker uses 1 GiB; live deployment/browser unverified.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "not_requested",
+      "hold_publication": false,
+      "quantities": [
+        {
+          "name": "grid rows",
+          "value": 593,
+          "unit": "cells",
+          "dataset_scenario": "archived Jezero CTX reference",
+          "denominator": "593 rows x 563 columns",
+          "selection_protocol": "documented fixed ROI and 20m target grid",
+          "limitation": "not rover-scale hazards or habitat safety",
+          "evidence_path": "assets/evidence/marshab.json",
+          "json_pointer": "/reference_grid/shape/0"
+        },
+        {
+          "name": "grid columns",
+          "value": 563,
+          "unit": "cells",
+          "dataset_scenario": "archived Jezero CTX reference",
+          "denominator": "593 rows x 563 columns",
+          "selection_protocol": "documented fixed ROI and 20m target grid",
+          "limitation": "not rover-scale hazards or habitat safety",
+          "evidence_path": "assets/evidence/marshab.json",
+          "json_pointer": "/reference_grid/shape/1"
+        },
+        {
+          "name": "grid spacing",
+          "value": 20,
+          "unit": "metres",
+          "dataset_scenario": "archived Jezero CTX reference",
+          "denominator": "each projected grid cell",
+          "selection_protocol": "bilinear reprojection to documented Mars CRS",
+          "limitation": "terrain-relative heuristic; no energy or safety validation",
+          "evidence_path": "assets/evidence/marshab.json",
+          "json_pointer": "/reference_grid/resolution_m"
+        }
+      ],
+      "claim_type": "quantitative"
+    },
+    {
+      "id": "geo-fresh-workflow",
+      "wording": "Two fresh installed-backend seed-123 runs reproduced the same numerical summary. Fresh-process reopening, relocation and interrupted-write recovery checks passed. The new verification supplement records the tested source fingerprint and 39 workflow/recovery checks; browser interaction remains unverified. The original report below is preserved separately.",
+      "claim_type": "quantitative",
+      "state": "rendered",
+      "surfaces": ["case-studies/geosteering.html"],
+      "evidence": [
+        {
+          "path": "assets/evidence/geosteering-verification-2026-11-01.json",
+          "sha256": "52fcc2cdddab5699418761627f11c5ca9b58ae19e216d15e8a250e04db734089",
+          "kind": "independently_artifact_checked"
+        }
+      ],
+      "source_revision": "14ffc90dfd547cfc1217d1ce3a059b4928639dc2",
+      "scope": "Fresh installed simulations and persisted workflow verification",
+      "qualification": "Browser, Linux, duplicate-submit and visual report checks unverified",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "not_requested",
+      "hold_publication": false,
+      "quantities": [
+        {
+          "name": "verified workflow cases",
+          "value": 39,
+          "unit": "test cases",
+          "dataset_scenario": "structural_dip_01-v1 seed123",
+          "denominator": "39 targeted workflow and recovery cases, not the complete suite",
+          "selection_protocol": "28 existing workflow/mutation controls and 11 new abrupt-exit recovery cases",
+          "limitation": "Browser, Linux, duplicate-submit and visual report checks unverified",
+          "evidence_path": "assets/evidence/geosteering-verification-2026-11-01.json",
+          "json_pointer": "/total_tests_passed"
+        }
+      ]
+    },
+    {
+      "id": "mars-directed-graph",
+      "wording": "The new independent checker reconstructed all 2,359,894 directed edges and matched each of the three archived route costs to Dijkstra within the declared float32-artifact tolerance. This establishes optimality on the serialized graph, not physical mobility. The reference was checked in place rather than regenerated, and the updated checker was not retested inside the earlier container budget.",
+      "claim_type": "quantitative",
+      "state": "rendered",
+      "surfaces": ["case-studies/marshab.html"],
+      "evidence": [
+        {
+          "path": "assets/evidence/marshab-verification-2026-11-01.json",
+          "sha256": "006aff14f4f103315381196ac4d64a44751fe72fb3f1db252ca632ab9ec60de0",
+          "kind": "independently_artifact_checked"
+        }
+      ],
+      "source_revision": "459973dba92dc5b82f9d24519fd333577646ae3a",
+      "scope": "Independent archived finite-graph Dijkstra verification",
+      "qualification": "Discrete graph optimality only; no physical mobility, fresh generation or updated container memory claim",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "not_requested",
+      "hold_publication": false,
+      "quantities": [
+        {
+          "name": "graph directed edges",
+          "value": 2359894,
+          "unit": "directed edges",
+          "dataset_scenario": "Archived Jezero CTX real-DEM reference",
+          "denominator": "300500 passable nodes on 333859-cell serialized grid; three archived routes",
+          "selection_protocol": "All allowed eight-neighbor directed edges; destination-cell costs; no corner cutting",
+          "limitation": "Discrete graph optimality only; no physical mobility, fresh generation or updated container memory claim",
+          "evidence_path": "assets/evidence/marshab-verification-2026-11-01.json",
+          "json_pointer": "/graph/directed_edges"
+        }
+      ]
+    },
+    {
+      "id": "roof-authentic-serving",
+      "wording": "The serving CLI and local HTTP API now share a manifest-bound prediction path. On one generated numerical image, their probability arrays and masks match exactly; an independent forward calculation agrees within the declared tolerance. This verifies a local serving transaction, not building accuracy or geographic transfer. Browser interaction and a new container startup remain unverified.",
+      "claim_type": "qualitative",
+      "state": "rendered",
+      "surfaces": ["case-studies/roof-segmentation.html"],
+      "evidence": [
+        {
+          "path": "assets/evidence/roof-segmentation-verification-2026-11-01.json",
+          "sha256": "17c97023945e7322e11a7153bbb6ed9402842ab7560305de1b2f4731b257759c",
+          "kind": "independently_artifact_checked"
+        }
+      ],
+      "source_revision": "4cf6fa12c635610d1b2832e0e0b5aa96329b4561",
+      "scope": "Genuine CPU CLI and loopback HTTP transaction using the original checkpoint and a generated numerical RGB fixture. Root independently compared saved arrays.",
+      "qualification": "One generated fixture; not a held-out accuracy evaluation. Dirty source identity is recorded separately. No new container/browser/deployment claim.",
+      "verification_date": "2026-11-01",
+      "owner_approval_state": "not_requested",
+      "hold_publication": false
+    }
+  ]
+}

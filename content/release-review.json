@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "scope": "Local Wave 1 draft; no publication approval implied.",
+  "gates": [
+    {
+      "id": "credential-and-resume-alignment",
+      "state": "pending",
+      "reason": "Exact awarded doctorate and career claims require owner confirmation; existing PDF unchanged."
+    },
+    {
+      "id": "asset-rights-review",
+      "state": "pending",
+      "reason": "Review source and dataset derivative permissions before publication."
+    },
+    {
+      "id": "interactive-verification",
+      "state": "not_run",
+      "reason": "Browser and platform UI access prohibited by current user instructions; no UI exception requested."
+    },
+    {
+      "id": "publication-approval",
+      "state": "pending",
+      "reason": "No merge, visibility change, deployment or external publication authorized by this local execution step."
+    }
+  ]
+}

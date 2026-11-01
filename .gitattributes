@@ -1,0 +1,18 @@
+# Authored source uses the same LF convention as the formatter on every OS.
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+.gitattributes text eol=lf
+
+# These files are identified by raw SHA-256, including original line endings.
+assets/evidence/** -text diff whitespace=cr-at-eol
+assets/downloads/** -text whitespace=cr-at-eol
+assets/downloads/*.pdf binary
+assets/downloads/*.zip binary
+# Upstream Markdown snapshots retain their intentional hard breaks verbatim.
+content/source-snapshots/** -text diff whitespace=-blank-at-eol,-blank-at-eof

@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ghostfolio Agent | Tanner Eischen</title>
+    <meta
+      name="description"
+      content="Bind numerical claims to the right financial field, entity, currency and time instead of matching any number in a tool response."
+    />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="canonical"
+      href="https://tanner-eischen.github.io/case-studies/ghostfolio-agent.html"
+    />
+    <meta property="og:title" content="Ghostfolio Agent | Tanner Eischen" />
+    <meta
+      property="og:description"
+      content="Bind numerical claims to the right financial field, entity, currency and time instead of matching any number in a tool response."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://tanner-eischen.github.io/case-studies/ghostfolio-agent.html"
+    />
+  </head>
+  <body class="case-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="case-nav" aria-label="Project navigation">
+      <a href="../index.html#work">← All work</a
+      ><a href="../index.html#contact">Contact Tanner</a>
+    </nav>
+    <main id="main" class="case-shell">
+      <nav class="case-breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a> /
+        <span aria-current="page">Ghostfolio Agent</span>
+      </nav>
+      <header class="case-head">
+        <p class="eyebrow">02 / Applied AI engineering</p>
+        <h1>Give “verified” a measurable boundary.</h1>
+        <p class="case-intro">
+          Bind numerical claims to the right financial field, entity, currency
+          and time instead of matching any number in a tool response.
+        </p>
+        <p class="case-project">Ghostfolio Agent · Local release</p>
+      </header>
+      <dl class="case-metrics">
+        <div>
+          <dt>verification controls</dt>
+          <dd>11 / 11</dd>
+        </div>
+        <div>
+          <dt>independent challenges</dt>
+          <dd>24 / 24</dd>
+        </div>
+        <div>
+          <dt>backend tests</dt>
+          <dd>619</dd>
+        </div>
+      </dl>
+      <section>
+        <h2>The problem</h2>
+        <p>
+          A stock price could be accepted as evidence for a portfolio total. The
+          evaluation catalog also contained assertion-free cases, so a green
+          result did not always demonstrate a checked answer.
+        </p>
+        <h2>My contribution</h2>
+        <p>
+          I connected typed portfolio tools, scoped numerical verification,
+          explicit answer outcomes, persistent local sessions, and a
+          credential-free synthetic deployment. Evaluation controls exercise the
+          actual verification pipeline.
+        </p>
+      </section>
+      <section>
+        <h2>How it works</h2>
+        <ol class="case-flow">
+          <li>Typed tool results</li>
+          <li>Scoped statement checks</li>
+          <li>Citations + field expectations</li>
+          <li>Verified / review / rejected / error</li>
+        </ol>
+        <h3>Decisions that shaped the release</h3>
+        <ul>
+          <li>
+            Verification checks entity, metric, currency/unit, period, source
+            and freshness. Unsupported language requires review.
+          </li>
+          <li>
+            Catalog assertions are validated separately from executed controls.
+            A 75-case catalog is not presented as 75 model runs.
+          </li>
+          <li>
+            Confidence and verification remain distinct. Provider timeouts and
+            incomplete evidence cannot become verified answers.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Measured results</h2>
+        <p>
+          All 75 catalog cases contain assertions. The measured 11 controls use
+          fixed synthetic tool outputs and zero model calls.
+        </p>
+        <section
+          class="case-table"
+          aria-label="Measured release results"
+          tabindex="0"
+        >
+          <table>
+            <caption>
+              Ghostfolio Agent: release evidence
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Evidence</th>
+                <th scope="col">Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Assertion-free catalog cases</th>
+                <td>0 of 75</td>
+              </tr>
+              <tr>
+                <th scope="row">Actual verification controls</th>
+                <td>11 of 11</td>
+              </tr>
+              <tr>
+                <th scope="row">Independent counterexamples</th>
+                <td>24 of 24</td>
+              </tr>
+              <tr>
+                <th scope="row">Live model answer quality</th>
+                <td>Not measured</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+      <section>
+        <h2>A failure worth inspecting</h2>
+        <h3>A plausible $180 answer is contradicted by the correct field.</h3>
+        <p>
+          The source contains both amounts. Field-scoped checking rejects the
+          claimed total even though $180 is a real stock price in that same tool
+          result. All values in this example are synthetic.
+        </p>
+        <pre><code>{
+  &quot;response&quot;: &quot;Your portfolio total is $180.&quot;,
+  &quot;stock_price_usd&quot;: 180,
+  &quot;portfolio_total_usd&quot;: 30000,
+  &quot;decision&quot;: &quot;rejected&quot;,
+  &quot;checked_field&quot;: &quot;source.tool_0.total_value&quot;
+}</code></pre>
+      </section>
+      <section>
+        <h2>Limits and next questions</h2>
+        <ul>
+          <li>
+            The verified profile is a single-operator local/private application
+            using synthetic sample data.
+          </li>
+          <li>
+            Supported numerical and typed-field checks do not establish
+            unrestricted natural-language entailment.
+          </li>
+          <li>
+            Live provider/model quality and browser interaction remain
+            unmeasured.
+          </li>
+        </ul>
+      </section>
+      <section class="case-download">
+        <h2>Inspect the evidence</h2>
+        <p>
+          <a href="../assets/evidence/ghostfolio-agent.json" download
+            >Download sanitized evidence (JSON)</a
+          >
+          ·
+          <a href="../assets/evidence/ghostfolio-agent.sha256" download
+            >SHA256</a
+          >
+        </p>
+        <p>
+          <a
+            href="https://github.com/Tanner-Eischen/ghostfolio-agent"
+            rel="noreferrer"
+            target="_blank"
+            >Project repository</a
+          >
+        </p>
+        <p class="case-note">
+          Software controls, development-set measurements and model quality
+          retain separate denominators. Local release artifacts are prepared for
+          review; no public deployment is implied.
+        </p>
+      </section>
+    </main>
+    <footer class="case-footer">
+      <a href="../index.html#work">Return to selected work</a>
+      <p>Tanner Eischen · AI evaluation and applied engineering</p>
+    </footer>
+  </body>
+</html>

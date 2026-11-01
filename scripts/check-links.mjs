@@ -1,37 +1,25 @@
-import { existsSync, readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { createHash } from "node:crypto";
+import { collectSite, publicFile } from "./site-files.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const html = readFileSync(resolve(root, "index.html"), "utf8");
-const failures = [];
-
-const ids = new Set(
-  [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]),
-);
-const references = [...html.matchAll(/\b(?:href|src)="([^"]+)"/g)].map(
-  (match) => match[1],
-);
-
-for (const reference of references) {
-  if (reference.startsWith("#")) {
-    const id = reference.slice(1);
-    if (id && !ids.has(id))
-      failures.push(`Missing in-page target: ${reference}`);
-    continue;
-  }
-
-  if (/^(?:https?:|mailto:|tel:|data:)/.test(reference)) continue;
-
-  const cleanPath = reference.split(/[?#]/, 1)[0];
-  if (cleanPath && !existsSync(resolve(root, cleanPath))) {
-    failures.push(`Missing local asset: ${reference}`);
-  }
+const target = process.argv.includes("--built") ? resolve(root, "dist") : root;
+const { pages, referenceCount } = collectSite(target);
+const evidence = resolve(target, "assets/evidence");
+for (const name of readdirSync(evidence).filter((file) =>
+  file.endsWith(".sha256"),
+)) {
+  const match = readFileSync(resolve(evidence, name), "utf8")
+    .trim()
+    .match(/^([a-f0-9]{64})\s+([a-z0-9-]+\.json)$/);
+  if (!match) throw new Error(`Invalid evidence hash record: ${name}`);
+  const actual = createHash("sha256")
+    .update(readFileSync(publicFile(target, `assets/evidence/${match[2]}`)))
+    .digest("hex");
+  if (actual !== match[1]) throw new Error(`Evidence hash mismatch: ${name}`);
 }
-
-if (failures.length > 0) {
-  console.error(failures.join("\n"));
-  process.exit(1);
-}
-
-console.log(`Checked ${references.length} links and asset references.`);
+console.log(
+  `Checked ${referenceCount} references across ${pages.length} ${target === root ? "source" : "built"} HTML pages, including CSS dependencies.`,
+);

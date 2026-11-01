@@ -1,0 +1,110 @@
+{
+  "checked_at_utc": "2026-11-01T05:39:40.778Z",
+  "method": "Unauthenticated CLI HTTP HEAD; GET only for unsupported HEAD. No browser/UI.",
+  "warning": "Accessible means an HTTP response, not verified demo behavior or artifact content. Inconclusive results retain local report/download fallbacks.",
+  "results": [
+    {
+      "url": "https://github.com/Tanner-Eischen",
+      "final_url": "https://github.com/Tanner-Eischen",
+      "http_status": 200,
+      "status": "accessible",
+      "elapsed_ms": 505,
+      "scope": "Unauthenticated CLI HTTP response; no browser interaction or UI inspection."
+    },
+    {
+      "url": "https://github.com/Tanner-Eischen/GeoSteering",
+      "final_url": "https://github.com/Tanner-Eischen/GeoSteering",
+      "http_status": 200,
+      "status": "accessible",
+      "elapsed_ms": 702,
+      "scope": "Unauthenticated CLI HTTP response; no browser interaction or UI inspection."
+    },
+    {
+      "url": "https://github.com/Tanner-Eischen/NLWebAgent",
+      "final_url": "https://github.com/Tanner-Eischen/NLWebAgent",
+      "http_status": 200,
+      "status": "accessible",
+      "elapsed_ms": 632,
+      "scope": "Unauthenticated CLI HTTP response; no browser interaction or UI inspection."
+    },
+    {
+      "url": "https://github.com/Tanner-Eischen/ParametricModeller",
+      "final_url": "https://github.com/Tanner-Eischen/ParametricModeller",
+      "http_status": 200,
+      "status": "accessible",
+      "elapsed_ms": 644,
+      "scope": "Unauthenticated CLI HTTP response; no browser interaction or UI inspection."
+    },
+    {
+      "url": "https://github.com/Tanner-Eischen/PublishingStrategist",
+      "final_url": "https://github.com/Tanner-Eischen/PublishingStrategist",
+      "http_status": 200,
+      "status": "accessible",
+      "elapsed_ms": 514,
+      "scope": "Unauthenticated CLI HTTP response; no browser interaction or UI inspection."
+    },
+    {
+      "url": "https://github.com/Tanner-Eischen/RoofSegmentation",
+      "final_url": "https://github.com/Tanner-Eischen/RoofSegmentation",
+      "http_status": 200,
+      "status": "accessible",
+      "elapsed_ms": 641,
+      "scope": "Unauthenticated CLI HTTP response; no browser interaction or UI inspection."
+    },
+    {
+      "url": "https://github.com/Tanner-Eischen/SocratesTutoring",
+      "final_url": "https://github.com/Tanner-Eischen/SocratesTutoring",
+      "http_status": 200,
+      "status": "accessible",
+      "elapsed_ms": 619,
+      "scope": "Unauthenticated CLI HTTP response; no browser interaction or UI inspection."
+    },
+    {
+      "url": "https://github.com/Tanner-Eischen/ghostfolio-agent",
+      "final_url": "https://github.com/Tanner-Eischen/ghostfolio-agent",
+      "http_status": 200,
+      "status": "accessible",
+      "elapsed_ms": 602,
+      "scope": "Unauthenticated CLI HTTP response; no browser interaction or UI inspection."
+    },
+    {
+      "url": "https://github.com/Tanner-Eischen?tab=repositories",
+      "final_url": "https://github.com/Tanner-Eischen?tab=repositories",
+      "http_status": 200,
+      "status": "accessible",
+      "elapsed_ms": 409,
+      "scope": "Unauthenticated CLI HTTP response; no browser interaction or UI inspection."
+    },
+    {
+      "url": "https://github.com/usgs/nshmp-haz-fortran/blob/9f78db0c3d9cd66f90d7aeda6b1082e6dad71502/src/hazFXnga13l.f",
+      "final_url": "https://github.com/usgs/nshmp-haz-fortran/blob/9f78db0c3d9cd66f90d7aeda6b1082e6dad71502/src/hazFXnga13l.f",
+      "http_status": 200,
+      "status": "accessible",
+      "elapsed_ms": 684,
+      "scope": "Unauthenticated CLI HTTP response; no browser interaction or UI inspection."
+    },
+    {
+      "url": "https://marshab.onrender.com/",
+      "status": "inconclusive",
+      "elapsed_ms": 10011,
+      "reason": "TimeoutError",
+      "scope": "Timeout/network failure is not evidence of a permanent outage."
+    },
+    {
+      "url": "https://spacenet.ai/spacenet-buildings-dataset-v2/",
+      "final_url": "https://spacenet.ai/spacenet-buildings-dataset-v2/",
+      "http_status": 200,
+      "status": "accessible",
+      "elapsed_ms": 412,
+      "scope": "Unauthenticated CLI HTTP response; no browser interaction or UI inspection."
+    },
+    {
+      "url": "https://www.linkedin.com/in/tanner-eischen",
+      "final_url": "https://www.linkedin.com/in/tanner-eischen",
+      "http_status": 999,
+      "status": "inconclusive",
+      "elapsed_ms": 920,
+      "scope": "Unauthenticated CLI HTTP response; no browser interaction or UI inspection."
+    }
+  ]
+}

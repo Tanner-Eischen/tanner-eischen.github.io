@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "supplements": [
+    {
+      "project_id": "geosteering",
+      "scope": "Two fresh installed seed123 runs, independent scoring and persisted-workflow recovery; browser/Linux/full-suite not verified.",
+      "summary_path": "assets/evidence/geosteering-verification-2026-11-01.json",
+      "summary_sha256": "52fcc2cdddab5699418761627f11c5ca9b58ae19e216d15e8a250e04db734089",
+      "archive_path": "assets/downloads/geosteering-verification-2026-11-01.zip",
+      "archive_sha256": "958817fa1f7c1509a8baabad7aea0abff9ff5a551eb615618f2885fa7ab97f64",
+      "payload_files": 13,
+      "state": "locally_verified_unpublished"
+    },
+    {
+      "project_id": "marshab",
+      "scope": "Independent reconstruction and directed Dijkstra check of three archived routes; no new science generation or container/browser verification.",
+      "summary_path": "assets/evidence/marshab-verification-2026-11-01.json",
+      "summary_sha256": "006aff14f4f103315381196ac4d64a44751fe72fb3f1db252ca632ab9ec60de0",
+      "archive_path": "assets/downloads/marshab-verification-2026-11-01.zip",
+      "archive_sha256": "2e1193424cac39216f12ee0a43d74e4c2a76ca75e198d59b5eb0d8ce48537286",
+      "payload_files": 2,
+      "state": "locally_verified_unpublished"
+    },
+    {
+      "project_id": "roof-segmentation",
+      "scope": "Genuine one-input generated-fixture CPU CLI/HTTP parity and independent forward check; not a new model-quality or geographic measurement.",
+      "summary_path": "assets/evidence/roof-segmentation-verification-2026-11-01.json",
+      "summary_sha256": "17c97023945e7322e11a7153bbb6ed9402842ab7560305de1b2f4731b257759c",
+      "archive_path": "assets/downloads/roof-segmentation-verification-2026-11-01.zip",
+      "archive_sha256": "bcd00353d63efea49895e67cf9a3a1b7d0ee344f7fb40ab6eecc2a167787d997",
+      "payload_files": 11,
+      "state": "locally_verified_unpublished"
+    }
+  ]
+}

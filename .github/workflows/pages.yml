@@ -33,6 +33,10 @@ jobs:
       - name: Run quality checks
         run: npm run check
 
+      - name: Check publication readiness
+        if: github.event_name != 'pull_request'
+        run: node scripts/check-content.mjs --release
+
       - name: Configure Pages
         if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v6

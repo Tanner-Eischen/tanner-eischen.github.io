@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-01",
+  "npm_run_check": "passed",
+  "negative_and_positive_validator_tests": 16,
+  "tests_passed": 16,
+  "tests_failed": 0,
+  "html_pages": 7,
+  "local_references": 101,
+  "built_files": 43,
+  "built_http_resource_hashes_still_match": true,
+  "publication_check_exit": 1,
+  "publication_check_meaning": "Expected held state; unresolved owner/resume, rights, UI and approval gates",
+  "full_check_log": "tmp/wave1-final-check.log",
+  "release_hold_log": "tmp/wave1-release-check.log",
+  "source_hashes": {
+    "scripts/check-content.mjs": "b022158c4ed529865dc26338d8a841b63f7bdaa450818d8cefd92b6296cfcdee",
+    "scripts/check-content.test.mjs": "58ef284f0b6e2bed02bf3a4710154518afffd7b8d12b14bd764f11f4ab7c74d7",
+    "content/claims.json": "2519197a391b9f908a6a86a4ba538e2469f5040e8573a4ac9cc7efb362d76469",
+    "content/projects.json": "eeb0d1148aac9c64adf7924a0173896e13594e8dda65dc9a7c9c8666c928e76e",
+    "content/handoffs.json": "52d8128ed2969c4d9bc48de92948b27443507dd5169afe166dc916391229ee63",
+    ".github/workflows/pages.yml": "04c3da52bf39de62b68aa23bf8be9a47eedfc464eefe448716c95d29f81af4e0"
+  }
+}

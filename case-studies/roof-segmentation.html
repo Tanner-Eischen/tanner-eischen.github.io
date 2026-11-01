@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roof Segmentation | Tanner Eischen</title>
+    <meta
+      name="description"
+      content="A measured building-segmentation workbench connecting geographic evaluation, real local-image inference, and recoverable training."
+    />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="canonical"
+      href="https://tanner-eischen.github.io/case-studies/roof-segmentation.html"
+    />
+    <meta property="og:title" content="Roof Segmentation | Tanner Eischen" />
+    <meta
+      property="og:description"
+      content="A measured building-segmentation workbench connecting geographic evaluation, real local-image inference, and recoverable training."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://tanner-eischen.github.io/case-studies/roof-segmentation.html"
+    />
+  </head>
+  <body class="case-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="case-nav" aria-label="Project navigation">
+      <a href="../index.html#work">← All work</a
+      ><a href="../index.html#contact">Contact Tanner</a>
+    </nav>
+    <main id="main" class="case-shell">
+      <nav class="case-breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a> /
+        <span aria-current="page">Roof Segmentation</span>
+      </nav>
+      <header class="case-head">
+        <p class="eyebrow">04 / Geospatial machine learning</p>
+        <h1>Measure building segmentation before claiming an improvement.</h1>
+        <p class="case-intro">
+          A measured building-segmentation workbench connecting geographic
+          evaluation, real local-image inference, and recoverable training.
+        </p>
+        <p class="case-project">
+          Roof Segmentation · Verified local CPU release · external transfer
+          limitations measured
+        </p>
+      </header>
+      <dl class="case-metrics">
+        <div>
+          <dt>serving-path WHU test IoU</dt>
+          <dd>0.8921</dd>
+        </div>
+        <div>
+          <dt>WHU test tiles</dt>
+          <dd>2,416</dd>
+        </div>
+        <div>
+          <dt>external city tiles</dt>
+          <dd>64</dd>
+        </div>
+      </dl>
+      <section>
+        <h2>The problem</h2>
+        <p>
+          The historical validation score mixed source geography across splits
+          and included missing image/mask pairs. It could not establish
+          predictive quality. The newer study preserves the WHU publisher
+          partitions and checks every paired file.
+        </p>
+        <h2>My contribution</h2>
+        <p>
+          I connected a frozen WHU checkpoint to real CPU inference, bounded
+          image uploads and polygons, explicit readiness and failure states, and
+          a local-upload interface. I added full-state recovery, a simple RGB
+          comparator, and an external-city experiment that exposes weak
+          transfer.
+        </p>
+      </section>
+      <section>
+        <h2>How it works</h2>
+        <ol class="case-flow">
+          <li>Frozen data and checkpoint</li>
+          <li>Bounded local upload + CPU prediction</li>
+          <li>Mask, contours and explicit failure states</li>
+          <li>Versioned evaluation and recoverable training</li>
+        </ol>
+        <h3>Decisions that shaped the release</h3>
+        <ul>
+          <li>
+            Measure the exact serving implementation in its locked CPU
+            environment. Keep its results separate from the original CUDA AMP
+            evaluation.
+          </li>
+          <li>
+            Treat missing weights, corrupt images, oversized inputs and
+            unavailable remote imagery as failures. Demo selection never
+            fabricates predictions.
+          </li>
+          <li>
+            Recover full optimizer, scheduler, AMP and RNG state at epoch
+            boundaries with workers=0. Validate source, data, runtime and
+            reviewed-label bindings before resuming.
+          </li>
+          <li>
+            Register 32 SpaceNet tiles per city before downloading labels or
+            scoring. Keep the original model and threshold frozen, including
+            when transfer results are poor.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Measured results</h2>
+        <p>
+          The serving CLI and local HTTP API now share a manifest-bound
+          prediction path. On one generated numerical image, their probability
+          arrays and masks match exactly; an independent forward calculation
+          agrees within the declared tolerance. This verifies a local serving
+          transaction, not building accuracy or geographic transfer. Browser
+          interaction and a new container startup remain unverified.
+        </p>
+        <p>
+          The original baseline remains the fixed reference; later training
+          experiments did not improve it. The new CPU result scores every WHU
+          test tile through the actual ModelService path. Reusing WHU is release
+          verification, not a new independent holdout. The 64 preselected
+          external tiles provide a separate, small transfer test.
+        </p>
+        <section
+          class="case-table"
+          aria-label="Measured release results"
+          tabindex="0"
+        >
+          <table>
+            <caption>
+              Roof Segmentation: release evidence
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Measurement</th>
+                <th scope="col">Cases</th>
+                <th scope="col">Global IoU</th>
+                <th scope="col">Dice</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Original WHU GPU baseline</th>
+                <td>2416</td>
+                <td>0.892119</td>
+                <td>0.942984</td>
+              </tr>
+              <tr>
+                <th scope="row">Locked CPU serving path / WHU</th>
+                <td>2416</td>
+                <td>0.892125</td>
+                <td>0.942988</td>
+              </tr>
+              <tr>
+                <th scope="row">RGB linear-discriminant baseline / WHU</th>
+                <td>2416</td>
+                <td>0.337183</td>
+                <td>0.504319</td>
+              </tr>
+              <tr>
+                <th scope="row">DeepLab development follow-up / WHU</th>
+                <td>2416</td>
+                <td>0.863038</td>
+                <td>0.926485</td>
+              </tr>
+              <tr>
+                <th scope="row">AOI_2_Vegas</th>
+                <td>32</td>
+                <td>0.401588</td>
+                <td>0.573047</td>
+              </tr>
+              <tr>
+                <th scope="row">AOI_3_Paris</th>
+                <td>32</td>
+                <td>0.047352</td>
+                <td>0.090422</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+      <section>
+        <h2>A failure worth inspecting</h2>
+        <h3>A strong within-domain score does not transfer to Paris.</h3>
+        <p>
+          With the original checkpoint and threshold unchanged, IoU fell to
+          0.4016 on Las Vegas and 0.0474 on Paris, 32 tiles per city. Different
+          acquisition and annotation domains matter. The examples show actual
+          masks, predictions and missed/false-positive pixels, without selecting
+          another model after seeing the results.
+        </p>
+        <pre><code>{
+  &quot;threshold&quot;: 0.5,
+  &quot;samples_per_city&quot;: 32,
+  &quot;regions&quot;: {
+    &quot;AOI_2_Vegas&quot;: {
+      &quot;samples&quot;: 32,
+      &quot;iou&quot;: 0.4015882263973643,
+      &quot;dice&quot;: 0.573047374162959,
+      &quot;precision&quot;: 0.6536702855301016,
+      &quot;recall&quot;: 0.5101287091779976,
+      &quot;f1&quot;: 0.5730473741629589,
+      &quot;pixel_accuracy&quot;: 0.8296798816568047,
+      &quot;tp&quot;: 1545338,
+      &quot;fp&quot;: 818756,
+      &quot;fn&quot;: 1483972,
+      &quot;tn&quot;: 9671934
+    },
+    &quot;AOI_3_Paris&quot;: {
+      &quot;samples&quot;: 32,
+      &quot;iou&quot;: 0.04735199844592298,
+      &quot;dice&quot;: 0.09042231936576166,
+      &quot;precision&quot;: 0.12092433431310538,
+      &quot;recall&quot;: 0.07220842891447594,
+      &quot;f1&quot;: 0.09042231936576166,
+      &quot;pixel_accuracy&quot;: 0.8839291420118344,
+      &quot;tp&quot;: 78002,
+      &quot;fp&quot;: 567046,
+      &quot;fn&quot;: 1002232,
+      &quot;tn&quot;: 11872720
+    }
+  },
+  &quot;external_tuning&quot;: false
+}</code></pre>
+      </section>
+      <section>
+        <h2>Working artifacts</h2>
+        <figure>
+          <img
+            src="../assets/images/case-roof-whu-learning.png"
+            alt="Recorded WHU baseline training and validation learning curves"
+            loading="lazy"
+            width="1800"
+            height="666"
+          />
+          <figcaption>
+            Recorded 40-epoch baseline. Selection uses validation; this curve is
+            not evidence of external-region accuracy.
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src="../assets/images/case-roof-external.png"
+            alt="Actual Las Vegas and Paris RGB imagery, published footprint masks, frozen-model predictions and error maps"
+            loading="lazy"
+            width="1820"
+            height="1960"
+          />
+          <figcaption>
+            SpaceNet Partners, CC BY-SA 4.0. Image-only rendering and
+            prediction/error overlays added by Tanner Eischen.
+            Lowest/highest-IoU positive case per city after scoring;
+            illustrative extremes, not representative samples.
+          </figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>Limits and next questions</h2>
+        <ul>
+          <li>
+            Binary building extent only. SpaceNet footprint labels and WHU
+            aerial annotations differ; this small transfer experiment does not
+            establish performance on arbitrary addresses or sensors.
+          </li>
+          <li>
+            Exact epoch-boundary resume supports workers=0. Persistent-worker
+            RNG and mid-batch recovery are not claimed; CPU and CUDA recovery
+            remain separate verified profiles.
+          </li>
+          <li>
+            Scoring used four independent CPU services for verification; this
+            does not change the deployed API concurrency limit.
+          </li>
+          <li>
+            The CUDA memory measurement covers one native 512px, batch-1
+            training step. It does not reconstruct peak memory during the
+            historical full training runs.
+          </li>
+          <li>
+            The original three-seed factorial study continues separately. Its
+            registered source was preserved; no incomplete study results are
+            promoted here.
+          </li>
+          <li>
+            WHU imagery is not republished because its exact redistribution
+            terms remain unclear. The SpaceNet-derived examples include
+            attribution and CC BY-SA 4.0 terms.
+          </li>
+          <li>
+            The supported application flow is local PNG/JPEG/WebP upload. Remote
+            imagery/address workflows are unavailable. Contours omit holes and
+            components too small to form a polygon; scores are uncalibrated.
+          </li>
+          <li>
+            Browser layout and interaction were not verified. Local release
+            checks and the existing hosted portfolio are separate; no deployment
+            was performed.
+          </li>
+        </ul>
+      </section>
+      <section class="case-download">
+        <h2>Inspect the evidence</h2>
+        <p>
+          <a
+            href="../assets/evidence/roof-segmentation-verification-2026-11-01.json"
+            download
+            >New local serving verification (JSON)</a
+          >
+          ·
+          <a
+            href="../assets/downloads/roof-segmentation-verification-2026-11-01.zip"
+            download
+            >Generated-fixture parity evidence (ZIP)</a
+          >
+        </p>
+        <p>
+          <a
+            href="../assets/downloads/roof-segmentation-evidence-2026-11-01.zip"
+            download
+            >Compact evidence packet (ZIP)</a
+          >
+          ·
+          <a href="../assets/evidence/roof-segmentation-handoff.json" download
+            >Versioned evidence handoff (JSON)</a
+          >
+        </p>
+        <p class="case-note">
+          Local review draft prepared November 1, 2026. Packet integrity and
+          recorded scientific artifacts were checked; publication, browser
+          interaction and current application deployment are separate gates.
+        </p>
+        <p>
+          <a href="../assets/evidence/roof-segmentation.json" download
+            >Download sanitized evidence (JSON)</a
+          >
+          ·
+          <a href="../assets/evidence/roof-segmentation.sha256" download
+            >SHA256</a
+          >
+        </p>
+        <p>
+          <a
+            href="https://github.com/Tanner-Eischen/RoofSegmentation"
+            rel="noreferrer"
+            target="_blank"
+            >Project repository</a
+          >
+        </p>
+        <p>
+          <a href="../assets/evidence/roof-whu-test-per-image.csv" download
+            >Baseline per-image test counts and metrics (CSV)</a
+          >
+        </p>
+        <p>
+          <a href="../assets/evidence/roof-serving-whu-per-image.csv" download
+            >Current CPU serving-path test counts (CSV)</a
+          >
+        </p>
+        <p>
+          <a href="../assets/evidence/roof-external-per-image.csv" download
+            >External per-city image counts and metrics (CSV)</a
+          >
+        </p>
+        <p>
+          <a
+            href="https://spacenet.ai/spacenet-buildings-dataset-v2/"
+            target="_blank"
+            rel="noreferrer"
+            >SpaceNet2 source, attribution and CC BY-SA 4.0 terms</a
+          >
+        </p>
+        <p class="case-note">
+          Software controls, development-set measurements and model quality
+          retain separate denominators. Verification dates and source revisions
+          are recorded in the evidence download. Browser interaction remains
+          unverified.
+        </p>
+      </section>
+    </main>
+    <footer class="case-footer">
+      <a href="../index.html#work">Return to selected work</a>
+      <p>Tanner Eischen · AI evaluation and applied engineering</p>
+    </footer>
+  </body>
+</html>

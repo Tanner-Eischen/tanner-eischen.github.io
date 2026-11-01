@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LegacyLens / Quasar | Tanner Eischen</title>
+    <meta
+      name="description"
+      content="Index immutable Fortran source, recover continued declarations, and return source-checked excerpts with honest retrieval limits."
+    />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="canonical"
+      href="https://tanner-eischen.github.io/case-studies/legacylens.html"
+    />
+    <meta property="og:title" content="LegacyLens / Quasar | Tanner Eischen" />
+    <meta
+      property="og:description"
+      content="Index immutable Fortran source, recover continued declarations, and return source-checked excerpts with honest retrieval limits."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://tanner-eischen.github.io/case-studies/legacylens.html"
+    />
+  </head>
+  <body class="case-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="case-nav" aria-label="Project navigation">
+      <a href="../index.html#work">← All work</a
+      ><a href="../index.html#contact">Contact Tanner</a>
+    </nav>
+    <main id="main" class="case-shell">
+      <nav class="case-breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a> /
+        <span aria-current="page">LegacyLens / Quasar</span>
+      </nav>
+      <header class="case-head">
+        <p class="eyebrow">03 / Scientific retrieval</p>
+        <h1>Keep source navigation tied to exact code.</h1>
+        <p class="case-intro">
+          Index immutable Fortran source, recover continued declarations, and
+          return source-checked excerpts with honest retrieval limits.
+        </p>
+        <p class="case-project">LegacyLens / Quasar · Local release</p>
+      </header>
+      <dl class="case-metrics">
+        <div>
+          <dt>declarations recovered</dt>
+          <dd>379 / 379</dd>
+        </div>
+        <div>
+          <dt>source-navigation controls</dt>
+          <dd>14 / 14</dd>
+        </div>
+        <div>
+          <dt>tests including real PostgreSQL</dt>
+          <dd>207</dd>
+        </div>
+      </dl>
+      <section>
+        <h2>The problem</h2>
+        <p>
+          The advertised ingest/query/evaluation commands were TODOs. Citation
+          validation accepted broad spans and ambiguous basenames, while the
+          parser missed continued routine declarations.
+        </p>
+        <h2>My contribution</h2>
+        <p>
+          I connected ingestion, real local embeddings, pgvector retrieval,
+          source validation, CLI/API workflows and versioned evaluation. A
+          parser repair restores physical declaration spans without changing
+          source text.
+        </p>
+      </section>
+      <section>
+        <h2>How it works</h2>
+        <ol class="case-flow">
+          <li>Pinned Git snapshot</li>
+          <li>Source-aligned chunks + BGE vectors</li>
+          <li>Symbol/file navigation + vector search</li>
+          <li>Exact citations or abstention</li>
+        </ol>
+        <h3>Decisions that shaped the release</h3>
+        <ul>
+          <li>
+            The corpus, model artifacts and chunker each have an identity.
+            Re-ingestion validates stored content and preserves completed work.
+          </li>
+          <li>
+            Explicit identifiers use literal symbol/file lookup with labeled
+            origins; conceptual questions retain the measured vector baseline.
+          </li>
+          <li>
+            Literal citation grounding, source-navigation contracts and semantic
+            relevance have separate reports and denominators.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Measured results</h2>
+        <p>
+          Both strategies were measured on the same 28-file, 4,597-vector index.
+          The ten answerable development questions have representative,
+          nonexhaustive evidence labels.
+        </p>
+        <section
+          class="case-table"
+          aria-label="Measured release results"
+          tabindex="0"
+        >
+          <table>
+            <caption>
+              LegacyLens / Quasar: release evidence
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Development measurement</th>
+                <th scope="col">Vector only</th>
+                <th scope="col">Symbol aware</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Selected-evidence MRR@10</th>
+                <td>0.00</td>
+                <td>0.20</td>
+              </tr>
+              <tr>
+                <th scope="row">Selected-evidence recall@10</th>
+                <td>0.00</td>
+                <td>0.15</td>
+              </tr>
+              <tr>
+                <th scope="row">Absent-identifier abstention</th>
+                <td>0 / 2</td>
+                <td>2 / 2</td>
+              </tr>
+              <tr>
+                <th scope="row">Literal citation grounding</th>
+                <td>100% returned citations</td>
+                <td>100% returned citations</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+      <section>
+        <h2>A failure worth inspecting</h2>
+        <h3>A three-line declaration needs three physical source lines.</h3>
+        <p>
+          The query returns the actual declaration and leading documentation.
+          Out-of-range spans, conflicting text and ambiguous basenames are
+          rejected. An independent inventory recovered 100 declarations missed
+          by the original parser.
+        </p>
+        <pre><code>{
+  &quot;file&quot;: &quot;src/hazFXnga13l.f&quot;,
+  &quot;declaration_lines&quot;: [
+    9744,
+    9746
+  ],
+  &quot;symbol&quot;: &quot;CY201305_NGA&quot;,
+  &quot;origin&quot;: &quot;symbol_definition&quot;,
+  &quot;old_parser&quot;: &quot;missed the continued declaration&quot;,
+  &quot;repaired_parser&quot;: &quot;preserves all three physical lines&quot;,
+  &quot;source_excerpt&quot;: &quot;        subroutine CY201305_NGA(ip,iprd, M, R_Rup, R_JB, R_x, V_S30,\n     1            F_Measured, F_Inferred, deltaZ1, DELTA, Z_TOR,\n     1            F_RV, F_NM, cDPP,gndout, tau, sigma_NL0, sigmaf)&quot;,
+  &quot;public_source&quot;: &quot;https://github.com/usgs/nshmp-haz-fortran/blob/9f78db0c3d9cd66f90d7aeda6b1082e6dad71502/src/hazFXnga13l.f#L9744-L9746&quot;,
+  &quot;citation_controls&quot;: [
+    {
+      &quot;reference&quot;: &quot;src/hazFXnga13l.f:9744-9746&quot;,
+      &quot;decision&quot;: &quot;accepted&quot;,
+      &quot;reason&quot;: &quot;Exact visible source span&quot;
+    },
+    {
+      &quot;reference&quot;: &quot;src/hazFXnga13l.f:9739-9746&quot;,
+      &quot;decision&quot;: &quot;rejected&quot;,
+      &quot;reason&quot;: &quot;Reference is outside the visible retrieved source&quot;
+    },
+    {
+      &quot;reference&quot;: &quot;hazFXnga13l.f:9744-9746&quot;,
+      &quot;decision&quot;: &quot;rejected&quot;,
+      &quot;reason&quot;: &quot;Reference is outside the visible retrieved source&quot;
+    }
+  ]
+}</code></pre>
+        <p>
+          <a
+            href="https://github.com/usgs/nshmp-haz-fortran/blob/9f78db0c3d9cd66f90d7aeda6b1082e6dad71502/src/hazFXnga13l.f#L9744-L9746"
+            >Inspect the pinned public source lines</a
+          >
+        </p>
+      </section>
+      <section>
+        <h2>Limits and next questions</h2>
+        <ul>
+          <li>
+            Exact-span judgments are representative, not exhaustive; zero
+            selected-span recovery is not zero global relevance.
+          </li>
+          <li>
+            The semantic development results remain weak. This release supports
+            grounded source navigation, not unrestricted scientific explanation.
+          </li>
+          <li>
+            The implementation stays private. Cloud answer quality and browser
+            interaction were not measured.
+          </li>
+        </ul>
+      </section>
+      <section class="case-download">
+        <h2>Inspect the evidence</h2>
+        <p>
+          <a href="../assets/evidence/legacylens.json" download
+            >Download sanitized evidence (JSON)</a
+          >
+          · <a href="../assets/evidence/legacylens.sha256" download>SHA256</a>
+        </p>
+        <p>
+          <span>Private implementation · sanitized evidence available</span>
+        </p>
+        <p class="case-note">
+          Software controls, development-set measurements and model quality
+          retain separate denominators. Local release artifacts are prepared for
+          review; no public deployment is implied.
+        </p>
+      </section>
+    </main>
+    <footer class="case-footer">
+      <a href="../index.html#work">Return to selected work</a>
+      <p>Tanner Eischen · AI evaluation and applied engineering</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-01",
+  "npm_run_check": "passed",
+  "final_formatter_scope_check": "passed",
+  "claim_checks": 17,
+  "site_and_network_classifier_checks": 12,
+  "total_tests_passed": 29,
+  "total_tests_failed": 0,
+  "html_pages": 7,
+  "checked_references": 120,
+  "built_files": 52,
+  "claims": 40,
+  "projects": 8,
+  "supplements": 3,
+  "home_static_resource_bytes": 1473620,
+  "external_link_states": {
+    "accessible": 11,
+    "authentication_required": 0,
+    "definitely_missing": 0,
+    "inconclusive": 2
+  },
+  "source_hashes": {
+    "scripts/site-files.mjs": "9ce238a5559440a840d54ec534d3353ea3d028dd816224710e047b0a2e12dc97",
+    "scripts/build-site.mjs": "7d3811e4c64ac1b3c98135aaedaac373ba0ff9c90df856091ece6ed81d394d2b",
+    "scripts/check-html.mjs": "e4a75503d396bc2148d766b05f66609a290e30d96c321ce3be9298075027a5c1",
+    "scripts/check-links.mjs": "1a086162167423bed9b2114b239f22211e86997c989dd07568530f8313ae4f7c",
+    "scripts/check-content.mjs": "e84f1cb10e473a8d37e5809298a600374ecc233a09ab154cbad8ac6909ea4b34",
+    "package.json": "08043690ba45a051a42165ccda1c97e3969105e9f505fdb9fde0f4cd091327ff",
+    "css/style.css": "05456350fb8a7a8df7be5b5dd15e6ce861488f854b7066ed6554b5abe058c3eb",
+    "js/custom.js": "9b9bae86bfc76bd6427bf38f7cc7f225f8424b01e45e66678a76f9dfcdee9ad4",
+    "content/claims.json": "82e7fd944baf9c63060f01230cedc74a3127320e087f1a86299dfd45de564b76",
+    "content/verification-supplements.json": "cae7347be16df657cc9ef579d263fcc5d2a65459ee8fff76081193b0e44b5b3f"
+  },
+  "no_browser_used": true,
+  "no_external_publication": true,
+  "full_check_log": "tmp/continuation-check.log",
+  "publication_check": "held as expected; no deployment",
+  "serving_final_summary_sha256": "17c97023945e7322e11a7153bbb6ed9402842ab7560305de1b2f4731b257759c"
+}

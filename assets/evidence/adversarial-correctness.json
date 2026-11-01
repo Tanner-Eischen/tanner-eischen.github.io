@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "measurement": "deterministic correctness controls",
+  "run_id": "6a3a469a349e449bbf45a3c5769d781a",
+  "suite_sha256": "d3cfd1f21f68fb26a2e8ff84dd0ca8aa0714dbf4dc888840228b1b52305698b7",
+  "seed": 1729,
+  "controls": {
+    "oracle": {
+      "total": 152,
+      "passed": 152,
+      "failed": 0,
+      "error": 0,
+      "skipped": 0,
+      "scored": 152,
+      "pass_rate": 1.0,
+      "valid": true
+    },
+    "nop": {
+      "total": 152,
+      "passed": 0,
+      "failed": 152,
+      "error": 0,
+      "skipped": 0,
+      "scored": 152,
+      "pass_rate": 0.0,
+      "valid": true
+    },
+    "unsigned": {
+      "total": 152,
+      "passed": 117,
+      "failed": 35,
+      "error": 0,
+      "skipped": 0,
+      "scored": 152,
+      "pass_rate": 0.7697368421052632,
+      "valid": true
+    },
+    "identity": {
+      "total": 152,
+      "passed": 0,
+      "failed": 152,
+      "error": 0,
+      "skipped": 0,
+      "scored": 152,
+      "pass_rate": 0.0,
+      "valid": true
+    }
+  },
+  "failure": {
+    "id": "negative-d",
+    "input": "123D",
+    "expected": "-123",
+    "actual": "123",
+    "status": "failed"
+  },
+  "model_performance": null,
+  "browser_verified": false,
+  "project": "Adversarial correctness benchmark",
+  "release_profile": "Verified locally; no hosting or browser-interaction claim"
+}

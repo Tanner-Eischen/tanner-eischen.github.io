@@ -6,14 +6,21 @@
   "scripts": {
     "build": "node scripts/build-site.mjs",
     "dev": "python -m http.server 8080",
-    "format": "prettier --write index.html css/style.css js/custom.js README.md scripts/*.mjs .github/workflows/pages.yml",
-    "format:check": "prettier --check index.html css/style.css js/custom.js README.md scripts/*.mjs .github/workflows/pages.yml",
-    "lint:html": "html-validate index.html",
+    "format": "prettier --write --no-error-on-unmatched-pattern index.html \"case-studies/**/*.html\" \"projects/**/*.html\" \"scientific-software/**/*.html\" \"ai-evaluation/**/*.html\" css/style.css js/custom.js README.md \"scripts/*.mjs\" \"content/*.json\" \".github/workflows/pages.yml\"",
+    "format:check": "prettier --check --no-error-on-unmatched-pattern index.html \"case-studies/**/*.html\" \"projects/**/*.html\" \"scientific-software/**/*.html\" \"ai-evaluation/**/*.html\" css/style.css js/custom.js README.md \"scripts/*.mjs\" \"content/*.json\" \".github/workflows/pages.yml\"",
+    "lint:html": "node scripts/check-html.mjs",
     "lint:links": "node scripts/check-links.mjs",
     "lint:js": "node --check js/custom.js",
-    "check": "npm run format:check && npm run lint:html && npm run lint:links && npm run lint:js && npm run build"
+    "check": "npm run format:check && npm run lint:html && npm run lint:links && npm run lint:js && npm run lint:content && npm run test:content && npm run test:site && npm run build && npm run check:built",
+    "lint:content": "node scripts/check-content.mjs",
+    "test:content": "node --test scripts/check-content.test.mjs",
+    "check:release": "npm run check && node scripts/check-content.mjs --release",
+    "test:site": "node --test scripts/site-files.test.mjs scripts/check-external.test.mjs",
+    "check:built": "node scripts/check-html.mjs --built && node scripts/check-links.mjs --built",
+    "check:external": "node scripts/check-external.mjs"
   },
   "devDependencies": {
+    "ajv": "8.20.0",
     "html-validate": "11.15.0",
     "prettier": "3.9.6"
   }

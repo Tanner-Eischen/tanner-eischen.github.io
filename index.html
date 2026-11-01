@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Tanner Eischen designs AI evaluations and builds AI applications in Python and TypeScript."
+      content="Tanner Eischen builds scientific software, geospatial data workflows, and applied AI with explicit validation."
     />
     <meta name="author" content="Tanner Eischen" />
     <meta name="theme-color" content="#f5cf3d" />
     <meta
       property="og:title"
-      content="Tanner Eischen, AI Evaluation and Applied AI Engineer"
+      content="Tanner Eischen, Scientific Software and Applied AI"
     />
     <meta
       property="og:description"
-      content="AI evaluation, browser automation, computer vision, and full-stack software projects."
+      content="Scientific software, geospatial data, and applied AI supported by reproducible evidence and explicit limitations."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://tanner-eischen.github.io/" />
-    <title>Tanner Eischen, AI Evaluation and Applied AI Engineer</title>
+    <title>Tanner Eischen, Scientific Software and Applied AI</title>
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/custom.js" defer></script>
+    <link rel="canonical" href="https://tanner-eischen.github.io/" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -69,15 +70,17 @@
       <section id="top" class="hero section-shell" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow">
-            <span>AI evaluation</span><span>Applied AI engineering</span>
+            <span>Scientific software</span
+            ><span>Geospatial data and applied AI</span>
           </p>
           <h1 id="hero-title">
-            I design AI evaluations and build AI applications.
+            Scientific software and applied AI, with explicit validation.
           </h1>
           <p class="hero-intro">
-            At Snorkel AI, I create terminal-based benchmarks for coding,
-            physics, mathematics, and geoscience. My software projects cover
-            browser automation, computer vision, and full-stack AI products.
+            I build reproducible data workflows in Python and TypeScript,
+            drawing on geophysics research and AI evaluation work. My projects
+            connect scientific models, geospatial analysis, and usable software
+            with measured results and clear limitations.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#work">View projects</a>
@@ -91,7 +94,8 @@
             </a>
           </div>
           <p class="availability">
-            <span aria-hidden="true"></span> Available for AI engineering roles
+            <span aria-hidden="true"></span> Available for scientific software
+            and AI engineering roles
           </p>
         </div>
 
@@ -111,7 +115,7 @@
           </div>
           <div class="focus-strip" aria-hidden="true">
             <span>Benchmark design</span>
-            <span>Browser automation</span>
+            <span>Geospatial analysis</span>
             <span>Scientific computing</span>
           </div>
         </div>
@@ -127,13 +131,124 @@
             <p class="kicker">Selected work</p>
             <h2 id="work-title">Projects</h2>
           </div>
-          <p>Six public projects with links to their source code.</p>
+          <p>
+            Scientific projects with inspectable local evidence, failure cases,
+            and explicit limits, followed by other selected work. Source access
+            and application verification are stated for each case study.
+          </p>
         </div>
 
         <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-number">01</span
+              ><span class="project-state">Scientific software</span>
+            </div>
+            <img
+              class="project-preview"
+              src="assets/images/case-geosteering-current.png"
+              alt="Synthetic HOLD and guided trajectories compared against the shared target formation"
+              loading="lazy"
+              width="1500"
+              height="525"
+            />
+            <div>
+              <h3>GeoSteering</h3>
+              <p>
+                A synthetic training workbench with shared-coordinate geology,
+                progressive observations, immutable decisions, and a controlled
+                causal steering comparison.
+              </p>
+              <p class="project-result">
+                38.1% HOLD versus 97.2% guided in-zone length on the same
+                synthetic 5,000-ft lateral, using a known signed sensor
+                calibration in one scenario and seed.
+              </p>
+              <p class="case-note">
+                Local synthetic evidence · public source · field performance
+                unvalidated
+              </p>
+            </div>
+            <a class="project-link" href="case-studies/geosteering.html"
+              >Read GeoSteering case study</a
+            >
+          </article>
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-number">02</span
+              ><span class="project-state">Geospatial machine learning</span>
+            </div>
+            <img
+              class="project-preview"
+              src="assets/images/case-roof-whu-learning.png"
+              alt="Recorded WHU baseline training and validation learning curves"
+              loading="lazy"
+              width="1800"
+              height="666"
+            />
+            <div>
+              <h3>Roof Segmentation</h3>
+              <p>
+                A binary building-segmentation pipeline with official WHU
+                partitions, reproducible training and evaluation, and a
+                separately measured local inference release.
+              </p>
+              <p class="project-result">
+                0.8921 WHU IoU across 2,416 tiles; external IoU 0.4016 in Las
+                Vegas and 0.0474 in Paris (32 each).
+              </p>
+              <p class="case-note">
+                Verified local CPU release · external transfer limitations
+                measured
+              </p>
+            </div>
+            <a class="project-link" href="case-studies/roof-segmentation.html"
+              >Read Roof Segmentation case study</a
+            >
+          </article>
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-number">03</span
+              ><span class="project-state">Planetary geospatial software</span>
+            </div>
+            <img
+              class="project-preview"
+              src="assets/images/case-marshab-comparison.png"
+              alt="Measured Jezero elevation, slope, terrain suitability and three candidate routes"
+              loading="lazy"
+              width="2100"
+              height="700"
+            />
+            <div>
+              <h3>MarsHab / MarsGIS</h3>
+              <p>
+                A measured DEM-to-suitability-to-routing workflow, with
+                planetary transforms, georeferenced exports, and a global
+                MOLA/CTX explorer.
+              </p>
+              <p class="project-result">
+                Three candidate routes on a checksum-verified 593 × 563 CTX
+                terrain grid at 20 m spacing.
+              </p>
+              <p class="case-note">
+                Local terrain evidence · private source · browser interaction
+                unverified
+              </p>
+            </div>
+            <a class="project-link" href="case-studies/marshab.html"
+              >Read MarsHab / MarsGIS case study</a
+            >
+            <a
+              class="project-link"
+              href="https://marshab.onrender.com"
+              target="_blank"
+              rel="noreferrer"
+              >Existing hosted explorer (current release not deployed)</a
+            >
+          </article>
           <article class="project-card project-card-featured reveal">
             <div class="project-topline">
-              <span class="project-number">01</span>
+              <span class="project-number">04</span>
               <span class="project-state">TypeScript CAD</span>
             </div>
             <div>
@@ -161,41 +276,9 @@
               View repository
             </a>
           </article>
-
           <article class="project-card reveal">
             <div class="project-topline">
-              <span class="project-number">02</span>
-              <span class="project-state">Computer vision</span>
-            </div>
-            <div>
-              <p class="project-domain">Geospatial ML</p>
-              <h3>Roof Segmentation</h3>
-              <p>
-                A U-Net segments roofs in satellite images selected by address.
-                The FastAPI and React application supports single-property,
-                batch, and side-by-side comparison workflows.
-              </p>
-            </div>
-            <ul class="tag-list" aria-label="Technologies">
-              <li>Python</li>
-              <li>PyTorch</li>
-              <li>FastAPI</li>
-              <li>React</li>
-            </ul>
-            <a
-              class="project-link"
-              href="https://github.com/Tanner-Eischen/RoofSegmentation"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="View Roof Segmentation on GitHub"
-            >
-              View repository
-            </a>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-topline">
-              <span class="project-number">03</span>
+              <span class="project-number">05</span>
               <span class="project-state">Portfolio analysis</span>
             </div>
             <div>
@@ -223,10 +306,9 @@
               View repository
             </a>
           </article>
-
           <article class="project-card reveal">
             <div class="project-topline">
-              <span class="project-number">04</span>
+              <span class="project-number">06</span>
               <span class="project-state">Publishing research</span>
             </div>
             <div>
@@ -254,10 +336,9 @@
               View repository
             </a>
           </article>
-
           <article class="project-card reveal">
             <div class="project-topline">
-              <span class="project-number">05</span>
+              <span class="project-number">07</span>
               <span class="project-state">Developer tools</span>
             </div>
             <div>
@@ -285,10 +366,9 @@
               View repository
             </a>
           </article>
-
           <article class="project-card reveal">
             <div class="project-topline">
-              <span class="project-number">06</span>
+              <span class="project-number">08</span>
               <span class="project-state">Tutoring software</span>
             </div>
             <div>
@@ -344,18 +424,19 @@
           <article class="experience-item reveal">
             <p class="experience-company">Snorkel AI</p>
             <div>
-              <h3>Subject Matter Expert, AI Benchmarking and Evaluation</h3>
+              <h3>
+                Expert Contributor &amp; Reviewer, AI Evaluation Engineering
+              </h3>
               <p>
                 I create terminal-based evaluation harnesses and containerized
                 benchmark environments for Terminal Bench and Reasoning Bench. I
-                have authored more than 50 tasks across coding, physics,
-                mathematics, geoscience, and data analysis.
+                author tasks across coding, physics, mathematics, geoscience,
+                and data analysis.
               </p>
               <p>
                 I write reference implementations, golden answers, rubrics,
-                graders, and deterministic checks. As a reviewer, I have found
-                more than 100 reasoning, validation, and reproducibility
-                defects.
+                graders, and deterministic checks. As a reviewer, I identify
+                reasoning, validation, and reproducibility defects.
               </p>
             </div>
           </article>
@@ -391,10 +472,9 @@
             <div>
               <h3>Research Assistant, Institute for Geophysics</h3>
               <p>
-                I built Python and Jupyter pipelines for terabyte-scale 3D
-                seismic data from Axial Seamount. I used them for data cleaning,
-                quality control, anomaly detection, visualization, and seismic
-                interpretation.
+                I built Python and Jupyter pipelines for 3D seismic data from
+                Axial Seamount. I used them for data cleaning, quality control,
+                anomaly detection, visualization, and seismic interpretation.
               </p>
             </div>
           </article>
@@ -459,9 +539,10 @@
           <p class="kicker">Background</p>
           <h2 id="background-title">Education and earlier work</h2>
           <p>
-            I earned a PhD in Geophysics from the University of Texas at Austin,
-            an MS in Geological Sciences from East Carolina University, and a BS
-            in Geology from Gustavus Adolphus College.
+            My background includes doctoral research in marine geophysics at the
+            University of Texas at Austin, an MS in Geological Sciences from
+            East Carolina University, and a BS in Geology from Gustavus Adolphus
+            College.
           </p>
           <a
             class="text-link"
@@ -469,8 +550,12 @@
             target="_blank"
             rel="noreferrer"
           >
-            Read my résumé
+            Existing résumé (revision pending)
           </a>
+          <p class="case-note">
+            This résumé predates the current project evidence and is being
+            reconciled with the site before publication of this update.
+          </p>
         </div>
 
         <div class="background-grid">
@@ -488,17 +573,16 @@
             <h3>Math and science instruction</h3>
             <p>
               I taught mathematics, physics, chemistry, and ACT/SAT preparation
-              to more than 20 students. Their average ACT score increased by
-              five points.
+              through individual tutoring and test preparation.
             </p>
           </article>
           <article class="background-card reveal">
             <p class="card-label">AECOM</p>
             <h3>Environmental geology</h3>
             <p>
-              I supported drilling oversight for more than 25 wells and borings
-              and prepared groundwater, geospatial, and hydrogeologic analyses
-              for technical reports.
+              I supported drilling oversight for wells and borings and prepared
+              groundwater, geospatial, and hydrogeologic analyses for technical
+              reports.
             </p>
           </article>
         </div>

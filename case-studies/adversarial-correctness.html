@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adversarial correctness benchmark | Tanner Eischen</title>
+    <meta
+      name="description"
+      content="Separate candidate execution from the reference answer, then challenge the grader with controls that should fail."
+    />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="canonical"
+      href="https://tanner-eischen.github.io/case-studies/adversarial-correctness.html"
+    />
+    <meta
+      property="og:title"
+      content="Adversarial correctness benchmark | Tanner Eischen"
+    />
+    <meta
+      property="og:description"
+      content="Separate candidate execution from the reference answer, then challenge the grader with controls that should fail."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://tanner-eischen.github.io/case-studies/adversarial-correctness.html"
+    />
+  </head>
+  <body class="case-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="case-nav" aria-label="Project navigation">
+      <a href="../index.html#work">← All work</a
+      ><a href="../index.html#contact">Contact Tanner</a>
+    </nav>
+    <main id="main" class="case-shell">
+      <nav class="case-breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a> /
+        <span aria-current="page">Adversarial correctness benchmark</span>
+      </nav>
+      <header class="case-head">
+        <p class="eyebrow">01 / AI evaluation</p>
+        <h1>Make a benchmark measure the submitted program.</h1>
+        <p class="case-intro">
+          Separate candidate execution from the reference answer, then challenge
+          the grader with controls that should fail.
+        </p>
+        <p class="case-project">
+          Adversarial correctness benchmark · Local release
+        </p>
+      </header>
+      <dl class="case-metrics">
+        <div>
+          <dt>cases per control</dt>
+          <dd>152</dd>
+        </div>
+        <div>
+          <dt>unit + container tests</dt>
+          <dd>108 + 10</dd>
+        </div>
+        <div>
+          <dt>paid model requests</dt>
+          <dd>0</dd>
+        </div>
+      </dl>
+      <section>
+        <h2>The problem</h2>
+        <p>
+          The generated harness ran the reference solution while grading a
+          candidate. A passing report could therefore hide a broken submission.
+          Optional 0x prefixes were also decoded incorrectly, and reports
+          inserted success claims instead of deriving them from attempts.
+        </p>
+        <h2>My contribution</h2>
+        <p>
+          I built a packed-decimal benchmark with independent fixtures, bounded
+          candidate execution, versioned result records, and reports generated
+          from those records. The release narrows its supported task so the
+          measurement foundation can be checked directly.
+        </p>
+      </section>
+      <section>
+        <h2>How it works</h2>
+        <ol class="case-flow">
+          <li>Known answers + seeded cases</li>
+          <li>Candidate process</li>
+          <li>Independent verifier</li>
+          <li>Per-case result records</li>
+        </ol>
+        <h3>Decisions that shaped the release</h3>
+        <ul>
+          <li>
+            Expected answers come from known integers and independent fixtures;
+            the grader never runs the reference to construct a candidate answer.
+          </li>
+          <li>
+            Every declared case runs. Incorrect output, execution errors and
+            skipped cases keep separate counts.
+          </li>
+          <li>
+            Untrusted candidates run inside a dedicated Linux container with
+            protected truth data and resource limits. Trusted host controls are
+            labeled separately.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Measured results</h2>
+        <p>
+          Deterministic controls establish grader behavior. These are not
+          language-model performance measurements.
+        </p>
+        <section
+          class="case-table"
+          aria-label="Measured release results"
+          tabindex="0"
+        >
+          <table>
+            <caption>
+              Adversarial correctness benchmark: release evidence
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Candidate</th>
+                <th scope="col">Passed</th>
+                <th scope="col">Failed</th>
+                <th scope="col">Execution errors</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">oracle</th>
+                <td>152</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <th scope="row">nop</th>
+                <td>0</td>
+                <td>152</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <th scope="row">unsigned</th>
+                <td>117</td>
+                <td>35</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <th scope="row">identity</th>
+                <td>0</td>
+                <td>152</td>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+      <section>
+        <h2>A failure worth inspecting</h2>
+        <h3>
+          An unsigned decoder returns the right digits with the wrong sign.
+        </h3>
+        <p>
+          The candidate exits successfully, but 123D must decode to -123. The
+          verifier records a failed case rather than borrowing the reference
+          output.
+        </p>
+        <pre><code>{
+  &quot;id&quot;: &quot;negative-d&quot;,
+  &quot;input&quot;: &quot;123D&quot;,
+  &quot;expected&quot;: &quot;-123&quot;,
+  &quot;actual&quot;: &quot;123&quot;,
+  &quot;status&quot;: &quot;failed&quot;
+}</code></pre>
+      </section>
+      <section>
+        <h2>Limits and next questions</h2>
+        <ul>
+          <li>
+            Frozen cases establish regression behavior; they do not establish
+            generalization or resistance to memorization.
+          </li>
+          <li>
+            No frontier-model or coding-agent quality was measured. Harbor
+            integration is separately pinned and smoke-tested.
+          </li>
+          <li>
+            The implementation remains private. This page contains sanitized
+            control evidence.
+          </li>
+        </ul>
+      </section>
+      <section class="case-download">
+        <h2>Inspect the evidence</h2>
+        <p>
+          <a href="../assets/evidence/adversarial-correctness.json" download
+            >Download sanitized evidence (JSON)</a
+          >
+          ·
+          <a href="../assets/evidence/adversarial-correctness.sha256" download
+            >SHA256</a
+          >
+        </p>
+        <p>
+          <span>Private implementation · sanitized evidence available</span>
+        </p>
+        <p class="case-note">
+          Software controls, development-set measurements and model quality
+          retain separate denominators. Local release artifacts are prepared for
+          review; no public deployment is implied.
+        </p>
+      </section>
+    </main>
+    <footer class="case-footer">
+      <a href="../index.html#work">Return to selected work</a>
+      <p>Tanner Eischen · AI evaluation and applied engineering</p>
+    </footer>
+  </body>
+</html>

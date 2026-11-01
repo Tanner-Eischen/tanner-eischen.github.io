@@ -1,0 +1,219 @@
+{
+  "schema_version": 2,
+  "reviewed_revision": "ff53742b99a537e5461e588b457f071b2062bfb4",
+  "review_date": "2026-10-31",
+  "dataset": "WHU publisher aerial building partitions",
+  "split_counts": {
+    "train": 4736,
+    "validation": 1036,
+    "test": 2416
+  },
+  "dataset_content_sha256": "538ac8569dcfd817b8557bc23ed18977de5dbba8d4b19719c82ab5ee4d1a308d",
+  "checkpoint_sha256": "2c5757995dafaa206abac4e22e384cdef78b4d93ab9026975050307ac2d9c7c5",
+  "baseline": {
+    "samples": 2416,
+    "threshold": 0.5,
+    "aggregate": {
+      "iou": 0.8921192509468081,
+      "dice": 0.942984170263471,
+      "precision": 0.9463754346228437,
+      "recall": 0.9396171237966977,
+      "f1": 0.9429841702634711,
+      "pixel_accuracy": 0.9873558164432349,
+      "tp": 66222657.0,
+      "fp": 3752381.0,
+      "fn": 4255685.0,
+      "tn": 559109181.0
+    }
+  },
+  "test_counts_recomputed_from_csv": {
+    "tp": 66222657,
+    "fp": 3752381,
+    "fn": 4255685,
+    "tn": 559109181
+  },
+  "per_image_csv_sha256": "49e5acd010ade2daa0dff86fc3c2f5ba05614bb1e43bbcd37db80339b19a6721",
+  "follow_up_control": {
+    "iou": 0.8773962894682532,
+    "validation_iou": 0.917083090123129
+  },
+  "deeplab": {
+    "iou": 0.8630383597268031
+  },
+  "ablation_results": null,
+  "browser_verified": false,
+  "release_gate_complete": true,
+  "fresh_checks": {
+    "junit_cases": {
+      "tests": 319,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "pytest_top_level_and_subtests": {
+      "passed": 306,
+      "subtests_passed": 13
+    },
+    "packaging_tests": 9,
+    "installed_module_count": 26,
+    "dependency_lock_sha256": "c9a3133c1fb77d5f82df9762886323ad3467629647e805e676ef8cf4e0e08cee",
+    "cpu_resume_checks": {
+      "model": true,
+      "optimizer": true,
+      "scheduler": true,
+      "scaler": true,
+      "rng": true,
+      "best_checkpoint": true,
+      "best": true,
+      "stalled": true,
+      "final.pt": true,
+      "best.pt": true,
+      "history_excluding_wall_time": true
+    },
+    "cuda_resume_checks": {
+      "model": true,
+      "optimizer": true,
+      "scheduler": true,
+      "scaler": true,
+      "rng": true,
+      "best_checkpoint": true,
+      "best": true,
+      "stalled": true,
+      "final.pt": true,
+      "best.pt": true,
+      "history_excluding_wall_time": true,
+      "advanced_cuda_rng_restored": true
+    },
+    "docker_status": "passed",
+    "python_security_audit": {
+      "scope": "All pinned third-party Python packages in Windows/Linux locks, including pip/wheel bootstrap; local project source is tested separately",
+      "lock_sha256": {
+        "windows": "c9a3133c1fb77d5f82df9762886323ad3467629647e805e676ef8cf4e0e08cee",
+        "linux": "1a04befb9a60a304a52f24b96e1dc138226b74f0e25bb3e0f19ec09570284fc9"
+      },
+      "third_party_versions_audited": 65,
+      "known_advisories": 0,
+      "skipped_third_parties": 0
+    },
+    "browser_verified": false
+  },
+  "revision_note": "Base ff53742 identifies earlier experiments. The unpublished local release is identified separately by installed source hashes and locked runtime. Original registered study source was preserved.",
+  "release_version": "0.3.0",
+  "release_gate_scope": "Bounded CPU local inference and scientific workbench; browser/remote imagery excluded",
+  "serving_measurement": {
+    "schema_version": 2,
+    "measurement": "Actual CPU ModelService on every frozen WHU test tile",
+    "samples": 2416,
+    "source_sha256": {
+      "api/inference.py": "560ff9098403434e9681e6b4cd3d9e471ddf5824e57b4b856abefb6c38467d45",
+      "roof_pipeline/dataset.py": "fd507b806ffc7872951684bc15924131cf4f32b1460c3472afc3ee43b664d552",
+      "roof_pipeline/models.py": "a8e6858236397f27ecfc8d62495a12eed69535a0d9853404684fae046e6b5198",
+      "roof_pipeline/predict.py": "982312da3924a0c5fa4ad79276eef1d267f746a689a5bdc81884dabaf4e8d673",
+      "roof_pipeline/common.py": "09818f6dbd6c3425d14096e64bd72b85d2ba1e24d25988eb6bd460a105adae89",
+      "scripts/evaluate_serving_release_parallel.py": "0438c60579d71206662dfa7445d273a3128428fdbe55fb2779717169eb41776a"
+    },
+    "checkpoint_sha256": "2c5757995dafaa206abac4e22e384cdef78b4d93ab9026975050307ac2d9c7c5",
+    "dataset_content_sha256": "538ac8569dcfd817b8557bc23ed18977de5dbba8d4b19719c82ab5ee4d1a308d",
+    "threshold": 0.5,
+    "runtime": {
+      "torch": "2.14.1+cpu",
+      "torchvision": "0.29.2+cpu",
+      "segmentation-models-pytorch": "0.6.0",
+      "numpy": "2.2.6",
+      "Pillow": "13.0.0"
+    },
+    "dependency_lock_sha256": "c9a3133c1fb77d5f82df9762886323ad3467629647e805e676ef8cf4e0e08cee",
+    "numerical_threads_per_service": 2,
+    "independent_services": 4,
+    "device": "cpu",
+    "aggregate": {
+      "tp": 66222671,
+      "fp": 3751883,
+      "fn": 4255671,
+      "tn": 559109679,
+      "iou": 0.8921254246501341,
+      "dice": 0.9429876191374509,
+      "precision": 0.9463821805852454,
+      "recall": 0.9396173224392821
+    },
+    "seconds": 864.8589999999967,
+    "selection": "No training, tuning or model selection",
+    "region": "WHU publisher Christchurch test partition",
+    "historical_runtime_note": "Separate serving-profile measurement; not a new independent holdout"
+  },
+  "simple_baseline": {
+    "method": "RGB linear discriminant, shared regularized covariance",
+    "model": {
+      "weight": [
+        -2.503493750737873,
+        -8.45364587353086,
+        15.270448346910218
+      ],
+      "bias": -3.4119895117586543,
+      "sampled_class_counts": [
+        3944351,
+        905313
+      ],
+      "stride": 16,
+      "regularization": 0.001
+    },
+    "threshold_frozen_from_validation": 0.44999999999999996,
+    "split_counts": {
+      "train": 4736,
+      "val": 1036,
+      "test": 2416
+    },
+    "dataset_content_sha256": "538ac8569dcfd817b8557bc23ed18977de5dbba8d4b19719c82ab5ee4d1a308d",
+    "aggregate": {
+      "iou": 0.3371832555225811,
+      "dice": 0.5043186924903683,
+      "precision": 0.558548976557273,
+      "recall": 0.45968704825661194,
+      "f1": 0.5043186924903684,
+      "pixel_accuracy": 0.8994438664013187,
+      "tp": 32397981,
+      "fp": 25605851,
+      "fn": 38080361,
+      "tn": 537255711
+    }
+  },
+  "external_regions": {
+    "AOI_2_Vegas": {
+      "samples": 32,
+      "iou": 0.4015882263973643,
+      "dice": 0.573047374162959,
+      "precision": 0.6536702855301016,
+      "recall": 0.5101287091779976,
+      "f1": 0.5730473741629589,
+      "pixel_accuracy": 0.8296798816568047,
+      "tp": 1545338,
+      "fp": 818756,
+      "fn": 1483972,
+      "tn": 9671934
+    },
+    "AOI_3_Paris": {
+      "samples": 32,
+      "iou": 0.04735199844592298,
+      "dice": 0.09042231936576166,
+      "precision": 0.12092433431310538,
+      "recall": 0.07220842891447594,
+      "f1": 0.09042231936576166,
+      "pixel_accuracy": 0.8839291420118344,
+      "tp": 78002,
+      "fp": 567046,
+      "fn": 1002232,
+      "tn": 11872720
+    }
+  },
+  "external_registration_sha256": "290d8183d8708a9aa0ea73862f91f00a529d9443f79dff46a69c270de72db1f9",
+  "external_selection": "Seed73;32 paired keys per city before labels/scoring; no retuning",
+  "release_binding": {
+    "project": "roof-segmentation",
+    "version": "0.3.0",
+    "owner_manifest_sha256": "3dddb262b2a4a1b4b05d7ba2b2d03c070f3d88cc9c76aea344751d9c75347eff",
+    "wheel_sha256": "10e16ed33569800f553d7167d45ab68457e7456e860a337f7b87946eb0d0c088",
+    "dependency_lock_sha256": "c9a3133c1fb77d5f82df9762886323ad3467629647e805e676ef8cf4e0e08cee"
+  },
+  "project": "Roof Segmentation",
+  "release_profile": "Verified local CPU release \u00b7 external transfer limitations measured"
+}

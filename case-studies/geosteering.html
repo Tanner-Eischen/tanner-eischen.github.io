@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GeoSteering | Tanner Eischen</title>
+    <meta
+      name="description"
+      content="A synthetic training workbench with shared-coordinate geology, progressive observations, immutable decisions, and a controlled causal steering comparison."
+    />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="canonical"
+      href="https://tanner-eischen.github.io/case-studies/geosteering.html"
+    />
+    <meta property="og:title" content="GeoSteering | Tanner Eischen" />
+    <meta
+      property="og:description"
+      content="A synthetic training workbench with shared-coordinate geology, progressive observations, immutable decisions, and a controlled causal steering comparison."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://tanner-eischen.github.io/case-studies/geosteering.html"
+    />
+  </head>
+  <body class="case-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="case-nav" aria-label="Project navigation">
+      <a href="../index.html#work">← All work</a
+      ><a href="../index.html#contact">Contact Tanner</a>
+    </nav>
+    <main id="main" class="case-shell">
+      <nav class="case-breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a> /
+        <span aria-current="page">GeoSteering</span>
+      </nav>
+      <header class="case-head">
+        <p class="eyebrow">05 / Scientific software</p>
+        <h1>
+          Separate recorded decisions from actions that change a well path.
+        </h1>
+        <p class="case-intro">
+          A synthetic training workbench with shared-coordinate geology,
+          progressive observations, immutable decisions, and a controlled causal
+          steering comparison.
+        </p>
+        <p class="case-note">
+          One idealized 2D scenario, seed 123, with a known signed synthetic
+          sensor calibration. These results do not establish field performance.
+        </p>
+        <p class="case-project">
+          GeoSteering · Verified synthetic workbench release · operational use
+          excluded
+        </p>
+      </header>
+      <dl class="case-metrics">
+        <div>
+          <dt>lateral length in zone</dt>
+          <dd>38.1% → 97.2%</dd>
+        </div>
+        <div>
+          <dt>shared scoring interval</dt>
+          <dd>5,000 ft</dd>
+        </div>
+        <div>
+          <dt>lateral DLS violations</dt>
+          <dd>0 / 0</dd>
+        </div>
+      </dl>
+      <section>
+        <h2>The problem</h2>
+        <p>
+          Replay recommendations cannot improve a path that has already been
+          recorded. A steering comparison needs actions that actually change the
+          trajectory, independent withheld truth, and equal scoring intervals.
+        </p>
+        <h2>My contribution</h2>
+        <p>
+          I implemented survey and LAS QC, offset-derived interpretations,
+          minimum-curvature geometry, bounded HOLD/BUILD/DROP commands, isolated
+          run histories, numerical scoring and PDF reporting. Real Volve data is
+          retained separately from the synthetic study.
+        </p>
+      </section>
+      <section>
+        <h2>How it works</h2>
+        <ol class="case-flow">
+          <li>Three offset wells constrain a target</li>
+          <li>Reveal active-well observations</li>
+          <li>Apply bounded steering commands</li>
+          <li>Score completed trajectories against withheld truth</li>
+        </ol>
+        <h3>Decisions that shaped the release</h3>
+        <ul>
+          <li>
+            Use fixed spatial geology so HOLD and observation-guided actions
+            encounter the same underlying formation.
+          </li>
+          <li>
+            Keep fixed-path interpretation replay separate from causal
+            simulation. Protect future data and truth until completion.
+          </li>
+          <li>
+            Score the same 5,000-ft lateral by length, with a 24-ft target and a
+            disclosed calibrated signed stratigraphic sensor.
+          </li>
+          <li>
+            Use a stable half-vector angle formula for tiny turns and reject
+            opposite-direction singular arcs. Capture truth relative to each run
+            so relocated completed projects reopen independently.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Measured results</h2>
+        <p>
+          Two fresh installed-backend seed-123 runs reproduced the same
+          numerical summary. Fresh-process reopening, relocation and
+          interrupted-write recovery checks passed. The new verification
+          supplement records the tested source fingerprint and 39
+          workflow/recovery checks; browser interaction remains unverified. The
+          original report below is preserved separately.
+        </p>
+        <p>
+          Current installed-wheel seed-123 structural_dip_01 release.
+          Independent references, complete exports, fresh-process reopening and
+          a relocated project were verified. The same 5,000-ft synthetic
+          interval retains the disclosed sensor and kinematic assumptions.
+        </p>
+        <section
+          class="case-table"
+          aria-label="Measured release results"
+          tabindex="0"
+        >
+          <table>
+            <caption>
+              GeoSteering: release evidence
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Strategy</th>
+                <th scope="col">In-zone lateral</th>
+                <th scope="col">Mean center distance</th>
+                <th scope="col">DLS violations</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">HOLD</th>
+                <td>38.071621%</td>
+                <td>27.524648 ft</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <th scope="row">Observation-guided</th>
+                <td>97.174266%</td>
+                <td>1.074121 ft</td>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+      <section>
+        <h2>A failure worth inspecting</h2>
+        <h3>Offset wells miss a localized structural disturbance.</h3>
+        <p>
+          The fixed HOLD path reaches only 38.1% in zone. Recommendations in
+          replay cannot repair that path. The guided causal run changes the
+          path, but benefits from a known signed sensor calibration that real
+          gamma-ray inversion does not provide.
+        </p>
+        <pre><code>{
+  &quot;scenario&quot;: &quot;structural_dip_01&quot;,
+  &quot;seed&quot;: 123,
+  &quot;hold&quot;: {
+    &quot;action_change_count&quot;: 0,
+    &quot;avg_center_distance_ft&quot;: 27.52464829587919,
+    &quot;clipped_command_count&quot;: 0,
+    &quot;dls_violation_count&quot;: 0,
+    &quot;evaluated_length_ft&quot;: 5000.0,
+    &quot;in_zone_length_ft&quot;: 1903.5810398298531,
+    &quot;integration_step_max_ft&quot;: 1.0,
+    &quot;max_dls_deg_per_100ft&quot;: 0.0,
+    &quot;max_overshoot_ft&quot;: 38.000000000000455,
+    &quot;percent_in_zone&quot;: 38.07162079659706
+  },
+  &quot;guided&quot;: {
+    &quot;action_change_count&quot;: 57,
+    &quot;avg_center_distance_ft&quot;: 1.074120655634311,
+    &quot;clipped_command_count&quot;: 5,
+    &quot;dls_violation_count&quot;: 0,
+    &quot;evaluated_length_ft&quot;: 5000.0,
+    &quot;in_zone_length_ft&quot;: 4858.713283922184,
+    &quot;integration_step_max_ft&quot;: 1.0,
+    &quot;max_dls_deg_per_100ft&quot;: 3.0000000000000884,
+    &quot;max_overshoot_ft&quot;: 2.6726085285911267,
+    &quot;percent_in_zone&quot;: 97.17426567844367
+  }
+}</code></pre>
+      </section>
+      <section>
+        <h2>Working artifacts</h2>
+        <figure>
+          <img
+            src="../assets/images/case-geosteering-final.png"
+            alt="Current installed-release HOLD and guided synthetic trajectories and placement scores"
+            loading="lazy"
+            width="1500"
+            height="525"
+          />
+          <figcaption>
+            Current seed-123 installed-wheel case, with known signed sensor
+            calibration and the same 5,000-ft scoring interval.
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src="../assets/images/case-geosteering-correlation.png"
+            alt="Active and offset-well logs and observed marker constraints"
+            loading="lazy"
+            width="1500"
+            height="600"
+          />
+          <figcaption>
+            Offset wells constrain the baseline; active observations are
+            revealed progressively. Withheld truth is evaluated after
+            completion.
+          </figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>Limits and next questions</h2>
+        <ul>
+          <li>
+            Synthetic training and scientific demonstration only. The signed
+            sensor, simplified kinematics, seed and geometry explain much of the
+            result; no operational drilling performance is established.
+          </li>
+          <li>
+            Exact source hashes and dirty base-revision metadata identify the
+            local release. This is an unpublished source build; numeric
+            reproducibility does not imply identical UUIDs, timestamps or PDF
+            bytes.
+          </li>
+          <li>
+            Real Volve data remains separately retained and lacks equivalent
+            withheld truth. Browser/Streamlit interaction and operational
+            drilling remain outside verified scope.
+          </li>
+        </ul>
+      </section>
+      <section class="case-download">
+        <h2>Inspect the evidence</h2>
+        <p>
+          <a
+            href="../assets/evidence/geosteering-verification-2026-11-01.json"
+            download
+            >New local verification summary (JSON)</a
+          >
+          ·
+          <a
+            href="../assets/downloads/geosteering-verification-2026-11-01.zip"
+            download
+            >Verification supplement (ZIP)</a
+          >
+        </p>
+        <p>
+          <a
+            href="../assets/downloads/geosteering-evidence-2026-11-01.zip"
+            download
+            >Compact evidence packet (ZIP)</a
+          >
+          ·
+          <a href="../assets/evidence/geosteering-handoff.json" download
+            >Versioned evidence handoff (JSON)</a
+          >
+        </p>
+        <p class="case-note">
+          Local review draft prepared November 1, 2026. Packet integrity and
+          recorded scientific artifacts were checked; publication, browser
+          interaction and current application deployment are separate gates.
+        </p>
+        <p>
+          <a href="../assets/evidence/geosteering.json" download
+            >Download sanitized evidence (JSON)</a
+          >
+          · <a href="../assets/evidence/geosteering.sha256" download>SHA256</a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Tanner-Eischen/GeoSteering"
+            rel="noreferrer"
+            target="_blank"
+            >Project repository</a
+          >
+        </p>
+        <p>
+          <a href="../assets/downloads/geosteering-current-report.pdf" download
+            >Current verified synthetic case report (PDF)</a
+          >
+        </p>
+        <p>
+          <a
+            href="../assets/evidence/geosteering-current-reference.json"
+            download
+            >Independent numerical references (JSON)</a
+          >
+        </p>
+        <p class="case-note">
+          Software controls, development-set measurements and model quality
+          retain separate denominators. Verification dates and source revisions
+          are recorded in the evidence download. Browser interaction remains
+          unverified.
+        </p>
+      </section>
+    </main>
+    <footer class="case-footer">
+      <a href="../index.html#work">Return to selected work</a>
+      <p>Tanner Eischen · AI evaluation and applied engineering</p>
+    </footer>
+  </body>
+</html>

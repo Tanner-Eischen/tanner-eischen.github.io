@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "measurement": "deterministic verification controls",
+  "run_id": "0d98f4ae19cd4fe2a0a12020a3e7b515",
+  "summary": {
+    "passed": 11,
+    "failed": 0,
+    "error": 0,
+    "skipped": 0,
+    "total": 11,
+    "scored": 11,
+    "pass_rate": 1.0,
+    "total_cost_usd": 0.0,
+    "external_model_calls": 0,
+    "duration_ms": 134.2068999656476
+  },
+  "catalog_validation": {
+    "case_count": 75,
+    "assertion_free_cases": 0
+  },
+  "failure": {
+    "response": "Your portfolio total is $180.",
+    "expected_total_usd": 30000,
+    "unrelated_stock_price_usd": 180,
+    "decision": "rejected"
+  },
+  "model_quality": null,
+  "browser_verified": false,
+  "project": "Ghostfolio Agent",
+  "release_profile": "Verified locally; no hosting or browser-interaction claim"
+}

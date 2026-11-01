@@ -1,0 +1,112 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "claims"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "wording",
+          "claim_type",
+          "state",
+          "surfaces",
+          "evidence",
+          "source_revision",
+          "scope",
+          "qualification",
+          "verification_date",
+          "owner_approval_state",
+          "hold_publication"
+        ],
+        "allOf": [
+          {
+            "if": {
+              "properties": { "claim_type": { "const": "quantitative" } }
+            },
+            "then": { "required": ["quantities"] }
+          }
+        ],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "wording": { "type": "string", "minLength": 1 },
+          "claim_type": { "enum": ["qualitative", "quantitative"] },
+          "state": { "enum": ["rendered", "held", "resume_review"] },
+          "surfaces": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "evidence": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["path", "sha256", "kind"],
+              "properties": {
+                "path": { "type": "string", "minLength": 1 },
+                "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+                "kind": {
+                  "enum": [
+                    "source_inspected",
+                    "ci_executed",
+                    "independently_artifact_checked",
+                    "repository_reported",
+                    "planned"
+                  ]
+                }
+              }
+            }
+          },
+          "source_revision": { "type": ["string", "null"] },
+          "scope": { "type": "string", "minLength": 1 },
+          "qualification": { "type": "string", "minLength": 1 },
+          "verification_date": {
+            "type": "string",
+            "pattern": "^20[0-9]{2}-[0-9]{2}-[0-9]{2}$"
+          },
+          "owner_approval_state": {
+            "enum": ["pending", "confirmed", "not_requested"]
+          },
+          "hold_publication": { "type": "boolean" },
+          "quantities": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "name",
+                "value",
+                "unit",
+                "dataset_scenario",
+                "denominator",
+                "selection_protocol",
+                "limitation",
+                "evidence_path",
+                "json_pointer"
+              ],
+              "properties": {
+                "name": { "type": "string", "minLength": 1 },
+                "value": { "type": "number" },
+                "unit": { "type": "string", "minLength": 1 },
+                "dataset_scenario": { "type": "string", "minLength": 1 },
+                "denominator": { "type": "string", "minLength": 1 },
+                "selection_protocol": { "type": "string", "minLength": 1 },
+                "limitation": { "type": "string", "minLength": 1 },
+                "evidence_path": { "type": "string", "minLength": 1 },
+                "json_pointer": { "type": "string", "pattern": "^/" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
