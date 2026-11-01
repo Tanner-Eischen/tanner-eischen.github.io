@@ -25,20 +25,26 @@
     },
     {
       "project": "marshab",
-      "source_commit": "e11e3b9a1ccb7926b1f8684653b97b1d2204eee0",
+      "source_commit": "833b6f8024e6a02ff7cedfc7ece442a26e5d8cf0",
       "evidence_url": "https://github.com/Tanner-Eischen/MarsGIS/blob/e11e3b9a1ccb7926b1f8684653b97b1d2204eee0/reports/mh03-browser-acceptance-2026-11-01/portfolio-evidence.json",
       "evidence_sha256": "09682a9e2f4473a6bdd6719f66d921a273e7a29d2087a87639daba6966fb99da",
       "actual_browser": "passed",
-      "backend_tests_passed": 461,
+      "backend_tests_passed": 463,
       "frontend_unit_tests_passed": 118,
-      "public_deployment": "passed_live_build_sources_ctx_mola_webgl_and_download",
-      "live_release_evidence": "https://github.com/Tanner-Eischen/tanner-eischen.github.io/blob/codex/portfolio-evidence-wave1/reports/browser-acceptance-2026-11-01/mars-public-live.json"
+      "public_deployment": "passed_full_smoke_and_new_computed_browser_result_after_memory_fix",
+      "live_release_evidence": "https://github.com/Tanner-Eischen/tanner-eischen.github.io/blob/codex/portfolio-evidence-wave1/reports/browser-acceptance-2026-11-01/mars-public-after-csr.json",
+      "initial_browser_source_commit": "e11e3b9a1ccb7926b1f8684653b97b1d2204eee0",
+      "memory_followup_evidence_url": "https://github.com/Tanner-Eischen/MarsGIS/blob/833b6f8024e6a02ff7cedfc7ece442a26e5d8cf0/reports/mh04-memory-followup-2026-11-01/portfolio-evidence.json",
+      "memory_followup_evidence_sha256": "bf3f56861c1cfd74edcb0867278d3958cafc601832ffbc23295e204d89a54b6d",
+      "targeted_memory_checks_passed": 63,
+      "backend_optional_tests_skipped": 1,
+      "live_release_evidence_sha256": "346b3e3459bd63cc176269f277476558cc501a6de7bfcff20fbd1885e9c5f2d3"
     }
   ],
   "limits": [
     "GeoSteering remains a known-sensor synthetic study; no field policy validation.",
     "Roof actual-checkpoint generated-fixture browser transaction does not measure accuracy; no public inference host.",
-    "Mars512MiB/0.1CPU journey completed without OOM but reached the memory cap; no headroom/capacity guarantee.",
-    "Mars backend suite has one disclosed skipped optional test. Browser coverage is one pinned Chromium/software-GPU configuration, not hardware certification."
+    "Initial hosted OOM is retained in the release report. The verifier allocation fix passed warm512MiB/2CPU locally at360071168bytes and the unchanged public free plan full smoke in212.7seconds with no OOM/restart events. No general capacity guarantee.",
+    "Mars backend suite has one disclosed optional skip. Local byte agreement is distinct from cross-environment GeoJSON floating-point tolerance agreement; four other scientific files are byte-identical across environments."
   ]
 }

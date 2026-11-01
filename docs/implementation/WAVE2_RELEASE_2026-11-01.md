@@ -6,7 +6,7 @@ GS-02, MH-03/04, RS-02/03/04 and PF-04/05/06 are implemented and verified. The o
 | --- | --- | --- |
 | GeoSteering | `b6790a2e42f41c12ac9d5a2435872b56b63b3c20` | 147 tests; real browser QC/steering/forks, retained run selection, PDF/CSV downloads, keyboard/mobile; original 2,689 artifact hashes unchanged. [CI](https://github.com/Tanner-Eischen/GeoSteering/actions/runs/41304870447) |
 | RoofSegmentation | `f13acdd9c3ccbfcefb658e3a3dcad7d457dfb561` | Real registered checkpoint, three byte-checked downloads, probability preview and recovery; 48 backend/10 frontend unit tests, five Tiny E2E controls plus real-checkpoint browser acceptance. [CI](https://github.com/Tanner-Eischen/RoofSegmentation/actions/runs/41301079811) |
-| MarsGIS | `e11e3b9a1ccb7926b1f8684653b97b1d2204eee0` | 461 backend tests/one optional skip; 118 frontend tests; CTX/MOLA, WebGL, cancellation/stale-response and exports. Five scientific output files unchanged. [CI](https://github.com/Tanner-Eischen/MarsGIS/actions/runs/41304886757) |
+| MarsGIS | `833b6f8024e6a02ff7cedfc7ece442a26e5d8cf0` | 463 backend tests/one optional skip; 118 frontend tests; CTX/MOLA, WebGL, cancellation/stale-response and exports. Five scientific output files unchanged. [CI](https://github.com/Tanner-Eischen/MarsGIS/actions/runs/41306775490) |
 | Portfolio | This release; deployed build manifest identifies exact source | 43 checks (18 content, 15 site/network-classification, 10 HTTP regressions), source/built lint, full loopback inventory, actual browser/keyboard/no-JS/reduced-motion/mobile and accessibility checks. |
 | HarborForge | `1258728` | Public implementation/default branch and 124 offline checks. Paid/live-model trials remain Wave 3; no new empirical model result claimed. |
 
@@ -14,9 +14,9 @@ All five target repositories are public and their landing pages returned HTTP 20
 
 ## Real deployment acceptance
 
-The existing Render service `marshab` remains on its unchanged free plan. Deploy `dep-dbjimhnavr4c73c3hosg` became live with the exact Mars source above. Backend byte fingerprint is `9bfed21f6dc9a89ef468332bb45967b7b19699a7dccae569a8d28f7e1b052428`; readiness verified pinned CTX and MOLA sources. Public CTX routing, byte-matched downloaded GeoJSON, MOLA keyboard routing and real Intel WebGL orbit/reset passed without application errors. See `reports/browser-acceptance-2026-11-01/mars-public-live.json` and screenshots.
+The existing Render service `marshab` remains on its unchanged free plan. Final deployment `dep-dbjj1ge417fc73av5gkg` is live from `833b6f8024e6a02ff7cedfc7ece442a26e5d8cf0`, at backend byte fingerprint `811318c993b328bdacc83503e408628bf6714fa742d5ee44d202eda563b77e69`. Readiness verified pinned CTX and MOLA sources. Public routes, keyboard entry, real Intel WebGL orbit/reset, downloaded GeoJSON and the full new comparison passed without application errors. See `reports/browser-acceptance-2026-11-01/mars-public-after-csr.json`.
 
-The local 512 MiB/0.1 CPU journey, including recomputation, completed without OOM but reached its memory cap. No headroom or general capacity guarantee is claimed. No new paid service or model call was created. GeoSteering and RoofSegmentation are authentic locally runnable applications; no public inference host is advertised.
+The first hosted full recomputation exceeded memory; its failure and root-cause correction are retained below. The corrected warm local 512 MiB/two-CPU run peaked at 360,071,168 bytes. The final public ordinary HTTP smoke passed in 212.7 seconds on the unchanged free service. These are observed journeys, not general capacity or latency guarantees. No new paid service or model call was created. GeoSteering and RoofSegmentation remain authentic locally runnable applications; no public inference host is advertised.
 
 ## Publication, integrity and rollback
 
@@ -27,3 +27,11 @@ Current staged-source and built-artifact scans use official Gitleaks vendor rule
 Previous Pages revision: `ee2779fd48949bd6204ba7e53d56e269990e4660`. To roll back, revert the publication changes on main and let the same quality gates redeploy the prior content; do not force-reset remote history. Previous Render deployment: `dep-dbhucubm8hqs73cosnh0`, source `459973dba92dc5b82f9d24519fd333577646ae3a`. Render rollback must restore the previous deployment/source/data together; no rollback was performed.
 
 The final Pages live-content and hash verification is retained as a separate post-deploy receipt. Existing unrelated Mars edits and untracked historical workspaces/assets were preserved. No advanced research, field-validation or paid-model claims were added. Wave 3 and optional Wave 4 work remain separate.
+
+## Hosted memory finding and completed correction
+
+At 12:14:59 UTC the first ordinary full hosted comparison recomputation, after warm map/routes, caused a provider-confirmed 512 MiB OOM restart. Earlier public explorer checks passed, but this finding reopens MH-04. Local container fit did not prove hosted recomputation reliability. The failed attempt is retained in `reports/browser-acceptance-2026-11-01/mars-public-comparison-oom.json`; the allocation fix in `833b6f8` preserves exact graph bytes and reduced construction peak from 181.4 MB to 42.6 MB. A warm 512 MiB/two-CPU run peaked at 360,071,168 bytes, without limit pressure, and retained all five scientific files byte-for-byte. No paid plan change or silent reference substitution is authorized.
+
+The corrected Render deployment `dep-dbjj1ge417fc73av5gkg` is live at backend fingerprint `811318c993b328bdacc83503e408628bf6714fa742d5ee44d202eda563b77e69`. The ordinary full public smoke passed in 212.7 seconds; the browser displayed its new server-computed result. Provider events through 12:38 UTC showed no OOM/restart. Maximum minute-sampled usage was 303,468,540 bytes, not an instantaneous peak. All five remote CI jobs passed. MH-04 is now closed.
+
+Cross-environment verification found exact bytes for both rasters, the report and comparison PNG. GeoJSON has identical structure and route vertices with 27 rounding-scale numeric differences (maximum coordinate difference 3.55e-15 degrees; four cost differences at most 1.46e-11). This passes an explicit eight-machine-epsilon scaled tolerance; it is not described as cross-environment byte equality. The failed first deployment attempt is retained rather than overwritten.

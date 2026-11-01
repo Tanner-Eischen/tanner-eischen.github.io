@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-01",
+  "source_commit": "e11e3b9a1ccb7926b1f8684653b97b1d2204eee0",
+  "deployment": "dep-dbjimhnavr4c73c3hosg",
+  "observed_utc": "2026-11-01T12:14:59.068286Z",
+  "observation": "One ordinary full comparison recomputation after warm route/map interactions caused a confirmed512MiB OOM restart. Earlier route/WebGL/export checks passed; the local512MiB fit did not establish hosted recomputation reliability.",
+  "provider_event_type": "server_failed",
+  "provider_reason": {
+    "oomKilled": {
+      "memoryLimit": "512Mi"
+    }
+  },
+  "recovered_available_utc": "2026-11-01T12:15:16.874162Z",
+  "smoke_result": "failed_on_HTTP502_status_poll",
+  "scientific_result": "No new result published; previous immutable reference remained available.",
+  "resolution": "MH04 reopened for measured memory root-cause fix; no paid-plan upgrade."
+}

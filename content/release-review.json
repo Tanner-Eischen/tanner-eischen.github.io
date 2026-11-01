@@ -14,7 +14,7 @@
       "state": "satisfied",
       "reason": "Actual Chromium functional and separate visual acceptance completed.",
       "evidence": "reports/browser-acceptance-2026-11-01/browser-proof.json",
-      "evidence_sha256": "a82873dd7daff97d0778f5a6ba88fdd0e25d4c7d53082473ab23732f18495f13"
+      "evidence_sha256": "6a4900cd1749ec32dc710e433b21297b309039e4cbb82fd5c124adb8e3854a18"
     },
     {
       "id": "publication-approval",

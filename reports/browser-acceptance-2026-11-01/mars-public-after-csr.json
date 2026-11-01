@@ -1,0 +1,151 @@
+{
+  "deployment": "dep-dbjj1ge417fc73av5gkg",
+  "source_commit": "833b6f8024e6a02ff7cedfc7ece442a26e5d8cf0",
+  "started_at": "2026-11-01T12:31:16.507Z",
+  "live": {
+    "status": "alive",
+    "build": {
+      "package_version": "0.1.1",
+      "build_id": null,
+      "declared_source_commit": null,
+      "declared_commit_scope": "Ancestry label only; actual backend byte identity is independent",
+      "backend_sha256": "811318c993b328bdacc83503e408628bf6714fa742d5ee44d202eda563b77e69",
+      "backend_python_files": 94,
+      "fingerprint_definition": "SHA-256 of sorted compact JSON mapping package-relative Python paths to byte SHA-256",
+      "capture_scope": "Cached once per process; restart after source changes; frontend assets are separate"
+    }
+  },
+  "ready": {
+    "status": "ready",
+    "checks": {
+      "config": "ready",
+      "cache_dir": "ready",
+      "output_dir": "ready",
+      "planetary_sources": "ready"
+    },
+    "build": {
+      "package_version": "0.1.1",
+      "build_id": null,
+      "declared_source_commit": null,
+      "declared_commit_scope": "Ancestry label only; actual backend byte identity is independent",
+      "backend_sha256": "811318c993b328bdacc83503e408628bf6714fa742d5ee44d202eda563b77e69",
+      "backend_python_files": 94,
+      "fingerprint_definition": "SHA-256 of sorted compact JSON mapping package-relative Python paths to byte SHA-256",
+      "capture_scope": "Cached once per process; restart after source changes; frontend assets are separate"
+    },
+    "sources": {
+      "status": "verified",
+      "verification_scope": "Pinned file checksums verified when the process source store initializes",
+      "global": {
+        "id": "mola16",
+        "sha256": "d18d9b9ab8c5516d02e157dd2cde0f1d0d160c21940e953ba22391269a545e7b"
+      },
+      "detail": {
+        "id": "ctx",
+        "sha256": "16a1aa66c3f48c1bca252795827db7b417876217aff0f5e1aff18027fab2327b"
+      }
+    }
+  },
+  "checks": [
+    {
+      "check": "post-fix-public-ctx-browser-route-and-3d",
+      "status": "passed",
+      "id": "b28774995f944eeeafe4e2a1a5983a90",
+      "request_id": "1dcd18c9-872f-4a68-b7ae-42a545116b7b",
+      "source": "ctx",
+      "spacing_m": 20
+    },
+    {
+      "check": "post-fix-public-mola-browser-route",
+      "status": "passed",
+      "id": "dc87b79763af4637af2ef6dae8870c09",
+      "source": "mola16"
+    },
+    {
+      "check": "public-full-comparison-ordinary-http-smoke",
+      "status": "passed",
+      "run_id": "3bc16f5b123d49b5a7ee1d0f63032e02",
+      "execution_mode": "server_computed_analysis",
+      "grid": [
+        593,
+        563
+      ],
+      "candidates": 3,
+      "layers": 5,
+      "public_artifacts_sha256": {
+        "terrain.tif": "503cbf0495e88fc9fd93b2abe12a6e7f2be4d594cd92495462315e50ba3ad464",
+        "suitability.tif": "b75ac67c499effef21ce7fd933b664aa215ec2de0fe57f54e389bf09e16746eb",
+        "routes.geojson": "eabe0d9f759296d9da4641719c56b76a0d6c36d702abe5addc551b812af150a3",
+        "report.md": "1a1ebadb9b1cdcf9b4e8c30e1f135057afa2336442fd221dd2cdd9d0f9ad032f",
+        "manifest.json": "9b0fad3772e581480eb3d76aac5562ca6955b3cc3a5e584bee557440d270eed6",
+        "comparison.png": "60927accfd9903e2b069a9da3b14f3636755c3bf29178c1c1fdfa02c5524532d",
+        "layers/elevation.png": "3a1bc671c9aab85c485b1408b30cf8f68561cd6f9436f6f9652080ead5f259dd",
+        "layers/slope.png": "bd03656d21de5e250e87015ddf9f9c34a4ce75f104b851355e21ce023fe586c6",
+        "layers/roughness.png": "5c91bd26498d5b9726516927a9b1c36314cc5dbfe9eb04e23f90c05e5065e3cd",
+        "layers/hillshade.png": "79753651af5fed8243adf6f2b7f3d99500092334d4279863c45d9ce5ce0dee4a",
+        "layers/suitability.png": "1c59595c8a1ff3a55707ce4c8912e38d421f6cf9b073216685f9dc73a5656009",
+        "probe.bin": "42c3cd5ba837e6939a4c3c52fe92d8c4bc68ea0499fdd6c71598b818252d7f92"
+      },
+      "cross_environment_four_files_byte_identical": [
+        {
+          "name": "comparison.png",
+          "expected": "60927accfd9903e2b069a9da3b14f3636755c3bf29178c1c1fdfa02c5524532d",
+          "actual": "60927accfd9903e2b069a9da3b14f3636755c3bf29178c1c1fdfa02c5524532d",
+          "passed": true
+        },
+        {
+          "name": "report.md",
+          "expected": "1a1ebadb9b1cdcf9b4e8c30e1f135057afa2336442fd221dd2cdd9d0f9ad032f",
+          "actual": "1a1ebadb9b1cdcf9b4e8c30e1f135057afa2336442fd221dd2cdd9d0f9ad032f",
+          "passed": true
+        },
+        {
+          "name": "suitability.tif",
+          "expected": "b75ac67c499effef21ce7fd933b664aa215ec2de0fe57f54e389bf09e16746eb",
+          "actual": "b75ac67c499effef21ce7fd933b664aa215ec2de0fe57f54e389bf09e16746eb",
+          "passed": true
+        },
+        {
+          "name": "terrain.tif",
+          "expected": "503cbf0495e88fc9fd93b2abe12a6e7f2be4d594cd92495462315e50ba3ad464",
+          "actual": "503cbf0495e88fc9fd93b2abe12a6e7f2be4d594cd92495462315e50ba3ad464",
+          "passed": true
+        }
+      ],
+      "cross_environment_geojson": {
+        "reference": "frozen data/output/portfolio_demo/routes.geojson",
+        "difference_count": 27,
+        "max_geometry_difference_degrees": 3.552713678800501e-15,
+        "max_numeric_difference": 1.4551915228366852e-11,
+        "criterion": "8*Number.EPSILON*max(1,abs(reference),abs(live)); identical keys, strings and array shapes",
+        "result": "passed"
+      }
+    },
+    {
+      "check": "public-ui-displays-new-server-computed-result",
+      "status": "passed",
+      "errors": []
+    }
+  ],
+  "finished_at": "2026-11-01T12:38:04.945Z",
+  "full_smoke_elapsed_seconds": 212.7164536,
+  "provider_memory": {
+    "resolution_seconds": 60,
+    "maximum_sampled_bytes": 303468540,
+    "limit_bytes": 536870912,
+    "scope": "Minute-sampled usage, not an instantaneous peak or capacity guarantee."
+  },
+  "provider_events": {
+    "from_utc": "2026-11-01T12:31:00Z",
+    "checked_through_utc": "2026-11-01T12:38:00Z",
+    "server_failed": [],
+    "server_restarted": []
+  },
+  "ci": {
+    "run": 41306775490,
+    "status": "success",
+    "backend_passed": 463,
+    "backend_optional_skipped": 1,
+    "frontend_passed": 118
+  }
+}

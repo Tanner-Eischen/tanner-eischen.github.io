@@ -233,10 +233,10 @@
             alongside the source.
           </li>
           <li>
-            The final local Docker journey completed at 512 MiB / 0.1 CPU,
-            including a full comparison recompute, without OOM. It reached the
-            memory cap and reclaimed cache; this is no general capacity or
-            headroom guarantee.
+            A warm 512 MiB / two-CPU local run peaked at 343 MiB after a
+            verifier allocation fix. The unchanged free host also completed the
+            full workflow. These observed runs are no general capacity
+            guarantee.
           </li>
           <li>
             The live release backend fingerprint and both source checksums

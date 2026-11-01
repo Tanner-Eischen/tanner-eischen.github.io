@@ -441,7 +441,8 @@
     "final-release-roof-segmentation.html.png": "5723887a8ab3a687c66eeb954969a6f2a74bac07fdaa5ae342412359bb8fcba0",
     "final-release-marshab.html.png": "173ef8521dd75f99300eb8b927fbdfc7ed1860f92fc7b12f7f56191587f74d39",
     "mars-public-ctx-webgl.png": "b58f47c1816bf0b6c6d04d5febaafb5bb3f78244b559d0126e26032c60559fbf",
-    "mars-public-mola-800.png": "ab496fe320de5246b24b113c075f6aa135cc70accef14c3ea0ab8996f50b5dec"
+    "mars-public-mola-800.png": "ab496fe320de5246b24b113c075f6aa135cc70accef14c3ea0ab8996f50b5dec",
+    "final-mars-memory-release-390.png": "16cbf8e7615c348ced85842a28f092785dd8e126b8c70bdd53eb5f428ad5d9da"
   },
   "limits": [
     "Automated accessibility checks are not full WCAG conformance.",
@@ -475,7 +476,10 @@
         "status": "passed"
       }
     ],
-    "content_fingerprint": "6da760df7d10349a6211c751938179938cd6b6d1c3b9c0fe0d4b5718edbf6406",
-    "automated_final_mars_case_violations": 0
-  }
+    "content_fingerprint": "4be8333419ecfa56a3aa15f975ad5687e752a0aa2a2864df208cfceca19c4831",
+    "automated_final_mars_case_violations": 0,
+    "memory_followup_mobile_body_overflow": false,
+    "latest_acceptance_download_sha256": "9a4af4a8eb06382b8e212e8d2eb839cd96675255d0e251183b4e606f17de3621"
+  },
+  "auxiliary_line_endings": "Windows/Linux comparison found CRLF differences only in the SVG favicon and nojekyll marker. Canonical marker LF and verbatim icon bytes make all public hashes match; rendered HTML/CSS/JS/scientific assets were already identical."
 }

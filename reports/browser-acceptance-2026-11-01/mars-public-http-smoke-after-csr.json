@@ -1,0 +1,63 @@
+{
+  "build": {
+    "backend_python_files": 94,
+    "backend_sha256": "811318c993b328bdacc83503e408628bf6714fa742d5ee44d202eda563b77e69",
+    "build_id": null,
+    "capture_scope": "Cached once per process; restart after source changes; frontend assets are separate",
+    "declared_commit_scope": "Ancestry label only; actual backend byte identity is independent",
+    "declared_source_commit": null,
+    "fingerprint_definition": "SHA-256 of sorted compact JSON mapping package-relative Python paths to byte SHA-256",
+    "package_version": "0.1.1"
+  },
+  "delivered_assets_sha256": {
+    "/assets/TerrainScene3D-D7T12Tjm.js": "621d44addc77608aa45a773262df71404dc8b8834fadd1707903553e69988a9c",
+    "/assets/index-DeoliP4Y.css": "7c2994ba9ff2db1fd7cb7f8ad31904bfb215686a29cff7e0042469f2cd86c10f",
+    "/assets/index-NEGn6WHu.js": "a99d09390b5ea9db64a54dc7e4ba15f83b09ad2d027dbd663a7a6583f72495e5"
+  },
+  "fixed_reference_recomputed": true,
+  "overload": {
+    "status": "not_run"
+  },
+  "ready_sources": {
+    "detail": {
+      "id": "ctx",
+      "sha256": "16a1aa66c3f48c1bca252795827db7b417876217aff0f5e1aff18027fab2327b"
+    },
+    "global": {
+      "id": "mola16",
+      "sha256": "d18d9b9ab8c5516d02e157dd2cde0f1d0d160c21940e953ba22391269a545e7b"
+    },
+    "status": "verified",
+    "verification_scope": "Pinned file checksums verified when the process source store initializes"
+  },
+  "routes": [
+    {
+      "analysis_spacing_m": 20.0,
+      "distance_m": 1619.6810116652966,
+      "export_sha256": "b2bbc59c08096c78159e91b119bcfcec963ff4c5cedc519c25ccd05f55daf2c9",
+      "request_id": "smoke_c601419d45d0400cb00890eeace844f7",
+      "run_id": "a0857e1b7b554816aef00ced1b48f0bc",
+      "source_id": "ctx",
+      "source_sha256": "16a1aa66c3f48c1bca252795827db7b417876217aff0f5e1aff18027fab2327b",
+      "status": "passed",
+      "terrain_cost_m_equivalent": 1792.1499481134776,
+      "vertices": 80
+    },
+    {
+      "analysis_spacing_m": 3704.4613373579646,
+      "distance_m": 166099.1563126481,
+      "export_sha256": "488c737552e5efca17fa285b66f029d6d47687c24bb1b76880095811d29ad63e",
+      "request_id": "smoke_1972fde0835a4b2e9a050528b978192e",
+      "run_id": "072db012d3e44ae88216c5528b299c71",
+      "source_id": "mola16",
+      "source_sha256": "d18d9b9ab8c5516d02e157dd2cde0f1d0d160c21940e953ba22391269a545e7b",
+      "status": "passed",
+      "terrain_cost_m_equivalent": 166598.40441734696,
+      "vertices": 33
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Actual HTTP transport and selected-point science; no browser or WebGL execution",
+  "status": "passed",
+  "timestamp_utc": "2026-11-01T12:31:40.681449+00:00"
+}

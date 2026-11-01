@@ -72,7 +72,7 @@
       "short_summary": "Real Mars elevation processing, terrain tradeoffs and routing.",
       "contribution": "Planetary transforms, terrain analysis, constrained routes and georeferenced exports.",
       "current_readiness": "local_evidence",
-      "source_revision": "e11e3b9a1ccb7926b1f8684653b97b1d2204eee0",
+      "source_revision": "833b6f8024e6a02ff7cedfc7ece442a26e5d8cf0",
       "source_access": "public",
       "source_repository": "Tanner-Eischen/MarsGIS",
       "source_url": "https://github.com/Tanner-Eischen/MarsGIS",
@@ -86,7 +86,7 @@
         "assets/evidence/wave2-browser-acceptance-2026-11-01.json"
       ],
       "limits": [
-        "Public source and live build/source readiness, CTX/MOLA routes, WebGL and downloads verified;512MiB local journey reached the cap; terrain tradeoffs are not habitat safety.",
+        "Public source and full free-host workflow verified after memory fix; warm512MiB local run peaked343MiB. Single observed journey is no capacity guarantee; terrain tradeoffs are not habitat safety.",
         "Exact dirty release snapshots are identified by artifact/source hashes; base commit is not the full tested source."
       ],
       "pages": ["index.html", "case-studies/marshab.html"],

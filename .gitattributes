@@ -17,3 +17,8 @@ assets/downloads/*.pdf binary
 assets/downloads/*.zip binary
 # Upstream Markdown snapshots retain their intentional hard breaks verbatim.
 content/source-snapshots/** -text diff whitespace=-blank-at-eol,-blank-at-eof
+
+# Auxiliary public files must have identical bytes on Windows and Linux.
+.nojekyll text eol=lf
+# Preserve icon bytes verbatim, including the existing SVG-formatted icon.
+favicon.ico -text
