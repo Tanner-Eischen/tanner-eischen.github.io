@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-01",
+  "scope": "Current publication assets and five target repositories, reviewed before visibility/publication changes.",
+  "asset_decisions": [
+    {
+      "scope": "GeoSteering",
+      "decision": "Synthetic scenario plots and sanitized numerical reports only; no raw Volve or private field data."
+    },
+    {
+      "scope": "MarsGIS",
+      "decision": "NASA/USGS Mars terrain derivatives with original source/provenance retained; no habitat-safety claim or new license grant."
+    },
+    {
+      "scope": "RoofSegmentation",
+      "decision": "Metric plots/CSV and attributed SpaceNet-derived examples; no WHU source imagery, masks or model weights redistributed. Unused legacy Google imagery removed from current source tree."
+    },
+    {
+      "scope": "Portfolio",
+      "decision": "Existing owner-authored site assets plus generated scientific figures and normalized browser evidence. New current-tree/build secret scan required before publishing."
+    },
+    {
+      "scope": "HarborForge",
+      "decision": "Synthetic public examples only; no private holdout, client or paid-model traces."
+    }
+  ],
+  "repository_audit": "All-ref source/history and GitHub metadata audits completed before changing private repository visibility. Findings adjudicated without publishing secret values. A historical credential in the already-public portfolio repository is tracked privately and is absent from the current release. History was preserved.",
+  "limits": [
+    "Public access does not invent a license for repositories without a license.",
+    "Prior measured packets and source science remain unchanged."
+  ]
+}

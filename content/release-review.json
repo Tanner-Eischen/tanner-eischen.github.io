@@ -1,26 +1,27 @@
 {
   "schema_version": 1,
-  "scope": "Local Wave 1 draft; no publication approval implied.",
+  "scope": "Owner-authorized Wave 2 release; biography/credential review is outside scope.",
   "gates": [
     {
-      "id": "credential-and-resume-alignment",
-      "state": "pending",
-      "reason": "Exact awarded doctorate and career claims require owner confirmation; existing PDF unchanged."
-    },
-    {
       "id": "asset-rights-review",
-      "state": "pending",
-      "reason": "Review source and dataset derivative permissions before publication."
+      "state": "satisfied",
+      "reason": "Current publication assets reviewed; restricted imagery/weights and private data excluded.",
+      "evidence": "content/publication-asset-review-2026-11-01.json",
+      "evidence_sha256": "82d71c6ea41ed637cba9538f187e29e6ab0b1f44f7602bf976295cc21c9e7d06"
     },
     {
       "id": "interactive-verification",
-      "state": "not_run",
-      "reason": "Browser and platform UI access prohibited by current user instructions; no UI exception requested."
+      "state": "satisfied",
+      "reason": "Actual Chromium functional and separate visual acceptance completed.",
+      "evidence": "reports/browser-acceptance-2026-11-01/browser-proof.json",
+      "evidence_sha256": "11258f8734b701acbc4726c84c719fbea582bc860bf071c92a0a4c6318580600"
     },
     {
       "id": "publication-approval",
-      "state": "pending",
-      "reason": "No merge, visibility change, deployment or external publication authorized by this local execution step."
+      "state": "satisfied",
+      "reason": "Owner explicitly requested completion of Wave 2 and public repositories.",
+      "evidence": "content/owner-release-instruction-2026-11-01.json",
+      "evidence_sha256": "00df25fa3990bc8b1183652f895e3ffaefca6ef777f2197cd7c5ff927d69dae2"
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-01",
+  "owner_request": "Authorize browser/UI testing; finish Wave 2; commit changes; make project repositories public; stop resume/credential questions.",
+  "scope": [
+    "browser and UI acceptance",
+    "bug fixes and commits",
+    "public project repositories",
+    "Wave 2 release and publication"
+  ],
+  "resume_and_credential_review": "excluded by owner; existing biography facts and PDF are not newly verified or replaced",
+  "spend_boundary": "Keep existing hosting plan; no new paid plans or model-provider calls."
+}

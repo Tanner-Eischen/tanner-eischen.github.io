@@ -60,8 +60,9 @@ robots metadata and a hash-bound static build manifest. This identifies the
 portfolio artifact; each project's handoff retains its own scientific provenance.
 
 The mobile navigation stays visible until its JavaScript enhancement initializes.
-This supports reading/navigation without JavaScript; browser layout, keyboard and
-mobile journeys remain unverified under the current no-UI instruction.
+Actual Chromium browser checks verified no-JavaScript reading, keyboard focus,
+mobile navigation, six case studies and 24 downloaded artifacts. See
+`reports/browser-acceptance-2026-11-01/` for normalized results and screenshots.
 
 ```bash
 npm run check:external
@@ -83,11 +84,11 @@ snapshots record reported capabilities, not a fresh application test.
 npm run check:release
 ```
 
-Publication readiness is intentionally held while credentials, the unchanged
-résumé, asset rights, interactive verification and publication approval remain
-unresolved. Local checks can pass without asserting these release gates passed.
-The deployment workflow checks this separately before uploading a Pages artifact.
-Current user instructions prohibit browser/platform UI checks; none were run.
+Publication readiness requires hash-bound asset and interactive-verification
+evidence plus the owner's release instruction. The owner authorized browser/UI
+testing and completion of Wave 2. Biography and résumé review are outside this
+release's scope; the existing PDF and factual wording are not newly verified or
+replaced. The deployment workflow checks readiness before uploading a Pages artifact.
 
 See `docs/implementation/WAVE1_HANDOFF_2026-11-01.md` for the current work,
 preserved changes, test evidence, limitations and remaining dependencies.

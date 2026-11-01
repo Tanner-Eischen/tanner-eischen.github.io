@@ -271,7 +271,6 @@ export function checkContent(root = repository, { release = false } = {}) {
     const gates = Array.isArray(review.gates) ? review.gates : [];
     const gateIds = gates.map((gate) => gate.id);
     for (const required of [
-      "credential-and-resume-alignment",
       "asset-rights-review",
       "interactive-verification",
       "publication-approval",

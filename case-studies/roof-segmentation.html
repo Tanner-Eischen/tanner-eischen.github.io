@@ -119,7 +119,8 @@
           arrays and masks match exactly; an independent forward calculation
           agrees within the declared tolerance. This verifies a local serving
           transaction, not building accuracy or geographic transfer. Browser
-          interaction and a new container startup remain unverified.
+          interaction and original-container startup are now verified in the
+          separate browser acceptance record.
         </p>
         <p>
           The original baseline remains the fixed reference; later training
@@ -243,6 +244,12 @@
           <figcaption>
             Recorded 40-epoch baseline. Selection uses validation; this curve is
             not evidence of external-region accuracy.
+            <a
+              href="../assets/images/case-roof-whu-learning.png"
+              target="_blank"
+              rel="noreferrer"
+              >View full-size figure</a
+            >
           </figcaption>
         </figure>
         <figure>
@@ -258,6 +265,12 @@
             prediction/error overlays added by Tanner Eischen.
             Lowest/highest-IoU positive case per city after scoring;
             illustrative extremes, not representative samples.
+            <a
+              href="../assets/images/case-roof-external.png"
+              target="_blank"
+              rel="noreferrer"
+              >View full-size figure</a
+            >
           </figcaption>
         </figure>
       </section>
@@ -299,14 +312,21 @@
             components too small to form a polygon; scores are uncalibrated.
           </li>
           <li>
-            Browser layout and interaction were not verified. Local release
-            checks and the existing hosted portfolio are separate; no deployment
-            was performed.
+            Actual-checkpoint browser acceptance verified local upload,
+            probability preview, three hash-matched exports, failure recovery,
+            keyboard use and mobile layout. This is a locally runnable
+            application; no public inference service is claimed.
           </li>
         </ul>
       </section>
       <section class="case-download">
         <h2>Inspect the evidence</h2>
+        <p>
+          <a
+            href="https://github.com/Tanner-Eischen/RoofSegmentation/tree/d0d5238c857d65dc17af89fc821f04fbab22c4db/reports/browser-acceptance-2026-11-01"
+            >Actual-checkpoint browser acceptance</a
+          >
+        </p>
         <p>
           <a
             href="../assets/evidence/roof-segmentation-verification-2026-11-01.json"
@@ -332,9 +352,9 @@
           >
         </p>
         <p class="case-note">
-          Local review draft prepared November 1, 2026. Packet integrity and
-          recorded scientific artifacts were checked; publication, browser
-          interaction and current application deployment are separate gates.
+          Scientific packets preserve their original measured revisions. New
+          browser acceptance is recorded separately in the public project
+          repository.
         </p>
         <p>
           <a href="../assets/evidence/roof-segmentation.json" download
@@ -379,8 +399,8 @@
         <p class="case-note">
           Software controls, development-set measurements and model quality
           retain separate denominators. Verification dates and source revisions
-          are recorded in the evidence download. Browser interaction remains
-          unverified.
+          are recorded in the evidence download. Browser acceptance covers the
+          application workflow and does not add scientific validation.
         </p>
       </section>
     </main>

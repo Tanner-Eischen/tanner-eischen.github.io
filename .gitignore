@@ -29,3 +29,6 @@ PRPs/
 node_modules/
 dist/
 tmp/
+
+# Local browser QA scratch; curated reports are tracked separately
+/output/playwright/

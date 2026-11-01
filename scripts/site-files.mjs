@@ -15,6 +15,7 @@ import {
   sep,
 } from "node:path";
 import { HtmlValidate, Parser } from "html-validate";
+import { createHash } from "node:crypto";
 
 export const siteOrigin = "https://tanner-eischen.github.io";
 export const pageUrl = (page) =>
@@ -197,4 +198,48 @@ export function collectSite(root) {
   }
   publicFile(root, ".nojekyll");
   return { pages, files, referenceCount };
+}
+
+// Version runtime entrypoints so returning visitors do not combine a new page
+// with a cached pre-release stylesheet or navigation script.
+export function versionEntrypoints(root, source, html) {
+  const edits = [];
+  for (const node of parseHtml(html).querySelectorAll(
+    'link[rel="stylesheet"][href], script[src]',
+  )) {
+    const attribute = node.getAttribute(
+      node.tagName === "script" ? "src" : "href",
+    );
+    const reference = decodeAttribute(attribute.value);
+    const local = resolveReference(root, source, reference);
+    if (!local) continue;
+    const hash = createHash("sha256")
+      .update(readFileSync(publicFile(root, local.name)))
+      .digest("hex")
+      .slice(0, 16);
+    const url = new URL(reference, `${siteOrigin}/${source}`);
+    url.searchParams.set("v", hash);
+    const path = reference.split(/[?#]/, 1)[0];
+    edits.push({
+      offset: attribute.valueLocation.offset,
+      size: attribute.valueLocation.size,
+      value: `${path}${url.search}${url.hash}`.replace(
+        /[&"'<>]/g,
+        (character) =>
+          ({
+            "&": "&amp;",
+            '"': "&quot;",
+            "'": "&#39;",
+            "<": "&lt;",
+            ">": "&gt;",
+          })[character],
+      ),
+    });
+  }
+  for (const edit of edits.sort((a, b) => b.offset - a.offset))
+    html =
+      html.slice(0, edit.offset) +
+      edit.value +
+      html.slice(edit.offset + edit.size);
+  return html;
 }

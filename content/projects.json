@@ -71,9 +71,9 @@
       "contribution": "Planetary transforms, terrain analysis, constrained routes and georeferenced exports.",
       "current_readiness": "local_evidence",
       "source_revision": "459973dba92dc5b82f9d24519fd333577646ae3a",
-      "source_access": "private",
+      "source_access": "public",
       "source_repository": "Tanner-Eischen/MarsGIS",
-      "source_url": null,
+      "source_url": "https://github.com/Tanner-Eischen/MarsGIS",
       "demo_url": "https://marshab.onrender.com",
       "report_url": "assets/evidence/marshab.json",
       "verification_date": "2026-11-01",
@@ -83,7 +83,7 @@
         "assets/evidence/marshab-verification-2026-11-01.json"
       ],
       "limits": [
-        "Private source; ROI-relative terrain tradeoffs, not habitat safety; 1 GiB recorded local container; browser/deployment unverified.",
+        "Public source; ROI-relative terrain tradeoffs, not habitat safety; 1 GiB recorded local container; browser/deployment unverified.",
         "Exact dirty release snapshots are identified by artifact/source hashes; base commit is not the full tested source."
       ],
       "pages": ["index.html", "case-studies/marshab.html"],

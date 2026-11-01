@@ -56,21 +56,21 @@
       "repository": "Tanner-Eischen/GeoSteering",
       "visibility": "public",
       "checked_date": "2026-11-01",
-      "method": "authenticated GitHub API visibility field; no signed-out browser check"
+      "method": "Authenticated GitHub API plus fresh signed-out Chromium public-page check (HTTP 200), 2026-11-01."
     },
     {
       "id": "roof-segmentation",
       "repository": "Tanner-Eischen/RoofSegmentation",
       "visibility": "public",
       "checked_date": "2026-11-01",
-      "method": "authenticated GitHub API visibility field; no signed-out browser check"
+      "method": "Authenticated GitHub API plus fresh signed-out Chromium public-page check (HTTP 200), 2026-11-01."
     },
     {
       "id": "marshab",
       "repository": "Tanner-Eischen/MarsGIS",
-      "visibility": "private",
+      "visibility": "public",
       "checked_date": "2026-11-01",
-      "method": "authenticated GitHub API visibility field; no signed-out browser check"
+      "method": "Authenticated GitHub API plus fresh signed-out Chromium public-page check (HTTP 200), 2026-11-01."
     }
   ]
 }

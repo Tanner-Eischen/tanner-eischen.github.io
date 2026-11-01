@@ -16,6 +16,7 @@ import {
   htmlReferences,
   pageUrl,
   resolveReference,
+  versionEntrypoints,
 } from "./site-files.mjs";
 
 const repository = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -134,11 +135,56 @@ test("CSS import cycles terminate", () =>
     put("css/theme.css", '@import "site.css";');
     assert.ok(collectSite(root).files.has("css/theme.css"));
   }));
+
+test("built CSS and script entrypoints are content-versioned without changing reading links", () =>
+  fixture((root, put) => {
+    put("js/nav.js", "console.log('first')");
+    const html =
+      '<link rel="stylesheet" href="/css/site.css?theme=plain"><script src="/js/nav.js" defer></script><a href="/assets/report.pdf">Report</a>';
+    const first = versionEntrypoints(root, "index.html", html);
+    assert.match(first, /site\.css\?theme=plain&amp;v=[a-f0-9]{16}/);
+    assert.match(first, /nav\.js\?v=[a-f0-9]{16}/);
+    assert.ok(first.includes('href="/assets/report.pdf"'));
+    put("js/nav.js", "console.log('second')");
+    assert.notEqual(first, versionEntrypoints(root, "index.html", html));
+  }));
 test("page discovery excludes docs, content and test workspaces", () =>
   fixture((root, put) => {
     put("docs/private.html", "private");
     put("content/template.html", "private");
     assert.equal(discoverPages(root).length, 2);
+  }));
+test("entrypoint values preserve escaped quotes and ampersands", () =>
+  fixture((root) => {
+    const compiled = versionEntrypoints(
+      root,
+      "index.html",
+      "<link rel='stylesheet' href='css/site.css#owner&#39;s&amp;theme'>",
+    );
+    assert.match(compiled, /#owner&#39;s&amp;theme'/);
+    assert.deepEqual(htmlReferences(compiled), [
+      compiled
+        .match(/href='([^']+)'/)[1]
+        .replaceAll("&#39;", "'")
+        .replaceAll("&amp;", "&"),
+    ]);
+  }));
+test("entrypoint versioning ignores comments and inline script text, and supports single quotes", () =>
+  fixture((root, put) => {
+    put("js/nav.js", "console.log('first')");
+    const comment = '<!-- <script src="/retired.js"></script> -->';
+    const inline =
+      '<script>const example = \'<link rel="stylesheet" href="/retired.css">\';</script>';
+    const actual =
+      "<link rel='stylesheet' href='/css/site.css'><script src='/js/nav.js'></script>";
+    const compiled = versionEntrypoints(
+      root,
+      "index.html",
+      comment + inline + actual,
+    );
+    assert.ok(compiled.startsWith(comment + inline));
+    assert.match(compiled, /href='\/css\/site\.css\?v=[a-f0-9]{16}'/);
+    assert.match(compiled, /src='\/js\/nav\.js\?v=[a-f0-9]{16}'/);
   }));
 test("a filesystem junction cannot expose resources outside the site", () =>
   fixture((root, put) => {

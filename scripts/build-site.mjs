@@ -12,7 +12,12 @@ import { createHash } from "node:crypto";
 import { spawnSync } from "node:child_process";
 import { basename, dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { collectSite, pageUrl, siteOrigin } from "./site-files.mjs";
+import {
+  collectSite,
+  pageUrl,
+  siteOrigin,
+  versionEntrypoints,
+} from "./site-files.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const output = resolve(root, "dist");
@@ -26,11 +31,18 @@ if (
 
 // Resolve every dependency before replacing the last successful generated site.
 const { pages, files } = collectSite(root);
+const compiledPages = new Map(
+  pages.map((file) => [
+    file,
+    versionEntrypoints(root, file, readFileSync(resolve(root, file), "utf8")),
+  ]),
+);
 rmSync(output, { recursive: true, force: true });
 for (const file of files) {
   const target = resolve(output, file);
   mkdirSync(dirname(target), { recursive: true });
-  cpSync(resolve(root, file), target);
+  if (file.endsWith(".html")) writeFileSync(target, compiledPages.get(file));
+  else cpSync(resolve(root, file), target);
 }
 const urls = pages.map((page) => pageUrl(page).replaceAll("&", "&amp;"));
 writeFileSync(

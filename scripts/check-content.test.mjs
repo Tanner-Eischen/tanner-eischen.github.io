@@ -41,14 +41,22 @@ function editJson(root, name, edit) {
   writeFileSync(path, JSON.stringify(data));
 }
 
-test("current local draft validates and remains held for publication", () => {
+test("current content validates", () => {
   assert.deepEqual(checkContent(root).failures, []);
-  assert.ok(
-    checkContent(root, { release: true }).failures.some((message) =>
-      message.includes("Publication held"),
-    ),
-  );
 });
+
+test("a pending publication gate still holds a valid release", () =>
+  fixture((dir) => {
+    editJson(dir, "content/release-review.json", (data) => {
+      data.gates.find((gate) => gate.id === "publication-approval").state =
+        "pending";
+    });
+    assert.ok(
+      checkContent(dir, { release: true }).failures.some((message) =>
+        message.includes("Publication held"),
+      ),
+    );
+  }));
 test("changed source evidence is rejected", () =>
   fixture((dir) => {
     writeFileSync(resolve(dir, "assets/evidence/geosteering.json"), "{}");
@@ -115,9 +123,14 @@ test("held credential wording cannot silently return", () =>
   }));
 test("private source cannot become a public source link", () =>
   fixture((dir) => {
+    editJson(dir, "content/source-access.json", (data) => {
+      data.repositories.find((record) => record.id === "marshab").visibility =
+        "private";
+    });
     editJson(dir, "content/projects.json", (data) => {
-      data.projects.find((project) => project.id === "marshab").source_url =
-        "https://github.com/Tanner-Eischen/MarsGIS";
+      const project = data.projects.find((project) => project.id === "marshab");
+      project.source_access = "private";
+      project.source_url = "https://github.com/Tanner-Eischen/MarsGIS";
     });
     assert.ok(
       checkContent(dir).failures.some((message) =>
@@ -181,6 +194,10 @@ test("required publication gates cannot be removed", () =>
   }));
 test("API privacy ledger cannot be bypassed by changing a project badge", () =>
   fixture((dir) => {
+    editJson(dir, "content/source-access.json", (data) => {
+      data.repositories.find((record) => record.id === "marshab").visibility =
+        "private";
+    });
     editJson(dir, "content/projects.json", (data) => {
       const project = data.projects.find((project) => project.id === "marshab");
       project.source_access = "public";
@@ -195,6 +212,10 @@ test("API privacy ledger cannot be bypassed by changing a project badge", () =>
 
 test("sanitized showcase badge cannot expose the private raw repository", () =>
   fixture((dir) => {
+    editJson(dir, "content/source-access.json", (data) => {
+      data.repositories.find((record) => record.id === "marshab").visibility =
+        "private";
+    });
     editJson(dir, "content/projects.json", (data) => {
       const project = data.projects.find((project) => project.id === "marshab");
       project.source_access = "sanitized_showcase";

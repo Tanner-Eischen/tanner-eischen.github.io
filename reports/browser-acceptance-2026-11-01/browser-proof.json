@@ -1,0 +1,446 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-01",
+  "scope": "Actual Chromium 145 browser acceptance against the built portfolio on a local HTTP origin; public deployment checked separately.",
+  "tools": {
+    "playwright": "1.58.2",
+    "axe_core_playwright": "4.14.0"
+  },
+  "checks": [
+    {
+      "check": "full-resolution-figure-link",
+      "status": "passed",
+      "url": "/assets/images/case-geosteering-final.png"
+    },
+    {
+      "check": "viewport-first-view-and-mobile-cycle",
+      "status": "passed",
+      "viewports": [
+        {
+          "width": 1440,
+          "height": 900,
+          "client": 1425,
+          "scroll": 1425,
+          "ctaBottom": 700.4792098999023,
+          "passed": true
+        },
+        {
+          "width": 800,
+          "height": 900,
+          "client": 785,
+          "scroll": 785,
+          "ctaBottom": 537.4791793823242,
+          "passed": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "client": 375,
+          "scroll": 375,
+          "ctaBottom": 653.0208358764648,
+          "passed": true
+        },
+        {
+          "width": 320,
+          "height": 800,
+          "client": 305,
+          "scroll": 305,
+          "ctaBottom": 756.1042098999023,
+          "passed": true
+        }
+      ],
+      "escapeFocus": true,
+      "linkCloses": true
+    },
+    {
+      "check": "keyboard-skip-link",
+      "status": "passed",
+      "target": "View projects"
+    },
+    {
+      "check": "no-javascript-core-reading-navigation",
+      "status": "passed",
+      "metrics": {
+        "scroll": 305,
+        "client": 305,
+        "nav": "visible"
+      }
+    },
+    {
+      "check": "reduced-motion-core-reading",
+      "status": "passed",
+      "metrics": {
+        "scroll": "auto",
+        "opacity": "1"
+      }
+    },
+    {
+      "check": "signed-out-public-source-access",
+      "status": "passed",
+      "repositories": [
+        {
+          "repo": "MarsGIS",
+          "status": 200,
+          "publicPage": true
+        },
+        {
+          "repo": "GeoSteering",
+          "status": 200,
+          "publicPage": true
+        },
+        {
+          "repo": "RoofSegmentation",
+          "status": 200,
+          "publicPage": true
+        },
+        {
+          "repo": "Red_Team_Project",
+          "status": 200,
+          "publicPage": true
+        },
+        {
+          "repo": "tanner-eischen.github.io",
+          "status": 200,
+          "publicPage": true
+        }
+      ]
+    },
+    {
+      "check": "six-case-routes-loaded-figures-viewport",
+      "status": "passed",
+      "routes": [
+        {
+          "route": "geosteering",
+          "client": 375,
+          "scroll": 375,
+          "allImagesLoaded": true,
+          "passed": true
+        },
+        {
+          "route": "roof-segmentation",
+          "client": 375,
+          "scroll": 375,
+          "allImagesLoaded": true,
+          "passed": true
+        },
+        {
+          "route": "marshab",
+          "client": 375,
+          "scroll": 375,
+          "allImagesLoaded": true,
+          "passed": true
+        },
+        {
+          "route": "ghostfolio-agent",
+          "client": 375,
+          "scroll": 375,
+          "allImagesLoaded": true,
+          "passed": true
+        },
+        {
+          "route": "legacylens",
+          "client": 375,
+          "scroll": 375,
+          "allImagesLoaded": true,
+          "passed": true
+        },
+        {
+          "route": "adversarial-correctness",
+          "client": 375,
+          "scroll": 375,
+          "allImagesLoaded": true,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "check": "actual-browser-evidence-downloads",
+      "status": "passed",
+      "count": 24,
+      "downloads": [
+        {
+          "project": "geosteering",
+          "href": "../assets/evidence/geosteering-verification-2026-11-01.json",
+          "sha256": "52fcc2cdddab5699418761627f11c5ca9b58ae19e216d15e8a250e04db734089",
+          "passed": true
+        },
+        {
+          "project": "geosteering",
+          "href": "../assets/downloads/geosteering-verification-2026-11-01.zip",
+          "sha256": "958817fa1f7c1509a8baabad7aea0abff9ff5a551eb615618f2885fa7ab97f64",
+          "passed": true
+        },
+        {
+          "project": "geosteering",
+          "href": "../assets/downloads/geosteering-evidence-2026-11-01.zip",
+          "sha256": "e63b43c3ba3fa13e0c48c8aa61fd93e2c16100dc132cd0b3542db31371c10ba3",
+          "passed": true
+        },
+        {
+          "project": "geosteering",
+          "href": "../assets/evidence/geosteering-handoff.json",
+          "sha256": "1200b2f07857707b1b967ae5ae035e4b597fb4108920b5d48bb9b6cf6ee3d088",
+          "passed": true
+        },
+        {
+          "project": "geosteering",
+          "href": "../assets/evidence/geosteering.json",
+          "sha256": "35ab8cba317dc5862ac066aaed638af8a635876a68c70c0aa7ee0054ac22a59b",
+          "passed": true
+        },
+        {
+          "project": "geosteering",
+          "href": "../assets/evidence/geosteering.sha256",
+          "sha256": "f98494eaf995d310554aedd1bf2392788995858af3bbc46cb9b47bd27720fed3",
+          "passed": true
+        },
+        {
+          "project": "geosteering",
+          "href": "../assets/downloads/geosteering-current-report.pdf",
+          "sha256": "01258804d34ae91551fe0834c78fc9a5852e4bf2b745544c20f80a5571a6ef46",
+          "passed": true
+        },
+        {
+          "project": "geosteering",
+          "href": "../assets/evidence/geosteering-current-reference.json",
+          "sha256": "666b7a4c307513009d1c8f2c83a2bbb081a62b8c14f13010c6e744146b14273e",
+          "passed": true
+        },
+        {
+          "project": "roof-segmentation",
+          "href": "../assets/evidence/roof-segmentation-verification-2026-11-01.json",
+          "sha256": "17c97023945e7322e11a7153bbb6ed9402842ab7560305de1b2f4731b257759c",
+          "passed": true
+        },
+        {
+          "project": "roof-segmentation",
+          "href": "../assets/downloads/roof-segmentation-verification-2026-11-01.zip",
+          "sha256": "bcd00353d63efea49895e67cf9a3a1b7d0ee344f7fb40ab6eecc2a167787d997",
+          "passed": true
+        },
+        {
+          "project": "roof-segmentation",
+          "href": "../assets/downloads/roof-segmentation-evidence-2026-11-01.zip",
+          "sha256": "65977381a65d88b24bb6a7a1fbb8293bd09d4601149eb17ba2b3efb09b78507a",
+          "passed": true
+        },
+        {
+          "project": "roof-segmentation",
+          "href": "../assets/evidence/roof-segmentation-handoff.json",
+          "sha256": "66a99c4c1d786acf81b2342964a8f8687e97f5670fc6579c21b58b2d74dc0bf6",
+          "passed": true
+        },
+        {
+          "project": "roof-segmentation",
+          "href": "../assets/evidence/roof-segmentation.json",
+          "sha256": "6d45294ce8aebee36deeaa673d9316df4ddf249a17a6f40544a215ed85615181",
+          "passed": true
+        },
+        {
+          "project": "roof-segmentation",
+          "href": "../assets/evidence/roof-segmentation.sha256",
+          "sha256": "de2e3a34152fb7c913e27aae0025250fa83ae5cbdc97fb5b94f25255015ac7b2",
+          "passed": true
+        },
+        {
+          "project": "roof-segmentation",
+          "href": "../assets/evidence/roof-whu-test-per-image.csv",
+          "sha256": "49e5acd010ade2daa0dff86fc3c2f5ba05614bb1e43bbcd37db80339b19a6721",
+          "passed": true
+        },
+        {
+          "project": "roof-segmentation",
+          "href": "../assets/evidence/roof-serving-whu-per-image.csv",
+          "sha256": "39371631271b320c965a9bf27fd663bff2a6a3b772d2c7ca4dafb4557ee56b88",
+          "passed": true
+        },
+        {
+          "project": "roof-segmentation",
+          "href": "../assets/evidence/roof-external-per-image.csv",
+          "sha256": "b1d8fe8d1d05725404c0b1a52c12b50fd6b10c89ebadaca67bd83d46c8503d08",
+          "passed": true
+        },
+        {
+          "project": "marshab",
+          "href": "../assets/evidence/marshab-verification-2026-11-01.json",
+          "sha256": "006aff14f4f103315381196ac4d64a44751fe72fb3f1db252ca632ab9ec60de0",
+          "passed": true
+        },
+        {
+          "project": "marshab",
+          "href": "../assets/downloads/marshab-verification-2026-11-01.zip",
+          "sha256": "2e1193424cac39216f12ee0a43d74e4c2a76ca75e198d59b5eb0d8ce48537286",
+          "passed": true
+        },
+        {
+          "project": "marshab",
+          "href": "../assets/downloads/marshab-evidence-2026-11-01.zip",
+          "sha256": "91d2c9013ea203009c15cd1c408dfb3d58e31a4ee059860ba07a1f19e7800b35",
+          "passed": true
+        },
+        {
+          "project": "marshab",
+          "href": "../assets/evidence/marshab-handoff.json",
+          "sha256": "0af3a267d8d38cc0d54cdccde3bf5ef888b4994bbcc627b203c7be1cea20bed4",
+          "passed": true
+        },
+        {
+          "project": "marshab",
+          "href": "../assets/evidence/marshab.json",
+          "sha256": "b646749a3836e818c2a8a01fea2c5aa9b4c8cb306bcf8a0ff48c8ebba8bfbd4c",
+          "passed": true
+        },
+        {
+          "project": "marshab",
+          "href": "../assets/evidence/marshab.sha256",
+          "sha256": "8dcf903c512b0477ebe06a359cd10e863a81469cfbebd57e573a0fe93719c54a",
+          "passed": true
+        },
+        {
+          "project": "marshab",
+          "href": "../assets/downloads/marshab-reference-routes.geojson",
+          "sha256": "96f8e4ad5991db021f33a05ea1577804e74230f19c0ad06fc8f5b9175b60fe87",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "check": "automated-accessibility-current-pages",
+      "status": "passed",
+      "tool": "axe-core/playwright4.14.0",
+      "scope": "AutomatedWCAG-tagged checks only,notfullconformance",
+      "pages": [
+        {
+          "route": "/",
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "route": "case-studies/geosteering.html",
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "route": "case-studies/roof-segmentation.html",
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "route": "case-studies/marshab.html",
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "route": "case-studies/ghostfolio-agent.html",
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "route": "case-studies/legacylens.html",
+          "violations": [],
+          "incomplete": []
+        },
+        {
+          "route": "case-studies/adversarial-correctness.html",
+          "violations": [],
+          "incomplete": []
+        }
+      ]
+    },
+    {
+      "check": "all-primary-section-anchors",
+      "status": "passed",
+      "anchors": [
+        {
+          "name": "Work",
+          "hash": "#work",
+          "top": 96,
+          "header": 84,
+          "passed": true
+        },
+        {
+          "name": "Experience",
+          "hash": "#experience",
+          "top": 95.92708587646484,
+          "header": 84,
+          "passed": true
+        },
+        {
+          "name": "Technical focus",
+          "hash": "#approach",
+          "top": 95.75,
+          "header": 84,
+          "passed": true
+        },
+        {
+          "name": "Background",
+          "hash": "#background",
+          "top": 96.25,
+          "header": 84,
+          "passed": true
+        },
+        {
+          "name": "Contact",
+          "hash": "#contact",
+          "top": 407.3958435058594,
+          "header": 84,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "check": "existing-pdf-opening-only",
+      "status": "passed",
+      "url": "/assets/resume.pdf",
+      "factsOrFileChanged": false
+    },
+    {
+      "check": "exploratory-resize-open-menu-roundtrip",
+      "status": "passed"
+    },
+    {
+      "check": "explicit-missing-route",
+      "status": "passed",
+      "http": 404
+    },
+    {
+      "check": "roof-full-image-target",
+      "status": "passed",
+      "imageUrl": "/assets/images/case-roof-whu-learning.png"
+    },
+    {
+      "check": "mars-full-image-target",
+      "status": "passed",
+      "imageUrl": "/assets/images/case-marshab-comparison.png"
+    },
+    {
+      "check": "data-table-keyboard-roundtrip",
+      "status": "passed",
+      "start": {
+        "x": 0,
+        "total": 364,
+        "width": 336
+      },
+      "right": 28,
+      "left": 0
+    }
+  ],
+  "app_console_errors": [],
+  "visual_inspection": "All home sections, six case study headers, scientific figures, mobile menu and contained table inspected.",
+  "screenshots_sha256": {
+    "final-home-1440.png": "71861c109c8d8bc29ea0917c96ea3788dd9cb6d074bc7758fd34a90ca2e49e60",
+    "final-home-800.png": "ab87f3e8eb4abbde470fe1c3710a60f61420a2cbffc6f247858c9a0cc5338fbb",
+    "final-home-390.png": "49d4af581d9c10a94f4c08cd772f21af9983deeca54c1ba2ccec5f06747317bf",
+    "final-home-320.png": "b263771a26d5fa88c1eb5f9f4469eec52433028310c272a88123a4b435a11b57",
+    "final-menu-320.png": "d4cb3c169a170a2c5bf6eb5affa5f3dcbc37cf57ec7fe4e90bf71f1bcfae9a76",
+    "final-no-js-case-320.png": "2a5e3311f9571aaa0e7e1abaf20fc9aa47550cd366a50f738036c84ade411d84",
+    "final-reduced-motion-800.png": "54f29107a351fedef670c7aa6b0fee9294f05923a94e1a53acc2638e93ddd18f",
+    "geosteering-figure-1440.png": "fd388e17ef37787f35714866bf8e7cab272437f3ed02dc3f4dbefb8da3767c7b",
+    "roof-table-keyboard-390.png": "0f67182359d8af30882c3c91defdb19bbea2c1ba346a0d2ab65e78e674238bff"
+  },
+  "limits": [
+    "Automated accessibility checks are not full WCAG conformance.",
+    "Existing biography and PDF facts unchanged; not independently verified.",
+    "Scientific evidence archives retain original source versions and limitations."
+  ]
+}
