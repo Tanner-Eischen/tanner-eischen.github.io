@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-11-01T06:58:49.830595+00:00",
+  "source_base_commit": "8292cd1",
+  "dirty_source_snapshot": true,
+  "source_sha256": {
+    "scripts/verify_built_site.py": "104ecba174bc98602fe0339492dd1ced45098fc6ea173cfb6a78f7101fe408de",
+    "scripts/test_verify_built_site.py": "b3b298318ac00fee68cfce6ba882f0c1a18b05d82dc9014685bab1c366990835",
+    "package.json": "618bcdd38634839531e2fa2fd3a8316d95c0f84fde27f1ddf2a7f06e465d5193",
+    ".github/workflows/pages.yml": "6d913f13127549e21e74f6944c89eb2a3df3fa82aa1c91fa4002d692bc10c5e7",
+    ".gitattributes": "3d6540c8f6b7fc6564db7a9d6fe5ea9ee76877363eff226ebaf207df65af4a3b",
+    "css/style.css": "75ed33149ebe8687a2b4631761d278216101894afad798a18eed5ca38fdd337a"
+  },
+  "npm_check": "passed",
+  "javascript_controls": 29,
+  "python_controls": 10,
+  "total_unique_controls": 39,
+  "python_test_profiles": [
+    "Windows Python 3.10",
+    "Windows bundled Python 3.12"
+  ],
+  "python_lint": "Ruff check and format --check passed",
+  "built_pages": 7,
+  "checked_references": 120,
+  "loopback_public_files": 52,
+  "loopback_requests": 53,
+  "home_static_resource_bytes": 1473644,
+  "report_destination_preflight": "resolved targets inside build root rejected before validation/writing",
+  "no_browser_or_ui": true,
+  "no_publication": true,
+  "full_check_log": "tmp/wave2-release-check.log",
+  "http_receipt": "docs/implementation/verification/wave2-http-verified-2026-11-01.json",
+  "http_receipt_sha256": "d2d670fde4109de6416ee34758831f28eb46a5ab74ac4e7aba5f0110d7b4dad8",
+  "limitations": [
+    "Loopback artifact checks do not certify browser layout, keyboard/mobile behavior or WCAG conformance.",
+    "Publication approval and original credential/rights gates are unchanged."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-11-01T06:41:44.614281+00:00",
+  "css_sha256": "75ed33149ebe8687a2b4631761d278216101894afad798a18eed5ca38fdd337a",
+  "focus_token": "--focus-ring",
+  "checks": [
+    {
+      "background_token": "--paper",
+      "background": "#fffdf5",
+      "foreground": "#9b6b00",
+      "contrast_ratio": 4.58563198744304
+    },
+    {
+      "background_token": "--paper-deep",
+      "background": "#f4edcf",
+      "foreground": "#9b6b00",
+      "contrast_ratio": 3.972009114219729
+    },
+    {
+      "background_token": "--white",
+      "background": "#ffffff",
+      "foreground": "#9b6b00",
+      "contrast_ratio": 4.669997419953821
+    },
+    {
+      "background_token": "--yellow",
+      "background": "#f5cf3d",
+      "foreground": "#9b6b00",
+      "contrast_ratio": 3.0855360765568416
+    },
+    {
+      "background_token": "--yellow-soft",
+      "background": "#ffe984",
+      "foreground": "#9b6b00",
+      "contrast_ratio": 3.834013175886378
+    },
+    {
+      "background_token": "--ink",
+      "background": "#17140d",
+      "foreground": "#9b6b00",
+      "contrast_ratio": 3.9365911053335685
+    },
+    {
+      "background_token": "--ink-soft",
+      "background": "#2c2617",
+      "foreground": "#9b6b00",
+      "contrast_ratio": 3.2195541213013237
+    }
+  ],
+  "scope": "Calculated declared flat CSS pairs only; no browser/rendering, composited gradients/alpha states or accessibility conformance assertion."
+}

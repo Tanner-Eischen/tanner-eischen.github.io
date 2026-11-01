@@ -11,13 +11,15 @@
     "lint:html": "node scripts/check-html.mjs",
     "lint:links": "node scripts/check-links.mjs",
     "lint:js": "node --check js/custom.js",
-    "check": "npm run format:check && npm run lint:html && npm run lint:links && npm run lint:js && npm run lint:content && npm run test:content && npm run test:site && npm run build && npm run check:built",
+    "check": "npm run format:check && npm run lint:html && npm run lint:links && npm run lint:js && npm run lint:content && npm run test:content && npm run test:site && npm run test:http && npm run build && npm run check:built && npm run check:http",
     "lint:content": "node scripts/check-content.mjs",
     "test:content": "node --test scripts/check-content.test.mjs",
     "check:release": "npm run check && node scripts/check-content.mjs --release",
     "test:site": "node --test scripts/site-files.test.mjs scripts/check-external.test.mjs",
     "check:built": "node scripts/check-html.mjs --built && node scripts/check-links.mjs --built",
-    "check:external": "node scripts/check-external.mjs"
+    "check:external": "node scripts/check-external.mjs",
+    "test:http": "python -m unittest discover -s scripts -p test_verify_built_site.py",
+    "check:http": "python scripts/verify_built_site.py"
   },
   "devDependencies": {
     "ajv": "8.20.0",

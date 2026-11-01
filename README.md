@@ -34,6 +34,24 @@ evidence hashes and the original WHU per-image count aggregation. Negative check
 exercise unsupported metrics, changed evidence, held credentials, private source
 links, nested routes, missing resources, traversal and filesystem junctions.
 
+The check also uses Python's standard-library HTTP server to serve the built
+artifact over loopback. It verifies every resource's bytes and Content-Length,
+directory index routes, the manifest fingerprint, exact file inventory,
+sitemap/robots metadata and the conservative 1.5 MB home-resource budget.
+Ten negative/integration controls cover corrupt files, missing downloads, undeclared files,
+path escape, changed fingerprints, a self-consistent wrong sitemap, excessive
+resource size, evidence overwrite protection and report destinations outside
+the validated artifact. No browser is opened.
+
+```bash
+npm run check:http -- --report docs/implementation/verification/new-http-proof.json
+```
+
+Choose a new report path for every saved run. Reports cannot overwrite earlier
+evidence. The check uses Python 3.10+ without third-party Python dependencies;
+CI explicitly selects Python 3.12. It does not measure browser layout,
+keyboard interaction, accessibility conformance or network timing.
+
 The seven existing routes are preserved. Additional pages under `case-studies/`,
 `projects/`, `scientific-software/` and `ai-evaluation/` enter the same checks.
 Only public pages and their referenced assets enter `dist/`; source/configuration
