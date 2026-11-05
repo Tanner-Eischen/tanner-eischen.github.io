@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-05",
+  "scope": "Portfolio curation and artifact imports; no new application/provider experiments",
+  "npm_check": "passed",
+  "test_groups": {
+    "content": 18,
+    "site_and_external_classifier": 15,
+    "http_regressions": 10
+  },
+  "built_pages": 9,
+  "built_files": 75,
+  "http_requests_checked": 76,
+  "home_resource_bytes": 1485889,
+  "browser_proof": "reports/project-card-review-2026-11-05/browser-proof.json",
+  "content_fingerprint": "4cdbb5a03be25eea5b3d547a4dbfb863d598cea943c5ca6805f6af0e5a6ff390",
+  "parametric_release_tests_passed": 18,
+  "ghostfolio_grounding_smoke_tests_passed": 69,
+  "old_scientific_receipts_unchanged": true,
+  "resume_unchanged": true,
+  "underlying_project_application_edits": false,
+  "new_model_calls": 0
+}

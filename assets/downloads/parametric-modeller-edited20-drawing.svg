@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1738.4" height="608" viewBox="0 0 1738.4 608">
+<title>White oak frame - 20 in source boards - in</title>
+<style>text{font-family:Arial,sans-serif;font-size:11px;fill:#111;stroke:none}line.outline{fill:none;stroke:#111;stroke-width:1.4;vector-effect:non-scaling-stroke}line.hidden{fill:none;stroke:#777;stroke-width:.8;stroke-dasharray:6 4;vector-effect:non-scaling-stroke}line.dimension{fill:none;stroke:#555;stroke-width:.75}line.annotation{fill:none;stroke:#111;stroke-width:1}line.grain{fill:none;stroke:#9a5d25;stroke-width:1}text.dimension,text.annotation{fill:#111;stroke:none}text.grain{fill:#9a5d25;stroke:none}.view-label{font-size:12px;font-weight:bold;letter-spacing:1px}.drawing-title{font-size:18px;font-weight:bold}</style>
+<defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="0" refY="3" orient="auto"><path d="M6,0 L0,3 L6,6 z" fill="#555"/></marker><marker id="arrow-end" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#555"/></marker></defs>
+<g data-view="top">
+<text id="top:label" class="annotation view-label" x="315.6" y="41" font-size="12px" text-anchor="middle">TOP</text>
+<line id="top:dimension:height" class="dimension" x1="587.2" y1="71" x2="587.2" y2="455" marker-start="url(#arrow)" marker-end="url(#arrow-end)"/>
+<line id="top:dimension:height-extension-bottom" class="dimension" x1="569.2" y1="455" x2="592.2" y2="455"/>
+<line id="top:dimension:height-extension-top" class="dimension" x1="569.2" y1="71" x2="592.2" y2="71"/>
+<line id="top:dimension:width" class="dimension" x1="66" y1="477" x2="565.2" y2="477" marker-start="url(#arrow)" marker-end="url(#arrow-end)"/>
+<line id="top:dimension:width-extension-left" class="dimension" x1="66" y1="459" x2="66" y2="482"/>
+<line id="top:dimension:width-extension-right" class="dimension" x1="565.2" y1="459" x2="565.2" y2="482"/>
+<text id="top:annotation:finished" class="dimension" x="315.6" y="263" font-size="11px" text-anchor="middle">4 white oak boards: 20 x 3 x 0.75 in</text>
+<text id="top:annotation:opening" class="dimension" x="315.6" y="205.4" font-size="11px" text-anchor="middle">Opening 20 x 14 in</text>
+<text id="top:annotation:stock" class="dimension" x="315.6" y="320.6" font-size="11px" text-anchor="middle">Stock: 20.5 x 3.25 x 0.875 in</text>
+<text id="top:dimension:height-label" class="dimension" x="592.2" y="263" font-size="11px" text-anchor="middle" transform="rotate(90 592.2 263)">20 in</text>
+<text id="top:dimension:width-label" class="dimension" x="315.6" y="473" font-size="11px" text-anchor="middle">26 in</text>
+<line id="top:grain:assembly-instance~3Aportfolio-frame-bottom~3Asource-body~3Aportfolio-frame-board_body:body:portfolio-frame-board_body" class="grain" x1="238.8" y1="426.2" x2="392.4" y2="426.2" marker-end="url(#arrow-end)"/>
+<line id="top:grain:assembly-instance~3Aportfolio-frame-left~3Asource-body~3Aportfolio-frame-board_body:body:portfolio-frame-board_body" class="grain" x1="94.8" y1="339.8" x2="94.8" y2="186.2" marker-end="url(#arrow-end)"/>
+<line id="top:grain:assembly-instance~3Aportfolio-frame-right~3Asource-body~3Aportfolio-frame-board_body:body:portfolio-frame-board_body" class="grain" x1="536.4" y1="339.8" x2="536.4" y2="186.2" marker-end="url(#arrow-end)"/>
+<line id="top:grain:assembly-instance~3Aportfolio-frame-top~3Asource-body~3Aportfolio-frame-board_body:body:portfolio-frame-board_body" class="grain" x1="238.8" y1="99.8" x2="392.4" y2="99.8" marker-end="url(#arrow-end)"/>
+<line id="top:edge:0000" class="outline" x1="66" y1="455" x2="66" y2="71"/>
+<line id="top:edge:0001" class="outline" x1="66" y1="455" x2="123.6" y2="455"/>
+<line id="top:edge:0002" class="outline" x1="66" y1="71" x2="123.6" y2="71"/>
+<line id="top:edge:0003" class="outline" x1="123.6" y1="455" x2="123.6" y2="397.4"/>
+<line id="top:edge:0004" class="outline" x1="123.6" y1="455" x2="507.6" y2="455"/>
+<line id="top:edge:0005" class="outline" x1="123.6" y1="397.4" x2="123.6" y2="128.6"/>
+<line id="top:edge:0006" class="outline" x1="123.6" y1="397.4" x2="507.6" y2="397.4"/>
+<line id="top:edge:0007" class="outline" x1="123.6" y1="128.6" x2="123.6" y2="71"/>
+<line id="top:edge:0008" class="outline" x1="123.6" y1="128.6" x2="507.6" y2="128.6"/>
+<line id="top:edge:0009" class="outline" x1="123.6" y1="71" x2="507.6" y2="71"/>
+<line id="top:edge:0010" class="outline" x1="507.6" y1="455" x2="507.6" y2="397.4"/>
+<line id="top:edge:0011" class="outline" x1="507.6" y1="455" x2="565.2" y2="455"/>
+<line id="top:edge:0012" class="outline" x1="507.6" y1="397.4" x2="507.6" y2="128.6"/>
+<line id="top:edge:0013" class="outline" x1="507.6" y1="128.6" x2="507.6" y2="71"/>
+<line id="top:edge:0014" class="outline" x1="507.6" y1="71" x2="565.2" y2="71"/>
+<line id="top:edge:0015" class="outline" x1="565.2" y1="455" x2="565.2" y2="71"/>
+</g>
+<g data-view="front">
+<text id="front:label" class="annotation view-label" x="926.8" y="41" font-size="12px" text-anchor="middle">FRONT</text>
+<line id="front:dimension:height" class="dimension" x1="1198.4" y1="255.8" x2="1198.4" y2="270.2" marker-start="url(#arrow)" marker-end="url(#arrow-end)"/>
+<line id="front:dimension:height-extension-bottom" class="dimension" x1="1180.4" y1="270.2" x2="1203.4" y2="270.2"/>
+<line id="front:dimension:height-extension-top" class="dimension" x1="1180.4" y1="255.8" x2="1203.4" y2="255.8"/>
+<line id="front:dimension:width" class="dimension" x1="677.2" y1="292.2" x2="1176.4" y2="292.2" marker-start="url(#arrow)" marker-end="url(#arrow-end)"/>
+<line id="front:dimension:width-extension-left" class="dimension" x1="677.2" y1="274.2" x2="677.2" y2="297.2"/>
+<line id="front:dimension:width-extension-right" class="dimension" x1="1176.4" y1="274.2" x2="1176.4" y2="297.2"/>
+<text id="front:dimension:height-label" class="dimension" x="1203.4" y="263" font-size="11px" text-anchor="middle" transform="rotate(90 1203.4 263)">0.75 in</text>
+<text id="front:dimension:width-label" class="dimension" x="926.8" y="288.2" font-size="11px" text-anchor="middle">26 in</text>
+<line id="front:edge:0000" class="outline" x1="677.2" y1="270.2" x2="677.2" y2="255.8"/>
+<line id="front:edge:0001" class="outline" x1="677.2" y1="270.2" x2="734.8" y2="270.2"/>
+<line id="front:edge:0002" class="outline" x1="677.2" y1="255.8" x2="734.8" y2="255.8"/>
+<line id="front:edge:0003" class="outline" x1="734.8" y1="270.2" x2="734.8" y2="255.8"/>
+<line id="front:edge:0004" class="outline" x1="734.8" y1="270.2" x2="1118.8" y2="270.2"/>
+<line id="front:edge:0005" class="outline" x1="734.8" y1="255.8" x2="1118.8" y2="255.8"/>
+<line id="front:edge:0006" class="outline" x1="1118.8" y1="270.2" x2="1118.8" y2="255.8"/>
+<line id="front:edge:0007" class="outline" x1="1118.8" y1="270.2" x2="1176.4" y2="270.2"/>
+<line id="front:edge:0008" class="outline" x1="1118.8" y1="255.8" x2="1176.4" y2="255.8"/>
+<line id="front:edge:0009" class="outline" x1="1176.4" y1="270.2" x2="1176.4" y2="255.8"/>
+</g>
+<g data-view="right">
+<text id="right:label" class="annotation view-label" x="1480.4" y="41" font-size="12px" text-anchor="middle">RIGHT</text>
+<line id="right:dimension:height" class="dimension" x1="1694.4" y1="255.8" x2="1694.4" y2="270.2" marker-start="url(#arrow)" marker-end="url(#arrow-end)"/>
+<line id="right:dimension:height-extension-bottom" class="dimension" x1="1676.4" y1="270.2" x2="1699.4" y2="270.2"/>
+<line id="right:dimension:height-extension-top" class="dimension" x1="1676.4" y1="255.8" x2="1699.4" y2="255.8"/>
+<line id="right:dimension:width" class="dimension" x1="1288.4" y1="292.2" x2="1672.4" y2="292.2" marker-start="url(#arrow)" marker-end="url(#arrow-end)"/>
+<line id="right:dimension:width-extension-left" class="dimension" x1="1288.4" y1="274.2" x2="1288.4" y2="297.2"/>
+<line id="right:dimension:width-extension-right" class="dimension" x1="1672.4" y1="274.2" x2="1672.4" y2="297.2"/>
+<text id="right:dimension:height-label" class="dimension" x="1699.4" y="263" font-size="11px" text-anchor="middle" transform="rotate(90 1699.4 263)">0.75 in</text>
+<text id="right:dimension:width-label" class="dimension" x="1480.4" y="288.2" font-size="11px" text-anchor="middle">20 in</text>
+<line id="right:edge:0003" class="hidden" x1="1346" y1="270.2" x2="1346" y2="255.8"/>
+<line id="right:edge:0006" class="hidden" x1="1614.8" y1="270.2" x2="1614.8" y2="255.8"/>
+<line id="right:edge:0000" class="outline" x1="1288.4" y1="270.2" x2="1288.4" y2="255.8"/>
+<line id="right:edge:0001" class="outline" x1="1288.4" y1="270.2" x2="1346" y2="270.2"/>
+<line id="right:edge:0002" class="outline" x1="1288.4" y1="255.8" x2="1346" y2="255.8"/>
+<line id="right:edge:0004" class="outline" x1="1346" y1="270.2" x2="1614.8" y2="270.2"/>
+<line id="right:edge:0005" class="outline" x1="1346" y1="255.8" x2="1614.8" y2="255.8"/>
+<line id="right:edge:0007" class="outline" x1="1614.8" y1="270.2" x2="1672.4" y2="270.2"/>
+<line id="right:edge:0008" class="outline" x1="1614.8" y1="255.8" x2="1672.4" y2="255.8"/>
+<line id="right:edge:0009" class="outline" x1="1672.4" y1="270.2" x2="1672.4" y2="255.8"/>
+</g>
+<line id="title-block:bottom" class="annotation" x1="1710.4" y1="580" x2="28" y2="580"/>
+<line id="title-block:divider" class="annotation" x1="1488.4" y1="512" x2="1488.4" y2="580"/>
+<line id="title-block:left" class="annotation" x1="28" y1="580" x2="28" y2="512"/>
+<line id="title-block:right" class="annotation" x1="1710.4" y1="512" x2="1710.4" y2="580"/>
+<line id="title-block:top" class="annotation" x1="28" y1="512" x2="1710.4" y2="512"/>
+<text id="title-block:scale" class="annotation" x="1500.4" y="537" font-size="11px" text-anchor="start">SCALE 1:5</text>
+<text id="title-block:subtitle" class="annotation" x="40" y="563" font-size="11px" text-anchor="start">ORTHOGRAPHIC SHOP DRAWING</text>
+<text id="title-block:title" class="annotation drawing-title" x="40" y="541" font-size="18px" text-anchor="start">White oak frame - 20 in source boards - in</text>
+<text id="title-block:units" class="annotation" x="1500.4" y="561" font-size="11px" text-anchor="start">UNITS IN</text>
+</svg>

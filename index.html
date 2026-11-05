@@ -132,9 +132,9 @@
             <h2 id="work-title">Projects</h2>
           </div>
           <p>
-            Scientific projects with inspectable local evidence, failure cases,
-            and explicit limits, followed by other selected work. Source access
-            and application verification are stated for each case study.
+            Scientific software, evaluation infrastructure, and selected applied
+            projects with inspectable outputs. Each case study explains what was
+            tested and what still needs work.
           </p>
         </div>
 
@@ -231,8 +231,8 @@
                 terrain grid at 20 m spacing.
               </p>
               <p class="case-note">
-                Terrain evidence · public source · live browser workflow
-                verified
+                Terrain-only evidence · public source · browser workflow checked
+                November 1, 2026
               </p>
             </div>
             <a class="project-link" href="case-studies/marshab.html"
@@ -246,48 +246,100 @@
               >Open Mars explorer</a
             >
           </article>
-          <article class="project-card project-card-featured reveal">
+          <article class="project-card reveal">
             <div class="project-topline">
-              <span class="project-number">04</span>
-              <span class="project-state">TypeScript CAD</span>
+              <span class="project-number">04</span
+              ><span class="project-state">AI evaluation</span>
             </div>
+            <img
+              class="project-preview"
+              src="assets/images/case-harborforge-calibration.svg"
+              alt="Recorded completion counts for North Mini Code, Super VL, Ultra and Flint on three calibration tasks"
+              loading="lazy"
+              width="1200"
+              height="620"
+            />
             <div>
-              <p class="project-domain">Computational geometry</p>
+              <h3>HarborForge</h3>
+              <p>
+                A terminal-agent evaluation platform with immutable tasks,
+                isolated execution and independent verification.
+              </p>
+              <p class="project-result">
+                24 calibration trials across four free models: 14 passes and 10
+                token/output-limit stops, all at $0.
+              </p>
+              <p class="case-note">
+                Real model calibration; three task templates, not a broad
+                capability ranking.
+              </p>
+            </div>
+            <a class="project-link" href="case-studies/harborforge.html"
+              >Read the evaluation case study</a
+            >
+          </article>
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-number">05</span
+              ><span class="project-state">Parametric CAD</span>
+            </div>
+            <img
+              class="project-preview"
+              src="assets/images/case-parametric-modeller-frame.svg"
+              alt="Actual exported shop drawing of the four-board frame example"
+              loading="lazy"
+              width="1623"
+              height="570"
+            />
+            <div>
               <h3>Parametric Modeller</h3>
               <p>
-                A browser-based CAD application for woodworking. It stores an
-                editable feature history, rebuilds geometry deterministically,
-                and exports shop drawings in SVG, PDF, and DXF formats.
+                A planar woodworking CAD editor with editable feature history. A
+                local frame example produces saved scenes, cut lists, and
+                SVG/PDF/DXF shop drawings.
+              </p>
+              <p class="case-note">
+                Headless geometry and export checks; browser workflow still
+                needs verification.
               </p>
             </div>
             <ul class="tag-list" aria-label="Technologies">
               <li>TypeScript</li>
               <li>Three.js</li>
-              <li>Vite</li>
+              <li>Geometry</li>
               <li>Vitest</li>
             </ul>
-            <a
-              class="project-link"
-              href="https://github.com/Tanner-Eischen/ParametricModeller"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="View Parametric Modeller on GitHub"
+            <a class="project-link" href="case-studies/parametric-modeller.html"
+              >Inspect the frame example</a
             >
-              View repository
-            </a>
           </article>
           <article class="project-card reveal">
             <div class="project-topline">
-              <span class="project-number">05</span>
-              <span class="project-state">Portfolio analysis</span>
+              <span class="project-number">06</span
+              ><span class="project-state">Applied AI verification</span>
             </div>
+            <img
+              class="project-preview"
+              src="assets/images/case-ghostfolio-verification-2026-11-05.svg"
+              alt="Synthetic verification rejects a stock price used as the portfolio total"
+              loading="lazy"
+              width="1200"
+              height="500"
+            />
             <div>
-              <p class="project-domain">Fintech AI</p>
               <h3>Ghostfolio Agent</h3>
               <p>
-                A portfolio assistant that calls typed analysis tools and checks
-                its responses with confidence scores and validation rules. The
-                repository includes a React interface and a FastAPI service.
+                A portfolio assistant that binds numerical claims to typed tool
+                results, checking the right financial field, entity and
+                currency.
+              </p>
+              <p class="project-result">
+                A synthetic example rejects a stock price used as a portfolio
+                total.
+              </p>
+              <p class="case-note">
+                Recorded offline verification controls; live-model quality and
+                browser interaction unmeasured.
               </p>
             </div>
             <ul class="tag-list" aria-label="Technologies">
@@ -296,105 +348,9 @@
               <li>React</li>
               <li>pytest</li>
             </ul>
-            <a
-              class="project-link"
-              href="https://github.com/Tanner-Eischen/ghostfolio-agent"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="View Ghostfolio Agent on GitHub"
+            <a class="project-link" href="case-studies/ghostfolio-agent.html"
+              >Inspect the verification example</a
             >
-              View repository
-            </a>
-          </article>
-          <article class="project-card reveal">
-            <div class="project-topline">
-              <span class="project-number">06</span>
-              <span class="project-state">Publishing research</span>
-            </div>
-            <div>
-              <p class="project-domain">Research automation</p>
-              <h3>Publishing Strategist</h3>
-              <p>
-                A research agent for Kindle Direct Publishing. It searches for
-                niches, compares competing titles, drafts listing copy, and
-                scores demand and competition with configured market data.
-              </p>
-            </div>
-            <ul class="tag-list" aria-label="Technologies">
-              <li>Python</li>
-              <li>FastAPI</li>
-              <li>React</li>
-              <li>Market APIs</li>
-            </ul>
-            <a
-              class="project-link"
-              href="https://github.com/Tanner-Eischen/PublishingStrategist"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="View Publishing Strategist on GitHub"
-            >
-              View repository
-            </a>
-          </article>
-          <article class="project-card reveal">
-            <div class="project-topline">
-              <span class="project-number">07</span>
-              <span class="project-state">Developer tools</span>
-            </div>
-            <div>
-              <p class="project-domain">Browser automation</p>
-              <h3>NLWebAgent</h3>
-              <p>
-                A CLI that turns natural-language test instructions into
-                Playwright actions. It records sessions, writes Playwright
-                tests, and tries coordinates when a selector fails.
-              </p>
-            </div>
-            <ul class="tag-list" aria-label="Technologies">
-              <li>Python</li>
-              <li>Playwright</li>
-              <li>Vision models</li>
-              <li>CLI</li>
-            </ul>
-            <a
-              class="project-link"
-              href="https://github.com/Tanner-Eischen/NLWebAgent"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="View NLWebAgent on GitHub"
-            >
-              View repository
-            </a>
-          </article>
-          <article class="project-card reveal">
-            <div class="project-topline">
-              <span class="project-number">08</span>
-              <span class="project-state">Tutoring software</span>
-            </div>
-            <div>
-              <p class="project-domain">Education</p>
-              <h3>Socrates</h3>
-              <p>
-                A tutoring application that responds with guiding questions. It
-                records sessions, displays learning analytics, and supports
-                real-time chat in the React client.
-              </p>
-            </div>
-            <ul class="tag-list" aria-label="Technologies">
-              <li>TypeScript</li>
-              <li>OpenAI</li>
-              <li>Express</li>
-              <li>React</li>
-            </ul>
-            <a
-              class="project-link"
-              href="https://github.com/Tanner-Eischen/SocratesTutoring"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="View Socrates on GitHub"
-            >
-              View repository
-            </a>
           </article>
         </div>
 

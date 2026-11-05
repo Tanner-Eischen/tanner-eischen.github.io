@@ -98,109 +98,96 @@
       }
     },
     {
+      "id": "harborforge",
+      "title": "HarborForge",
+      "category": "AI evaluation",
+      "short_summary": "Actual free-model calibration with frozen tasks and independent verification.",
+      "contribution": "A terminal-agent evaluation platform with immutable tasks, isolated execution and independent verification.",
+      "current_readiness": "local_evidence",
+      "source_revision": "6f549055469a8c4f591857e44256bfa8bda6a29f",
+      "source_access": "public",
+      "source_repository": "Tanner-Eischen/Red_Team_Project",
+      "source_url": "https://github.com/Tanner-Eischen/Red_Team_Project",
+      "demo_url": null,
+      "report_url": "assets/evidence/harborforge-case-study-summary.json",
+      "verification_date": "2026-11-05",
+      "evidence": [
+        "assets/evidence/harborforge-calibration-2026-11-02.json",
+        "assets/evidence/harborforge-flint-2026-11-05.json",
+        "assets/evidence/harborforge-case-study-summary.json"
+      ],
+      "limits": [
+        "Three calibration task templates, two attempts per model; not an independent holdout or universal model ranking.",
+        "Flint ran on a later date using the same task and harness; output/token stops are unsuccessful completions, not verifier rejections.",
+        "Raw calibration task content and model traces remain private; the downloadable repair example is an authored public reference replay."
+      ],
+      "pages": ["index.html", "case-studies/harborforge.html"],
+      "image": {
+        "path": "assets/images/case-harborforge-calibration.svg",
+        "alt": "Recorded completion counts for four free models on three calibration tasks",
+        "width": 1200,
+        "height": 620
+      }
+    },
+    {
       "id": "parametric-modeller",
       "title": "Parametric Modeller",
       "category": "applied software",
-      "short_summary": "Parametric Modeller repository-reported implementation.",
-      "contribution": "A browser-based CAD application for woodworking. It stores an editable feature history, rebuilds geometry deterministically, and exports shop drawings in SVG, PDF, and DXF formats.",
-      "current_readiness": "source_only",
-      "source_revision": null,
+      "short_summary": "Planar CAD feature history with an inspectable saved-frame and drawing example.",
+      "contribution": "A planar woodworking CAD editor with editable feature history. A local frame example produces saved scenes, cut lists, and SVG/PDF/DXF shop drawings.",
+      "current_readiness": "local_evidence",
+      "source_revision": "10bb20c77e11b6295b0f3a7b1ade70d0172fff70",
       "source_access": "public",
       "source_repository": "Tanner-Eischen/ParametricModeller",
       "source_url": "https://github.com/Tanner-Eischen/ParametricModeller",
       "demo_url": null,
-      "report_url": null,
-      "verification_date": "2026-11-01",
-      "evidence": ["content/source-snapshots/parametric-modeller-readme.txt"],
+      "report_url": "assets/evidence/parametric-modeller-frame.json",
+      "verification_date": "2026-11-05",
+      "evidence": ["assets/evidence/parametric-modeller-frame.json"],
       "limits": [
-        "Current repository README/access inspected; app and feature behavior not rerun in this session."
+        "Planar/prismatic square-butt example only; no curved CAD, joinery or structural certification.",
+        "Edit helper updates source length and derived placements explicitly; general assembly-constraint propagation is not established by this example.",
+        "Browser/WebGL editing, picking, autosave and download workflow require acceptance testing.",
+        "Geometry and export controls do not establish manufacturing suitability or financial savings.",
+        "The tested local source includes unpublished changes; the base revision alone is not the complete tested snapshot."
       ],
-      "pages": ["index.html"],
-      "image": null
+      "pages": ["index.html", "case-studies/parametric-modeller.html"],
+      "image": {
+        "path": "assets/images/case-parametric-modeller-frame.svg",
+        "alt": "Actual exported shop drawing of the four-board frame example",
+        "width": 1623,
+        "height": 570
+      }
     },
     {
       "id": "ghostfolio-agent",
       "title": "Ghostfolio Agent",
       "category": "applied software",
-      "short_summary": "Ghostfolio Agent repository-reported implementation.",
-      "contribution": "A portfolio assistant that calls typed analysis tools and checks its responses with confidence scores and validation rules. The repository includes a React interface and a FastAPI service.",
-      "current_readiness": "source_only",
+      "short_summary": "Typed-tool numerical grounding with a synthetic verification example.",
+      "contribution": "A portfolio assistant that binds numerical claims to typed tool results, checking the right financial field, entity and currency.",
+      "current_readiness": "local_evidence",
       "source_revision": null,
       "source_access": "public",
       "source_repository": "Tanner-Eischen/ghostfolio-agent",
       "source_url": "https://github.com/Tanner-Eischen/ghostfolio-agent",
       "demo_url": null,
       "report_url": "assets/evidence/ghostfolio-agent.json",
-      "verification_date": "2026-11-01",
-      "evidence": ["content/source-snapshots/ghostfolio-agent-readme.txt"],
-      "limits": [
-        "Current repository README/access inspected; app and feature behavior not rerun in this session."
+      "verification_date": "2026-11-05",
+      "evidence": [
+        "assets/evidence/ghostfolio-agent.json",
+        "content/source-snapshots/ghostfolio-agent-readme.txt"
       ],
-      "pages": ["index.html"],
-      "image": null
-    },
-    {
-      "id": "publishing-strategist",
-      "title": "Publishing Strategist",
-      "category": "applied software",
-      "short_summary": "Publishing Strategist repository-reported implementation.",
-      "contribution": "A research agent for Kindle Direct Publishing. It searches for niches, compares competing titles, drafts listing copy, and scores demand and competition with configured market data.",
-      "current_readiness": "source_only",
-      "source_revision": null,
-      "source_access": "public",
-      "source_repository": "Tanner-Eischen/PublishingStrategist",
-      "source_url": "https://github.com/Tanner-Eischen/PublishingStrategist",
-      "demo_url": null,
-      "report_url": null,
-      "verification_date": "2026-11-01",
-      "evidence": ["content/source-snapshots/publishing-strategist-readme.txt"],
       "limits": [
-        "Current repository README/access inspected; app and feature behavior not rerun in this session."
+        "Recorded synthetic controls use zero model calls; live answer quality, browser interaction and multi-user/public hosting are unmeasured.",
+        "The source checkout contains unpublished changes; public receipt counts are not a full current-application certification."
       ],
-      "pages": ["index.html"],
-      "image": null
-    },
-    {
-      "id": "nlwebagent",
-      "title": "NLWebAgent",
-      "category": "applied software",
-      "short_summary": "NLWebAgent repository-reported implementation.",
-      "contribution": "A CLI that turns natural-language test instructions into Playwright actions. It records sessions, writes Playwright tests, and tries coordinates when a selector fails.",
-      "current_readiness": "source_only",
-      "source_revision": null,
-      "source_access": "public",
-      "source_repository": "Tanner-Eischen/NLWebAgent",
-      "source_url": "https://github.com/Tanner-Eischen/NLWebAgent",
-      "demo_url": null,
-      "report_url": null,
-      "verification_date": "2026-11-01",
-      "evidence": ["content/source-snapshots/nlwebagent-readme.txt"],
-      "limits": [
-        "Current repository README/access inspected; app and feature behavior not rerun in this session."
-      ],
-      "pages": ["index.html"],
-      "image": null
-    },
-    {
-      "id": "socrates",
-      "title": "Socrates",
-      "category": "applied software",
-      "short_summary": "Socrates repository-reported implementation.",
-      "contribution": "A tutoring application that responds with guiding questions. It records sessions, displays learning analytics, and supports real-time chat in the React client.",
-      "current_readiness": "source_only",
-      "source_revision": null,
-      "source_access": "public",
-      "source_repository": "Tanner-Eischen/SocratesTutoring",
-      "source_url": "https://github.com/Tanner-Eischen/SocratesTutoring",
-      "demo_url": null,
-      "report_url": null,
-      "verification_date": "2026-11-01",
-      "evidence": ["content/source-snapshots/socrates-readme.txt"],
-      "limits": [
-        "Current repository README/access inspected; app and feature behavior not rerun in this session."
-      ],
-      "pages": ["index.html"],
-      "image": null
+      "pages": ["index.html", "case-studies/ghostfolio-agent.html"],
+      "image": {
+        "path": "assets/images/case-ghostfolio-verification-2026-11-05.svg",
+        "alt": "Synthetic verification rejects a stock price used as the portfolio total",
+        "width": 1200,
+        "height": 500
+      }
     }
   ]
 }

@@ -22,3 +22,8 @@ content/source-snapshots/** -text diff whitespace=-blank-at-eol,-blank-at-eof
 .nojekyll text eol=lf
 # Preserve icon bytes verbatim, including the existing SVG-formatted icon.
 favicon.ico -text
+
+# New project previews are bound to byte-level evidence and asset reviews.
+assets/images/case-harborforge-calibration.svg -text diff
+assets/images/case-parametric-modeller-frame.svg -text diff
+assets/images/case-ghostfolio-verification-2026-11-05.svg -text diff

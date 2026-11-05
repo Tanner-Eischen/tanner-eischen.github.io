@@ -583,40 +583,40 @@
     },
     {
       "id": "project-parametric-modeller",
-      "wording": "A browser-based CAD application for woodworking. It stores an editable feature history, rebuilds geometry deterministically, and exports shop drawings in SVG, PDF, and DXF formats.",
+      "wording": "A planar woodworking CAD editor with editable feature history. A local frame example produces saved scenes, cut lists, and SVG/PDF/DXF shop drawings.",
       "state": "rendered",
       "surfaces": ["index.html"],
       "evidence": [
         {
-          "path": "content/source-snapshots/parametric-modeller-readme.txt",
-          "sha256": "ace67a061d213ff1048a8741c82b4b05f31ecf44fb9e977de3702437826e0640",
-          "kind": "repository_reported"
+          "path": "assets/evidence/parametric-modeller-frame.json",
+          "sha256": "cac5cd780c76517de1ef54d07bf6e770976f242a76355a5fc338c41c1231b06a",
+          "kind": "independently_artifact_checked"
         }
       ],
-      "source_revision": null,
-      "scope": "Existing project contribution description; current public repository README inspected. Application behavior not rerun.",
-      "qualification": "Repository-reported capability; no new production-scale, live-service or model-quality validation.",
-      "verification_date": "2026-11-01",
+      "source_revision": "10bb20c77e11b6295b0f3a7b1ade70d0172fff70",
+      "scope": "Bounded local example and inspected output artifacts; not a live-model or browser-quality result.",
+      "qualification": "Headless CAD exports or fixed synthetic numerical controls only. Unmeasured application behavior is explicitly qualified on the card and case page.",
+      "verification_date": "2026-11-05",
       "owner_approval_state": "not_requested",
       "hold_publication": false,
       "claim_type": "qualitative"
     },
     {
       "id": "project-ghostfolio-agent",
-      "wording": "A portfolio assistant that calls typed analysis tools and checks its responses with confidence scores and validation rules. The repository includes a React interface and a FastAPI service.",
+      "wording": "A portfolio assistant that binds numerical claims to typed tool results, checking the right financial field, entity and currency.",
       "state": "rendered",
       "surfaces": ["index.html"],
       "evidence": [
         {
-          "path": "content/source-snapshots/ghostfolio-agent-readme.txt",
-          "sha256": "5e26cb97e2bcb2888ad476e23c7619a8dbaa20861beb23b57f11eeaa69d8609a",
-          "kind": "repository_reported"
+          "path": "assets/evidence/ghostfolio-agent.json",
+          "sha256": "1c66aab3c39bbef17937542ef856529f480c3ffaeaef12df90be0c1a844ac611",
+          "kind": "independently_artifact_checked"
         }
       ],
       "source_revision": null,
-      "scope": "Existing project contribution description; current public repository README inspected. Application behavior not rerun.",
-      "qualification": "Repository-reported capability; no new production-scale, live-service or model-quality validation.",
-      "verification_date": "2026-11-01",
+      "scope": "Bounded local example and inspected output artifacts; not a live-model or browser-quality result.",
+      "qualification": "Headless CAD exports or fixed synthetic numerical controls only. Unmeasured application behavior is explicitly qualified on the card and case page.",
+      "verification_date": "2026-11-05",
       "owner_approval_state": "not_requested",
       "hold_publication": false,
       "claim_type": "qualitative"
@@ -624,8 +624,8 @@
     {
       "id": "project-publishing-strategist",
       "wording": "A research agent for Kindle Direct Publishing. It searches for niches, compares competing titles, drafts listing copy, and scores demand and competition with configured market data.",
-      "state": "rendered",
-      "surfaces": ["index.html"],
+      "state": "held",
+      "surfaces": [],
       "evidence": [
         {
           "path": "content/source-snapshots/publishing-strategist-readme.txt",
@@ -635,8 +635,8 @@
       ],
       "source_revision": null,
       "scope": "Existing project contribution description; current public repository README inspected. Application behavior not rerun.",
-      "qualification": "Repository-reported capability; no new production-scale, live-service or model-quality validation.",
-      "verification_date": "2026-11-01",
+      "qualification": "Removed from homepage after workflow-readiness review. Repository retained; restoration requires a checked end-to-end example.",
+      "verification_date": "2026-11-05",
       "owner_approval_state": "not_requested",
       "hold_publication": false,
       "claim_type": "qualitative"
@@ -644,8 +644,8 @@
     {
       "id": "project-nlwebagent",
       "wording": "A CLI that turns natural-language test instructions into Playwright actions. It records sessions, writes Playwright tests, and tries coordinates when a selector fails.",
-      "state": "rendered",
-      "surfaces": ["index.html"],
+      "state": "held",
+      "surfaces": [],
       "evidence": [
         {
           "path": "content/source-snapshots/nlwebagent-readme.txt",
@@ -655,8 +655,8 @@
       ],
       "source_revision": null,
       "scope": "Existing project contribution description; current public repository README inspected. Application behavior not rerun.",
-      "qualification": "Repository-reported capability; no new production-scale, live-service or model-quality validation.",
-      "verification_date": "2026-11-01",
+      "qualification": "Removed from homepage after workflow-readiness review. Repository retained; restoration requires a checked end-to-end example.",
+      "verification_date": "2026-11-05",
       "owner_approval_state": "not_requested",
       "hold_publication": false,
       "claim_type": "qualitative"
@@ -664,8 +664,8 @@
     {
       "id": "project-socrates",
       "wording": "A tutoring application that responds with guiding questions. It records sessions, displays learning analytics, and supports real-time chat in the React client.",
-      "state": "rendered",
-      "surfaces": ["index.html"],
+      "state": "held",
+      "surfaces": [],
       "evidence": [
         {
           "path": "content/source-snapshots/socrates-readme.txt",
@@ -675,8 +675,8 @@
       ],
       "source_revision": null,
       "scope": "Existing project contribution description; current public repository README inspected. Application behavior not rerun.",
-      "qualification": "Repository-reported capability; no new production-scale, live-service or model-quality validation.",
-      "verification_date": "2026-11-01",
+      "qualification": "Removed from homepage after workflow-readiness review. Repository retained; restoration requires a checked end-to-end example.",
+      "verification_date": "2026-11-05",
       "owner_approval_state": "not_requested",
       "hold_publication": false,
       "claim_type": "qualitative"
@@ -934,6 +934,72 @@
       "qualification": "One generated fixture; not a held-out accuracy evaluation. Dirty source identity is recorded separately. Subsequent browser acceptance has a separate public report.",
       "verification_date": "2026-11-01",
       "owner_approval_state": "not_requested",
+      "hold_publication": false
+    },
+    {
+      "id": "harborforge-calibration-headline",
+      "wording": "24 calibration trials across four free models: 14 passes and 10 token/output-limit stops, all at $0.",
+      "claim_type": "quantitative",
+      "surfaces": ["index.html", "case-studies/harborforge.html"],
+      "evidence": [
+        {
+          "path": "assets/evidence/harborforge-case-study-summary.json",
+          "sha256": "4b594502aaba29cb505456f32a1e4d1997eb9571b17e8ce7a7618fca8c77fccc",
+          "kind": "independently_artifact_checked"
+        }
+      ],
+      "quantities": [
+        {
+          "name": "registered-trials",
+          "value": 24,
+          "unit": "trials",
+          "dataset_scenario": "Three synthetic scientific-software calibration templates",
+          "denominator": "24 preregistered model-task-repeat trials",
+          "selection_protocol": "Same fixed tasks and harness; two repeats per model; no adaptive promotion.",
+          "limitation": "Small calibration across two dates; not broad capability measurement.",
+          "evidence_path": "assets/evidence/harborforge-case-study-summary.json",
+          "json_pointer": "/trial_count"
+        },
+        {
+          "name": "verified-passes",
+          "value": 14,
+          "unit": "trials",
+          "dataset_scenario": "Three synthetic scientific-software calibration templates",
+          "denominator": "24 preregistered model-task-repeat trials",
+          "selection_protocol": "Same fixed tasks and harness; two repeats per model; no adaptive promotion.",
+          "limitation": "Small calibration across two dates; not broad capability measurement.",
+          "evidence_path": "assets/evidence/harborforge-case-study-summary.json",
+          "json_pointer": "/outcomes/PASS"
+        },
+        {
+          "name": "token-output-stops",
+          "value": 10,
+          "unit": "trials",
+          "dataset_scenario": "Three synthetic scientific-software calibration templates",
+          "denominator": "24 preregistered model-task-repeat trials",
+          "selection_protocol": "Same fixed tasks and harness; two repeats per model; no adaptive promotion.",
+          "limitation": "Small calibration across two dates; not broad capability measurement.",
+          "evidence_path": "assets/evidence/harborforge-case-study-summary.json",
+          "json_pointer": "/outcomes/AGENT_TIMEOUT"
+        },
+        {
+          "name": "recorded-model-cost",
+          "value": 0,
+          "unit": "USD",
+          "dataset_scenario": "Three synthetic scientific-software calibration templates",
+          "denominator": "24 preregistered model-task-repeat trials",
+          "selection_protocol": "Same fixed tasks and harness; two repeats per model; no adaptive promotion.",
+          "limitation": "Small calibration across two dates; not broad capability measurement.",
+          "evidence_path": "assets/evidence/harborforge-case-study-summary.json",
+          "json_pointer": "/cost_usd"
+        }
+      ],
+      "state": "rendered",
+      "source_revision": "6f549055469a8c4f591857e44256bfa8bda6a29f",
+      "scope": "Three frozen calibration task templates; four models; two attempts per model, with Flint on November 5 and the original models November 2.",
+      "qualification": "Small development calibration; no independent holdout. Token/output stops count as unsuccessful completions, and a trial can contain several model requests.",
+      "verification_date": "2026-11-05",
+      "owner_approval_state": "confirmed",
       "hold_publication": false
     }
   ]

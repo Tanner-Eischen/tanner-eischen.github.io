@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-05",
+  "owner_request": "Review the other portfolio project cards, weigh removal where it improves the portfolio, and report projects that still need polish.",
+  "authorization_basis": [
+    "Current owner request to address the portfolio cards",
+    "Existing owner authorization for browser testing, commits and portfolio publication recorded November 1"
+  ],
+  "scope": [
+    "Homepage project curation and case-study evidence updates",
+    "Retain repositories and historical routes",
+    "Report concrete project-polish work; no underlying application rewrite"
+  ],
+  "resume_and_credential_review": "Excluded; existing biography and PDF preserved.",
+  "spend_boundary": "No new model calls, paid runs, hosting plans or repository visibility changes."
+}

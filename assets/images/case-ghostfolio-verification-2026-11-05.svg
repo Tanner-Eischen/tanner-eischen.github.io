@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+  <title id="title">Ghostfolio synthetic field-scoped verification example</title>
+  <desc id="desc">A tool reports a stock price of 180 dollars and portfolio total of 30000 dollars. A claim that the portfolio total is 180 dollars is rejected because it uses the wrong field.</desc>
+  <rect width="1200" height="500" rx="24" fill="#f4efe3"/>
+  <g font-family="Arial, sans-serif" fill="#242117">
+    <text x="54" y="52" font-size="16" letter-spacing="3">GHOSTFOLIO / SYNTHETIC VERIFICATION</text>
+    <text x="54" y="105" font-size="38" font-weight="700">Right number. Wrong financial field.</text>
+    <rect x="54" y="145" width="520" height="148" rx="12" fill="#fffdf7" stroke="#c7bfae"/>
+    <text x="80" y="187" font-size="21">stock_price_usd</text>
+    <text x="80" y="253" font-size="48">$180</text>
+    <rect x="598" y="145" width="548" height="148" rx="12" fill="#fffdf7" stroke="#357667" stroke-width="3"/>
+    <text x="624" y="187" font-size="21">portfolio_total_usd</text>
+    <text x="624" y="253" font-size="48">$30,000</text>
+    <text x="54" y="345" font-size="24">Claim: "Your portfolio total is $180."</text>
+    <rect x="54" y="373" width="198" height="52" rx="8" fill="#8c3430"/>
+    <text x="81" y="408" font-size="23" fill="#fffdf7" font-weight="700">REJECTED</text>
+    <text x="275" y="407" font-size="21">The claim must bind to the portfolio-total field.</text>
+    <text x="54" y="465" font-size="16">Fixed synthetic tool outputs / zero model calls / not live answer-quality measurement</text>
+  </g>
+</svg>

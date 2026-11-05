@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-05",
+  "scope": "Six curated homepage cards, two new bounded case studies and public/synthetic example assets.",
+  "prior_assets_review": {
+    "path": "content/publication-asset-review-2026-11-01.json",
+    "sha256": "652a4537b8ec5e0bce0589b3cfb68efea2682ad55ab08ab83bd5c01a66e8e360",
+    "scope": "Unchanged prior scientific/portrait/resume assets retain their original review."
+  },
+  "decisions": [
+    {
+      "project": "HarborForge",
+      "decision": "Only previously published aggregate receipts and public discovery reference samples; no private calibration inputs/candidate code/traces/registry."
+    },
+    {
+      "project": "Parametric Modeller",
+      "decision": "Owner-generated synthetic frame scenes, cut lists and drawing exports, plus a sanitized headless evidence projection. No raw source/configuration map or machine paths."
+    },
+    {
+      "project": "Ghostfolio Agent",
+      "decision": "Owner-generated explanatory SVG from the existing synthetic receipt; no real accounts, holdings or provider traces."
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/downloads/parametric-modeller-default18-cut-list.csv",
+      "sha256": "8093e8bfe826fbf7f9b8308353dfa6be02ff3583640bdd159e1d48639c8bbc46",
+      "bytes": 366
+    },
+    {
+      "path": "assets/downloads/parametric-modeller-default18-drawing.dxf",
+      "sha256": "2e38c16db1856f87c92f477f72fc3c45496f9b777cee2d5207b416239d4ca65e",
+      "bytes": 11548
+    },
+    {
+      "path": "assets/downloads/parametric-modeller-default18-drawing.pdf",
+      "sha256": "5bb5bdad350f8fd22d0f35b993bae130add8e155e6fc61a39d3fc4070a203325",
+      "bytes": 3322
+    },
+    {
+      "path": "assets/downloads/parametric-modeller-default18-drawing.svg",
+      "sha256": "b4c30d1cb3e85e8b6f6f4623b21b940f619e0022827e46568219d7410c2bce05",
+      "bytes": 10092
+    },
+    {
+      "path": "assets/downloads/parametric-modeller-default18-scene.json",
+      "sha256": "d6a21e82f56e4584ef81845e471c987e47302e78b76c73739b7aaae928ef39bc",
+      "bytes": 7355
+    },
+    {
+      "path": "assets/downloads/parametric-modeller-edited20-cut-list.csv",
+      "sha256": "cd18fb90b3479f896c9001cd16fc51d0d48dcc1173b7e86b6e84c71aba773fe5",
+      "bytes": 366
+    },
+    {
+      "path": "assets/downloads/parametric-modeller-edited20-drawing.svg",
+      "sha256": "e7010039ba67518f77b2b20662728ef0a7eb18c41979182a4821878c991b702d",
+      "bytes": 10092
+    },
+    {
+      "path": "assets/downloads/parametric-modeller-edited20-scene.json",
+      "sha256": "8cd0c0b1aaeef183a7be8f4d50fd261ef24fdb52af22b12f67dfeac3022083a9",
+      "bytes": 7355
+    },
+    {
+      "path": "assets/evidence/harborforge-calibration-2026-11-02.json",
+      "sha256": "354c3b7f381129dfd3f5168772f029f20d4c5e05324bf70ffda52c92f715b0f5",
+      "bytes": 8131
+    },
+    {
+      "path": "assets/evidence/harborforge-case-study-summary.json",
+      "sha256": "4b594502aaba29cb505456f32a1e4d1997eb9571b17e8ce7a7618fca8c77fccc",
+      "bytes": 3863
+    },
+    {
+      "path": "assets/evidence/harborforge-flint-2026-11-05.json",
+      "sha256": "a35c6920cb45ee313cd82a853a16726f062c4d7b2f440d6355d6d5b475f6f83f",
+      "bytes": 8435
+    },
+    {
+      "path": "assets/evidence/harborforge-model-results.csv",
+      "sha256": "0d1cfa30adf1857c9cdeb4004a1826435f83b442a0abfe4b6d64d685c412c4b0",
+      "bytes": 472
+    },
+    {
+      "path": "assets/evidence/harborforge-sample-after.json",
+      "sha256": "f0d54e90a4a729cc15908695096eacc91cb2f0e34e222051a9a5ff435aed968a",
+      "bytes": 136
+    },
+    {
+      "path": "assets/evidence/harborforge-sample-before.json",
+      "sha256": "9e536b2bda7f31fa329bfee51f2e55be5e08db9bf89a72a0ad31338a7ca0161a",
+      "bytes": 196
+    },
+    {
+      "path": "assets/evidence/harborforge-sample-patch.txt",
+      "sha256": "5dc03b807e3009d2aabf1e5fd96ffa22c636957104c5ac8023799cf221d68c7a",
+      "bytes": 397
+    },
+    {
+      "path": "assets/evidence/harborforge-sample-verification.json",
+      "sha256": "70d4c158ba718e1a398a235e40d77409db739e740c70c50e404dc9db42303b16",
+      "bytes": 1008
+    },
+    {
+      "path": "assets/evidence/parametric-modeller-frame.json",
+      "sha256": "cac5cd780c76517de1ef54d07bf6e770976f242a76355a5fc338c41c1231b06a",
+      "bytes": 5895
+    },
+    {
+      "path": "assets/images/case-ghostfolio-verification-2026-11-05.svg",
+      "sha256": "6e128647bb7b8e360ab5a06da9daae87ebd66d2ac890c0e95df97617c1bc3b60",
+      "bytes": 1662
+    },
+    {
+      "path": "assets/images/case-harborforge-calibration.svg",
+      "sha256": "ed7eca7c169aef44dc43107385eadd9bad4bf4ac0041e1e0b0b5c578e4e9b895",
+      "bytes": 2229
+    },
+    {
+      "path": "assets/images/case-parametric-modeller-frame.svg",
+      "sha256": "b4c30d1cb3e85e8b6f6f4623b21b940f619e0022827e46568219d7410c2bce05",
+      "bytes": 10092
+    }
+  ],
+  "source_applications_modified": false,
+  "new_model_calls": 0
+}

@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "project": "Parametric Modeller",
+  "measurement": "bounded headless frame geometry, persistence and actual CAD exports",
+  "verification_date": "2026-11-05",
+  "source_repository": "https://github.com/Tanner-Eischen/ParametricModeller",
+  "base_revision": "10bb20c77e11b6295b0f3a7b1ade70d0172fff70",
+  "source_dirty": true,
+  "base_revision_is_complete_tested_snapshot": false,
+  "source_snapshot_sha256": "a319ab235e0cbbbb1b1c688a7a2e6f63b3b5122776b6a4e7e6f1647603a63aac",
+  "source_snapshot_hash_definition": "SHA256 of canonical sorted compact JSON mapping relative source paths to raw-byte SHA256; full map is retained locally, not exported",
+  "source_file_hashes_rechecked": 216,
+  "recorded_release_evidence_sha256": "95c67822ff7ad55ffccf00a3c0c3edb73482dbdb95bf40770f651a4bde4ddcda",
+  "fresh_verification": {
+    "command": "npm test -- tests/release",
+    "test_files_passed": 2,
+    "tests_passed": 18,
+    "scope": "Focused headless frame and export tests; not the full application or a browser run"
+  },
+  "model_calls": 0,
+  "browser_interaction_verified": false,
+  "webgl_interaction_verified": false,
+  "source_example_publication": "Prepared local example and release tests include uncommitted source additions; linked base revision alone does not reproduce the tested snapshot.",
+  "variants": {
+    "default18": {
+      "status": "passed",
+      "physical_parts": 4,
+      "board_inches": [
+        18,
+        3,
+        0.75
+      ],
+      "outer_inches": [
+        24,
+        18,
+        0.75
+      ],
+      "opening_inches": [
+        18,
+        12
+      ],
+      "volume_cubic_inches": 162,
+      "stock_inches": [
+        18.5,
+        3.25,
+        0.875
+      ],
+      "finished_mm": [
+        457.2,
+        76.2,
+        19.05
+      ],
+      "cut_list_group_count": 1,
+      "cut_list_quantity": 4,
+      "persistence": {
+        "saved_feature_history_matches": true,
+        "reopened_geometry_and_ids_match": true
+      },
+      "drawing_dimension_labels_inches": [
+        "24 in",
+        "18 in",
+        "0.75 in"
+      ],
+      "pdf_pages": 1,
+      "dxf_units_code": 1
+    },
+    "edited20": {
+      "status": "passed",
+      "physical_parts": 4,
+      "board_inches": [
+        20,
+        3,
+        0.75
+      ],
+      "outer_inches": [
+        26,
+        20,
+        0.75
+      ],
+      "opening_inches": [
+        20,
+        14
+      ],
+      "volume_cubic_inches": 180,
+      "stock_inches": [
+        20.5,
+        3.25,
+        0.875
+      ],
+      "finished_mm": [
+        508,
+        76.2,
+        19.05
+      ],
+      "cut_list_group_count": 1,
+      "cut_list_quantity": 4,
+      "persistence": {
+        "saved_feature_history_matches": true,
+        "reopened_geometry_and_ids_match": true
+      },
+      "drawing_dimension_labels_inches": [
+        "26 in",
+        "20 in",
+        "0.75 in"
+      ],
+      "pdf_pages": 1,
+      "dxf_units_code": 1
+    }
+  },
+  "artifacts": [
+    {
+      "path": "assets/downloads/parametric-modeller-default18-scene.json",
+      "source_artifact": "default18/frame.json",
+      "variant": "default18",
+      "sha256": "d6a21e82f56e4584ef81845e471c987e47302e78b76c73739b7aaae928ef39bc",
+      "bytes": 7355
+    },
+    {
+      "path": "assets/downloads/parametric-modeller-edited20-scene.json",
+      "source_artifact": "edited20/frame.json",
+      "variant": "edited20",
+      "sha256": "8cd0c0b1aaeef183a7be8f4d50fd261ef24fdb52af22b12f67dfeac3022083a9",
+      "bytes": 7355
+    },
+    {
+      "path": "assets/downloads/parametric-modeller-default18-cut-list.csv",
+      "source_artifact": "default18/cut-list.csv",
+      "variant": "default18",
+      "sha256": "8093e8bfe826fbf7f9b8308353dfa6be02ff3583640bdd159e1d48639c8bbc46",
+      "bytes": 366
+    },
+    {
+      "path": "assets/downloads/parametric-modeller-edited20-cut-list.csv",
+      "source_artifact": "edited20/cut-list.csv",
+      "variant": "edited20",
+      "sha256": "cd18fb90b3479f896c9001cd16fc51d0d48dcc1173b7e86b6e84c71aba773fe5",
+      "bytes": 366
+    },
+    {
+      "path": "assets/downloads/parametric-modeller-default18-drawing.svg",
+      "source_artifact": "default18/drawing-in.svg",
+      "variant": "default18",
+      "sha256": "b4c30d1cb3e85e8b6f6f4623b21b940f619e0022827e46568219d7410c2bce05",
+      "bytes": 10092
+    },
+    {
+      "path": "assets/downloads/parametric-modeller-edited20-drawing.svg",
+      "source_artifact": "edited20/drawing-in.svg",
+      "variant": "edited20",
+      "sha256": "e7010039ba67518f77b2b20662728ef0a7eb18c41979182a4821878c991b702d",
+      "bytes": 10092
+    },
+    {
+      "path": "assets/downloads/parametric-modeller-default18-drawing.pdf",
+      "source_artifact": "default18/drawing-in.pdf",
+      "variant": "default18",
+      "sha256": "5bb5bdad350f8fd22d0f35b993bae130add8e155e6fc61a39d3fc4070a203325",
+      "bytes": 3322
+    },
+    {
+      "path": "assets/downloads/parametric-modeller-default18-drawing.dxf",
+      "source_artifact": "default18/drawing-in.dxf",
+      "variant": "default18",
+      "sha256": "2e38c16db1856f87c92f477f72fc3c45496f9b777cee2d5207b416239d4ca65e",
+      "bytes": 11548
+    },
+    {
+      "path": "assets/images/case-parametric-modeller-frame.svg",
+      "source_artifact": "default18/drawing-in.svg",
+      "variant": "default18",
+      "sha256": "b4c30d1cb3e85e8b6f6f4623b21b940f619e0022827e46568219d7410c2bce05",
+      "bytes": 10092
+    }
+  ],
+  "limits": [
+    "Planar/prismatic square-butt example only; no curved CAD, joinery or structural certification.",
+    "Edit helper updates source length and derived placements explicitly; general assembly-constraint propagation is not established by this example.",
+    "Browser/WebGL editing, picking, autosave and download workflow require acceptance testing.",
+    "Geometry and export controls do not establish manufacturing suitability or financial savings."
+  ]
+}

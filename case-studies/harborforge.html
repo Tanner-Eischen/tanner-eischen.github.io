@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HarborForge | Tanner Eischen</title>
+    <meta
+      name="description"
+      content="An isolated terminal-agent evaluation workflow with independent grading, frozen tasks, bounded free-model requests and inspectable calibration results."
+    />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="canonical"
+      href="https://tanner-eischen.github.io/case-studies/harborforge.html"
+    />
+    <meta property="og:title" content="HarborForge | Tanner Eischen" />
+    <meta
+      property="og:description"
+      content="Four free models, the same three tasks, independent verifier results and explicit budget stops."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://tanner-eischen.github.io/case-studies/harborforge.html"
+    />
+  </head>
+  <body class="case-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="case-nav" aria-label="Project navigation">
+      <a href="../index.html#work">← All work</a
+      ><a href="../index.html#contact">Contact Tanner</a>
+    </nav>
+    <main id="main" class="case-shell">
+      <nav class="case-breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a> /
+        <span aria-current="page">HarborForge</span>
+      </nav>
+      <header class="case-head">
+        <p class="eyebrow">AI evaluation / terminal agents</p>
+        <h1>Make an agent's result inspectable.</h1>
+        <p class="case-intro">
+          Freeze a task, run the model in an isolated terminal, and grade its
+          exported program independently. Keep an unfinished attempt visible
+          instead of turning it into a passing score.
+        </p>
+        <p class="case-project">
+          HarborForge · Actual calibration runs, November 2 and 5, 2026
+        </p>
+      </header>
+      <dl class="case-metrics">
+        <div>
+          <dt>registered model trials</dt>
+          <dd>24</dd>
+        </div>
+        <div>
+          <dt>independently verified passes</dt>
+          <dd>14</dd>
+        </div>
+        <div>
+          <dt>reported model charges</dt>
+          <dd>$0</dd>
+        </div>
+      </dl>
+      <section>
+        <h2>The problem</h2>
+        <p>
+          A green unit suite can demonstrate runner behavior without proving
+          that a model completed a task. A verifier can also give misleading
+          results if the candidate can access its reference solution or if
+          missing output and provider failures disappear from the denominator.
+        </p>
+        <h2>My contribution</h2>
+        <p>
+          I built a Harbor-based evaluation platform with versioned tasks,
+          immutable campaigns, conservative request budgets, protected grading
+          and evidence-linked reports. I then exercised the actual terminal
+          workflow with four named free models through OpenRouter.
+        </p>
+      </section>
+      <section>
+        <h2>How it works</h2>
+        <ol class="case-flow">
+          <li>Validate and freeze the task</li>
+          <li>Run the isolated terminal agent</li>
+          <li>Export source and output</li>
+          <li>Grade in a separate verifier</li>
+          <li>Retain outcome and usage receipts</li>
+        </ol>
+        <h3>Decisions that shaped the implementation</h3>
+        <ul>
+          <li>
+            The agent image excludes the reference solution and hidden tests.
+            The separate verifier checks the candidate's exported artifacts.
+            Real Docker controls must pass before model evaluation.
+          </li>
+          <li>
+            Task bytes, prompt/parser hashes, harness settings and repeats are
+            frozen. Flint reuses the original calibration tasks rather than
+            receiving regenerated versions.
+          </li>
+          <li>
+            The provider credential stays in the host controller. Named free
+            routes, zero-price ceilings and disabled paid fallbacks are checked
+            before dispatch; actual provider usage must report exactly zero
+            cost.
+          </li>
+          <li>
+            Provider requests and whole agent trials have separate counts.
+            Missing usage remains unknown, and automatic retries are disabled
+            for this registered calibration.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Actual model results</h2>
+        <p>
+          24 calibration trials across four free models: 14 passes and 10
+          token/output-limit stops, all at $0. Each model attempted the same
+          three synthetic task templates twice: scientific ETL, geospatial
+          raster processing and repository debugging.
+        </p>
+        <figure>
+          <a href="../assets/images/case-harborforge-calibration.svg">
+            <img
+              src="../assets/images/case-harborforge-calibration.svg"
+              alt="Calibration completions: North Mini Code zero of six, Super VL six of six, Ultra six of six and Flint two of six"
+              width="1200"
+              height="620"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            Successful completion under a fixed harness, not a universal model
+            ranking. Three templates and two repeats per model.
+          </figcaption>
+        </figure>
+        <section
+          class="case-table"
+          aria-label="Actual calibration results"
+          tabindex="0"
+        >
+          <table>
+            <caption>
+              November 2 and 5 calibration: every planned trial retained
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Model</th>
+                <th scope="col">Run date</th>
+                <th scope="col">Passes</th>
+                <th scope="col">Other outcomes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">North Mini Code</th>
+                <td>November 2</td>
+                <td>0 / 6</td>
+                <td>Six token/output-budget stops</td>
+              </tr>
+              <tr>
+                <th scope="row">Nemotron 3.5 Super VL</th>
+                <td>November 2</td>
+                <td>6 / 6</td>
+                <td>None</td>
+              </tr>
+              <tr>
+                <th scope="row">Nemotron 3 Ultra</th>
+                <td>November 2</td>
+                <td>6 / 6</td>
+                <td>None</td>
+              </tr>
+              <tr>
+                <th scope="row">Flint</th>
+                <td>November 5</td>
+                <td>2 / 6</td>
+                <td>
+                  Three per-response output stops; one cumulative-token stop
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <p>
+          138 trial requests and four separate availability probes reported $0
+          in model charges. Two earlier protocol-development requests are
+          excluded from those counts. The matched harness used Harbor 0.13.2,
+          temperature zero, low reasoning and 8,192 output tokens per call.
+        </p>
+      </section>
+      <section>
+        <h2>A stop is not a verifier rejection</h2>
+        <p>
+          The stored category <code>AGENT_TIMEOUT</code> includes token and
+          output-limit stops. Those count as unsuccessful completions. If the
+          verifier never ran, the record has no independent correctness verdict;
+          it does not establish that a submitted raster or program was graded
+          wrong. This prevents a resource-limit outcome from becoming an
+          unsupported claim about a model's scientific reasoning.
+        </p>
+      </section>
+      <section>
+        <h2>A public workflow you can inspect</h2>
+        <h3>The total is right, but the interval union is wrong.</h3>
+        <p>
+          The archived public repository-debug fixture demonstrates the grading
+          boundary. Its starter keeps touching intervals separate. The existing
+          authored reference repair changes <code>&lt;</code> to
+          <code>&lt;=</code>, merging them as the contract requires.
+        </p>
+        <pre><code>Before: {"intervals":[[-11,-6],[-4,0],[0,3],[5,9],[9,14]],"covered":21}
+After:  {"intervals":[[-11,-6],[-4,3],[5,14]],"covered":21}</code></pre>
+        <p>
+          Both totals are 21. The verifier rejects the starter and accepts the
+          repair because it checks the complete output and API behavior. Six
+          public behavioral controls pass.
+        </p>
+        <p class="case-note">
+          This sample is a local author/reference replay with zero new model
+          calls, not a Flint-generated answer or a new Docker eligibility
+          result. The archived fixture predates the current separate-verifier
+          Docker package contract. Raw calibration tasks and model traces stay
+          private.
+        </p>
+      </section>
+      <section>
+        <h2>Limits and next questions</h2>
+        <ul>
+          <li>
+            Three calibration task templates and two repeats per model cannot
+            establish a broad capability ranking or independent holdout
+            performance.
+          </li>
+          <li>
+            Flint ran on a different date. Matching tasks and harness settings
+            does not eliminate provider or model-version drift.
+          </li>
+          <li>
+            Token/output limits are part of the protocol; they were not expanded
+            after observing these failures.
+          </li>
+          <li>
+            Matched parent/child hardening and a separately developed frozen
+            holdout remain future measurements.
+          </li>
+        </ul>
+      </section>
+      <section class="case-download">
+        <h2>Inspect or reproduce the work</h2>
+        <p>
+          <a
+            href="../assets/evidence/harborforge-case-study-summary.json"
+            download
+            >Case-study summary (JSON)</a
+          >
+          ·
+          <a href="../assets/evidence/harborforge-model-results.csv" download
+            >Model results (CSV)</a
+          >
+          ·
+          <a
+            href="../assets/evidence/harborforge-calibration-2026-11-02.json"
+            download
+            >Original calibration receipt</a
+          >
+          ·
+          <a
+            href="../assets/evidence/harborforge-flint-2026-11-05.json"
+            download
+            >Flint receipt</a
+          >
+        </p>
+        <p>
+          <a href="../assets/evidence/harborforge-sample-before.json" download
+            >Sample before</a
+          >
+          ·
+          <a href="../assets/evidence/harborforge-sample-after.json" download
+            >Sample after</a
+          >
+          ·
+          <a href="../assets/evidence/harborforge-sample-patch.txt" download
+            >Reference patch</a
+          >
+          ·
+          <a
+            href="../assets/evidence/harborforge-sample-verification.json"
+            download
+            >Reference verification</a
+          >
+        </p>
+        <p>
+          <a
+            href="https://github.com/Tanner-Eischen/Red_Team_Project"
+            rel="noreferrer"
+            target="_blank"
+            >Public project repository</a
+          >
+          ·
+          <a
+            href="https://github.com/Tanner-Eischen/Red_Team_Project/blob/6f549055469a8c4f591857e44256bfa8bda6a29f/docs/CASE_STUDY_FREE_MODEL_WORKFLOW.md"
+            rel="noreferrer"
+            target="_blank"
+            >Pinned workflow and rebuild instructions</a
+          >
+        </p>
+        <p class="case-note">
+          The public default branch is <code>codex/evaluation-platform</code>.
+          The report rebuild command reads published receipts and runs trusted
+          public reference code; it makes no inference requests.
+        </p>
+      </section>
+    </main>
+    <footer class="case-footer">
+      <a href="../index.html#work">Return to selected work</a>
+      <p>Tanner Eischen · Scientific software and AI evaluation</p>
+    </footer>
+  </body>
+</html>

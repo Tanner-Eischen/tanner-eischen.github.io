@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-05",
+  "scope": "Targeted portfolio reading, new case-study navigation, images and narrow viewport; underlying project application workflows not rerun",
+  "tool": "in-app Chromium via cua_repl",
+  "passed": true,
+  "content_fingerprint": "4cdbb5a03be25eea5b3d547a4dbfb863d598cea943c5ca6805f6af0e5a6ff390",
+  "source_base": "f916c59a04ba8df4ae8e06f437043752851fc52a",
+  "dirty_source_snapshot": true,
+  "rendered_text_whitespace_normalized": true,
+  "checks": [
+    {
+      "check": "six-curated-cards",
+      "client": 1265,
+      "links": [
+        "case-studies/geosteering.html",
+        "case-studies/roof-segmentation.html",
+        "case-studies/marshab.html",
+        "https://marshab.onrender.com",
+        "case-studies/harborforge.html",
+        "case-studies/parametric-modeller.html",
+        "case-studies/ghostfolio-agent.html"
+      ],
+      "scroll": 1265,
+      "titles": [
+        "GeoSteering",
+        "Roof Segmentation",
+        "MarsHab / MarsGIS",
+        "HarborForge",
+        "Parametric Modeller",
+        "Ghostfolio Agent"
+      ],
+      "viewport": 1280
+    },
+    {
+      "check": "harborforge-case-link",
+      "client": 1265,
+      "hasCalibrationHeadline": true,
+      "heading": "Make an agent's result inspectable.",
+      "scroll": 1265,
+      "title": "HarborForge | Tanner Eischen"
+    },
+    {
+      "artifactLinks": [
+        "../assets/downloads/parametric-modeller-default18-scene.json",
+        "../assets/downloads/parametric-modeller-default18-cut-list.csv",
+        "../assets/downloads/parametric-modeller-default18-drawing.svg",
+        "../assets/downloads/parametric-modeller-default18-drawing.pdf",
+        "../assets/downloads/parametric-modeller-default18-drawing.dxf",
+        "../assets/downloads/parametric-modeller-edited20-scene.json",
+        "../assets/downloads/parametric-modeller-edited20-cut-list.csv",
+        "../assets/downloads/parametric-modeller-edited20-drawing.svg"
+      ],
+      "check": "cad-case-link",
+      "client": 1265,
+      "hasUnverifiedBrowserLimit": true,
+      "heading": "From an editable frame to real shop drawings.",
+      "scroll": 1265,
+      "title": "Parametric Modeller | Tanner Eischen"
+    },
+    {
+      "cardBounds": [
+        {
+          "left": 16.666667938232422,
+          "right": 288.6666679382324
+        },
+        {
+          "left": 16.666667938232422,
+          "right": 288.6666679382324
+        },
+        {
+          "left": 16.666667938232422,
+          "right": 288.6666679382324
+        },
+        {
+          "left": 16.666667938232422,
+          "right": 288.6666679382324
+        },
+        {
+          "left": 16.666667938232422,
+          "right": 288.6666679382324
+        },
+        {
+          "left": 16.666667938232422,
+          "right": 288.6666679382324
+        }
+      ],
+      "check": "mobile-layout-320",
+      "client": 305,
+      "scroll": 305,
+      "titles": [
+        "GeoSteering",
+        "Roof Segmentation",
+        "MarsHab / MarsGIS",
+        "HarborForge",
+        "Parametric Modeller",
+        "Ghostfolio Agent"
+      ],
+      "viewport": 320
+    },
+    {
+      "check": "mobile-menu-link-closes",
+      "expanded": "false"
+    },
+    {
+      "check": "final-desktop-cards-and-images",
+      "client": 1265,
+      "images": [
+        {
+          "loaded": true,
+          "src": "assets/images/case-geosteering-current.png"
+        },
+        {
+          "loaded": true,
+          "src": "assets/images/case-roof-whu-learning.png"
+        },
+        {
+          "loaded": true,
+          "src": "assets/images/case-marshab-comparison.png"
+        },
+        {
+          "loaded": true,
+          "src": "assets/images/case-harborforge-calibration.svg"
+        },
+        {
+          "loaded": true,
+          "src": "assets/images/case-parametric-modeller-frame.svg"
+        },
+        {
+          "loaded": true,
+          "src": "assets/images/case-ghostfolio-verification-2026-11-05.svg"
+        }
+      ],
+      "removedCardsAbsent": true,
+      "scroll": 1265,
+      "titles": [
+        "GeoSteering",
+        "Roof Segmentation",
+        "MarsHab / MarsGIS",
+        "HarborForge",
+        "Parametric Modeller",
+        "Ghostfolio Agent"
+      ],
+      "viewport": 1280
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "desktop.png",
+      "sha256": "32e1191f2a51723f35c317b4ddb3fa80756a9ab8e2a8e87f8563f10d8a6b093a"
+    },
+    {
+      "file": "supporting-cards.png",
+      "sha256": "48f97a74fd380842813aeade59bb2ffe6307fdec2a8c447b95d1c9befd718fb8"
+    },
+    {
+      "file": "mobile.png",
+      "sha256": "5f088c5b206410615f897327ea9a30b051fd9e10e97bad6ee67095a3b68d4b61"
+    }
+  ],
+  "underlying_application_browser_quality_not_newly_verified": true
+}

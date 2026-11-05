@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Parametric Modeller | Tanner Eischen</title>
+    <meta
+      name="description"
+      content="An editable woodworking frame, checked geometric dimensions, saved scenes, cut lists and actual SVG, PDF and DXF shop drawings."
+    />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="canonical"
+      href="https://tanner-eischen.github.io/case-studies/parametric-modeller.html"
+    />
+    <meta property="og:title" content="Parametric Modeller | Tanner Eischen" />
+    <meta
+      property="og:description"
+      content="An editable woodworking frame, checked geometric dimensions, saved scenes, cut lists and actual SVG, PDF and DXF shop drawings."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://tanner-eischen.github.io/case-studies/parametric-modeller.html"
+    />
+  </head>
+  <body class="case-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="case-nav" aria-label="Project navigation">
+      <a href="../index.html#work">All work</a>
+      <a href="../index.html#contact">Contact Tanner</a>
+    </nav>
+    <main id="main" class="case-shell">
+      <nav class="case-breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a> /
+        <span aria-current="page">Parametric Modeller</span>
+      </nav>
+      <header class="case-head">
+        <p class="eyebrow">Computational geometry / TypeScript CAD</p>
+        <h1>From an editable frame to real shop drawings.</h1>
+        <p class="case-intro">
+          One source board drives four physical frame instances. Feature history
+          stays editable through rebuilding, save/load, cut lists and
+          dimensional drawing exports.
+        </p>
+        <p class="case-project">Parametric Modeller · Local headless example</p>
+      </header>
+      <dl class="case-metrics">
+        <div>
+          <dt>physical boards</dt>
+          <dd>4</dd>
+        </div>
+        <div>
+          <dt>focused release tests</dt>
+          <dd>18 passed</dd>
+        </div>
+        <div>
+          <dt>drawing formats</dt>
+          <dd>SVG / PDF / DXF</dd>
+        </div>
+      </dl>
+      <section>
+        <h2>The problem</h2>
+        <p>
+          A useful CAD model must survive an edit without losing its feature
+          history or changing what its manufacturing outputs mean. A component
+          definition supplies geometry; it must not appear as a fifth board in
+          the cut list when four instances make the frame.
+        </p>
+        <h2>My contribution</h2>
+        <p>
+          I built a browser-based woodworking editor around planar B-Rep
+          geometry, parametric features and deterministic rebuilds. The bounded
+          frame example connects the production feature engine, component
+          rebuilder, persistence, measurements, cut-list generator and drawing
+          exporters. Triangles provide the display; feature history supplies the
+          geometry.
+        </p>
+      </section>
+      <section>
+        <h2>Inspect one complete workflow</h2>
+        <ol class="case-flow">
+          <li>Define an 18 × 3 × 0.75 in white-oak board.</li>
+          <li>Place four instances into a square-butt frame.</li>
+          <li>Save and reopen the editable feature history.</li>
+          <li>Change the source length to 20 in and update placements.</li>
+          <li>Rebuild dimensions, material quantities and shop drawings.</li>
+        </ol>
+        <figure>
+          <img
+            src="../assets/images/case-parametric-modeller-frame.svg"
+            alt="Actual exported front, right and top shop drawing views of the four-board frame, with dimensions and grain directions"
+            width="1623"
+            height="570"
+            loading="lazy"
+          />
+          <figcaption>
+            Actual SVG export for the default frame, with dimensions in inches.
+            This is an exported drawing, not a screenshot of a verified browser
+            editing session.
+          </figcaption>
+        </figure>
+        <section
+          class="case-table"
+          aria-label="Measured frame states"
+          tabindex="0"
+        >
+          <table>
+            <caption>
+              Two checked states of the same editable frame
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Measurement</th>
+                <th scope="col">Default 18 in boards</th>
+                <th scope="col">Edited 20 in boards</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Physical parts</th>
+                <td>4</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <th scope="row">Outer dimensions</th>
+                <td>24 × 18 in</td>
+                <td>26 × 20 in</td>
+              </tr>
+              <tr>
+                <th scope="row">Opening</th>
+                <td>18 × 12 in</td>
+                <td>20 × 14 in</td>
+              </tr>
+              <tr>
+                <th scope="row">Material volume</th>
+                <td>162 in³</td>
+                <td>180 in³</td>
+              </tr>
+              <tr>
+                <th scope="row">Cut-list groups / quantity</th>
+                <td>1 / 4</td>
+                <td>1 / 4</td>
+              </tr>
+              <tr>
+                <th scope="row">Save/load geometry and IDs</th>
+                <td>Preserved</td>
+                <td>Preserved</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+      <section>
+        <h2>What the checks establish</h2>
+        <p>
+          Eighteen focused headless tests passed on November 5, 2026. They check
+          physical part counts, independent dimensions and volume, stable IDs,
+          save/load behavior, material/grain metadata and real SVG/PDF/DXF
+          values. Repeated exports of the unchanged sample are byte-identical.
+          Other controls reject corrupted or unsupported history and a nonplanar
+          corner move before producing the corresponding output.
+        </p>
+        <p>
+          The edit helper updates both source length and instance placements.
+          That explicit operation is the scope of this example; it does not
+          establish automatic propagation through arbitrary assembly
+          constraints.
+        </p>
+      </section>
+      <section class="case-download">
+        <h2>Download the actual outputs</h2>
+        <p>
+          Default state:
+          <a
+            href="../assets/downloads/parametric-modeller-default18-scene.json"
+            download
+            >editable scene JSON</a
+          >
+          ·
+          <a
+            href="../assets/downloads/parametric-modeller-default18-cut-list.csv"
+            download
+            >cut list CSV</a
+          >
+          ·
+          <a
+            href="../assets/downloads/parametric-modeller-default18-drawing.svg"
+            download
+            >SVG drawing</a
+          >
+          ·
+          <a
+            href="../assets/downloads/parametric-modeller-default18-drawing.pdf"
+            download
+            >PDF drawing</a
+          >
+          ·
+          <a
+            href="../assets/downloads/parametric-modeller-default18-drawing.dxf"
+            download
+            >DXF drawing</a
+          >
+        </p>
+        <p>
+          Edited state:
+          <a
+            href="../assets/downloads/parametric-modeller-edited20-scene.json"
+            download
+            >editable scene JSON</a
+          >
+          ·
+          <a
+            href="../assets/downloads/parametric-modeller-edited20-cut-list.csv"
+            download
+            >cut list CSV</a
+          >
+          ·
+          <a
+            href="../assets/downloads/parametric-modeller-edited20-drawing.svg"
+            download
+            >SVG drawing</a
+          >
+        </p>
+        <p>
+          <a href="../assets/evidence/parametric-modeller-frame.json" download
+            >Sanitized measurements, provenance and file checksums</a
+          >
+        </p>
+        <p>
+          The files were copied unchanged from the checked local build. The
+          evidence identifies a dirty source snapshot based on a public commit;
+          the linked base revision alone does not reproduce the prepared example
+          and its uncommitted release tests.
+        </p>
+      </section>
+      <section>
+        <h2>What still needs polish</h2>
+        <ul>
+          <li>
+            Publish the prepared example and release-test additions so the
+            public source can reproduce these exact downloads.
+          </li>
+          <li>
+            Verify the browser workflow: open the scene, select and edit a
+            board, rebuild, save/reload and download drawings. WebGL interaction
+            and browser autosave have not been verified by these headless
+            checks.
+          </li>
+          <li>
+            Keep the supported scope planar and prismatic. This square-butt
+            example has no modeled fasteners, joinery or structural rating.
+            Curved CAD and automatic geometry repair are outside this release.
+          </li>
+        </ul>
+        <p>
+          <a
+            href="https://github.com/Tanner-Eischen/ParametricModeller"
+            target="_blank"
+            rel="noreferrer"
+            >Inspect the public project source</a
+          >
+        </p>
+      </section>
+    </main>
+    <footer class="case-footer">
+      <a href="../index.html#work">Return to selected work</a>
+      <p>Tanner Eischen · Scientific software and applied engineering</p>
+    </footer>
+  </body>
+</html>

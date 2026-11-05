@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title description">
+  <title id="title">HarborForge free-model calibration completions</title>
+  <desc id="description">North Mini Code passed zero of six trials, Nemotron 3.5 Super VL six of six, Nemotron 3 Ultra six of six, and Flint two of six. Three calibration task templates, two repeats per model, November 2 and 5, 2026. This is descriptive calibration, not a universal model ranking.</desc>
+  <rect width="1200" height="620" rx="24" fill="#f8f3e6" />
+  <g font-family="Arial, Helvetica, sans-serif" fill="#27271f">
+    <text x="54" y="70" font-size="21" font-weight="700" letter-spacing="3">HARBORFORGE / ACTUAL MODEL TRIALS</text>
+    <text x="54" y="129" font-size="43" font-weight="700">Four free models. Same three tasks.</text>
+    <text x="54" y="172" font-size="25" fill="#59594a">Successful completions / six registered attempts per model</text>
+    <g fill="#e0ddce">
+      <rect x="460" y="216" width="560" height="32" rx="8" />
+      <rect x="460" y="296" width="560" height="32" rx="8" />
+      <rect x="460" y="376" width="560" height="32" rx="8" />
+      <rect x="460" y="456" width="560" height="32" rx="8" />
+    </g>
+    <g fill="#296d60">
+      <rect x="460" y="296" width="560" height="32" rx="8" />
+      <rect x="460" y="376" width="560" height="32" rx="8" />
+      <rect x="460" y="456" width="186.6667" height="32" rx="8" />
+    </g>
+    <g font-size="28">
+      <text x="54" y="241">North Mini Code</text>
+      <text x="54" y="321">Nemotron 3.5 Super VL</text>
+      <text x="54" y="401">Nemotron 3 Ultra</text>
+      <text x="54" y="481">Flint</text>
+    </g>
+    <g font-size="31" font-weight="700" text-anchor="end">
+      <text x="1146" y="242">0 / 6</text>
+      <text x="1146" y="322">6 / 6</text>
+      <text x="1146" y="402">6 / 6</text>
+      <text x="1146" y="482">2 / 6</text>
+    </g>
+    <text x="54" y="555" font-size="25" font-weight="700">24 trials · 14 passes · 10 token/output-limit stops · $0</text>
+    <text x="54" y="593" font-size="21" fill="#59594a">November 2 and 5, 2026 · calibration only, not independent holdout measurement</text>
+  </g>
+</svg>

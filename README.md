@@ -7,7 +7,7 @@ This repository contains [tanner-eischen.github.io](https://tanner-eischen.githu
 ## What’s here
 
 - A responsive, single-page portfolio built with semantic HTML, modern CSS, and plain JavaScript
-- Six project case studies with explicit source-access and evidence limits
+- Six selected homepage projects and eight retained case studies with explicit source-access and evidence limits
 - Accessible navigation, keyboard focus states, reduced-motion support, and structured headings
 - Automated HTML, formatting, and local-link checks
 - GitHub Pages workflow with quality and publication-readiness gates
@@ -113,3 +113,9 @@ Portfolio content and personal assets are © Tanner Eischen. Source code may be 
 
 The completed browser/publication release is documented in
 `docs/implementation/WAVE2_RELEASE_2026-11-01.md`; earlier handoffs preserve their historical limits.
+
+The [November 5 card review](docs/implementation/PROJECT_CARD_REVIEW_2026-11-05.md)
+records the six-project selection, three removed homepage cards, new HarborForge
+and CAD examples, and the remaining project-polish work. Older case-study routes
+and application evidence remain available; a portfolio browser check does not
+certify an underlying application's workflow.
