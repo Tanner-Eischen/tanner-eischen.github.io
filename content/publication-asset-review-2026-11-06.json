@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-06",
+  "scope": "Parametric Modeller source/browser acceptance status followthrough and six new owner-generated frame artifacts.",
+  "prior_assets_review": {
+    "path": "content/publication-asset-review-2026-11-05.json",
+    "sha256": "688afdabaeb11c6487bdbf3858d2d5bf0d4ca6fa1ab12e6d412df64f8a5fa65c",
+    "scope": "All previous asset review decisions and bytes remain unchanged."
+  },
+  "decisions": [
+    {
+      "project": "Parametric Modeller",
+      "decision": "Only owner-generated synthetic frame scene, cut list, drawing files and the actual local browser screenshot, plus a sanitized browser acceptance projection. No credentials, personal files, machine paths or provider data."
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/downloads/parametric-modeller-browser-edited20-scene.json",
+      "sha256": "007d0e00f43665f29e3145b24739b6b52a6434ff7cfa6afd7c6392e68c19fa6a",
+      "bytes": 9978
+    },
+    {
+      "path": "assets/downloads/parametric-modeller-browser-edited20-cut-list.csv",
+      "sha256": "cd18fb90b3479f896c9001cd16fc51d0d48dcc1173b7e86b6e84c71aba773fe5",
+      "bytes": 366
+    },
+    {
+      "path": "assets/downloads/parametric-modeller-browser-edited20-drawing.svg",
+      "sha256": "cebba349470bb1ad54f9765f25b0d14295b5b8dd0364dc32139c92ac294e9e16",
+      "bytes": 8282
+    },
+    {
+      "path": "assets/downloads/parametric-modeller-browser-edited20-drawing.pdf",
+      "sha256": "22626dda39e54f9800c2d0eda66e09ba8e7c54ab9787fb381c6c6277d8a4d3e0",
+      "bytes": 2658
+    },
+    {
+      "path": "assets/downloads/parametric-modeller-browser-edited20-drawing.dxf",
+      "sha256": "e2ac6e983722f2321ff8a948b8da7783d12c4f38494953c4696dfe4babce3498",
+      "bytes": 9861
+    },
+    {
+      "path": "assets/images/case-parametric-modeller-browser-2026-11-06.png",
+      "sha256": "ee0afb79d4e4027f61b95de5ba9c7e7741da4c5ced11102e48b62790d29fdc48",
+      "bytes": 65959
+    },
+    {
+      "path": "assets/evidence/parametric-modeller-browser-2026-11-06.json",
+      "sha256": "0b77209fc61b72b84b10c717360de750116c82dfa88516567bab0f2fdcb7bbc7",
+      "bytes": 9130
+    }
+  ]
+}

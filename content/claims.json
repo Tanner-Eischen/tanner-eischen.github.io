@@ -588,15 +588,15 @@
       "surfaces": ["index.html"],
       "evidence": [
         {
-          "path": "assets/evidence/parametric-modeller-frame.json",
-          "sha256": "cac5cd780c76517de1ef54d07bf6e770976f242a76355a5fc338c41c1231b06a",
+          "path": "assets/evidence/parametric-modeller-browser-2026-11-06.json",
+          "sha256": "0b77209fc61b72b84b10c717360de750116c82dfa88516567bab0f2fdcb7bbc7",
           "kind": "independently_artifact_checked"
         }
       ],
-      "source_revision": "10bb20c77e11b6295b0f3a7b1ade70d0172fff70",
-      "scope": "Bounded local example and inspected output artifacts; not a live-model or browser-quality result.",
-      "qualification": "Headless CAD exports or fixed synthetic numerical controls only. Unmeasured application behavior is explicitly qualified on the card and case page.",
-      "verification_date": "2026-11-05",
+      "source_revision": "1fee3a5c4f94289d80062c33cacce10636fb73d4",
+      "scope": "Bounded local frame browser acceptance plus full local core tests and inspected real download artifacts; no public hosted app or general CAD signoff.",
+      "qualification": "Authored four-board length/layout workflow only. Recent files recovery is explicit; mobile, arbitrary instance edits and the full legacy browser suite remain unverified.",
+      "verification_date": "2026-11-06",
       "owner_approval_state": "not_requested",
       "hold_publication": false,
       "claim_type": "qualitative"

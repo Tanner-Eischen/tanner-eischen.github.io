@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "project": "Parametric Modeller",
+  "measurement": "bounded four-board browser editing, persistence, recovery and actual manufacturing downloads",
+  "verification_date": "2026-11-06",
+  "source_repository": "https://github.com/Tanner-Eischen/ParametricModeller",
+  "source_revision": "1fee3a5c4f94289d80062c33cacce10636fb73d4",
+  "source_url": "https://github.com/Tanner-Eischen/ParametricModeller/tree/1fee3a5c4f94289d80062c33cacce10636fb73d4",
+  "source_commit_publication": "Committed source published on the owner repository; default-branch and CI acceptance are tracked separately.",
+  "app_version": "0.2.1",
+  "execution_profile": "Local production Vite build served over HTTP in Chromium; real WebGL rendering and visible controls.",
+  "browser_interaction_verified": true,
+  "webgl_interaction_verified": true,
+  "public_hosted_app_verified": false,
+  "model_calls": 0,
+  "upstream_receipts": [
+    {
+      "url": "https://github.com/Tanner-Eischen/ParametricModeller/blob/1fee3a5c4f94289d80062c33cacce10636fb73d4/release/browser-qa-2026-11-05/final/README.md",
+      "sha256": "5dcf40b8b4a196b5083c5b5c3c4535ad84626267442a5adc0872391987f2265e"
+    },
+    {
+      "url": "https://github.com/Tanner-Eischen/ParametricModeller/blob/1fee3a5c4f94289d80062c33cacce10636fb73d4/release/browser-qa-2026-11-05/final/ui-checks.json",
+      "sha256": "ee350ef8d1cfba18443bc053a64ff491e908999365dcd32f767112444cc4f0da"
+    },
+    {
+      "url": "https://github.com/Tanner-Eischen/ParametricModeller/blob/1fee3a5c4f94289d80062c33cacce10636fb73d4/release/browser-qa-2026-11-05/final/artifact-verification.json",
+      "sha256": "56b6b8d46a14aeefc7afebbb85f90eb8e08050b1cdaa035c4bdfb3d0d06d22b1"
+    }
+  ],
+  "source_identity": {
+    "definition": "SHA256 of LF-canonicalized src TS/CSS bytes; artifact hashes are raw bytes",
+    "application_source_hashes_checked_against_published_commit": 209
+  },
+  "core_checks": {
+    "scope": "Full local Vitest core run; browser acceptance recorded separately; broad legacy browser suite not run.",
+    "test_files_passed": 143,
+    "tests_passed": 1171,
+    "lint_exit": 0,
+    "typecheck_exit": 0,
+    "production_build_exit": 0,
+    "coverage_percent": {
+      "branches": 52.8,
+      "functions": 64.51,
+      "statements": 63.45,
+      "lines": 64.64
+    }
+  },
+  "browser_checks": [
+    {
+      "check": "load-frame",
+      "expected": [
+        4,
+        24,
+        18,
+        0.75
+      ],
+      "actual": "4 physical boards; outer dimensions 24 × 18 × 0.75 in"
+    },
+    {
+      "check": "edit-20",
+      "actual": "4 physical boards; outer dimensions 26 × 20 × 0.75 in",
+      "undoEnabled": true
+    },
+    {
+      "check": "pointer-undo",
+      "actual": "4 physical boards; outer dimensions 24 × 18 × 0.75 in"
+    },
+    {
+      "check": "pointer-redo",
+      "actual": "4 physical boards; outer dimensions 26 × 20 × 0.75 in"
+    },
+    {
+      "check": "reject-six",
+      "error": "Frame board length must be finite and greater than 6 inches",
+      "actual": "4 physical boards; outer dimensions 26 × 20 × 0.75 in"
+    },
+    {
+      "check": "invalid-edit-no-history",
+      "actual": "4 physical boards; outer dimensions 24 × 18 × 0.75 in",
+      "undoEnabled": false
+    },
+    {
+      "check": "real-scene-download",
+      "features": [
+        {
+          "id": "portfolio-frame-board",
+          "parameters": {
+            "width": 20,
+            "depth": 3,
+            "height": 0.75,
+            "anchorMode": "corner",
+            "origin": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "instances": [
+        "portfolio-frame-bottom",
+        "portfolio-frame-top",
+        "portfolio-frame-left",
+        "portfolio-frame-right"
+      ],
+      "bodyCount": 4
+    },
+    {
+      "check": "import-downloaded-scene",
+      "actual": "4 physical boards; outer dimensions 26 × 20 × 0.75 in",
+      "title": "White oak square-butt frame - Parametric Modeler"
+    },
+    {
+      "check": "recent-file-recovery-after-reload",
+      "actual": "4 physical boards; outer dimensions 26 × 20 × 0.75 in",
+      "status": "Reopened White oak square-butt frame from the latest autosaved snapshot"
+    },
+    {
+      "check": "real-csv",
+      "actual": "Part names,Quantity,Material,Grade,Stock code,Finished length,Finished width,Finished thickness,Stock length,Stock width,Stock thickness,Unit,Grain,Board feet,Notes\r\nBottom board; Left board; Right board; Top board,4,White oak,,,20,3,0.75,20.5,3.25,0.875,in,straight,1.619,\"Illustrative square-butt frame; fasteners, joinery and structural rating are not modeled.\"\r\n"
+    },
+    {
+      "check": "bad-import-keeps-frame",
+      "status": "Open failed: Unexpected end of JSON input",
+      "actual": "4 physical boards; outer dimensions 26 × 20 × 0.75 in"
+    },
+    {
+      "check": "recovery-and-bad-import-identities",
+      "featuresEqual": true,
+      "instancesEqual": true,
+      "metadataEqual": true
+    },
+    {
+      "check": "viewport-picking",
+      "status": "Box | Body selected",
+      "label": null
+    },
+    {
+      "check": "clear-selection",
+      "status": ""
+    },
+    {
+      "check": "rebuild-view",
+      "actual": "4 physical boards; outer dimensions 26 × 20 × 0.75 in",
+      "status": "Top view"
+    },
+    {
+      "check": "viewport-900",
+      "actual": {
+        "controls": [
+          {
+            "box": {
+              "bottom": 472.53125,
+              "height": 35.53125,
+              "left": 550.6666870117188,
+              "right": 880.0000305175781,
+              "top": 437,
+              "width": 329.3333435058594,
+              "x": 550.6666870117188,
+              "y": 437
+            },
+            "label": "Frame board length (in)"
+          },
+          {
+            "box": {
+              "bottom": 518.0625,
+              "height": 35.53125,
+              "left": 550.6666870117188,
+              "right": 880.0000305175781,
+              "top": 482.53125,
+              "width": 329.3333435058594,
+              "x": 550.6666870117188,
+              "y": 482.53125
+            },
+            "label": "Apply frame length"
+          }
+        ],
+        "height": 700,
+        "scrollWidth": 900,
+        "width": 900
+      }
+    },
+    {
+      "check": "orbit-drag",
+      "actual": "4 physical boards; outer dimensions 26 × 20 × 0.75 in",
+      "note": "Left drag in empty viewport changed camera; geometry bounds retained."
+    }
+  ],
+  "geometry": {
+    "physical_parts": 4,
+    "outer_inches": [
+      26,
+      20,
+      0.75
+    ],
+    "opening_inches": [
+      20,
+      14
+    ],
+    "volume_cubic_inches": 180,
+    "csv_finished_inches": [
+      20,
+      3,
+      0.75
+    ],
+    "csv_stock_inches": [
+      20.5,
+      3.25,
+      0.875
+    ],
+    "drawing_dimensions_inches": [
+      26,
+      20,
+      0.75
+    ],
+    "dxf_insunits": 1
+  },
+  "copied_artifacts": [
+    {
+      "path": "assets/downloads/parametric-modeller-browser-edited20-scene.json",
+      "source_filename": "edited20-scene.json",
+      "sha256": "007d0e00f43665f29e3145b24739b6b52a6434ff7cfa6afd7c6392e68c19fa6a",
+      "bytes": 9978
+    },
+    {
+      "path": "assets/downloads/parametric-modeller-browser-edited20-cut-list.csv",
+      "source_filename": "edited20-cut-list.csv",
+      "sha256": "cd18fb90b3479f896c9001cd16fc51d0d48dcc1173b7e86b6e84c71aba773fe5",
+      "bytes": 366
+    },
+    {
+      "path": "assets/downloads/parametric-modeller-browser-edited20-drawing.svg",
+      "source_filename": "edited20-drawing.svg",
+      "sha256": "cebba349470bb1ad54f9765f25b0d14295b5b8dd0364dc32139c92ac294e9e16",
+      "bytes": 8282
+    },
+    {
+      "path": "assets/downloads/parametric-modeller-browser-edited20-drawing.pdf",
+      "source_filename": "edited20-drawing.pdf",
+      "sha256": "22626dda39e54f9800c2d0eda66e09ba8e7c54ab9787fb381c6c6277d8a4d3e0",
+      "bytes": 2658
+    },
+    {
+      "path": "assets/downloads/parametric-modeller-browser-edited20-drawing.dxf",
+      "source_filename": "edited20-drawing.dxf",
+      "sha256": "e2ac6e983722f2321ff8a948b8da7783d12c4f38494953c4696dfe4babce3498",
+      "bytes": 9861
+    },
+    {
+      "path": "assets/images/case-parametric-modeller-browser-2026-11-06.png",
+      "source_filename": "frame20-final.png",
+      "sha256": "ee0afb79d4e4027f61b95de5ba9c7e7741da4c5ced11102e48b62790d29fdc48",
+      "bytes": 65959
+    }
+  ],
+  "limits": [
+    "One authored square-butt frame with explicit coordinated length/layout editing; no general constraint solver.",
+    "Reload begins Untitled; Recent files restores imported scenes while browser local storage is available. Downloaded JSON remains the durable copy.",
+    "Independent per-instance metadata overrides and arbitrary instance transforms are outside acceptance.",
+    "Desktop 1280x720 and narrow 900x700 tested; mobile and unrelated CAD tools remain unverified.",
+    "No hosted interactive app or structural/manufacturing certification is implied.",
+    "The historical November 5 headless receipt and reference download bytes remain unchanged."
+  ]
+}

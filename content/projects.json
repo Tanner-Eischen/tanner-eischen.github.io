@@ -133,23 +133,26 @@
       "id": "parametric-modeller",
       "title": "Parametric Modeller",
       "category": "applied software",
-      "short_summary": "Planar CAD feature history with an inspectable saved-frame and drawing example.",
+      "short_summary": "Planar CAD feature history with a browser-tested frame edit and actual manufacturing downloads.",
       "contribution": "A planar woodworking CAD editor with editable feature history. A local frame example produces saved scenes, cut lists, and SVG/PDF/DXF shop drawings.",
       "current_readiness": "local_evidence",
-      "source_revision": "10bb20c77e11b6295b0f3a7b1ade70d0172fff70",
+      "source_revision": "1fee3a5c4f94289d80062c33cacce10636fb73d4",
       "source_access": "public",
       "source_repository": "Tanner-Eischen/ParametricModeller",
       "source_url": "https://github.com/Tanner-Eischen/ParametricModeller",
       "demo_url": null,
-      "report_url": "assets/evidence/parametric-modeller-frame.json",
-      "verification_date": "2026-11-05",
-      "evidence": ["assets/evidence/parametric-modeller-frame.json"],
+      "report_url": "assets/evidence/parametric-modeller-browser-2026-11-06.json",
+      "verification_date": "2026-11-06",
+      "evidence": [
+        "assets/evidence/parametric-modeller-browser-2026-11-06.json",
+        "assets/evidence/parametric-modeller-frame.json"
+      ],
       "limits": [
-        "Planar/prismatic square-butt example only; no curved CAD, joinery or structural certification.",
-        "Edit helper updates source length and derived placements explicitly; general assembly-constraint propagation is not established by this example.",
-        "Browser/WebGL editing, picking, autosave and download workflow require acceptance testing.",
-        "Geometry and export controls do not establish manufacturing suitability or financial savings.",
-        "The tested local source includes unpublished changes; the base revision alone is not the complete tested snapshot."
+        "One authored square-butt frame with explicit coordinated length/layout editing; no general constraint solver.",
+        "Reload begins Untitled; Recent files restores imported scenes while browser local storage is available. Downloaded JSON remains the durable copy.",
+        "Independent per-instance metadata overrides and arbitrary instance transforms are outside acceptance.",
+        "Desktop 1280x720 and narrow 900x700 tested; mobile and unrelated CAD tools remain unverified.",
+        "No hosted interactive app or structural/manufacturing certification is implied."
       ],
       "pages": ["index.html", "case-studies/parametric-modeller.html"],
       "image": {

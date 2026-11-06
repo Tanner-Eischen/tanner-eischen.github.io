@@ -44,7 +44,9 @@
           stays editable through rebuilding, save/load, cut lists and
           dimensional drawing exports.
         </p>
-        <p class="case-project">Parametric Modeller · Local headless example</p>
+        <p class="case-project">
+          Parametric Modeller · Browser-tested frame workflow
+        </p>
       </header>
       <dl class="case-metrics">
         <div>
@@ -52,8 +54,8 @@
           <dd>4</dd>
         </div>
         <div>
-          <dt>focused release tests</dt>
-          <dd>18 passed</dd>
+          <dt>core tests</dt>
+          <dd>1,171 passed</dd>
         </div>
         <div>
           <dt>drawing formats</dt>
@@ -83,10 +85,26 @@
         <ol class="case-flow">
           <li>Define an 18 × 3 × 0.75 in white-oak board.</li>
           <li>Place four instances into a square-butt frame.</li>
-          <li>Save and reopen the editable feature history.</li>
-          <li>Change the source length to 20 in and update placements.</li>
-          <li>Rebuild dimensions, material quantities and shop drawings.</li>
+          <li>
+            Set Frame board length to 20 in and apply the coordinated edit.
+          </li>
+          <li>Undo and redo, then download and reopen the editable scene.</li>
+          <li>Export the four-board cut list and SVG/PDF/DXF shop drawings.</li>
         </ol>
+        <figure>
+          <img
+            src="../assets/images/case-parametric-modeller-browser-2026-11-06.png"
+            alt="Actual Parametric Modeller browser session showing the rendered four-board frame, length 20 inches and outer dimensions 26 by 20 inches"
+            width="1280"
+            height="720"
+            loading="lazy"
+          />
+          <figcaption>
+            Actual WebGL editor after the coordinated length edit, file
+            roundtrip and recovery checks on November 6, 2026. This workflow was
+            tested locally; a hosted interactive app is not linked here.
+          </figcaption>
+        </figure>
         <figure>
           <img
             src="../assets/images/case-parametric-modeller-frame.svg"
@@ -96,9 +114,8 @@
             loading="lazy"
           />
           <figcaption>
-            Actual SVG export for the default frame, with dimensions in inches.
-            This is an exported drawing, not a screenshot of a verified browser
-            editing session.
+            Reference SVG export for the default frame, with dimensions in
+            inches. The separate screenshot above shows the browser editor.
           </figcaption>
         </figure>
         <section
@@ -155,12 +172,22 @@
       <section>
         <h2>What the checks establish</h2>
         <p>
-          Eighteen focused headless tests passed on November 5, 2026. They check
-          physical part counts, independent dimensions and volume, stable IDs,
-          save/load behavior, material/grain metadata and real SVG/PDF/DXF
-          values. Repeated exports of the unchanged sample are byte-identical.
-          Other controls reject corrupted or unsupported history and a nonplanar
-          corner move before producing the corresponding output.
+          The final local core run passed 1,171 tests across 143 files, lint,
+          TypeScript and the production build on November 6, 2026. Frame
+          controls check part counts, independent dimensions and volume, stable
+          IDs, save/load, material/grain metadata and actual SVG/PDF/DXF values.
+          Repeated exports of the unchanged reference sample are byte-identical.
+          These core checks are separate from the recorded browser acceptance.
+        </p>
+        <p>
+          The real browser pass verified the visible length edit, pointer
+          Undo/Redo, selection, rebuild, scene download/import and explicit
+          recovery through Recent files after reload. The downloaded CSV retains
+          all four board names and quantity 4. SVG, decoded PDF content and DXF
+          contain the expected 26, 20 and 0.75 in dimension labels. A rejected 6
+          in edit and malformed JSON import leave the good frame unchanged.
+          Named views, orbit, fit and reset were checked at desktop widths;
+          mobile and unrelated CAD tools remain unverified.
         </p>
         <p>
           The edit helper updates both source length and instance placements.
@@ -172,7 +199,7 @@
       <section class="case-download">
         <h2>Download the actual outputs</h2>
         <p>
-          Default state:
+          Default reference state:
           <a
             href="../assets/downloads/parametric-modeller-default18-scene.json"
             download
@@ -204,49 +231,68 @@
           >
         </p>
         <p>
-          Edited state:
+          Actual browser-edited state:
           <a
-            href="../assets/downloads/parametric-modeller-edited20-scene.json"
+            href="../assets/downloads/parametric-modeller-browser-edited20-scene.json"
             download
             >editable scene JSON</a
           >
           ·
           <a
-            href="../assets/downloads/parametric-modeller-edited20-cut-list.csv"
+            href="../assets/downloads/parametric-modeller-browser-edited20-cut-list.csv"
             download
             >cut list CSV</a
           >
           ·
           <a
-            href="../assets/downloads/parametric-modeller-edited20-drawing.svg"
+            href="../assets/downloads/parametric-modeller-browser-edited20-drawing.svg"
             download
             >SVG drawing</a
           >
-        </p>
-        <p>
-          <a href="../assets/evidence/parametric-modeller-frame.json" download
-            >Sanitized measurements, provenance and file checksums</a
+          ·
+          <a
+            href="../assets/downloads/parametric-modeller-browser-edited20-drawing.pdf"
+            download
+            >PDF drawing</a
+          >
+          ·
+          <a
+            href="../assets/downloads/parametric-modeller-browser-edited20-drawing.dxf"
+            download
+            >DXF drawing</a
           >
         </p>
         <p>
-          The files were copied unchanged from the checked local build. The
-          evidence identifies a dirty source snapshot based on a public commit;
-          the linked base revision alone does not reproduce the prepared example
-          and its uncommitted release tests.
+          <a
+            href="../assets/evidence/parametric-modeller-browser-2026-11-06.json"
+            download
+            >Browser acceptance, measurements and file checksums</a
+          >
+          ·
+          <a href="../assets/evidence/parametric-modeller-frame.json" download
+            >Historical November 5 headless receipt</a
+          >
+        </p>
+        <p>
+          Browser downloads and the screenshot are copied unchanged from the
+          tested production build. The new receipt identifies the published
+          source commit and upstream source/artifact checksums. The earlier
+          headless receipt and reference downloads remain historical records.
         </p>
       </section>
       <section>
-        <h2>What still needs polish</h2>
+        <h2>Supported scope and remaining limits</h2>
         <ul>
           <li>
-            Publish the prepared example and release-test additions so the
-            public source can reproduce these exact downloads.
+            Reload opens an empty editor. Recent files explicitly restores an
+            imported scene while browser local storage is available. Keep the
+            downloaded JSON as the durable copy.
           </li>
           <li>
-            Verify the browser workflow: open the scene, select and edit a
-            board, rebuild, save/reload and download drawings. WebGL interaction
-            and browser autosave have not been verified by these headless
-            checks.
+            The example control derives its four placements and manufacturing
+            tags together. Independent per-instance material overrides and
+            arbitrary instance transforms are outside this acceptance. The full
+            legacy browser test suite was not run for this signoff.
           </li>
           <li>
             Keep the supported scope planar and prismatic. This square-butt
@@ -256,7 +302,7 @@
         </ul>
         <p>
           <a
-            href="https://github.com/Tanner-Eischen/ParametricModeller"
+            href="https://github.com/Tanner-Eischen/ParametricModeller/tree/1fee3a5c4f94289d80062c33cacce10636fb73d4"
             target="_blank"
             rel="noreferrer"
             >Inspect the public project source</a

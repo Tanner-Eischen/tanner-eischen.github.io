@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-06",
+  "tested_at": "2026-11-06T19:15:13.473Z",
+  "scope": "Targeted updated Parametric Modeller card and case reading/navigation/image/download, desktop1280 and mobile320; unchanged project pages retain November5 review. Application workflow separately verified in its source repository.",
+  "tool": "in-app Chromium via cua_repl",
+  "passed": true,
+  "content_fingerprint": "ce1719f3d9a64108f79c4346825762986bcd978b59ae3684f6a892f0608671ac",
+  "source_base": "acfec88cd05a0a212aa1d13670f082405b50f75f",
+  "dirty_source_snapshot": true,
+  "previous_review": "reports/project-card-review-2026-11-05/browser-proof.json",
+  "checks": [
+    {
+      "check": "updated-card",
+      "text": "Parametric Modeller\n\nA planar woodworking CAD editor with editable feature history. A local frame example produces saved scenes, cut lists, and SVG/PDF/DXF shop drawings.\n\nFrame browser workflow checked · public source · downloadable outputs."
+    },
+    {
+      "check": "case-study-reading",
+      "title": "Parametric Modeller | Tanner Eischen",
+      "text": "Home / Parametric Modeller\n\nCOMPUTATIONAL GEOMETRY / TYPESCRIPT CAD\n\nFrom an editable frame to real shop drawings.\n\nOne source board drives four physical frame instances. Feature history stays editable through rebuilding, save/load, cut lists and dimensional drawing exports.\n\nParametric Modeller · Browser-tested frame workflow\n\nphysical boards\n4\ncore tests\n1,171 passed\ndrawing formats\nSVG / PDF / DXF\nThe problem\n\nA useful CAD model must survive an edit without losing its feature history or changing what its manufacturing outputs mean. A component definition supplies geometry; it must not appear as a fifth board in the cut list when four instances make the frame.\n\nMy contribution\n\nI built a browser-based woodworking editor around planar B-Rep geometry, parametric features and deterministic rebuilds. The bounded frame example connects the production feature engine, component rebuilder, persistence, measurements, cut-list generator and drawing exporters. Triangles provide the display; feature history supplies the geometry.\n\nInspect one complete workflow\nDefine an 18 × 3 × 0.75 in white-oak board.\nPlace four instances into a square-butt frame.\nSet Frame board length to 20 in and apply the coordinated edit.\nUndo and redo, then download and reopen the editable scene.\nExport the four-board cut list and SVG/PDF/DXF shop drawings.\nActual WebGL editor after the coordinated length edit, file roundtrip and recovery checks on November 6, 2026. This workflow was tested locally; a hosted interactive app is not linked here.\nReference SVG export for the default frame, with dimensions in inches. The separate screenshot above shows the browser editor.\nTwo checked states of the same editable frame\nMeasurement\tDefault 18 in boards\tEdited 20 in boards\nPhysical parts\t4\t4\nOuter dimensions\t24 × 18 in\t26 × 20 in\nOpening\t18 × 12 in\t20 × 14 in\nMaterial volume\t162 in³\t180 in³\nCut-list groups / quantity\t1 / 4\t1 / 4\nSave/load geometry and IDs\tPreserved\tPreserved\nWhat the checks establish\n\nThe final local core run passed 1,171 tests across 143 files, lint, TypeScript and the production build on November 6, 2026. Frame controls check part counts, independent dimensions and volume, stable IDs, save/load, material/grain metadata and actual SVG/PDF/DXF values. Repeated exports of the unchanged reference sample are byte-identical. These core checks are separate from the recorded browser acceptance.\n\nThe real browser pass verified the visible length edit, pointer Undo/Redo, selection, rebuild, scene download/import and explicit recovery through Recent files after reload. The downloaded CSV retains all four board names and quantity 4. SVG, decoded PDF content and DXF contain the expected 26, 20 and 0.75 in dimension labels. A rejected 6 in edit and malformed JSON import leave the good frame unchanged. Named views, orbit, fit and reset were checked at desktop widths; mobile and unrelated CAD tools remain unverified.\n\nThe edit helper updates both source length and instance placements. That explicit operation is the scope of this example; it does not establish automatic propagation through arbitrary assembly constraints.\n\nDownload the actual outputs\n\nDefault reference state: editable scene JSON · cut list CSV · SVG drawing · PDF drawing · DXF drawing\n\nActual browser-edited state: editable scene JSON · cut list CSV · SVG drawing · PDF drawing · DXF drawing\n\nBrowser acceptance, measurements and file checksums · Historical November 5 headless receipt\n\nBrowser downloads and the screenshot are copied unchanged from the tested production build. The new receipt identifies the published source commit and upstream source/artifact checksums. The earlier headless receipt and reference downloads remain historical records.\n\nSupported scope and remaining limits\nReload opens an empty editor. Recent files explicitly restores an imported scene while browser local storage is available. Keep the downloaded JSON as the durable copy.\nThe example control derives its four placements and manufacturing tags together. Independent per-instance material overrides and arbitrary instance transforms are outside this acceptance. The full legacy browser test suite was not run for this signoff.\nKeep the supported scope planar and prismatic. This square-butt example has no modeled fasteners, joinery or structural rating. Curved CAD and automatic geometry repair are outside this release.\n\nInspect the public project source",
+      "images": [
+        {
+          "height": 720,
+          "loaded": true,
+          "src": "../assets/images/case-parametric-modeller-browser-2026-11-06.png",
+          "width": 1280
+        },
+        {
+          "height": 570,
+          "loaded": true,
+          "src": "../assets/images/case-parametric-modeller-frame.svg",
+          "width": 1623
+        }
+      ],
+      "source": "https://github.com/Tanner-Eischen/ParametricModeller/tree/1fee3a5c4f94289d80062c33cacce10636fb73d4"
+    },
+    {
+      "check": "case-csv-link",
+      "matchesAppDownload": true
+    },
+    {
+      "check": "case-mobile320",
+      "actual": {
+        "client": 305,
+        "images": [
+          {
+            "left": 19.197917938232425,
+            "loaded": true,
+            "right": 285.4687614440918
+          },
+          {
+            "left": 19.197917938232425,
+            "loaded": true,
+            "right": 285.4687614440918
+          }
+        ],
+        "scroll": 305,
+        "width": 320
+      }
+    },
+    {
+      "check": "card-mobile320",
+      "actual": {
+        "client": 305,
+        "scroll": 305,
+        "width": 320
+      },
+      "text": "Parametric Modeller\n\nA planar woodworking CAD editor with editable feature history. A local frame example produces saved scenes, cut lists, and SVG/PDF/DXF shop drawings.\n\nFrame browser workflow checked · public source · downloadable outputs."
+    }
+  ],
+  "screenshots": [
+    "card-desktop.png",
+    "case-desktop.png",
+    "case-mobile320.png",
+    "card-mobile320.png"
+  ]
+}

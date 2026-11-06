@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "scope": "Owner-requested November 5 project-card curation; existing publication authorization retained. Application verification remains separately dated.",
+  "scope": "Owner-requested Parametric Modeller polish and publication followthrough, November 6; existing publication authorization retained. Application verification remains separately dated.",
   "gates": [
     {
       "id": "asset-rights-review",
       "state": "satisfied",
-      "reason": "New assets are public aggregate evidence or owner-generated synthetic CAD/verification examples; unchanged prior assets retain their original review.",
-      "evidence": "content/publication-asset-review-2026-11-05.json",
-      "evidence_sha256": "688afdabaeb11c6487bdbf3858d2d5bf0d4ca6fa1ab12e6d412df64f8a5fa65c"
+      "reason": "New owner-generated synthetic frame browser downloads and actual local editor screenshot are reviewed in the November 6 supplement; prior reviewed asset bytes remain unchanged.",
+      "evidence": "content/publication-asset-review-2026-11-06.json",
+      "evidence_sha256": "6e66ce59d7a4d1e4de3ca4df858cafc4fbe7edfb8a7c2ae823309517782f7c45"
     },
     {
       "id": "interactive-verification",
       "state": "satisfied",
-      "reason": "Targeted actual in-app Chromium reading/navigation/image and320px mobile checks passed against the current built content fingerprint. Underlying project application workflows were not newly browser-tested.",
-      "evidence": "reports/project-card-review-2026-11-05/browser-proof.json",
-      "evidence_sha256": "ad90634e05cafc1a75b7e63108d281b9ec6914678c2cd218b561ef3f06184075"
+      "reason": "Targeted updated CAD card/case reading, navigation, image and actual CSV download passed in Chromium at desktop and 320px widths against the current built fingerprint. The November 5 review remains historical evidence for unchanged pages; application acceptance is separately recorded.",
+      "evidence": "reports/parametric-polish-2026-11-06/browser-proof.json",
+      "evidence_sha256": "78d6061208cbc537f1d3bc2b2750c062c53d4aa54f0398935e99776b214ee5bf"
     },
     {
       "id": "publication-approval",
